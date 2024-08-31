@@ -4,8 +4,6 @@ import sys
 from utils import *
 
 def run_naive_installation(path):
-    config_return_code = os.system(f'cd {path} && ./autogen') # if this command is redundant then it doesnt matter
-    config_return_code = os.system(f'cd {path} && ./config') # if the command is redundant then it doesnt matter
     make_return_code = os.system(f'cd {path} && make')
     return make_return_code
 
@@ -24,8 +22,22 @@ for repo_name in os.listdir(REPOS_DIR):
     repo_path = os.path.join(REPOS_DIR, repo_name)
     logger.info(f"Analyzing {repo_path}")
 
+    # CASE 0: Repo has a configure.ac file
+    # Then run `autoreconf -i` before subsequent commands
+    if os.path.isfile(os.path.join(repo_path, 'configure.ac')):
+        logger.info("Running autoreconf")
+        autoreconf_return_code = os.system(f'cd {repo_path} && autoreconf -i')
+        if autoreconf_return_code != 0:
+            logger.error(f"Error: autoreconf failed for {repo_name}")
+            fails.append(repo_name)
+            continue
+        else:
+            logger.info(f"Success: autoreconf succeeded for {repo_name}")
+
+    autogen_return_code = os.system(f'cd {repo_path} && ./autogen.sh') # if this command is redundant then it doesnt matter
+    config_return_code = os.system(f'cd {repo_path} && ./configure') # if the command is redundant then it doesnt matter
+
     makefile_path = find_makefile(repo_path)
-    
     # CASE 1: Repo has a makefile
     if makefile_path:
         logger.info(f"Found Makefile: {makefile_path}")
