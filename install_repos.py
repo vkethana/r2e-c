@@ -4,7 +4,8 @@ import sys
 from utils import *
 
 def run_naive_installation(path):
-    config_return_code = os.system(f'cd {path} && ./config')
+    config_return_code = os.system(f'cd {path} && ./autogen') # if this command is redundant then it doesnt matter
+    config_return_code = os.system(f'cd {path} && ./config') # if the command is redundant then it doesnt matter
     make_return_code = os.system(f'cd {path} && make')
     return make_return_code
 
@@ -24,7 +25,8 @@ for repo_name in os.listdir(REPOS_DIR):
     logger.info(f"Analyzing {repo_path}")
 
     makefile_path = find_makefile(repo_path)
-
+    
+    # CASE 1: Repo has a makefile
     if makefile_path:
         logger.info(f"Found Makefile: {makefile_path}")
         logger.info("Running naive installation")
@@ -38,6 +40,10 @@ for repo_name in os.listdir(REPOS_DIR):
     else:
         logger.error(f"No Makefile found for {repo_name}")
         fails.append(repo_name)
+
+    # TODO: Case 2: Repo has a CMakeLists.txt
+    # TODO: Case 3: Repo has a configure script
+    # TODO: Case 4: Repo has gradlew files
 
 print("Successes:")
 print(successes)
