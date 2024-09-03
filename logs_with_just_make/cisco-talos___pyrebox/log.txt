@@ -1,0 +1,5 @@
+09/01/2024 05:49:52 PM logger_cisco-talos___pyrebox INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cisco-talos___pyrebox)
+09/01/2024 05:49:52 PM logger_cisco-talos___pyrebox INFO Analyzing repos/cisco-talos___pyrebox (install_repos.py:23) (cisco-talos___pyrebox)
+09/01/2024 05:49:52 PM logger_cisco-talos___pyrebox INFO Found Makefile: repos/cisco-talos___pyrebox/Makefile (install_repos.py:43) (cisco-talos___pyrebox)
+09/01/2024 05:49:52 PM logger_cisco-talos___pyrebox INFO Running naive installation (install_repos.py:44) (cisco-talos___pyrebox)
+09/01/2024 05:49:52 PM logger_cisco-talos___pyrebox ERROR Error: make failed for cisco-talos___pyrebox (install_repos.py:47) (cisco-talos___pyrebox)

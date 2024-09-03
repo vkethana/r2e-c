@@ -1,0 +1,5 @@
+09/01/2024 05:49:39 PM logger_seclab-ucr___intang INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (seclab-ucr___intang)
+09/01/2024 05:49:39 PM logger_seclab-ucr___intang INFO Analyzing repos/seclab-ucr___intang (install_repos.py:23) (seclab-ucr___intang)
+09/01/2024 05:49:39 PM logger_seclab-ucr___intang INFO Found Makefile: repos/seclab-ucr___intang/Makefile (install_repos.py:43) (seclab-ucr___intang)
+09/01/2024 05:49:39 PM logger_seclab-ucr___intang INFO Running naive installation (install_repos.py:44) (seclab-ucr___intang)
+09/01/2024 05:49:39 PM logger_seclab-ucr___intang ERROR Error: make failed for seclab-ucr___intang (install_repos.py:47) (seclab-ucr___intang)

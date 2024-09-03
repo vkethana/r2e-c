@@ -1,0 +1,5 @@
+09/01/2024 05:50:52 PM logger_mongrel2___mongrel2 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mongrel2___mongrel2)
+09/01/2024 05:50:52 PM logger_mongrel2___mongrel2 INFO Analyzing repos/mongrel2___mongrel2 (install_repos.py:23) (mongrel2___mongrel2)
+09/01/2024 05:50:52 PM logger_mongrel2___mongrel2 INFO Found Makefile: repos/mongrel2___mongrel2/Makefile (install_repos.py:43) (mongrel2___mongrel2)
+09/01/2024 05:50:52 PM logger_mongrel2___mongrel2 INFO Running naive installation (install_repos.py:44) (mongrel2___mongrel2)
+09/01/2024 05:50:52 PM logger_mongrel2___mongrel2 ERROR Error: make failed for mongrel2___mongrel2 (install_repos.py:47) (mongrel2___mongrel2)

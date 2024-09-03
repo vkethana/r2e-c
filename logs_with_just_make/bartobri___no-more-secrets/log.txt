@@ -1,0 +1,5 @@
+09/01/2024 05:49:59 PM logger_bartobri___no-more-secrets INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bartobri___no-more-secrets)
+09/01/2024 05:49:59 PM logger_bartobri___no-more-secrets INFO Analyzing repos/bartobri___no-more-secrets (install_repos.py:23) (bartobri___no-more-secrets)
+09/01/2024 05:49:59 PM logger_bartobri___no-more-secrets INFO Found Makefile: repos/bartobri___no-more-secrets/Makefile (install_repos.py:43) (bartobri___no-more-secrets)
+09/01/2024 05:49:59 PM logger_bartobri___no-more-secrets INFO Running naive installation (install_repos.py:44) (bartobri___no-more-secrets)
+09/01/2024 05:50:00 PM logger_bartobri___no-more-secrets INFO Success: make succeeded for bartobri___no-more-secrets (install_repos.py:50) (bartobri___no-more-secrets)

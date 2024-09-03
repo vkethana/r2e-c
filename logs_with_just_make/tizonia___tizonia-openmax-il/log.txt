@@ -1,0 +1,4 @@
+09/01/2024 06:12:55 PM logger_tizonia___tizonia-openmax-il INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tizonia___tizonia-openmax-il)
+09/01/2024 06:12:55 PM logger_tizonia___tizonia-openmax-il INFO Analyzing repos/tizonia___tizonia-openmax-il (install_repos.py:23) (tizonia___tizonia-openmax-il)
+09/01/2024 06:12:55 PM logger_tizonia___tizonia-openmax-il INFO Running autoreconf (install_repos.py:28) (tizonia___tizonia-openmax-il)
+09/01/2024 06:14:21 PM logger_tizonia___tizonia-openmax-il ERROR Error: autoreconf failed for tizonia___tizonia-openmax-il (install_repos.py:31) (tizonia___tizonia-openmax-il)

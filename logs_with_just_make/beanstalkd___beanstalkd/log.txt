@@ -1,0 +1,5 @@
+09/01/2024 06:15:06 PM logger_beanstalkd___beanstalkd INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (beanstalkd___beanstalkd)
+09/01/2024 06:15:06 PM logger_beanstalkd___beanstalkd INFO Analyzing repos/beanstalkd___beanstalkd (install_repos.py:23) (beanstalkd___beanstalkd)
+09/01/2024 06:15:06 PM logger_beanstalkd___beanstalkd INFO Found Makefile: repos/beanstalkd___beanstalkd/Makefile (install_repos.py:43) (beanstalkd___beanstalkd)
+09/01/2024 06:15:06 PM logger_beanstalkd___beanstalkd INFO Running naive installation (install_repos.py:44) (beanstalkd___beanstalkd)
+09/01/2024 06:15:07 PM logger_beanstalkd___beanstalkd INFO Success: make succeeded for beanstalkd___beanstalkd (install_repos.py:50) (beanstalkd___beanstalkd)

@@ -1,0 +1,5 @@
+09/01/2024 05:52:47 PM logger_apple___darwin-xnu INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (apple___darwin-xnu)
+09/01/2024 05:52:47 PM logger_apple___darwin-xnu INFO Analyzing repos/apple___darwin-xnu (install_repos.py:23) (apple___darwin-xnu)
+09/01/2024 05:52:47 PM logger_apple___darwin-xnu INFO Found Makefile: repos/apple___darwin-xnu/Makefile (install_repos.py:43) (apple___darwin-xnu)
+09/01/2024 05:52:47 PM logger_apple___darwin-xnu INFO Running naive installation (install_repos.py:44) (apple___darwin-xnu)
+09/01/2024 05:52:47 PM logger_apple___darwin-xnu ERROR Error: make failed for apple___darwin-xnu (install_repos.py:47) (apple___darwin-xnu)

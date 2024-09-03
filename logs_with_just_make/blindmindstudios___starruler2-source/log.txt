@@ -1,0 +1,3 @@
+09/01/2024 05:53:19 PM logger_blindmindstudios___starruler2-source INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (blindmindstudios___starruler2-source)
+09/01/2024 05:53:19 PM logger_blindmindstudios___starruler2-source INFO Analyzing repos/blindmindstudios___starruler2-source (install_repos.py:23) (blindmindstudios___starruler2-source)
+09/01/2024 05:53:19 PM logger_blindmindstudios___starruler2-source ERROR No Makefile found for blindmindstudios___starruler2-source (install_repos.py:53) (blindmindstudios___starruler2-source)

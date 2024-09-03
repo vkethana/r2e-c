@@ -1,0 +1,5 @@
+09/01/2024 05:55:28 PM logger_rdesktop___rdesktop INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (rdesktop___rdesktop)
+09/01/2024 05:55:28 PM logger_rdesktop___rdesktop INFO Analyzing repos/rdesktop___rdesktop (install_repos.py:23) (rdesktop___rdesktop)
+09/01/2024 05:55:28 PM logger_rdesktop___rdesktop INFO Running autoreconf (install_repos.py:28) (rdesktop___rdesktop)
+09/01/2024 05:55:30 PM logger_rdesktop___rdesktop INFO Success: autoreconf succeeded for rdesktop___rdesktop (install_repos.py:35) (rdesktop___rdesktop)
+09/01/2024 05:55:32 PM logger_rdesktop___rdesktop ERROR No Makefile found for rdesktop___rdesktop (install_repos.py:53) (rdesktop___rdesktop)

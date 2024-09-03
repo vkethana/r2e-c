@@ -1,0 +1,7 @@
+09/01/2024 06:11:29 PM logger_webmproject___libwebp INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (webmproject___libwebp)
+09/01/2024 06:11:29 PM logger_webmproject___libwebp INFO Analyzing repos/webmproject___libwebp (install_repos.py:23) (webmproject___libwebp)
+09/01/2024 06:11:29 PM logger_webmproject___libwebp INFO Running autoreconf (install_repos.py:28) (webmproject___libwebp)
+09/01/2024 06:11:35 PM logger_webmproject___libwebp INFO Success: autoreconf succeeded for webmproject___libwebp (install_repos.py:35) (webmproject___libwebp)
+09/01/2024 06:11:45 PM logger_webmproject___libwebp INFO Found Makefile: repos/webmproject___libwebp/Makefile (install_repos.py:43) (webmproject___libwebp)
+09/01/2024 06:11:45 PM logger_webmproject___libwebp INFO Running naive installation (install_repos.py:44) (webmproject___libwebp)
+09/01/2024 06:12:37 PM logger_webmproject___libwebp INFO Success: make succeeded for webmproject___libwebp (install_repos.py:50) (webmproject___libwebp)

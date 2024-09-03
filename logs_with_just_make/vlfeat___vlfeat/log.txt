@@ -1,0 +1,5 @@
+09/01/2024 05:54:20 PM logger_vlfeat___vlfeat INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (vlfeat___vlfeat)
+09/01/2024 05:54:20 PM logger_vlfeat___vlfeat INFO Analyzing repos/vlfeat___vlfeat (install_repos.py:23) (vlfeat___vlfeat)
+09/01/2024 05:54:20 PM logger_vlfeat___vlfeat INFO Found Makefile: repos/vlfeat___vlfeat/Makefile (install_repos.py:43) (vlfeat___vlfeat)
+09/01/2024 05:54:20 PM logger_vlfeat___vlfeat INFO Running naive installation (install_repos.py:44) (vlfeat___vlfeat)
+09/01/2024 05:54:25 PM logger_vlfeat___vlfeat ERROR Error: make failed for vlfeat___vlfeat (install_repos.py:47) (vlfeat___vlfeat)

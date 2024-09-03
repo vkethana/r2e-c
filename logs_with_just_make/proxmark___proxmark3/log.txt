@@ -1,0 +1,5 @@
+09/01/2024 05:51:00 PM logger_proxmark___proxmark3 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (proxmark___proxmark3)
+09/01/2024 05:51:00 PM logger_proxmark___proxmark3 INFO Analyzing repos/proxmark___proxmark3 (install_repos.py:23) (proxmark___proxmark3)
+09/01/2024 05:51:00 PM logger_proxmark___proxmark3 INFO Found Makefile: repos/proxmark___proxmark3/Makefile (install_repos.py:43) (proxmark___proxmark3)
+09/01/2024 05:51:00 PM logger_proxmark___proxmark3 INFO Running naive installation (install_repos.py:44) (proxmark___proxmark3)
+09/01/2024 05:51:14 PM logger_proxmark___proxmark3 ERROR Error: make failed for proxmark___proxmark3 (install_repos.py:47) (proxmark___proxmark3)

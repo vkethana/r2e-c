@@ -1,0 +1,5 @@
+09/01/2024 05:58:05 PM logger_samyk___pwnat INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (samyk___pwnat)
+09/01/2024 05:58:05 PM logger_samyk___pwnat INFO Analyzing repos/samyk___pwnat (install_repos.py:23) (samyk___pwnat)
+09/01/2024 05:58:05 PM logger_samyk___pwnat INFO Found Makefile: repos/samyk___pwnat/Makefile (install_repos.py:43) (samyk___pwnat)
+09/01/2024 05:58:05 PM logger_samyk___pwnat INFO Running naive installation (install_repos.py:44) (samyk___pwnat)
+09/01/2024 05:58:06 PM logger_samyk___pwnat INFO Success: make succeeded for samyk___pwnat (install_repos.py:50) (samyk___pwnat)

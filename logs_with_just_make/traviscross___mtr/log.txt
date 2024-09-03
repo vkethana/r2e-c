@@ -1,0 +1,7 @@
+09/01/2024 05:58:14 PM logger_traviscross___mtr INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (traviscross___mtr)
+09/01/2024 05:58:14 PM logger_traviscross___mtr INFO Analyzing repos/traviscross___mtr (install_repos.py:23) (traviscross___mtr)
+09/01/2024 05:58:14 PM logger_traviscross___mtr INFO Running autoreconf (install_repos.py:28) (traviscross___mtr)
+09/01/2024 05:58:17 PM logger_traviscross___mtr INFO Success: autoreconf succeeded for traviscross___mtr (install_repos.py:35) (traviscross___mtr)
+09/01/2024 05:58:20 PM logger_traviscross___mtr INFO Found Makefile: repos/traviscross___mtr/Makefile (install_repos.py:43) (traviscross___mtr)
+09/01/2024 05:58:20 PM logger_traviscross___mtr INFO Running naive installation (install_repos.py:44) (traviscross___mtr)
+09/01/2024 05:58:23 PM logger_traviscross___mtr INFO Success: make succeeded for traviscross___mtr (install_repos.py:50) (traviscross___mtr)

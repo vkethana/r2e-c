@@ -1,0 +1,5 @@
+09/01/2024 06:15:05 PM logger_willemt___raft INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (willemt___raft)
+09/01/2024 06:15:05 PM logger_willemt___raft INFO Analyzing repos/willemt___raft (install_repos.py:23) (willemt___raft)
+09/01/2024 06:15:05 PM logger_willemt___raft INFO Found Makefile: repos/willemt___raft/Makefile (install_repos.py:43) (willemt___raft)
+09/01/2024 06:15:05 PM logger_willemt___raft INFO Running naive installation (install_repos.py:44) (willemt___raft)
+09/01/2024 06:15:06 PM logger_willemt___raft INFO Success: make succeeded for willemt___raft (install_repos.py:50) (willemt___raft)

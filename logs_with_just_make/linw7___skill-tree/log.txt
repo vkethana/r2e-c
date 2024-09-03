@@ -1,0 +1,3 @@
+09/01/2024 05:54:34 PM logger_linw7___skill-tree INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (linw7___skill-tree)
+09/01/2024 05:54:34 PM logger_linw7___skill-tree INFO Analyzing repos/linw7___skill-tree (install_repos.py:23) (linw7___skill-tree)
+09/01/2024 05:54:34 PM logger_linw7___skill-tree ERROR No Makefile found for linw7___skill-tree (install_repos.py:53) (linw7___skill-tree)

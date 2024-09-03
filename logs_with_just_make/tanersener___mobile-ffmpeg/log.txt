@@ -1,0 +1,3 @@
+09/01/2024 05:57:24 PM logger_tanersener___mobile-ffmpeg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tanersener___mobile-ffmpeg)
+09/01/2024 05:57:24 PM logger_tanersener___mobile-ffmpeg INFO Analyzing repos/tanersener___mobile-ffmpeg (install_repos.py:23) (tanersener___mobile-ffmpeg)
+09/01/2024 05:57:24 PM logger_tanersener___mobile-ffmpeg ERROR No Makefile found for tanersener___mobile-ffmpeg (install_repos.py:53) (tanersener___mobile-ffmpeg)

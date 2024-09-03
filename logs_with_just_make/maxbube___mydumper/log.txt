@@ -1,0 +1,3 @@
+09/01/2024 06:11:10 PM logger_maxbube___mydumper INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (maxbube___mydumper)
+09/01/2024 06:11:10 PM logger_maxbube___mydumper INFO Analyzing repos/maxbube___mydumper (install_repos.py:23) (maxbube___mydumper)
+09/01/2024 06:11:10 PM logger_maxbube___mydumper ERROR No Makefile found for maxbube___mydumper (install_repos.py:53) (maxbube___mydumper)

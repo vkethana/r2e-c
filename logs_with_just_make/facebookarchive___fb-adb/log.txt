@@ -1,0 +1,5 @@
+09/01/2024 06:12:37 PM logger_facebookarchive___fb-adb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (facebookarchive___fb-adb)
+09/01/2024 06:12:37 PM logger_facebookarchive___fb-adb INFO Analyzing repos/facebookarchive___fb-adb (install_repos.py:23) (facebookarchive___fb-adb)
+09/01/2024 06:12:37 PM logger_facebookarchive___fb-adb INFO Running autoreconf (install_repos.py:28) (facebookarchive___fb-adb)
+09/01/2024 06:12:40 PM logger_facebookarchive___fb-adb INFO Success: autoreconf succeeded for facebookarchive___fb-adb (install_repos.py:35) (facebookarchive___fb-adb)
+09/01/2024 06:12:42 PM logger_facebookarchive___fb-adb ERROR No Makefile found for facebookarchive___fb-adb (install_repos.py:53) (facebookarchive___fb-adb)

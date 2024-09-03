@@ -1,0 +1,5 @@
+09/01/2024 05:54:09 PM logger_minoca___os INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (minoca___os)
+09/01/2024 05:54:09 PM logger_minoca___os INFO Analyzing repos/minoca___os (install_repos.py:23) (minoca___os)
+09/01/2024 05:54:09 PM logger_minoca___os INFO Found Makefile: repos/minoca___os/Makefile (install_repos.py:43) (minoca___os)
+09/01/2024 05:54:09 PM logger_minoca___os INFO Running naive installation (install_repos.py:44) (minoca___os)
+09/01/2024 05:54:09 PM logger_minoca___os ERROR Error: make failed for minoca___os (install_repos.py:47) (minoca___os)

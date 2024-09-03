@@ -1,0 +1,5 @@
+09/01/2024 05:52:47 PM logger_aergoio___litetree INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (aergoio___litetree)
+09/01/2024 05:52:47 PM logger_aergoio___litetree INFO Analyzing repos/aergoio___litetree (install_repos.py:23) (aergoio___litetree)
+09/01/2024 05:52:47 PM logger_aergoio___litetree INFO Found Makefile: repos/aergoio___litetree/makefile (install_repos.py:43) (aergoio___litetree)
+09/01/2024 05:52:47 PM logger_aergoio___litetree INFO Running naive installation (install_repos.py:44) (aergoio___litetree)
+09/01/2024 05:52:47 PM logger_aergoio___litetree ERROR Error: make failed for aergoio___litetree (install_repos.py:47) (aergoio___litetree)

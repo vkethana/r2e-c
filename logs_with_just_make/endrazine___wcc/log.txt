@@ -1,0 +1,5 @@
+09/01/2024 06:14:57 PM logger_endrazine___wcc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (endrazine___wcc)
+09/01/2024 06:14:57 PM logger_endrazine___wcc INFO Analyzing repos/endrazine___wcc (install_repos.py:23) (endrazine___wcc)
+09/01/2024 06:14:57 PM logger_endrazine___wcc INFO Found Makefile: repos/endrazine___wcc/Makefile (install_repos.py:43) (endrazine___wcc)
+09/01/2024 06:14:57 PM logger_endrazine___wcc INFO Running naive installation (install_repos.py:44) (endrazine___wcc)
+09/01/2024 06:14:57 PM logger_endrazine___wcc ERROR Error: make failed for endrazine___wcc (install_repos.py:47) (endrazine___wcc)

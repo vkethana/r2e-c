@@ -1,0 +1,5 @@
+09/01/2024 05:57:24 PM logger_luadist___lua INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (luadist___lua)
+09/01/2024 05:57:24 PM logger_luadist___lua INFO Analyzing repos/luadist___lua (install_repos.py:23) (luadist___lua)
+09/01/2024 05:57:24 PM logger_luadist___lua INFO Found Makefile: repos/luadist___lua/Makefile (install_repos.py:43) (luadist___lua)
+09/01/2024 05:57:24 PM logger_luadist___lua INFO Running naive installation (install_repos.py:44) (luadist___lua)
+09/01/2024 05:57:24 PM logger_luadist___lua INFO Success: make succeeded for luadist___lua (install_repos.py:50) (luadist___lua)

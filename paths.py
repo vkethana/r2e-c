@@ -1,7 +1,7 @@
 import os
 
 REPOS_DIR = 'repos'
-LOGGER_DIR = 'logs'
+LOGGER_DIR = 'logs_with_make_cmake_gradlew'
 
 # Check if REPORS_DIR exists
 if not os.path.exists(REPOS_DIR):

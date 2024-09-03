@@ -1,0 +1,5 @@
+09/01/2024 05:52:36 PM logger_fix94___nintendont INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (fix94___nintendont)
+09/01/2024 05:52:36 PM logger_fix94___nintendont INFO Analyzing repos/fix94___nintendont (install_repos.py:23) (fix94___nintendont)
+09/01/2024 05:52:36 PM logger_fix94___nintendont INFO Found Makefile: repos/fix94___nintendont/Makefile (install_repos.py:43) (fix94___nintendont)
+09/01/2024 05:52:36 PM logger_fix94___nintendont INFO Running naive installation (install_repos.py:44) (fix94___nintendont)
+09/01/2024 05:52:36 PM logger_fix94___nintendont ERROR Error: make failed for fix94___nintendont (install_repos.py:47) (fix94___nintendont)

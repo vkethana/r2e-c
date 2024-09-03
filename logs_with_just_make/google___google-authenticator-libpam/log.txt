@@ -1,0 +1,5 @@
+09/01/2024 06:10:52 PM logger_google___google-authenticator-libpam INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (google___google-authenticator-libpam)
+09/01/2024 06:10:52 PM logger_google___google-authenticator-libpam INFO Analyzing repos/google___google-authenticator-libpam (install_repos.py:23) (google___google-authenticator-libpam)
+09/01/2024 06:10:52 PM logger_google___google-authenticator-libpam INFO Running autoreconf (install_repos.py:28) (google___google-authenticator-libpam)
+09/01/2024 06:10:57 PM logger_google___google-authenticator-libpam INFO Success: autoreconf succeeded for google___google-authenticator-libpam (install_repos.py:35) (google___google-authenticator-libpam)
+09/01/2024 06:10:59 PM logger_google___google-authenticator-libpam ERROR No Makefile found for google___google-authenticator-libpam (install_repos.py:53) (google___google-authenticator-libpam)

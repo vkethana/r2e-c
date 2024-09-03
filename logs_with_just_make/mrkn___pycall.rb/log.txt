@@ -1,0 +1,3 @@
+09/01/2024 06:15:05 PM logger_mrkn___pycall.rb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mrkn___pycall.rb)
+09/01/2024 06:15:05 PM logger_mrkn___pycall.rb INFO Analyzing repos/mrkn___pycall.rb (install_repos.py:23) (mrkn___pycall.rb)
+09/01/2024 06:15:05 PM logger_mrkn___pycall.rb ERROR No Makefile found for mrkn___pycall.rb (install_repos.py:53) (mrkn___pycall.rb)

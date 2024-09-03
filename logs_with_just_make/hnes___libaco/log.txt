@@ -1,0 +1,3 @@
+09/01/2024 05:52:36 PM logger_hnes___libaco INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hnes___libaco)
+09/01/2024 05:52:36 PM logger_hnes___libaco INFO Analyzing repos/hnes___libaco (install_repos.py:23) (hnes___libaco)
+09/01/2024 05:52:36 PM logger_hnes___libaco ERROR No Makefile found for hnes___libaco (install_repos.py:53) (hnes___libaco)

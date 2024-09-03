@@ -1,0 +1,3 @@
+09/01/2024 05:57:24 PM logger_jiangdongguo___androidusbcamera INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jiangdongguo___androidusbcamera)
+09/01/2024 05:57:24 PM logger_jiangdongguo___androidusbcamera INFO Analyzing repos/jiangdongguo___androidusbcamera (install_repos.py:23) (jiangdongguo___androidusbcamera)
+09/01/2024 05:57:24 PM logger_jiangdongguo___androidusbcamera ERROR No Makefile found for jiangdongguo___androidusbcamera (install_repos.py:53) (jiangdongguo___androidusbcamera)

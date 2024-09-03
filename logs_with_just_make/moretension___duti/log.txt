@@ -1,0 +1,5 @@
+09/01/2024 06:14:57 PM logger_moretension___duti INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (moretension___duti)
+09/01/2024 06:14:57 PM logger_moretension___duti INFO Analyzing repos/moretension___duti (install_repos.py:23) (moretension___duti)
+09/01/2024 06:14:57 PM logger_moretension___duti INFO Running autoreconf (install_repos.py:28) (moretension___duti)
+09/01/2024 06:14:58 PM logger_moretension___duti INFO Success: autoreconf succeeded for moretension___duti (install_repos.py:35) (moretension___duti)
+09/01/2024 06:14:58 PM logger_moretension___duti ERROR No Makefile found for moretension___duti (install_repos.py:53) (moretension___duti)

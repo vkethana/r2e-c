@@ -1,0 +1,5 @@
+09/01/2024 06:15:29 PM logger_visit1985___mdp INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (visit1985___mdp)
+09/01/2024 06:15:29 PM logger_visit1985___mdp INFO Analyzing repos/visit1985___mdp (install_repos.py:23) (visit1985___mdp)
+09/01/2024 06:15:29 PM logger_visit1985___mdp INFO Found Makefile: repos/visit1985___mdp/Makefile (install_repos.py:43) (visit1985___mdp)
+09/01/2024 06:15:29 PM logger_visit1985___mdp INFO Running naive installation (install_repos.py:44) (visit1985___mdp)
+09/01/2024 06:15:30 PM logger_visit1985___mdp INFO Success: make succeeded for visit1985___mdp (install_repos.py:50) (visit1985___mdp)

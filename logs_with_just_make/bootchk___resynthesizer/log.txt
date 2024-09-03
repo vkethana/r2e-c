@@ -1,0 +1,4 @@
+09/01/2024 06:11:10 PM logger_bootchk___resynthesizer INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bootchk___resynthesizer)
+09/01/2024 06:11:10 PM logger_bootchk___resynthesizer INFO Analyzing repos/bootchk___resynthesizer (install_repos.py:23) (bootchk___resynthesizer)
+09/01/2024 06:11:10 PM logger_bootchk___resynthesizer INFO Running autoreconf (install_repos.py:28) (bootchk___resynthesizer)
+09/01/2024 06:11:11 PM logger_bootchk___resynthesizer ERROR Error: autoreconf failed for bootchk___resynthesizer (install_repos.py:31) (bootchk___resynthesizer)

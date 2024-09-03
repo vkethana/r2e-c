@@ -1,0 +1,5 @@
+09/01/2024 05:54:02 PM logger_vermaseren___form INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (vermaseren___form)
+09/01/2024 05:54:02 PM logger_vermaseren___form INFO Analyzing repos/vermaseren___form (install_repos.py:23) (vermaseren___form)
+09/01/2024 05:54:02 PM logger_vermaseren___form INFO Running autoreconf (install_repos.py:28) (vermaseren___form)
+09/01/2024 05:54:06 PM logger_vermaseren___form INFO Success: autoreconf succeeded for vermaseren___form (install_repos.py:35) (vermaseren___form)
+09/01/2024 05:54:09 PM logger_vermaseren___form ERROR No Makefile found for vermaseren___form (install_repos.py:53) (vermaseren___form)

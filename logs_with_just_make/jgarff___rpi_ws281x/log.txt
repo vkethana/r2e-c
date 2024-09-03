@@ -1,0 +1,3 @@
+09/01/2024 05:56:11 PM logger_jgarff___rpi_ws281x INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jgarff___rpi_ws281x)
+09/01/2024 05:56:11 PM logger_jgarff___rpi_ws281x INFO Analyzing repos/jgarff___rpi_ws281x (install_repos.py:23) (jgarff___rpi_ws281x)
+09/01/2024 05:56:11 PM logger_jgarff___rpi_ws281x ERROR No Makefile found for jgarff___rpi_ws281x (install_repos.py:53) (jgarff___rpi_ws281x)

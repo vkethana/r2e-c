@@ -1,0 +1,7 @@
+09/01/2024 05:50:25 PM logger_shellinabox___shellinabox INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (shellinabox___shellinabox)
+09/01/2024 05:50:25 PM logger_shellinabox___shellinabox INFO Analyzing repos/shellinabox___shellinabox (install_repos.py:23) (shellinabox___shellinabox)
+09/01/2024 05:50:25 PM logger_shellinabox___shellinabox INFO Running autoreconf (install_repos.py:28) (shellinabox___shellinabox)
+09/01/2024 05:50:29 PM logger_shellinabox___shellinabox INFO Success: autoreconf succeeded for shellinabox___shellinabox (install_repos.py:35) (shellinabox___shellinabox)
+09/01/2024 05:50:34 PM logger_shellinabox___shellinabox INFO Found Makefile: repos/shellinabox___shellinabox/Makefile (install_repos.py:43) (shellinabox___shellinabox)
+09/01/2024 05:50:34 PM logger_shellinabox___shellinabox INFO Running naive installation (install_repos.py:44) (shellinabox___shellinabox)
+09/01/2024 05:50:40 PM logger_shellinabox___shellinabox ERROR Error: make failed for shellinabox___shellinabox (install_repos.py:47) (shellinabox___shellinabox)

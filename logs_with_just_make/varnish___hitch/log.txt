@@ -1,0 +1,5 @@
+09/01/2024 06:14:41 PM logger_varnish___hitch INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (varnish___hitch)
+09/01/2024 06:14:41 PM logger_varnish___hitch INFO Analyzing repos/varnish___hitch (install_repos.py:23) (varnish___hitch)
+09/01/2024 06:14:41 PM logger_varnish___hitch INFO Running autoreconf (install_repos.py:28) (varnish___hitch)
+09/01/2024 06:14:44 PM logger_varnish___hitch INFO Success: autoreconf succeeded for varnish___hitch (install_repos.py:35) (varnish___hitch)
+09/01/2024 06:14:45 PM logger_varnish___hitch ERROR No Makefile found for varnish___hitch (install_repos.py:53) (varnish___hitch)

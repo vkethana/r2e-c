@@ -1,0 +1,5 @@
+09/01/2024 06:11:22 PM logger_taviso___loadlibrary INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (taviso___loadlibrary)
+09/01/2024 06:11:22 PM logger_taviso___loadlibrary INFO Analyzing repos/taviso___loadlibrary (install_repos.py:23) (taviso___loadlibrary)
+09/01/2024 06:11:22 PM logger_taviso___loadlibrary INFO Found Makefile: repos/taviso___loadlibrary/Makefile (install_repos.py:43) (taviso___loadlibrary)
+09/01/2024 06:11:22 PM logger_taviso___loadlibrary INFO Running naive installation (install_repos.py:44) (taviso___loadlibrary)
+09/01/2024 06:11:29 PM logger_taviso___loadlibrary INFO Success: make succeeded for taviso___loadlibrary (install_repos.py:50) (taviso___loadlibrary)

@@ -1,0 +1,3 @@
+09/01/2024 05:50:44 PM logger_google___eddystone INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (google___eddystone)
+09/01/2024 05:50:44 PM logger_google___eddystone INFO Analyzing repos/google___eddystone (install_repos.py:23) (google___eddystone)
+09/01/2024 05:50:44 PM logger_google___eddystone ERROR No Makefile found for google___eddystone (install_repos.py:53) (google___eddystone)

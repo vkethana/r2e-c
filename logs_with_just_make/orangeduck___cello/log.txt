@@ -1,0 +1,5 @@
+09/01/2024 05:54:31 PM logger_orangeduck___cello INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (orangeduck___cello)
+09/01/2024 05:54:31 PM logger_orangeduck___cello INFO Analyzing repos/orangeduck___cello (install_repos.py:23) (orangeduck___cello)
+09/01/2024 05:54:31 PM logger_orangeduck___cello INFO Found Makefile: repos/orangeduck___cello/Makefile (install_repos.py:43) (orangeduck___cello)
+09/01/2024 05:54:31 PM logger_orangeduck___cello INFO Running naive installation (install_repos.py:44) (orangeduck___cello)
+09/01/2024 05:54:33 PM logger_orangeduck___cello INFO Success: make succeeded for orangeduck___cello (install_repos.py:50) (orangeduck___cello)

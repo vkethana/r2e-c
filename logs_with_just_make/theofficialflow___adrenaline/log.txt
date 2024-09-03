@@ -1,0 +1,3 @@
+09/01/2024 05:57:24 PM logger_theofficialflow___adrenaline INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (theofficialflow___adrenaline)
+09/01/2024 05:57:24 PM logger_theofficialflow___adrenaline INFO Analyzing repos/theofficialflow___adrenaline (install_repos.py:23) (theofficialflow___adrenaline)
+09/01/2024 05:57:24 PM logger_theofficialflow___adrenaline ERROR No Makefile found for theofficialflow___adrenaline (install_repos.py:53) (theofficialflow___adrenaline)

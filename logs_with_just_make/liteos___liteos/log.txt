@@ -1,0 +1,5 @@
+09/01/2024 06:11:22 PM logger_liteos___liteos INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (liteos___liteos)
+09/01/2024 06:11:22 PM logger_liteos___liteos INFO Analyzing repos/liteos___liteos (install_repos.py:23) (liteos___liteos)
+09/01/2024 06:11:22 PM logger_liteos___liteos INFO Found Makefile: repos/liteos___liteos/Makefile (install_repos.py:43) (liteos___liteos)
+09/01/2024 06:11:22 PM logger_liteos___liteos INFO Running naive installation (install_repos.py:44) (liteos___liteos)
+09/01/2024 06:11:22 PM logger_liteos___liteos ERROR Error: make failed for liteos___liteos (install_repos.py:47) (liteos___liteos)

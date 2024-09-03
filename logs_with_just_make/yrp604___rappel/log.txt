@@ -1,0 +1,5 @@
+09/01/2024 06:14:40 PM logger_yrp604___rappel INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yrp604___rappel)
+09/01/2024 06:14:40 PM logger_yrp604___rappel INFO Analyzing repos/yrp604___rappel (install_repos.py:23) (yrp604___rappel)
+09/01/2024 06:14:40 PM logger_yrp604___rappel INFO Found Makefile: repos/yrp604___rappel/Makefile (install_repos.py:43) (yrp604___rappel)
+09/01/2024 06:14:40 PM logger_yrp604___rappel INFO Running naive installation (install_repos.py:44) (yrp604___rappel)
+09/01/2024 06:14:41 PM logger_yrp604___rappel ERROR Error: make failed for yrp604___rappel (install_repos.py:47) (yrp604___rappel)

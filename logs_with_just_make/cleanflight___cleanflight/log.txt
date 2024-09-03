@@ -1,0 +1,5 @@
+09/01/2024 05:54:11 PM logger_cleanflight___cleanflight INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cleanflight___cleanflight)
+09/01/2024 05:54:11 PM logger_cleanflight___cleanflight INFO Analyzing repos/cleanflight___cleanflight (install_repos.py:23) (cleanflight___cleanflight)
+09/01/2024 05:54:11 PM logger_cleanflight___cleanflight INFO Found Makefile: repos/cleanflight___cleanflight/Makefile (install_repos.py:43) (cleanflight___cleanflight)
+09/01/2024 05:54:11 PM logger_cleanflight___cleanflight INFO Running naive installation (install_repos.py:44) (cleanflight___cleanflight)
+09/01/2024 05:54:11 PM logger_cleanflight___cleanflight ERROR Error: make failed for cleanflight___cleanflight (install_repos.py:47) (cleanflight___cleanflight)

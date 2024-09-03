@@ -1,0 +1,3 @@
+09/01/2024 05:48:51 PM logger_mabeijianxi___small-video-record INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mabeijianxi___small-video-record)
+09/01/2024 05:48:51 PM logger_mabeijianxi___small-video-record INFO Analyzing repos/mabeijianxi___small-video-record (install_repos.py:23) (mabeijianxi___small-video-record)
+09/01/2024 05:48:51 PM logger_mabeijianxi___small-video-record ERROR No Makefile found for mabeijianxi___small-video-record (install_repos.py:53) (mabeijianxi___small-video-record)

@@ -1,0 +1,7 @@
+09/01/2024 06:14:45 PM logger_kohler___gifsicle INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kohler___gifsicle)
+09/01/2024 06:14:45 PM logger_kohler___gifsicle INFO Analyzing repos/kohler___gifsicle (install_repos.py:23) (kohler___gifsicle)
+09/01/2024 06:14:45 PM logger_kohler___gifsicle INFO Running autoreconf (install_repos.py:28) (kohler___gifsicle)
+09/01/2024 06:14:47 PM logger_kohler___gifsicle INFO Success: autoreconf succeeded for kohler___gifsicle (install_repos.py:35) (kohler___gifsicle)
+09/01/2024 06:14:50 PM logger_kohler___gifsicle INFO Found Makefile: repos/kohler___gifsicle/Makefile (install_repos.py:43) (kohler___gifsicle)
+09/01/2024 06:14:50 PM logger_kohler___gifsicle INFO Running naive installation (install_repos.py:44) (kohler___gifsicle)
+09/01/2024 06:14:56 PM logger_kohler___gifsicle INFO Success: make succeeded for kohler___gifsicle (install_repos.py:50) (kohler___gifsicle)

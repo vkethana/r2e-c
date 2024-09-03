@@ -1,0 +1,5 @@
+09/01/2024 06:15:29 PM logger_samr7___vanitygen INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (samr7___vanitygen)
+09/01/2024 06:15:29 PM logger_samr7___vanitygen INFO Analyzing repos/samr7___vanitygen (install_repos.py:23) (samr7___vanitygen)
+09/01/2024 06:15:29 PM logger_samr7___vanitygen INFO Found Makefile: repos/samr7___vanitygen/Makefile (install_repos.py:43) (samr7___vanitygen)
+09/01/2024 06:15:29 PM logger_samr7___vanitygen INFO Running naive installation (install_repos.py:44) (samr7___vanitygen)
+09/01/2024 06:15:29 PM logger_samr7___vanitygen ERROR Error: make failed for samr7___vanitygen (install_repos.py:47) (samr7___vanitygen)

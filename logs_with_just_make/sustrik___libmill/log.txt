@@ -1,0 +1,7 @@
+09/01/2024 05:48:16 PM logger_sustrik___libmill INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sustrik___libmill)
+09/01/2024 05:48:16 PM logger_sustrik___libmill INFO Analyzing repos/sustrik___libmill (install_repos.py:23) (sustrik___libmill)
+09/01/2024 05:48:16 PM logger_sustrik___libmill INFO Running autoreconf (install_repos.py:28) (sustrik___libmill)
+09/01/2024 05:48:21 PM logger_sustrik___libmill INFO Success: autoreconf succeeded for sustrik___libmill (install_repos.py:35) (sustrik___libmill)
+09/01/2024 05:48:29 PM logger_sustrik___libmill INFO Found Makefile: repos/sustrik___libmill/Makefile (install_repos.py:43) (sustrik___libmill)
+09/01/2024 05:48:29 PM logger_sustrik___libmill INFO Running naive installation (install_repos.py:44) (sustrik___libmill)
+09/01/2024 05:48:40 PM logger_sustrik___libmill INFO Success: make succeeded for sustrik___libmill (install_repos.py:50) (sustrik___libmill)

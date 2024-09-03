@@ -1,0 +1,5 @@
+09/01/2024 05:57:28 PM logger_schismtracker___schismtracker INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (schismtracker___schismtracker)
+09/01/2024 05:57:28 PM logger_schismtracker___schismtracker INFO Analyzing repos/schismtracker___schismtracker (install_repos.py:23) (schismtracker___schismtracker)
+09/01/2024 05:57:28 PM logger_schismtracker___schismtracker INFO Running autoreconf (install_repos.py:28) (schismtracker___schismtracker)
+09/01/2024 05:57:31 PM logger_schismtracker___schismtracker INFO Success: autoreconf succeeded for schismtracker___schismtracker (install_repos.py:35) (schismtracker___schismtracker)
+09/01/2024 05:57:32 PM logger_schismtracker___schismtracker ERROR No Makefile found for schismtracker___schismtracker (install_repos.py:53) (schismtracker___schismtracker)

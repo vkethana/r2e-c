@@ -1,0 +1,3 @@
+09/01/2024 05:57:24 PM logger_mykter___afl-training INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mykter___afl-training)
+09/01/2024 05:57:24 PM logger_mykter___afl-training INFO Analyzing repos/mykter___afl-training (install_repos.py:23) (mykter___afl-training)
+09/01/2024 05:57:24 PM logger_mykter___afl-training ERROR No Makefile found for mykter___afl-training (install_repos.py:53) (mykter___afl-training)

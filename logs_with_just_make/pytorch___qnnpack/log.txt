@@ -1,0 +1,3 @@
+09/01/2024 05:54:36 PM logger_pytorch___qnnpack INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pytorch___qnnpack)
+09/01/2024 05:54:36 PM logger_pytorch___qnnpack INFO Analyzing repos/pytorch___qnnpack (install_repos.py:23) (pytorch___qnnpack)
+09/01/2024 05:54:36 PM logger_pytorch___qnnpack ERROR No Makefile found for pytorch___qnnpack (install_repos.py:53) (pytorch___qnnpack)

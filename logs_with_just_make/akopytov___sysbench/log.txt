@@ -1,0 +1,5 @@
+09/01/2024 05:48:51 PM logger_akopytov___sysbench INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (akopytov___sysbench)
+09/01/2024 05:48:51 PM logger_akopytov___sysbench INFO Analyzing repos/akopytov___sysbench (install_repos.py:23) (akopytov___sysbench)
+09/01/2024 05:48:51 PM logger_akopytov___sysbench INFO Running autoreconf (install_repos.py:28) (akopytov___sysbench)
+09/01/2024 05:48:57 PM logger_akopytov___sysbench INFO Success: autoreconf succeeded for akopytov___sysbench (install_repos.py:35) (akopytov___sysbench)
+09/01/2024 05:49:04 PM logger_akopytov___sysbench ERROR No Makefile found for akopytov___sysbench (install_repos.py:53) (akopytov___sysbench)

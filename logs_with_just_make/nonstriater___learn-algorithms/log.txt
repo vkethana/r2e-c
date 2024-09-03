@@ -1,0 +1,3 @@
+09/01/2024 06:12:43 PM logger_nonstriater___learn-algorithms INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nonstriater___learn-algorithms)
+09/01/2024 06:12:43 PM logger_nonstriater___learn-algorithms INFO Analyzing repos/nonstriater___learn-algorithms (install_repos.py:23) (nonstriater___learn-algorithms)
+09/01/2024 06:12:43 PM logger_nonstriater___learn-algorithms ERROR No Makefile found for nonstriater___learn-algorithms (install_repos.py:53) (nonstriater___learn-algorithms)

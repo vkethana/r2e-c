@@ -1,0 +1,5 @@
+09/01/2024 05:55:18 PM logger_zpl-c___librg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (zpl-c___librg)
+09/01/2024 05:55:18 PM logger_zpl-c___librg INFO Analyzing repos/zpl-c___librg (install_repos.py:23) (zpl-c___librg)
+09/01/2024 05:55:18 PM logger_zpl-c___librg INFO Found Makefile: repos/zpl-c___librg/Makefile (install_repos.py:43) (zpl-c___librg)
+09/01/2024 05:55:18 PM logger_zpl-c___librg INFO Running naive installation (install_repos.py:44) (zpl-c___librg)
+09/01/2024 05:55:26 PM logger_zpl-c___librg INFO Success: make succeeded for zpl-c___librg (install_repos.py:50) (zpl-c___librg)

@@ -1,0 +1,5 @@
+09/01/2024 05:54:29 PM logger_saminiir___level-ip INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (saminiir___level-ip)
+09/01/2024 05:54:29 PM logger_saminiir___level-ip INFO Analyzing repos/saminiir___level-ip (install_repos.py:23) (saminiir___level-ip)
+09/01/2024 05:54:29 PM logger_saminiir___level-ip INFO Found Makefile: repos/saminiir___level-ip/Makefile (install_repos.py:43) (saminiir___level-ip)
+09/01/2024 05:54:29 PM logger_saminiir___level-ip INFO Running naive installation (install_repos.py:44) (saminiir___level-ip)
+09/01/2024 05:54:29 PM logger_saminiir___level-ip ERROR Error: make failed for saminiir___level-ip (install_repos.py:47) (saminiir___level-ip)

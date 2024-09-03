@@ -1,0 +1,3 @@
+09/01/2024 05:50:44 PM logger_iliasam___opensimplelidar INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (iliasam___opensimplelidar)
+09/01/2024 05:50:44 PM logger_iliasam___opensimplelidar INFO Analyzing repos/iliasam___opensimplelidar (install_repos.py:23) (iliasam___opensimplelidar)
+09/01/2024 05:50:44 PM logger_iliasam___opensimplelidar ERROR No Makefile found for iliasam___opensimplelidar (install_repos.py:53) (iliasam___opensimplelidar)

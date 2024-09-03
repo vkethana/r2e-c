@@ -1,0 +1,3 @@
+09/01/2024 05:54:25 PM logger_fossasia___pslab-bootloader INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (fossasia___pslab-bootloader)
+09/01/2024 05:54:25 PM logger_fossasia___pslab-bootloader INFO Analyzing repos/fossasia___pslab-bootloader (install_repos.py:23) (fossasia___pslab-bootloader)
+09/01/2024 05:54:25 PM logger_fossasia___pslab-bootloader ERROR No Makefile found for fossasia___pslab-bootloader (install_repos.py:53) (fossasia___pslab-bootloader)

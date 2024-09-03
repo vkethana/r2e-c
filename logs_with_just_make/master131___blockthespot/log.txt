@@ -1,0 +1,3 @@
+09/01/2024 06:14:56 PM logger_master131___blockthespot INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (master131___blockthespot)
+09/01/2024 06:14:56 PM logger_master131___blockthespot INFO Analyzing repos/master131___blockthespot (install_repos.py:23) (master131___blockthespot)
+09/01/2024 06:14:56 PM logger_master131___blockthespot ERROR No Makefile found for master131___blockthespot (install_repos.py:53) (master131___blockthespot)

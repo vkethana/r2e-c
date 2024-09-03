@@ -1,0 +1,5 @@
+09/01/2024 06:10:21 PM logger_huangz1990___redis-3.0-annotated INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (huangz1990___redis-3.0-annotated)
+09/01/2024 06:10:21 PM logger_huangz1990___redis-3.0-annotated INFO Analyzing repos/huangz1990___redis-3.0-annotated (install_repos.py:23) (huangz1990___redis-3.0-annotated)
+09/01/2024 06:10:21 PM logger_huangz1990___redis-3.0-annotated INFO Found Makefile: repos/huangz1990___redis-3.0-annotated/Makefile (install_repos.py:43) (huangz1990___redis-3.0-annotated)
+09/01/2024 06:10:21 PM logger_huangz1990___redis-3.0-annotated INFO Running naive installation (install_repos.py:44) (huangz1990___redis-3.0-annotated)
+09/01/2024 06:10:52 PM logger_huangz1990___redis-3.0-annotated INFO Success: make succeeded for huangz1990___redis-3.0-annotated (install_repos.py:50) (huangz1990___redis-3.0-annotated)

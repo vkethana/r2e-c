@@ -1,0 +1,5 @@
+09/01/2024 05:50:41 PM logger_fancycode___memorymodule INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (fancycode___memorymodule)
+09/01/2024 05:50:41 PM logger_fancycode___memorymodule INFO Analyzing repos/fancycode___memorymodule (install_repos.py:23) (fancycode___memorymodule)
+09/01/2024 05:50:41 PM logger_fancycode___memorymodule INFO Found Makefile: repos/fancycode___memorymodule/Makefile (install_repos.py:43) (fancycode___memorymodule)
+09/01/2024 05:50:41 PM logger_fancycode___memorymodule INFO Running naive installation (install_repos.py:44) (fancycode___memorymodule)
+09/01/2024 05:50:44 PM logger_fancycode___memorymodule INFO Success: make succeeded for fancycode___memorymodule (install_repos.py:50) (fancycode___memorymodule)

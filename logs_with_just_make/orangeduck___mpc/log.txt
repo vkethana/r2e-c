@@ -1,0 +1,5 @@
+09/01/2024 05:57:03 PM logger_orangeduck___mpc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (orangeduck___mpc)
+09/01/2024 05:57:03 PM logger_orangeduck___mpc INFO Analyzing repos/orangeduck___mpc (install_repos.py:23) (orangeduck___mpc)
+09/01/2024 05:57:03 PM logger_orangeduck___mpc INFO Found Makefile: repos/orangeduck___mpc/Makefile (install_repos.py:43) (orangeduck___mpc)
+09/01/2024 05:57:03 PM logger_orangeduck___mpc INFO Running naive installation (install_repos.py:44) (orangeduck___mpc)
+09/01/2024 05:57:24 PM logger_orangeduck___mpc INFO Success: make succeeded for orangeduck___mpc (install_repos.py:50) (orangeduck___mpc)

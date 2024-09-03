@@ -1,0 +1,5 @@
+09/01/2024 06:15:05 PM logger_kripken___box2d.js INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kripken___box2d.js)
+09/01/2024 06:15:05 PM logger_kripken___box2d.js INFO Analyzing repos/kripken___box2d.js (install_repos.py:23) (kripken___box2d.js)
+09/01/2024 06:15:05 PM logger_kripken___box2d.js INFO Found Makefile: repos/kripken___box2d.js/Makefile (install_repos.py:43) (kripken___box2d.js)
+09/01/2024 06:15:05 PM logger_kripken___box2d.js INFO Running naive installation (install_repos.py:44) (kripken___box2d.js)
+09/01/2024 06:15:05 PM logger_kripken___box2d.js ERROR Error: make failed for kripken___box2d.js (install_repos.py:47) (kripken___box2d.js)

@@ -1,0 +1,3 @@
+09/01/2024 06:09:40 PM logger_pwmt___zathura INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pwmt___zathura)
+09/01/2024 06:09:40 PM logger_pwmt___zathura INFO Analyzing repos/pwmt___zathura (install_repos.py:23) (pwmt___zathura)
+09/01/2024 06:09:40 PM logger_pwmt___zathura ERROR No Makefile found for pwmt___zathura (install_repos.py:53) (pwmt___zathura)

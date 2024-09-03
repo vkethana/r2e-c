@@ -1,0 +1,5 @@
+09/01/2024 05:53:19 PM logger_telegrammessenger___mtproxy INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (telegrammessenger___mtproxy)
+09/01/2024 05:53:19 PM logger_telegrammessenger___mtproxy INFO Analyzing repos/telegrammessenger___mtproxy (install_repos.py:23) (telegrammessenger___mtproxy)
+09/01/2024 05:53:19 PM logger_telegrammessenger___mtproxy INFO Found Makefile: repos/telegrammessenger___mtproxy/Makefile (install_repos.py:43) (telegrammessenger___mtproxy)
+09/01/2024 05:53:19 PM logger_telegrammessenger___mtproxy INFO Running naive installation (install_repos.py:44) (telegrammessenger___mtproxy)
+09/01/2024 05:53:28 PM logger_telegrammessenger___mtproxy INFO Success: make succeeded for telegrammessenger___mtproxy (install_repos.py:50) (telegrammessenger___mtproxy)

@@ -1,0 +1,3 @@
+09/01/2024 06:09:40 PM logger_facebookresearch___darkforestgo INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (facebookresearch___darkforestgo)
+09/01/2024 06:09:40 PM logger_facebookresearch___darkforestgo INFO Analyzing repos/facebookresearch___darkforestgo (install_repos.py:23) (facebookresearch___darkforestgo)
+09/01/2024 06:09:40 PM logger_facebookresearch___darkforestgo ERROR No Makefile found for facebookresearch___darkforestgo (install_repos.py:53) (facebookresearch___darkforestgo)

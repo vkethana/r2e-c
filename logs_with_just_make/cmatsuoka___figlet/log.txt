@@ -1,0 +1,5 @@
+09/01/2024 05:54:33 PM logger_cmatsuoka___figlet INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cmatsuoka___figlet)
+09/01/2024 05:54:33 PM logger_cmatsuoka___figlet INFO Analyzing repos/cmatsuoka___figlet (install_repos.py:23) (cmatsuoka___figlet)
+09/01/2024 05:54:33 PM logger_cmatsuoka___figlet INFO Found Makefile: repos/cmatsuoka___figlet/Makefile (install_repos.py:43) (cmatsuoka___figlet)
+09/01/2024 05:54:33 PM logger_cmatsuoka___figlet INFO Running naive installation (install_repos.py:44) (cmatsuoka___figlet)
+09/01/2024 05:54:34 PM logger_cmatsuoka___figlet INFO Success: make succeeded for cmatsuoka___figlet (install_repos.py:50) (cmatsuoka___figlet)

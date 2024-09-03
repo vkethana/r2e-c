@@ -1,0 +1,5 @@
+09/01/2024 05:52:36 PM logger_tuanpmt___esp_mqtt INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tuanpmt___esp_mqtt)
+09/01/2024 05:52:36 PM logger_tuanpmt___esp_mqtt INFO Analyzing repos/tuanpmt___esp_mqtt (install_repos.py:23) (tuanpmt___esp_mqtt)
+09/01/2024 05:52:36 PM logger_tuanpmt___esp_mqtt INFO Found Makefile: repos/tuanpmt___esp_mqtt/Makefile (install_repos.py:43) (tuanpmt___esp_mqtt)
+09/01/2024 05:52:36 PM logger_tuanpmt___esp_mqtt INFO Running naive installation (install_repos.py:44) (tuanpmt___esp_mqtt)
+09/01/2024 05:52:36 PM logger_tuanpmt___esp_mqtt ERROR Error: make failed for tuanpmt___esp_mqtt (install_repos.py:47) (tuanpmt___esp_mqtt)

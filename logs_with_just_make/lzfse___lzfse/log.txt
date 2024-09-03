@@ -1,0 +1,5 @@
+09/01/2024 06:11:07 PM logger_lzfse___lzfse INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (lzfse___lzfse)
+09/01/2024 06:11:07 PM logger_lzfse___lzfse INFO Analyzing repos/lzfse___lzfse (install_repos.py:23) (lzfse___lzfse)
+09/01/2024 06:11:07 PM logger_lzfse___lzfse INFO Found Makefile: repos/lzfse___lzfse/Makefile (install_repos.py:43) (lzfse___lzfse)
+09/01/2024 06:11:07 PM logger_lzfse___lzfse INFO Running naive installation (install_repos.py:44) (lzfse___lzfse)
+09/01/2024 06:11:08 PM logger_lzfse___lzfse INFO Success: make succeeded for lzfse___lzfse (install_repos.py:50) (lzfse___lzfse)

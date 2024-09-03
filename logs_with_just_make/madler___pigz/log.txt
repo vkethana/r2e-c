@@ -1,0 +1,5 @@
+09/01/2024 05:57:25 PM logger_madler___pigz INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (madler___pigz)
+09/01/2024 05:57:25 PM logger_madler___pigz INFO Analyzing repos/madler___pigz (install_repos.py:23) (madler___pigz)
+09/01/2024 05:57:25 PM logger_madler___pigz INFO Found Makefile: repos/madler___pigz/Makefile (install_repos.py:43) (madler___pigz)
+09/01/2024 05:57:25 PM logger_madler___pigz INFO Running naive installation (install_repos.py:44) (madler___pigz)
+09/01/2024 05:57:28 PM logger_madler___pigz INFO Success: make succeeded for madler___pigz (install_repos.py:50) (madler___pigz)

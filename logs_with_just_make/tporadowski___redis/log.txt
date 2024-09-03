@@ -1,0 +1,5 @@
+09/01/2024 06:12:42 PM logger_tporadowski___redis INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tporadowski___redis)
+09/01/2024 06:12:42 PM logger_tporadowski___redis INFO Analyzing repos/tporadowski___redis (install_repos.py:23) (tporadowski___redis)
+09/01/2024 06:12:42 PM logger_tporadowski___redis INFO Found Makefile: repos/tporadowski___redis/Makefile (install_repos.py:43) (tporadowski___redis)
+09/01/2024 06:12:42 PM logger_tporadowski___redis INFO Running naive installation (install_repos.py:44) (tporadowski___redis)
+09/01/2024 06:12:42 PM logger_tporadowski___redis ERROR Error: make failed for tporadowski___redis (install_repos.py:47) (tporadowski___redis)

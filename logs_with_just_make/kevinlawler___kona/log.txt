@@ -1,0 +1,5 @@
+09/01/2024 05:52:23 PM logger_kevinlawler___kona INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kevinlawler___kona)
+09/01/2024 05:52:23 PM logger_kevinlawler___kona INFO Analyzing repos/kevinlawler___kona (install_repos.py:23) (kevinlawler___kona)
+09/01/2024 05:52:23 PM logger_kevinlawler___kona INFO Found Makefile: repos/kevinlawler___kona/Makefile (install_repos.py:43) (kevinlawler___kona)
+09/01/2024 05:52:23 PM logger_kevinlawler___kona INFO Running naive installation (install_repos.py:44) (kevinlawler___kona)
+09/01/2024 05:52:36 PM logger_kevinlawler___kona INFO Success: make succeeded for kevinlawler___kona (install_repos.py:50) (kevinlawler___kona)

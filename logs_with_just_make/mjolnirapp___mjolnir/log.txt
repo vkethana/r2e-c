@@ -1,0 +1,5 @@
+09/01/2024 06:11:29 PM logger_mjolnirapp___mjolnir INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mjolnirapp___mjolnir)
+09/01/2024 06:11:29 PM logger_mjolnirapp___mjolnir INFO Analyzing repos/mjolnirapp___mjolnir (install_repos.py:23) (mjolnirapp___mjolnir)
+09/01/2024 06:11:29 PM logger_mjolnirapp___mjolnir INFO Found Makefile: repos/mjolnirapp___mjolnir/Makefile (install_repos.py:43) (mjolnirapp___mjolnir)
+09/01/2024 06:11:29 PM logger_mjolnirapp___mjolnir INFO Running naive installation (install_repos.py:44) (mjolnirapp___mjolnir)
+09/01/2024 06:11:29 PM logger_mjolnirapp___mjolnir ERROR Error: make failed for mjolnirapp___mjolnir (install_repos.py:47) (mjolnirapp___mjolnir)

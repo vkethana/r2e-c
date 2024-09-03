@@ -1,0 +1,3 @@
+09/01/2024 06:12:43 PM logger_krakjoe___pthreads INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (krakjoe___pthreads)
+09/01/2024 06:12:43 PM logger_krakjoe___pthreads INFO Analyzing repos/krakjoe___pthreads (install_repos.py:23) (krakjoe___pthreads)
+09/01/2024 06:12:43 PM logger_krakjoe___pthreads ERROR No Makefile found for krakjoe___pthreads (install_repos.py:53) (krakjoe___pthreads)

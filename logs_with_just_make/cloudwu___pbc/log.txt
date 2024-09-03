@@ -1,0 +1,5 @@
+09/01/2024 05:54:34 PM logger_cloudwu___pbc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cloudwu___pbc)
+09/01/2024 05:54:34 PM logger_cloudwu___pbc INFO Analyzing repos/cloudwu___pbc (install_repos.py:23) (cloudwu___pbc)
+09/01/2024 05:54:34 PM logger_cloudwu___pbc INFO Found Makefile: repos/cloudwu___pbc/Makefile (install_repos.py:43) (cloudwu___pbc)
+09/01/2024 05:54:34 PM logger_cloudwu___pbc INFO Running naive installation (install_repos.py:44) (cloudwu___pbc)
+09/01/2024 05:54:36 PM logger_cloudwu___pbc ERROR Error: make failed for cloudwu___pbc (install_repos.py:47) (cloudwu___pbc)

@@ -1,0 +1,5 @@
+09/01/2024 05:54:36 PM logger_cnlohr___espusb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cnlohr___espusb)
+09/01/2024 05:54:36 PM logger_cnlohr___espusb INFO Analyzing repos/cnlohr___espusb (install_repos.py:23) (cnlohr___espusb)
+09/01/2024 05:54:36 PM logger_cnlohr___espusb INFO Found Makefile: repos/cnlohr___espusb/Makefile (install_repos.py:43) (cnlohr___espusb)
+09/01/2024 05:54:36 PM logger_cnlohr___espusb INFO Running naive installation (install_repos.py:44) (cnlohr___espusb)
+09/01/2024 05:54:36 PM logger_cnlohr___espusb ERROR Error: make failed for cnlohr___espusb (install_repos.py:47) (cnlohr___espusb)

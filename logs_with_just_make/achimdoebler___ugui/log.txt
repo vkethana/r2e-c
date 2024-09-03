@@ -1,0 +1,3 @@
+09/01/2024 05:50:41 PM logger_achimdoebler___ugui INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (achimdoebler___ugui)
+09/01/2024 05:50:41 PM logger_achimdoebler___ugui INFO Analyzing repos/achimdoebler___ugui (install_repos.py:23) (achimdoebler___ugui)
+09/01/2024 05:50:41 PM logger_achimdoebler___ugui ERROR No Makefile found for achimdoebler___ugui (install_repos.py:53) (achimdoebler___ugui)

@@ -1,0 +1,3 @@
+09/01/2024 05:48:40 PM logger_justinfrankel___licecap INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (justinfrankel___licecap)
+09/01/2024 05:48:40 PM logger_justinfrankel___licecap INFO Analyzing repos/justinfrankel___licecap (install_repos.py:23) (justinfrankel___licecap)
+09/01/2024 05:48:40 PM logger_justinfrankel___licecap ERROR No Makefile found for justinfrankel___licecap (install_repos.py:53) (justinfrankel___licecap)

@@ -1,0 +1,5 @@
+09/01/2024 05:53:28 PM logger_mpenkov___ffmpeg-tutorial INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mpenkov___ffmpeg-tutorial)
+09/01/2024 05:53:28 PM logger_mpenkov___ffmpeg-tutorial INFO Analyzing repos/mpenkov___ffmpeg-tutorial (install_repos.py:23) (mpenkov___ffmpeg-tutorial)
+09/01/2024 05:53:28 PM logger_mpenkov___ffmpeg-tutorial INFO Found Makefile: repos/mpenkov___ffmpeg-tutorial/Makefile (install_repos.py:43) (mpenkov___ffmpeg-tutorial)
+09/01/2024 05:53:28 PM logger_mpenkov___ffmpeg-tutorial INFO Running naive installation (install_repos.py:44) (mpenkov___ffmpeg-tutorial)
+09/01/2024 05:53:28 PM logger_mpenkov___ffmpeg-tutorial ERROR Error: make failed for mpenkov___ffmpeg-tutorial (install_repos.py:47) (mpenkov___ffmpeg-tutorial)

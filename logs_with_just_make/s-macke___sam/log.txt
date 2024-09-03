@@ -1,0 +1,5 @@
+09/01/2024 05:54:25 PM logger_s-macke___sam INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (s-macke___sam)
+09/01/2024 05:54:25 PM logger_s-macke___sam INFO Analyzing repos/s-macke___sam (install_repos.py:23) (s-macke___sam)
+09/01/2024 05:54:25 PM logger_s-macke___sam INFO Found Makefile: repos/s-macke___sam/Makefile (install_repos.py:43) (s-macke___sam)
+09/01/2024 05:54:25 PM logger_s-macke___sam INFO Running naive installation (install_repos.py:44) (s-macke___sam)
+09/01/2024 05:54:25 PM logger_s-macke___sam ERROR Error: make failed for s-macke___sam (install_repos.py:47) (s-macke___sam)

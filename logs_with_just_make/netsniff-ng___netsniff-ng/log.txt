@@ -1,0 +1,5 @@
+09/01/2024 06:10:59 PM logger_netsniff-ng___netsniff-ng INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (netsniff-ng___netsniff-ng)
+09/01/2024 06:10:59 PM logger_netsniff-ng___netsniff-ng INFO Analyzing repos/netsniff-ng___netsniff-ng (install_repos.py:23) (netsniff-ng___netsniff-ng)
+09/01/2024 06:11:00 PM logger_netsniff-ng___netsniff-ng INFO Found Makefile: repos/netsniff-ng___netsniff-ng/Makefile (install_repos.py:43) (netsniff-ng___netsniff-ng)
+09/01/2024 06:11:00 PM logger_netsniff-ng___netsniff-ng INFO Running naive installation (install_repos.py:44) (netsniff-ng___netsniff-ng)
+09/01/2024 06:11:07 PM logger_netsniff-ng___netsniff-ng INFO Success: make succeeded for netsniff-ng___netsniff-ng (install_repos.py:50) (netsniff-ng___netsniff-ng)
