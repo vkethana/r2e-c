@@ -1,7 +1,0 @@
-09/01/2024 05:50:52 PM logger_shadowsocks___chinadns INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (shadowsocks___chinadns)
-09/01/2024 05:50:52 PM logger_shadowsocks___chinadns INFO Analyzing repos/shadowsocks___chinadns (install_repos.py:23) (shadowsocks___chinadns)
-09/01/2024 05:50:52 PM logger_shadowsocks___chinadns INFO Running autoreconf (install_repos.py:28) (shadowsocks___chinadns)
-09/01/2024 05:50:55 PM logger_shadowsocks___chinadns INFO Success: autoreconf succeeded for shadowsocks___chinadns (install_repos.py:35) (shadowsocks___chinadns)
-09/01/2024 05:50:57 PM logger_shadowsocks___chinadns INFO Found Makefile: repos/shadowsocks___chinadns/Makefile (install_repos.py:43) (shadowsocks___chinadns)
-09/01/2024 05:50:57 PM logger_shadowsocks___chinadns INFO Running naive installation (install_repos.py:44) (shadowsocks___chinadns)
-09/01/2024 05:50:58 PM logger_shadowsocks___chinadns INFO Success: make succeeded for shadowsocks___chinadns (install_repos.py:50) (shadowsocks___chinadns)

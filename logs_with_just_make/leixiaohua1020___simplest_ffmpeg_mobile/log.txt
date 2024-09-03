@@ -1,3 +1,0 @@
-09/01/2024 05:48:48 PM logger_leixiaohua1020___simplest_ffmpeg_mobile INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (leixiaohua1020___simplest_ffmpeg_mobile)
-09/01/2024 05:48:48 PM logger_leixiaohua1020___simplest_ffmpeg_mobile INFO Analyzing repos/leixiaohua1020___simplest_ffmpeg_mobile (install_repos.py:23) (leixiaohua1020___simplest_ffmpeg_mobile)
-09/01/2024 05:48:48 PM logger_leixiaohua1020___simplest_ffmpeg_mobile ERROR No Makefile found for leixiaohua1020___simplest_ffmpeg_mobile (install_repos.py:53) (leixiaohua1020___simplest_ffmpeg_mobile)

@@ -1,3 +1,0 @@
-09/01/2024 06:15:12 PM logger_armink___flashdb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (armink___flashdb)
-09/01/2024 06:15:12 PM logger_armink___flashdb INFO Analyzing repos/armink___flashdb (install_repos.py:23) (armink___flashdb)
-09/01/2024 06:15:12 PM logger_armink___flashdb ERROR No Makefile found for armink___flashdb (install_repos.py:53) (armink___flashdb)

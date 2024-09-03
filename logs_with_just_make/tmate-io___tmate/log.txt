@@ -1,5 +1,0 @@
-09/01/2024 05:59:44 PM logger_tmate-io___tmate INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tmate-io___tmate)
-09/01/2024 05:59:44 PM logger_tmate-io___tmate INFO Analyzing repos/tmate-io___tmate (install_repos.py:23) (tmate-io___tmate)
-09/01/2024 05:59:44 PM logger_tmate-io___tmate INFO Running autoreconf (install_repos.py:28) (tmate-io___tmate)
-09/01/2024 05:59:46 PM logger_tmate-io___tmate INFO Success: autoreconf succeeded for tmate-io___tmate (install_repos.py:35) (tmate-io___tmate)
-09/01/2024 05:59:51 PM logger_tmate-io___tmate ERROR No Makefile found for tmate-io___tmate (install_repos.py:53) (tmate-io___tmate)

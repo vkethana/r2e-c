@@ -1,3 +1,0 @@
-09/01/2024 06:02:40 PM logger_teaonly___android-eye INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (teaonly___android-eye)
-09/01/2024 06:02:40 PM logger_teaonly___android-eye INFO Analyzing repos/teaonly___android-eye (install_repos.py:23) (teaonly___android-eye)
-09/01/2024 06:02:40 PM logger_teaonly___android-eye ERROR No Makefile found for teaonly___android-eye (install_repos.py:53) (teaonly___android-eye)

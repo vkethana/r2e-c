@@ -1,4 +1,0 @@
-09/01/2024 05:54:25 PM logger_facebookarchive___libphenom INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (facebookarchive___libphenom)
-09/01/2024 05:54:25 PM logger_facebookarchive___libphenom INFO Analyzing repos/facebookarchive___libphenom (install_repos.py:23) (facebookarchive___libphenom)
-09/01/2024 05:54:25 PM logger_facebookarchive___libphenom INFO Running autoreconf (install_repos.py:28) (facebookarchive___libphenom)
-09/01/2024 05:54:29 PM logger_facebookarchive___libphenom ERROR Error: autoreconf failed for facebookarchive___libphenom (install_repos.py:31) (facebookarchive___libphenom)

@@ -1,3 +1,0 @@
-09/01/2024 05:48:14 PM logger_yourtion___30daymakeos INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yourtion___30daymakeos)
-09/01/2024 05:48:14 PM logger_yourtion___30daymakeos INFO Analyzing repos/yourtion___30daymakeos (install_repos.py:23) (yourtion___30daymakeos)
-09/01/2024 05:48:14 PM logger_yourtion___30daymakeos ERROR No Makefile found for yourtion___30daymakeos (install_repos.py:53) (yourtion___30daymakeos)

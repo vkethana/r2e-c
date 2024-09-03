@@ -1,3 +1,0 @@
-09/01/2024 06:11:20 PM logger_yianwillis___vimcdoc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yianwillis___vimcdoc)
-09/01/2024 06:11:20 PM logger_yianwillis___vimcdoc INFO Analyzing repos/yianwillis___vimcdoc (install_repos.py:23) (yianwillis___vimcdoc)
-09/01/2024 06:11:20 PM logger_yianwillis___vimcdoc ERROR No Makefile found for yianwillis___vimcdoc (install_repos.py:53) (yianwillis___vimcdoc)

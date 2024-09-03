@@ -1,3 +1,0 @@
-09/01/2024 05:50:52 PM logger_spacemeowx2___switch-lan-play INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (spacemeowx2___switch-lan-play)
-09/01/2024 05:50:52 PM logger_spacemeowx2___switch-lan-play INFO Analyzing repos/spacemeowx2___switch-lan-play (install_repos.py:23) (spacemeowx2___switch-lan-play)
-09/01/2024 05:50:52 PM logger_spacemeowx2___switch-lan-play ERROR No Makefile found for spacemeowx2___switch-lan-play (install_repos.py:53) (spacemeowx2___switch-lan-play)

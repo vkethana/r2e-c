@@ -1,7 +1,0 @@
-09/01/2024 05:50:44 PM logger_tpruvot___ccminer INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tpruvot___ccminer)
-09/01/2024 05:50:44 PM logger_tpruvot___ccminer INFO Analyzing repos/tpruvot___ccminer (install_repos.py:23) (tpruvot___ccminer)
-09/01/2024 05:50:44 PM logger_tpruvot___ccminer INFO Running autoreconf (install_repos.py:28) (tpruvot___ccminer)
-09/01/2024 05:50:47 PM logger_tpruvot___ccminer INFO Success: autoreconf succeeded for tpruvot___ccminer (install_repos.py:35) (tpruvot___ccminer)
-09/01/2024 05:50:51 PM logger_tpruvot___ccminer INFO Found Makefile: repos/tpruvot___ccminer/Makefile (install_repos.py:43) (tpruvot___ccminer)
-09/01/2024 05:50:51 PM logger_tpruvot___ccminer INFO Running naive installation (install_repos.py:44) (tpruvot___ccminer)
-09/01/2024 05:50:52 PM logger_tpruvot___ccminer ERROR Error: make failed for tpruvot___ccminer (install_repos.py:47) (tpruvot___ccminer)

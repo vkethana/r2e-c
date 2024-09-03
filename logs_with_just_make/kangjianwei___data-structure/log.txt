@@ -1,3 +1,0 @@
-09/01/2024 05:48:48 PM logger_kangjianwei___data-structure INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kangjianwei___data-structure)
-09/01/2024 05:48:48 PM logger_kangjianwei___data-structure INFO Analyzing repos/kangjianwei___data-structure (install_repos.py:23) (kangjianwei___data-structure)
-09/01/2024 05:48:48 PM logger_kangjianwei___data-structure ERROR No Makefile found for kangjianwei___data-structure (install_repos.py:53) (kangjianwei___data-structure)

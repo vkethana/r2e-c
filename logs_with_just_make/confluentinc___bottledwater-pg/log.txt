@@ -1,5 +1,0 @@
-09/01/2024 06:15:05 PM logger_confluentinc___bottledwater-pg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (confluentinc___bottledwater-pg)
-09/01/2024 06:15:05 PM logger_confluentinc___bottledwater-pg INFO Analyzing repos/confluentinc___bottledwater-pg (install_repos.py:23) (confluentinc___bottledwater-pg)
-09/01/2024 06:15:05 PM logger_confluentinc___bottledwater-pg INFO Found Makefile: repos/confluentinc___bottledwater-pg/Makefile (install_repos.py:43) (confluentinc___bottledwater-pg)
-09/01/2024 06:15:05 PM logger_confluentinc___bottledwater-pg INFO Running naive installation (install_repos.py:44) (confluentinc___bottledwater-pg)
-09/01/2024 06:15:05 PM logger_confluentinc___bottledwater-pg ERROR Error: make failed for confluentinc___bottledwater-pg (install_repos.py:47) (confluentinc___bottledwater-pg)

@@ -1,3 +1,0 @@
-09/01/2024 05:54:31 PM logger_pervognsen___bitwise INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pervognsen___bitwise)
-09/01/2024 05:54:31 PM logger_pervognsen___bitwise INFO Analyzing repos/pervognsen___bitwise (install_repos.py:23) (pervognsen___bitwise)
-09/01/2024 05:54:31 PM logger_pervognsen___bitwise ERROR No Makefile found for pervognsen___bitwise (install_repos.py:53) (pervognsen___bitwise)

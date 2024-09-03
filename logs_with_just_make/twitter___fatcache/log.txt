@@ -1,7 +1,0 @@
-09/01/2024 05:58:23 PM logger_twitter___fatcache INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (twitter___fatcache)
-09/01/2024 05:58:23 PM logger_twitter___fatcache INFO Analyzing repos/twitter___fatcache (install_repos.py:23) (twitter___fatcache)
-09/01/2024 05:58:23 PM logger_twitter___fatcache INFO Running autoreconf (install_repos.py:28) (twitter___fatcache)
-09/01/2024 05:58:26 PM logger_twitter___fatcache INFO Success: autoreconf succeeded for twitter___fatcache (install_repos.py:35) (twitter___fatcache)
-09/01/2024 05:58:30 PM logger_twitter___fatcache INFO Found Makefile: repos/twitter___fatcache/Makefile (install_repos.py:43) (twitter___fatcache)
-09/01/2024 05:58:30 PM logger_twitter___fatcache INFO Running naive installation (install_repos.py:44) (twitter___fatcache)
-09/01/2024 05:58:31 PM logger_twitter___fatcache INFO Success: make succeeded for twitter___fatcache (install_repos.py:50) (twitter___fatcache)

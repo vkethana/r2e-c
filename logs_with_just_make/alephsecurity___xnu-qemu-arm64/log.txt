@@ -1,5 +1,0 @@
-09/01/2024 06:12:43 PM logger_alephsecurity___xnu-qemu-arm64 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (alephsecurity___xnu-qemu-arm64)
-09/01/2024 06:12:43 PM logger_alephsecurity___xnu-qemu-arm64 INFO Analyzing repos/alephsecurity___xnu-qemu-arm64 (install_repos.py:23) (alephsecurity___xnu-qemu-arm64)
-09/01/2024 06:12:53 PM logger_alephsecurity___xnu-qemu-arm64 INFO Found Makefile: repos/alephsecurity___xnu-qemu-arm64/Makefile (install_repos.py:43) (alephsecurity___xnu-qemu-arm64)
-09/01/2024 06:12:53 PM logger_alephsecurity___xnu-qemu-arm64 INFO Running naive installation (install_repos.py:44) (alephsecurity___xnu-qemu-arm64)
-09/01/2024 06:12:55 PM logger_alephsecurity___xnu-qemu-arm64 ERROR Error: make failed for alephsecurity___xnu-qemu-arm64 (install_repos.py:47) (alephsecurity___xnu-qemu-arm64)

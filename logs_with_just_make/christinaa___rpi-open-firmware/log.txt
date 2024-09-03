@@ -1,5 +1,0 @@
-09/01/2024 05:54:36 PM logger_christinaa___rpi-open-firmware INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (christinaa___rpi-open-firmware)
-09/01/2024 05:54:36 PM logger_christinaa___rpi-open-firmware INFO Analyzing repos/christinaa___rpi-open-firmware (install_repos.py:23) (christinaa___rpi-open-firmware)
-09/01/2024 05:54:36 PM logger_christinaa___rpi-open-firmware INFO Found Makefile: repos/christinaa___rpi-open-firmware/Makefile (install_repos.py:43) (christinaa___rpi-open-firmware)
-09/01/2024 05:54:36 PM logger_christinaa___rpi-open-firmware INFO Running naive installation (install_repos.py:44) (christinaa___rpi-open-firmware)
-09/01/2024 05:54:36 PM logger_christinaa___rpi-open-firmware ERROR Error: make failed for christinaa___rpi-open-firmware (install_repos.py:47) (christinaa___rpi-open-firmware)

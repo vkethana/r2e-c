@@ -1,3 +1,0 @@
-09/01/2024 05:52:54 PM logger_addy-dclxvi___almighty-dotfiles INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (addy-dclxvi___almighty-dotfiles)
-09/01/2024 05:52:54 PM logger_addy-dclxvi___almighty-dotfiles INFO Analyzing repos/addy-dclxvi___almighty-dotfiles (install_repos.py:23) (addy-dclxvi___almighty-dotfiles)
-09/01/2024 05:52:54 PM logger_addy-dclxvi___almighty-dotfiles ERROR No Makefile found for addy-dclxvi___almighty-dotfiles (install_repos.py:53) (addy-dclxvi___almighty-dotfiles)

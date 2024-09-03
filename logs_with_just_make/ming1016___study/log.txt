@@ -1,3 +1,0 @@
-09/01/2024 05:56:27 PM logger_ming1016___study INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ming1016___study)
-09/01/2024 05:56:27 PM logger_ming1016___study INFO Analyzing repos/ming1016___study (install_repos.py:23) (ming1016___study)
-09/01/2024 05:56:27 PM logger_ming1016___study ERROR No Makefile found for ming1016___study (install_repos.py:53) (ming1016___study)

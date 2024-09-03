@@ -1,5 +1,0 @@
-09/01/2024 05:53:28 PM logger_baskerville___sxhkd INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (baskerville___sxhkd)
-09/01/2024 05:53:28 PM logger_baskerville___sxhkd INFO Analyzing repos/baskerville___sxhkd (install_repos.py:23) (baskerville___sxhkd)
-09/01/2024 05:53:28 PM logger_baskerville___sxhkd INFO Found Makefile: repos/baskerville___sxhkd/Makefile (install_repos.py:43) (baskerville___sxhkd)
-09/01/2024 05:53:28 PM logger_baskerville___sxhkd INFO Running naive installation (install_repos.py:44) (baskerville___sxhkd)
-09/01/2024 05:53:28 PM logger_baskerville___sxhkd ERROR Error: make failed for baskerville___sxhkd (install_repos.py:47) (baskerville___sxhkd)

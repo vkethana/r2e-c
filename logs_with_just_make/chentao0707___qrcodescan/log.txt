@@ -1,7 +1,0 @@
-09/01/2024 05:46:19 PM logger_chentao0707___qrcodescan INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (chentao0707___qrcodescan)
-09/01/2024 05:46:19 PM logger_chentao0707___qrcodescan INFO Analyzing repos/chentao0707___qrcodescan (install_repos.py:23) (chentao0707___qrcodescan)
-09/01/2024 05:46:19 PM logger_chentao0707___qrcodescan ERROR No Makefile found for chentao0707___qrcodescan (install_repos.py:53) (chentao0707___qrcodescan)
-09/03/2024 08:12:17 PM logger_chentao0707___qrcodescan INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (chentao0707___qrcodescan)
-09/03/2024 08:12:17 PM logger_chentao0707___qrcodescan INFO Analyzing repos/chentao0707___qrcodescan (install_repos.py:84) (chentao0707___qrcodescan)
-09/03/2024 08:12:17 PM logger_chentao0707___qrcodescan ERROR No supported build system found for repos/chentao0707___qrcodescan (install_repos.py:74) (chentao0707___qrcodescan)
-09/03/2024 08:12:17 PM logger_chentao0707___qrcodescan ERROR Error: Build failed for chentao0707___qrcodescan (install_repos.py:90) (chentao0707___qrcodescan)

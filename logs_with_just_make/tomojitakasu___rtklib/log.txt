@@ -1,3 +1,0 @@
-09/01/2024 05:54:34 PM logger_tomojitakasu___rtklib INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tomojitakasu___rtklib)
-09/01/2024 05:54:34 PM logger_tomojitakasu___rtklib INFO Analyzing repos/tomojitakasu___rtklib (install_repos.py:23) (tomojitakasu___rtklib)
-09/01/2024 05:54:34 PM logger_tomojitakasu___rtklib ERROR No Makefile found for tomojitakasu___rtklib (install_repos.py:53) (tomojitakasu___rtklib)

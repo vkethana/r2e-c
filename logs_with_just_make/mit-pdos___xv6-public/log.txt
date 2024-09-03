@@ -1,5 +1,0 @@
-09/01/2024 05:48:48 PM logger_mit-pdos___xv6-public INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mit-pdos___xv6-public)
-09/01/2024 05:48:48 PM logger_mit-pdos___xv6-public INFO Analyzing repos/mit-pdos___xv6-public (install_repos.py:23) (mit-pdos___xv6-public)
-09/01/2024 05:48:48 PM logger_mit-pdos___xv6-public INFO Found Makefile: repos/mit-pdos___xv6-public/Makefile (install_repos.py:43) (mit-pdos___xv6-public)
-09/01/2024 05:48:48 PM logger_mit-pdos___xv6-public INFO Running naive installation (install_repos.py:44) (mit-pdos___xv6-public)
-09/01/2024 05:48:50 PM logger_mit-pdos___xv6-public INFO Success: make succeeded for mit-pdos___xv6-public (install_repos.py:50) (mit-pdos___xv6-public)

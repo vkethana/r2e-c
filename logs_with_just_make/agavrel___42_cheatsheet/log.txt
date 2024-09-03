@@ -1,3 +1,0 @@
-09/01/2024 05:52:54 PM logger_agavrel___42_cheatsheet INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (agavrel___42_cheatsheet)
-09/01/2024 05:52:54 PM logger_agavrel___42_cheatsheet INFO Analyzing repos/agavrel___42_cheatsheet (install_repos.py:23) (agavrel___42_cheatsheet)
-09/01/2024 05:52:54 PM logger_agavrel___42_cheatsheet ERROR No Makefile found for agavrel___42_cheatsheet (install_repos.py:53) (agavrel___42_cheatsheet)

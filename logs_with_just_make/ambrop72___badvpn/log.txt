@@ -1,3 +1,0 @@
-09/01/2024 06:08:54 PM logger_ambrop72___badvpn INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ambrop72___badvpn)
-09/01/2024 06:08:54 PM logger_ambrop72___badvpn INFO Analyzing repos/ambrop72___badvpn (install_repos.py:23) (ambrop72___badvpn)
-09/01/2024 06:08:54 PM logger_ambrop72___badvpn ERROR No Makefile found for ambrop72___badvpn (install_repos.py:53) (ambrop72___badvpn)

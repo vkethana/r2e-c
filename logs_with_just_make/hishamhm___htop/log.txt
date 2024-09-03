@@ -1,7 +1,0 @@
-09/01/2024 05:55:04 PM logger_hishamhm___htop INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hishamhm___htop)
-09/01/2024 05:55:04 PM logger_hishamhm___htop INFO Analyzing repos/hishamhm___htop (install_repos.py:23) (hishamhm___htop)
-09/01/2024 05:55:04 PM logger_hishamhm___htop INFO Running autoreconf (install_repos.py:28) (hishamhm___htop)
-09/01/2024 05:55:07 PM logger_hishamhm___htop INFO Success: autoreconf succeeded for hishamhm___htop (install_repos.py:35) (hishamhm___htop)
-09/01/2024 05:55:13 PM logger_hishamhm___htop INFO Found Makefile: repos/hishamhm___htop/Makefile (install_repos.py:43) (hishamhm___htop)
-09/01/2024 05:55:13 PM logger_hishamhm___htop INFO Running naive installation (install_repos.py:44) (hishamhm___htop)
-09/01/2024 05:55:18 PM logger_hishamhm___htop INFO Success: make succeeded for hishamhm___htop (install_repos.py:50) (hishamhm___htop)

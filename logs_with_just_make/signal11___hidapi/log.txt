@@ -1,5 +1,0 @@
-09/01/2024 05:48:40 PM logger_signal11___hidapi INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (signal11___hidapi)
-09/01/2024 05:48:40 PM logger_signal11___hidapi INFO Analyzing repos/signal11___hidapi (install_repos.py:23) (signal11___hidapi)
-09/01/2024 05:48:40 PM logger_signal11___hidapi INFO Running autoreconf (install_repos.py:28) (signal11___hidapi)
-09/01/2024 05:48:46 PM logger_signal11___hidapi INFO Success: autoreconf succeeded for signal11___hidapi (install_repos.py:35) (signal11___hidapi)
-09/01/2024 05:48:48 PM logger_signal11___hidapi ERROR No Makefile found for signal11___hidapi (install_repos.py:53) (signal11___hidapi)

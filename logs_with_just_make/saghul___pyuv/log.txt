@@ -1,3 +1,0 @@
-09/01/2024 05:58:14 PM logger_saghul___pyuv INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (saghul___pyuv)
-09/01/2024 05:58:14 PM logger_saghul___pyuv INFO Analyzing repos/saghul___pyuv (install_repos.py:23) (saghul___pyuv)
-09/01/2024 05:58:14 PM logger_saghul___pyuv ERROR No Makefile found for saghul___pyuv (install_repos.py:53) (saghul___pyuv)

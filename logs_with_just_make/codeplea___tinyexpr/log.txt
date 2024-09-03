@@ -1,5 +1,0 @@
-09/01/2024 06:14:21 PM logger_codeplea___tinyexpr INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (codeplea___tinyexpr)
-09/01/2024 06:14:21 PM logger_codeplea___tinyexpr INFO Analyzing repos/codeplea___tinyexpr (install_repos.py:23) (codeplea___tinyexpr)
-09/01/2024 06:14:21 PM logger_codeplea___tinyexpr INFO Found Makefile: repos/codeplea___tinyexpr/Makefile (install_repos.py:43) (codeplea___tinyexpr)
-09/01/2024 06:14:21 PM logger_codeplea___tinyexpr INFO Running naive installation (install_repos.py:44) (codeplea___tinyexpr)
-09/01/2024 06:14:22 PM logger_codeplea___tinyexpr INFO Success: make succeeded for codeplea___tinyexpr (install_repos.py:50) (codeplea___tinyexpr)

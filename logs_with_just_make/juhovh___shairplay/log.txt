@@ -1,5 +1,0 @@
-09/01/2024 05:56:11 PM logger_juhovh___shairplay INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (juhovh___shairplay)
-09/01/2024 05:56:11 PM logger_juhovh___shairplay INFO Analyzing repos/juhovh___shairplay (install_repos.py:23) (juhovh___shairplay)
-09/01/2024 05:56:11 PM logger_juhovh___shairplay INFO Running autoreconf (install_repos.py:28) (juhovh___shairplay)
-09/01/2024 05:56:16 PM logger_juhovh___shairplay INFO Success: autoreconf succeeded for juhovh___shairplay (install_repos.py:35) (juhovh___shairplay)
-09/01/2024 05:56:23 PM logger_juhovh___shairplay ERROR No Makefile found for juhovh___shairplay (install_repos.py:53) (juhovh___shairplay)

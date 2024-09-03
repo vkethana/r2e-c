@@ -1,3 +1,0 @@
-09/01/2024 05:52:47 PM logger_go-gl___glfw INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (go-gl___glfw)
-09/01/2024 05:52:47 PM logger_go-gl___glfw INFO Analyzing repos/go-gl___glfw (install_repos.py:23) (go-gl___glfw)
-09/01/2024 05:52:47 PM logger_go-gl___glfw ERROR No Makefile found for go-gl___glfw (install_repos.py:53) (go-gl___glfw)

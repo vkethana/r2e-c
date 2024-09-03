@@ -1,5 +1,0 @@
-09/01/2024 06:12:55 PM logger_danielfrg___word2vec INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (danielfrg___word2vec)
-09/01/2024 06:12:55 PM logger_danielfrg___word2vec INFO Analyzing repos/danielfrg___word2vec (install_repos.py:23) (danielfrg___word2vec)
-09/01/2024 06:12:55 PM logger_danielfrg___word2vec INFO Found Makefile: repos/danielfrg___word2vec/Makefile (install_repos.py:43) (danielfrg___word2vec)
-09/01/2024 06:12:55 PM logger_danielfrg___word2vec INFO Running naive installation (install_repos.py:44) (danielfrg___word2vec)
-09/01/2024 06:12:55 PM logger_danielfrg___word2vec INFO Success: make succeeded for danielfrg___word2vec (install_repos.py:50) (danielfrg___word2vec)

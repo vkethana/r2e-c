@@ -1,5 +1,0 @@
-09/01/2024 05:54:11 PM logger_marcobambini___gravity INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (marcobambini___gravity)
-09/01/2024 05:54:11 PM logger_marcobambini___gravity INFO Analyzing repos/marcobambini___gravity (install_repos.py:23) (marcobambini___gravity)
-09/01/2024 05:54:11 PM logger_marcobambini___gravity INFO Found Makefile: repos/marcobambini___gravity/Makefile (install_repos.py:43) (marcobambini___gravity)
-09/01/2024 05:54:11 PM logger_marcobambini___gravity INFO Running naive installation (install_repos.py:44) (marcobambini___gravity)
-09/01/2024 05:54:20 PM logger_marcobambini___gravity INFO Success: make succeeded for marcobambini___gravity (install_repos.py:50) (marcobambini___gravity)

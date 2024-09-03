@@ -1,3 +1,0 @@
-09/01/2024 06:14:58 PM logger_damonkohler___sl4a INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (damonkohler___sl4a)
-09/01/2024 06:14:58 PM logger_damonkohler___sl4a INFO Analyzing repos/damonkohler___sl4a (install_repos.py:23) (damonkohler___sl4a)
-09/01/2024 06:14:58 PM logger_damonkohler___sl4a ERROR No Makefile found for damonkohler___sl4a (install_repos.py:53) (damonkohler___sl4a)

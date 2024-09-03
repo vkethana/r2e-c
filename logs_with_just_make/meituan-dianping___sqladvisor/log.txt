@@ -1,3 +1,0 @@
-09/01/2024 06:12:43 PM logger_meituan-dianping___sqladvisor INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (meituan-dianping___sqladvisor)
-09/01/2024 06:12:43 PM logger_meituan-dianping___sqladvisor INFO Analyzing repos/meituan-dianping___sqladvisor (install_repos.py:23) (meituan-dianping___sqladvisor)
-09/01/2024 06:12:43 PM logger_meituan-dianping___sqladvisor ERROR No Makefile found for meituan-dianping___sqladvisor (install_repos.py:53) (meituan-dianping___sqladvisor)

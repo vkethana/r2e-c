@@ -1,3 +1,0 @@
-09/01/2024 05:54:25 PM logger_bugaevc___wl-clipboard INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bugaevc___wl-clipboard)
-09/01/2024 05:54:25 PM logger_bugaevc___wl-clipboard INFO Analyzing repos/bugaevc___wl-clipboard (install_repos.py:23) (bugaevc___wl-clipboard)
-09/01/2024 05:54:25 PM logger_bugaevc___wl-clipboard ERROR No Makefile found for bugaevc___wl-clipboard (install_repos.py:53) (bugaevc___wl-clipboard)

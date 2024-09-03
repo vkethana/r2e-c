@@ -1,5 +1,0 @@
-09/01/2024 05:51:14 PM logger_apple___homekitadk INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (apple___homekitadk)
-09/01/2024 05:51:14 PM logger_apple___homekitadk INFO Analyzing repos/apple___homekitadk (install_repos.py:23) (apple___homekitadk)
-09/01/2024 05:51:14 PM logger_apple___homekitadk INFO Found Makefile: repos/apple___homekitadk/Makefile (install_repos.py:43) (apple___homekitadk)
-09/01/2024 05:51:14 PM logger_apple___homekitadk INFO Running naive installation (install_repos.py:44) (apple___homekitadk)
-09/01/2024 05:52:23 PM logger_apple___homekitadk INFO Success: make succeeded for apple___homekitadk (install_repos.py:50) (apple___homekitadk)

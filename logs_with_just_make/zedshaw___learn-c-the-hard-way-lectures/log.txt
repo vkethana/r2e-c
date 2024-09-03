@@ -1,5 +1,0 @@
-09/01/2024 05:49:59 PM logger_zedshaw___learn-c-the-hard-way-lectures INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (zedshaw___learn-c-the-hard-way-lectures)
-09/01/2024 05:49:59 PM logger_zedshaw___learn-c-the-hard-way-lectures INFO Analyzing repos/zedshaw___learn-c-the-hard-way-lectures (install_repos.py:23) (zedshaw___learn-c-the-hard-way-lectures)
-09/01/2024 05:49:59 PM logger_zedshaw___learn-c-the-hard-way-lectures INFO Found Makefile: repos/zedshaw___learn-c-the-hard-way-lectures/Makefile (install_repos.py:43) (zedshaw___learn-c-the-hard-way-lectures)
-09/01/2024 05:49:59 PM logger_zedshaw___learn-c-the-hard-way-lectures INFO Running naive installation (install_repos.py:44) (zedshaw___learn-c-the-hard-way-lectures)
-09/01/2024 05:49:59 PM logger_zedshaw___learn-c-the-hard-way-lectures ERROR Error: make failed for zedshaw___learn-c-the-hard-way-lectures (install_repos.py:47) (zedshaw___learn-c-the-hard-way-lectures)

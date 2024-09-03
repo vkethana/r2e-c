@@ -1,5 +1,0 @@
-09/01/2024 05:49:19 PM logger_janmojzis___tinyssh INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (janmojzis___tinyssh)
-09/01/2024 05:49:19 PM logger_janmojzis___tinyssh INFO Analyzing repos/janmojzis___tinyssh (install_repos.py:23) (janmojzis___tinyssh)
-09/01/2024 05:49:19 PM logger_janmojzis___tinyssh INFO Found Makefile: repos/janmojzis___tinyssh/Makefile (install_repos.py:43) (janmojzis___tinyssh)
-09/01/2024 05:49:19 PM logger_janmojzis___tinyssh INFO Running naive installation (install_repos.py:44) (janmojzis___tinyssh)
-09/01/2024 05:49:39 PM logger_janmojzis___tinyssh INFO Success: make succeeded for janmojzis___tinyssh (install_repos.py:50) (janmojzis___tinyssh)

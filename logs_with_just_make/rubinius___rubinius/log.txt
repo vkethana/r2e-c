@@ -1,5 +1,0 @@
-09/01/2024 05:49:07 PM logger_rubinius___rubinius INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (rubinius___rubinius)
-09/01/2024 05:49:07 PM logger_rubinius___rubinius INFO Analyzing repos/rubinius___rubinius (install_repos.py:23) (rubinius___rubinius)
-09/01/2024 05:49:07 PM logger_rubinius___rubinius INFO Found Makefile: repos/rubinius___rubinius/Makefile (install_repos.py:43) (rubinius___rubinius)
-09/01/2024 05:49:07 PM logger_rubinius___rubinius INFO Running naive installation (install_repos.py:44) (rubinius___rubinius)
-09/01/2024 05:49:07 PM logger_rubinius___rubinius ERROR Error: make failed for rubinius___rubinius (install_repos.py:47) (rubinius___rubinius)

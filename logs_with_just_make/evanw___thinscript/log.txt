@@ -1,3 +1,0 @@
-09/01/2024 06:10:17 PM logger_evanw___thinscript INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (evanw___thinscript)
-09/01/2024 06:10:17 PM logger_evanw___thinscript INFO Analyzing repos/evanw___thinscript (install_repos.py:23) (evanw___thinscript)
-09/01/2024 06:10:17 PM logger_evanw___thinscript ERROR No Makefile found for evanw___thinscript (install_repos.py:53) (evanw___thinscript)

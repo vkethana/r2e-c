@@ -1,5 +1,0 @@
-09/01/2024 06:00:56 PM logger_abcminiuser___lufa INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (abcminiuser___lufa)
-09/01/2024 06:00:56 PM logger_abcminiuser___lufa INFO Analyzing repos/abcminiuser___lufa (install_repos.py:23) (abcminiuser___lufa)
-09/01/2024 06:00:56 PM logger_abcminiuser___lufa INFO Found Makefile: repos/abcminiuser___lufa/makefile (install_repos.py:43) (abcminiuser___lufa)
-09/01/2024 06:00:56 PM logger_abcminiuser___lufa INFO Running naive installation (install_repos.py:44) (abcminiuser___lufa)
-09/01/2024 06:02:25 PM logger_abcminiuser___lufa INFO Success: make succeeded for abcminiuser___lufa (install_repos.py:50) (abcminiuser___lufa)

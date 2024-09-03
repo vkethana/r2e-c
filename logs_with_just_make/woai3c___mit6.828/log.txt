@@ -1,3 +1,0 @@
-09/01/2024 06:10:52 PM logger_woai3c___mit6.828 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (woai3c___mit6.828)
-09/01/2024 06:10:52 PM logger_woai3c___mit6.828 INFO Analyzing repos/woai3c___mit6.828 (install_repos.py:23) (woai3c___mit6.828)
-09/01/2024 06:10:52 PM logger_woai3c___mit6.828 ERROR No Makefile found for woai3c___mit6.828 (install_repos.py:53) (woai3c___mit6.828)

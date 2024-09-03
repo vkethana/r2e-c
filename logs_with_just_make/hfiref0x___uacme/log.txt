@@ -1,3 +1,0 @@
-09/01/2024 06:15:11 PM logger_hfiref0x___uacme INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hfiref0x___uacme)
-09/01/2024 06:15:11 PM logger_hfiref0x___uacme INFO Analyzing repos/hfiref0x___uacme (install_repos.py:23) (hfiref0x___uacme)
-09/01/2024 06:15:11 PM logger_hfiref0x___uacme ERROR No Makefile found for hfiref0x___uacme (install_repos.py:53) (hfiref0x___uacme)

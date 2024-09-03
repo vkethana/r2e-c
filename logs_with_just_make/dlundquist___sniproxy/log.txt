@@ -1,4 +1,0 @@
-09/01/2024 05:49:06 PM logger_dlundquist___sniproxy INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (dlundquist___sniproxy)
-09/01/2024 05:49:06 PM logger_dlundquist___sniproxy INFO Analyzing repos/dlundquist___sniproxy (install_repos.py:23) (dlundquist___sniproxy)
-09/01/2024 05:49:06 PM logger_dlundquist___sniproxy INFO Running autoreconf (install_repos.py:28) (dlundquist___sniproxy)
-09/01/2024 05:49:07 PM logger_dlundquist___sniproxy ERROR Error: autoreconf failed for dlundquist___sniproxy (install_repos.py:31) (dlundquist___sniproxy)

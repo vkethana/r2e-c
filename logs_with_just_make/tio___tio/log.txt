@@ -1,3 +1,0 @@
-09/01/2024 06:11:19 PM logger_tio___tio INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tio___tio)
-09/01/2024 06:11:19 PM logger_tio___tio INFO Analyzing repos/tio___tio (install_repos.py:23) (tio___tio)
-09/01/2024 06:11:19 PM logger_tio___tio ERROR No Makefile found for tio___tio (install_repos.py:53) (tio___tio)

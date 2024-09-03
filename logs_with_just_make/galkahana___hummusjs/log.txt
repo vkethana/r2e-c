@@ -1,3 +1,0 @@
-09/01/2024 05:54:34 PM logger_galkahana___hummusjs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (galkahana___hummusjs)
-09/01/2024 05:54:34 PM logger_galkahana___hummusjs INFO Analyzing repos/galkahana___hummusjs (install_repos.py:23) (galkahana___hummusjs)
-09/01/2024 05:54:34 PM logger_galkahana___hummusjs ERROR No Makefile found for galkahana___hummusjs (install_repos.py:53) (galkahana___hummusjs)

@@ -1,3 +1,0 @@
-09/01/2024 05:57:03 PM logger_guanshuicheng___invoice INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (guanshuicheng___invoice)
-09/01/2024 05:57:03 PM logger_guanshuicheng___invoice INFO Analyzing repos/guanshuicheng___invoice (install_repos.py:23) (guanshuicheng___invoice)
-09/01/2024 05:57:03 PM logger_guanshuicheng___invoice ERROR No Makefile found for guanshuicheng___invoice (install_repos.py:53) (guanshuicheng___invoice)

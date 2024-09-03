@@ -1,3 +1,0 @@
-09/01/2024 05:55:32 PM logger_kdlucas___byte-unixbench INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kdlucas___byte-unixbench)
-09/01/2024 05:55:32 PM logger_kdlucas___byte-unixbench INFO Analyzing repos/kdlucas___byte-unixbench (install_repos.py:23) (kdlucas___byte-unixbench)
-09/01/2024 05:55:32 PM logger_kdlucas___byte-unixbench ERROR No Makefile found for kdlucas___byte-unixbench (install_repos.py:53) (kdlucas___byte-unixbench)

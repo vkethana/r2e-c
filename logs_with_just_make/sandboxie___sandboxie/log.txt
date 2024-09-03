@@ -1,3 +1,0 @@
-09/01/2024 06:10:52 PM logger_sandboxie___sandboxie INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sandboxie___sandboxie)
-09/01/2024 06:10:52 PM logger_sandboxie___sandboxie INFO Analyzing repos/sandboxie___sandboxie (install_repos.py:23) (sandboxie___sandboxie)
-09/01/2024 06:10:52 PM logger_sandboxie___sandboxie ERROR No Makefile found for sandboxie___sandboxie (install_repos.py:53) (sandboxie___sandboxie)

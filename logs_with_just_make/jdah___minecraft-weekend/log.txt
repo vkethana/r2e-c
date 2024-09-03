@@ -1,5 +1,0 @@
-09/01/2024 06:14:57 PM logger_jdah___minecraft-weekend INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jdah___minecraft-weekend)
-09/01/2024 06:14:57 PM logger_jdah___minecraft-weekend INFO Analyzing repos/jdah___minecraft-weekend (install_repos.py:23) (jdah___minecraft-weekend)
-09/01/2024 06:14:57 PM logger_jdah___minecraft-weekend INFO Found Makefile: repos/jdah___minecraft-weekend/Makefile (install_repos.py:43) (jdah___minecraft-weekend)
-09/01/2024 06:14:57 PM logger_jdah___minecraft-weekend INFO Running naive installation (install_repos.py:44) (jdah___minecraft-weekend)
-09/01/2024 06:14:57 PM logger_jdah___minecraft-weekend ERROR Error: make failed for jdah___minecraft-weekend (install_repos.py:47) (jdah___minecraft-weekend)

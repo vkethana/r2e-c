@@ -1,3 +1,0 @@
-09/01/2024 06:02:25 PM logger_blinker-iot___blinker-esp-idf INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (blinker-iot___blinker-esp-idf)
-09/01/2024 06:02:25 PM logger_blinker-iot___blinker-esp-idf INFO Analyzing repos/blinker-iot___blinker-esp-idf (install_repos.py:23) (blinker-iot___blinker-esp-idf)
-09/01/2024 06:02:25 PM logger_blinker-iot___blinker-esp-idf ERROR No Makefile found for blinker-iot___blinker-esp-idf (install_repos.py:53) (blinker-iot___blinker-esp-idf)

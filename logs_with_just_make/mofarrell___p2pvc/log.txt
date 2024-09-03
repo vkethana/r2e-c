@@ -1,5 +1,0 @@
-09/01/2024 05:53:28 PM logger_mofarrell___p2pvc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mofarrell___p2pvc)
-09/01/2024 05:53:28 PM logger_mofarrell___p2pvc INFO Analyzing repos/mofarrell___p2pvc (install_repos.py:23) (mofarrell___p2pvc)
-09/01/2024 05:53:28 PM logger_mofarrell___p2pvc INFO Found Makefile: repos/mofarrell___p2pvc/Makefile (install_repos.py:43) (mofarrell___p2pvc)
-09/01/2024 05:53:28 PM logger_mofarrell___p2pvc INFO Running naive installation (install_repos.py:44) (mofarrell___p2pvc)
-09/01/2024 05:53:28 PM logger_mofarrell___p2pvc ERROR Error: make failed for mofarrell___p2pvc (install_repos.py:47) (mofarrell___p2pvc)

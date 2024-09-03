@@ -1,3 +1,0 @@
-09/01/2024 05:49:06 PM logger_maratyszcza___nnpack INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (maratyszcza___nnpack)
-09/01/2024 05:49:06 PM logger_maratyszcza___nnpack INFO Analyzing repos/maratyszcza___nnpack (install_repos.py:23) (maratyszcza___nnpack)
-09/01/2024 05:49:06 PM logger_maratyszcza___nnpack ERROR No Makefile found for maratyszcza___nnpack (install_repos.py:53) (maratyszcza___nnpack)

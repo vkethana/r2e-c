@@ -1,7 +1,0 @@
-09/01/2024 06:02:25 PM logger_joedog___siege INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (joedog___siege)
-09/01/2024 06:02:25 PM logger_joedog___siege INFO Analyzing repos/joedog___siege (install_repos.py:23) (joedog___siege)
-09/01/2024 06:02:25 PM logger_joedog___siege INFO Running autoreconf (install_repos.py:28) (joedog___siege)
-09/01/2024 06:02:29 PM logger_joedog___siege INFO Success: autoreconf succeeded for joedog___siege (install_repos.py:35) (joedog___siege)
-09/01/2024 06:02:35 PM logger_joedog___siege INFO Found Makefile: repos/joedog___siege/Makefile (install_repos.py:43) (joedog___siege)
-09/01/2024 06:02:35 PM logger_joedog___siege INFO Running naive installation (install_repos.py:44) (joedog___siege)
-09/01/2024 06:02:40 PM logger_joedog___siege ERROR Error: make failed for joedog___siege (install_repos.py:47) (joedog___siege)

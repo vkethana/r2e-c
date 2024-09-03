@@ -1,5 +1,0 @@
-09/01/2024 06:11:19 PM logger_yarrick___pingfs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yarrick___pingfs)
-09/01/2024 06:11:19 PM logger_yarrick___pingfs INFO Analyzing repos/yarrick___pingfs (install_repos.py:23) (yarrick___pingfs)
-09/01/2024 06:11:19 PM logger_yarrick___pingfs INFO Found Makefile: repos/yarrick___pingfs/Makefile (install_repos.py:43) (yarrick___pingfs)
-09/01/2024 06:11:19 PM logger_yarrick___pingfs INFO Running naive installation (install_repos.py:44) (yarrick___pingfs)
-09/01/2024 06:11:20 PM logger_yarrick___pingfs ERROR Error: make failed for yarrick___pingfs (install_repos.py:47) (yarrick___pingfs)

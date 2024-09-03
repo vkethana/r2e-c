@@ -1,3 +1,0 @@
-09/01/2024 05:52:47 PM logger_iolanguage___io INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (iolanguage___io)
-09/01/2024 05:52:47 PM logger_iolanguage___io INFO Analyzing repos/iolanguage___io (install_repos.py:23) (iolanguage___io)
-09/01/2024 05:52:47 PM logger_iolanguage___io ERROR No Makefile found for iolanguage___io (install_repos.py:53) (iolanguage___io)

@@ -1,3 +1,0 @@
-09/01/2024 06:09:40 PM logger_mpc-hc___mpc-hc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mpc-hc___mpc-hc)
-09/01/2024 06:09:40 PM logger_mpc-hc___mpc-hc INFO Analyzing repos/mpc-hc___mpc-hc (install_repos.py:23) (mpc-hc___mpc-hc)
-09/01/2024 06:09:40 PM logger_mpc-hc___mpc-hc ERROR No Makefile found for mpc-hc___mpc-hc (install_repos.py:53) (mpc-hc___mpc-hc)

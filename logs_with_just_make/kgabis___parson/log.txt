@@ -1,5 +1,0 @@
-09/01/2024 05:48:14 PM logger_kgabis___parson INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kgabis___parson)
-09/01/2024 05:48:14 PM logger_kgabis___parson INFO Analyzing repos/kgabis___parson (install_repos.py:23) (kgabis___parson)
-09/01/2024 05:48:14 PM logger_kgabis___parson INFO Found Makefile: repos/kgabis___parson/Makefile (install_repos.py:43) (kgabis___parson)
-09/01/2024 05:48:14 PM logger_kgabis___parson INFO Running naive installation (install_repos.py:44) (kgabis___parson)
-09/01/2024 05:48:15 PM logger_kgabis___parson INFO Success: make succeeded for kgabis___parson (install_repos.py:50) (kgabis___parson)

@@ -1,3 +1,0 @@
-09/01/2024 05:54:36 PM logger_hacksysteam___hacksysextremevulnerabledriver INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hacksysteam___hacksysextremevulnerabledriver)
-09/01/2024 05:54:36 PM logger_hacksysteam___hacksysextremevulnerabledriver INFO Analyzing repos/hacksysteam___hacksysextremevulnerabledriver (install_repos.py:23) (hacksysteam___hacksysextremevulnerabledriver)
-09/01/2024 05:54:36 PM logger_hacksysteam___hacksysextremevulnerabledriver ERROR No Makefile found for hacksysteam___hacksysextremevulnerabledriver (install_repos.py:53) (hacksysteam___hacksysextremevulnerabledriver)

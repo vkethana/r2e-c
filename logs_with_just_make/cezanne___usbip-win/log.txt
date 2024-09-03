@@ -1,3 +1,0 @@
-09/01/2024 06:15:05 PM logger_cezanne___usbip-win INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cezanne___usbip-win)
-09/01/2024 06:15:05 PM logger_cezanne___usbip-win INFO Analyzing repos/cezanne___usbip-win (install_repos.py:23) (cezanne___usbip-win)
-09/01/2024 06:15:05 PM logger_cezanne___usbip-win ERROR No Makefile found for cezanne___usbip-win (install_repos.py:53) (cezanne___usbip-win)

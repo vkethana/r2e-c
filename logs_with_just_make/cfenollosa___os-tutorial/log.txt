@@ -1,3 +1,0 @@
-09/01/2024 05:54:34 PM logger_cfenollosa___os-tutorial INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cfenollosa___os-tutorial)
-09/01/2024 05:54:34 PM logger_cfenollosa___os-tutorial INFO Analyzing repos/cfenollosa___os-tutorial (install_repos.py:23) (cfenollosa___os-tutorial)
-09/01/2024 05:54:34 PM logger_cfenollosa___os-tutorial ERROR No Makefile found for cfenollosa___os-tutorial (install_repos.py:53) (cfenollosa___os-tutorial)

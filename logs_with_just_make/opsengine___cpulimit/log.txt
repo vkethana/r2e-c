@@ -1,5 +1,0 @@
-09/01/2024 06:12:42 PM logger_opsengine___cpulimit INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (opsengine___cpulimit)
-09/01/2024 06:12:42 PM logger_opsengine___cpulimit INFO Analyzing repos/opsengine___cpulimit (install_repos.py:23) (opsengine___cpulimit)
-09/01/2024 06:12:42 PM logger_opsengine___cpulimit INFO Found Makefile: repos/opsengine___cpulimit/Makefile (install_repos.py:43) (opsengine___cpulimit)
-09/01/2024 06:12:42 PM logger_opsengine___cpulimit INFO Running naive installation (install_repos.py:44) (opsengine___cpulimit)
-09/01/2024 06:12:43 PM logger_opsengine___cpulimit INFO Success: make succeeded for opsengine___cpulimit (install_repos.py:50) (opsengine___cpulimit)

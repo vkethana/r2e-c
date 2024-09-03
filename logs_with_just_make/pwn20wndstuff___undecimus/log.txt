@@ -1,5 +1,0 @@
-09/01/2024 06:11:19 PM logger_pwn20wndstuff___undecimus INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pwn20wndstuff___undecimus)
-09/01/2024 06:11:19 PM logger_pwn20wndstuff___undecimus INFO Analyzing repos/pwn20wndstuff___undecimus (install_repos.py:23) (pwn20wndstuff___undecimus)
-09/01/2024 06:11:19 PM logger_pwn20wndstuff___undecimus INFO Found Makefile: repos/pwn20wndstuff___undecimus/Makefile (install_repos.py:43) (pwn20wndstuff___undecimus)
-09/01/2024 06:11:19 PM logger_pwn20wndstuff___undecimus INFO Running naive installation (install_repos.py:44) (pwn20wndstuff___undecimus)
-09/01/2024 06:11:19 PM logger_pwn20wndstuff___undecimus ERROR Error: make failed for pwn20wndstuff___undecimus (install_repos.py:47) (pwn20wndstuff___undecimus)

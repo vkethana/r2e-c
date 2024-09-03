@@ -1,5 +1,0 @@
-09/01/2024 05:48:48 PM logger_danielgtaylor___jpeg-archive INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (danielgtaylor___jpeg-archive)
-09/01/2024 05:48:48 PM logger_danielgtaylor___jpeg-archive INFO Analyzing repos/danielgtaylor___jpeg-archive (install_repos.py:23) (danielgtaylor___jpeg-archive)
-09/01/2024 05:48:48 PM logger_danielgtaylor___jpeg-archive INFO Found Makefile: repos/danielgtaylor___jpeg-archive/Makefile (install_repos.py:43) (danielgtaylor___jpeg-archive)
-09/01/2024 05:48:48 PM logger_danielgtaylor___jpeg-archive INFO Running naive installation (install_repos.py:44) (danielgtaylor___jpeg-archive)
-09/01/2024 05:48:48 PM logger_danielgtaylor___jpeg-archive ERROR Error: make failed for danielgtaylor___jpeg-archive (install_repos.py:47) (danielgtaylor___jpeg-archive)

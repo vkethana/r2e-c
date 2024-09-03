@@ -1,5 +1,0 @@
-09/01/2024 06:11:20 PM logger_wiire-a___pixiewps INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (wiire-a___pixiewps)
-09/01/2024 06:11:20 PM logger_wiire-a___pixiewps INFO Analyzing repos/wiire-a___pixiewps (install_repos.py:23) (wiire-a___pixiewps)
-09/01/2024 06:11:20 PM logger_wiire-a___pixiewps INFO Found Makefile: repos/wiire-a___pixiewps/Makefile (install_repos.py:43) (wiire-a___pixiewps)
-09/01/2024 06:11:20 PM logger_wiire-a___pixiewps INFO Running naive installation (install_repos.py:44) (wiire-a___pixiewps)
-09/01/2024 06:11:22 PM logger_wiire-a___pixiewps INFO Success: make succeeded for wiire-a___pixiewps (install_repos.py:50) (wiire-a___pixiewps)

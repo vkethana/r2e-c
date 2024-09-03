@@ -1,3 +1,0 @@
-09/01/2024 05:48:48 PM logger_yangchaojiang___yjplay INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yangchaojiang___yjplay)
-09/01/2024 05:48:48 PM logger_yangchaojiang___yjplay INFO Analyzing repos/yangchaojiang___yjplay (install_repos.py:23) (yangchaojiang___yjplay)
-09/01/2024 05:48:48 PM logger_yangchaojiang___yjplay ERROR No Makefile found for yangchaojiang___yjplay (install_repos.py:53) (yangchaojiang___yjplay)

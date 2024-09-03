@@ -1,3 +1,0 @@
-09/01/2024 05:48:48 PM logger_alibaba___lvs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (alibaba___lvs)
-09/01/2024 05:48:48 PM logger_alibaba___lvs INFO Analyzing repos/alibaba___lvs (install_repos.py:23) (alibaba___lvs)
-09/01/2024 05:48:48 PM logger_alibaba___lvs ERROR No Makefile found for alibaba___lvs (install_repos.py:53) (alibaba___lvs)

@@ -1,5 +1,0 @@
-09/01/2024 06:15:07 PM logger_jordansissel___xdotool INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jordansissel___xdotool)
-09/01/2024 06:15:07 PM logger_jordansissel___xdotool INFO Analyzing repos/jordansissel___xdotool (install_repos.py:23) (jordansissel___xdotool)
-09/01/2024 06:15:07 PM logger_jordansissel___xdotool INFO Found Makefile: repos/jordansissel___xdotool/Makefile (install_repos.py:43) (jordansissel___xdotool)
-09/01/2024 06:15:07 PM logger_jordansissel___xdotool INFO Running naive installation (install_repos.py:44) (jordansissel___xdotool)
-09/01/2024 06:15:11 PM logger_jordansissel___xdotool INFO Success: make succeeded for jordansissel___xdotool (install_repos.py:50) (jordansissel___xdotool)

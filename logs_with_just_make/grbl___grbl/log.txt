@@ -1,5 +1,0 @@
-09/01/2024 06:15:11 PM logger_grbl___grbl INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (grbl___grbl)
-09/01/2024 06:15:11 PM logger_grbl___grbl INFO Analyzing repos/grbl___grbl (install_repos.py:23) (grbl___grbl)
-09/01/2024 06:15:11 PM logger_grbl___grbl INFO Found Makefile: repos/grbl___grbl/Makefile (install_repos.py:43) (grbl___grbl)
-09/01/2024 06:15:11 PM logger_grbl___grbl INFO Running naive installation (install_repos.py:44) (grbl___grbl)
-09/01/2024 06:15:12 PM logger_grbl___grbl INFO Success: make succeeded for grbl___grbl (install_repos.py:50) (grbl___grbl)

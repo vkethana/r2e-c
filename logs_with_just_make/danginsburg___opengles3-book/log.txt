@@ -1,3 +1,0 @@
-09/01/2024 05:57:32 PM logger_danginsburg___opengles3-book INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (danginsburg___opengles3-book)
-09/01/2024 05:57:32 PM logger_danginsburg___opengles3-book INFO Analyzing repos/danginsburg___opengles3-book (install_repos.py:23) (danginsburg___opengles3-book)
-09/01/2024 05:57:32 PM logger_danginsburg___opengles3-book ERROR No Makefile found for danginsburg___opengles3-book (install_repos.py:53) (danginsburg___opengles3-book)

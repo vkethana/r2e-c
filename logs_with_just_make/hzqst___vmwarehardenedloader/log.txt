@@ -1,3 +1,0 @@
-09/01/2024 06:15:05 PM logger_hzqst___vmwarehardenedloader INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hzqst___vmwarehardenedloader)
-09/01/2024 06:15:05 PM logger_hzqst___vmwarehardenedloader INFO Analyzing repos/hzqst___vmwarehardenedloader (install_repos.py:23) (hzqst___vmwarehardenedloader)
-09/01/2024 06:15:05 PM logger_hzqst___vmwarehardenedloader ERROR No Makefile found for hzqst___vmwarehardenedloader (install_repos.py:53) (hzqst___vmwarehardenedloader)

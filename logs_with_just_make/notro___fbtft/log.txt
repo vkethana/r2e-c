@@ -1,5 +1,0 @@
-09/01/2024 06:14:58 PM logger_notro___fbtft INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (notro___fbtft)
-09/01/2024 06:14:58 PM logger_notro___fbtft INFO Analyzing repos/notro___fbtft (install_repos.py:23) (notro___fbtft)
-09/01/2024 06:14:58 PM logger_notro___fbtft INFO Found Makefile: repos/notro___fbtft/Makefile (install_repos.py:43) (notro___fbtft)
-09/01/2024 06:14:58 PM logger_notro___fbtft INFO Running naive installation (install_repos.py:44) (notro___fbtft)
-09/01/2024 06:14:59 PM logger_notro___fbtft ERROR Error: make failed for notro___fbtft (install_repos.py:47) (notro___fbtft)

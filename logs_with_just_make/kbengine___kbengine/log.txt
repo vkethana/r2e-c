@@ -1,3 +1,0 @@
-09/01/2024 05:49:06 PM logger_kbengine___kbengine INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kbengine___kbengine)
-09/01/2024 05:49:06 PM logger_kbengine___kbengine INFO Analyzing repos/kbengine___kbengine (install_repos.py:23) (kbengine___kbengine)
-09/01/2024 05:49:06 PM logger_kbengine___kbengine ERROR No Makefile found for kbengine___kbengine (install_repos.py:53) (kbengine___kbengine)
