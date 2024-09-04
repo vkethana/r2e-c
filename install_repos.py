@@ -68,13 +68,55 @@ class GradleBuildSystem(BuildSystem):
         logger.info("Running Gradle build")
         return os.system(f'cd {repo_path} && ./gradlew build') == 0
 
+
+class SConsBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'SConstruct'))
+
+    def build(self, repo_path: str, logger) -> bool:
+        logger.info("Running SCons build")
+        return os.system(f'cd {repo_path} && scons') == 0
+
+class BazelBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'WORKSPACE'))
+
+    def build(self, repo_path: str, logger) -> bool:
+        logger.info("Running Bazel build")
+        return os.system(f'cd {repo_path} && bazel build //...') == 0
+
+class MesonBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'meson.build'))
+
+    def build(self, repo_path: str, logger) -> bool:
+        logger.info("Running Meson build")
+        build_dir = os.path.join(repo_path, 'build')
+        os.makedirs(build_dir, exist_ok=True)
+        if os.system(f'cd {build_dir} && meson .. && ninja') != 0:
+            return False
+        return True
+
+class CustomScriptBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'build.sh'))
+
+    def build(self, repo_path: str, logger) -> bool:
+        logger.info("Running custom build.sh script")
+        build_script = os.path.join(repo_path, 'build.sh')
+        os.chmod(build_script, 0o755)  # Ensure the script is executable
+        return os.system(f'cd {repo_path} && ./build.sh') == 0
+
 def build_repo(repo_path: str, logger) -> bool:
     build_systems = [
         AutotoolsBuildSystem(),
         MakefileBuildSystem(),
         CMakeBuildSystem(),
         GradleBuildSystem(),
-        # Add more build systems here
+        SConsBuildSystem(),
+        BazelBuildSystem(),
+        MesonBuildSystem(),
+        CustomScriptBuildSystem(),  # Add the new build system
     ]
 
     for build_system in build_systems:
