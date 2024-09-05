@@ -20,7 +20,7 @@ def setup_logger(path, repo_id):
     formatter.converter = time.localtime
 
     # Create file handler
-    file_handler = logging.FileHandler(os.path.join(path, "log.txt"))
+    file_handler = logging.FileHandler(os.path.join(path, f"{repo_id}.log"))
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
 
