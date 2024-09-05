@@ -160,11 +160,10 @@ def main() -> Tuple[List[str], List[str]]:
     fails = []
 
     for repo_name in os.listdir(REPOS_DIR):
-        logger = setup_logger(os.path.join(LOGGER_DIR, repo_name), repo_name)
+        logger = setup_logger(LOGGER_DIR, repo_name)
         repo_path = os.path.join(REPOS_DIR, repo_name)
         logger.info(f"Analyzing {repo_path}")
 
-        print(f"{repo_name} uses build system:", build_repo(repo_path, logger))
         if build_repo(repo_path, logger):
             logger.info(f"Success: Build succeeded for {repo_name}")
             successes.append(repo_name)
