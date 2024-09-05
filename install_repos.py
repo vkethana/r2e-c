@@ -53,7 +53,10 @@ class MakefileBuildSystem(BuildSystem):
         self.run_command('./configure', repo_path, logger)
         
         logger.info("Running make")
-        return self.run_command('make', repo_path, logger)
+        if not self.run_command('make', repo_path, logger):
+            return "make failed"
+
+        return "success"
 
 class AutotoolsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -62,14 +65,17 @@ class AutotoolsBuildSystem(BuildSystem):
     def build(self, repo_path: str, logger) -> bool:
         logger.info("Running autoreconf")
         if not self.run_command('autoreconf -i', repo_path, logger):
-            return False
+            return "autoreconf failed"
         logger.info("Running autogen.sh")
         self.run_command('./autogen.sh', repo_path, logger)
         logger.info("Running configure")
         if not self.run_command('./configure', repo_path, logger):
-            return False
+            return "configure failed"
         logger.info("Running make")
-        return self.run_command('make', repo_path, logger)
+        if not self.run_command('make', repo_path, logger):
+            return "make failed"
+
+        return "success"
 
 
 class CMakeBuildSystem(BuildSystem):
@@ -80,9 +86,14 @@ class CMakeBuildSystem(BuildSystem):
         logger.info("Running CMake")
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
-        if os.system(f'cd {build_dir} && cmake .. && cmake --build .') != 0:
-            return False
-        return True
+
+        if not self.run_command(f"cd {build_dir} && cmake ..", repo_path, logger):
+            return "cmake failed"
+
+        if not self.run_command(f"cd {build_dir} && cmake --build .", repo_path, logger):
+            return "cmake build failed"
+
+        return "success"
 
 class GradleBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -90,7 +101,9 @@ class GradleBuildSystem(BuildSystem):
 
     def build(self, repo_path: str, logger) -> bool:
         logger.info("Running Gradle build")
-        return self.run_command(f'cd {repo_path} && ./gradlew build', repo_path, logger)
+        if not self.run_command(f'cd {repo_path} && ./gradlew build', repo_path, logger):
+            return "gradle failed"
+        return "success"
 
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -98,7 +111,10 @@ class SConsBuildSystem(BuildSystem):
 
     def build(self, repo_path: str, logger) -> bool:
         logger.info("Running SCons build")
-        return self.run_command('scons', repo_path, logger)
+        if not self.run_command('scons', repo_path, logger):
+            return "scons failed"
+
+        return "success"
 
 
 class BazelBuildSystem(BuildSystem):
@@ -107,7 +123,11 @@ class BazelBuildSystem(BuildSystem):
 
     def build(self, repo_path: str, logger) -> bool:
         logger.info("Running Bazel build")
-        return self.run_command('bazel build //...', repo_path, logger)
+
+        if not self.run_command('bazel build //...', repo_path, logger):
+            return "bazel build failed"
+
+        return "success"
 
 
 class MesonBuildSystem(BuildSystem):
@@ -118,11 +138,14 @@ class MesonBuildSystem(BuildSystem):
         logger.info("Running Meson build")
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
-        
+
         if not self.run_command(f'meson ..', build_dir, logger):
-            return False
-        
-        return self.run_command('ninja', build_dir, logger)
+            return "meson failed"
+
+        if not self.run_command('ninja', build_dir, logger):
+            return "ninja failed"
+
+        return "success"
 
 class CustomScriptBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -132,7 +155,10 @@ class CustomScriptBuildSystem(BuildSystem):
         logger.info("Running custom build.sh script")
         build_script = os.path.join(repo_path, 'build.sh')
         os.chmod(build_script, 0o755)  # Ensure the script is executable
-        return self.run_command('./build.sh', repo_path, logger)
+        if not self.run_command('./build.sh', repo_path, logger):
+            return "build.sh failed"
+
+        return "success"
 
 
 def build_repo(repo_path: str, logger) -> bool:
@@ -158,18 +184,24 @@ def build_repo(repo_path: str, logger) -> bool:
 def main() -> Tuple[List[str], List[str]]:
     successes = []
     fails = []
+    print("\033[92m" + f"Current number successes: {len(successes)}\nCurrent number failures: {len(fails)}\nCurrent number total: {len(successes) + len(fails)}" + "\033[0m")
 
     for repo_name in os.listdir(REPOS_DIR):
         logger = setup_logger(LOGGER_DIR, repo_name)
         repo_path = os.path.join(REPOS_DIR, repo_name)
         logger.info(f"Analyzing {repo_path}")
 
-        if build_repo(repo_path, logger):
+        repo_build_exit_code = build_repo(repo_path, logger)
+
+        if repo_build_exit_code == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
             successes.append(repo_name)
         else:
-            logger.error(f"Error: Build failed for {repo_name}")
+            logger.error(f"Error: Build failed for {repo_name}\nBuild failed for reason: {repo_build_exit_code}")
+            print("\033[91m" + f"Error: Build failed for {repo_name}\nBuild failed for reason: {repo_build_exit_code}" + "\033[0m")
             fails.append(repo_name)
+
+        print("\033[92m" + f"Current number successes: {len(successes)}\nCurrent number failures: {len(fails)}\nCurrent number total: {len(successes) + len(fails)}" + "\033[0m")
 
     return successes, fails
 
