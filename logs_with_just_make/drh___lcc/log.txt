@@ -1,5 +1,0 @@
-09/01/2024 06:09:40 PM logger_drh___lcc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (drh___lcc)
-09/01/2024 06:09:40 PM logger_drh___lcc INFO Analyzing repos/drh___lcc (install_repos.py:23) (drh___lcc)
-09/01/2024 06:09:40 PM logger_drh___lcc INFO Found Makefile: repos/drh___lcc/makefile (install_repos.py:43) (drh___lcc)
-09/01/2024 06:09:40 PM logger_drh___lcc INFO Running naive installation (install_repos.py:44) (drh___lcc)
-09/01/2024 06:09:40 PM logger_drh___lcc INFO Success: make succeeded for drh___lcc (install_repos.py:50) (drh___lcc)

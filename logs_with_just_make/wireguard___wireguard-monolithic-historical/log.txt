@@ -1,3 +1,0 @@
-09/01/2024 05:56:11 PM logger_wireguard___wireguard-monolithic-historical INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (wireguard___wireguard-monolithic-historical)
-09/01/2024 05:56:11 PM logger_wireguard___wireguard-monolithic-historical INFO Analyzing repos/wireguard___wireguard-monolithic-historical (install_repos.py:23) (wireguard___wireguard-monolithic-historical)
-09/01/2024 05:56:11 PM logger_wireguard___wireguard-monolithic-historical ERROR No Makefile found for wireguard___wireguard-monolithic-historical (install_repos.py:53) (wireguard___wireguard-monolithic-historical)

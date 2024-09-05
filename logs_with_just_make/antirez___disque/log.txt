@@ -1,5 +1,0 @@
-09/01/2024 05:50:00 PM logger_antirez___disque INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (antirez___disque)
-09/01/2024 05:50:00 PM logger_antirez___disque INFO Analyzing repos/antirez___disque (install_repos.py:23) (antirez___disque)
-09/01/2024 05:50:00 PM logger_antirez___disque INFO Found Makefile: repos/antirez___disque/Makefile (install_repos.py:43) (antirez___disque)
-09/01/2024 05:50:00 PM logger_antirez___disque INFO Running naive installation (install_repos.py:44) (antirez___disque)
-09/01/2024 05:50:25 PM logger_antirez___disque INFO Success: make succeeded for antirez___disque (install_repos.py:50) (antirez___disque)

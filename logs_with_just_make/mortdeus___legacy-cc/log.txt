@@ -1,3 +1,0 @@
-09/01/2024 06:11:19 PM logger_mortdeus___legacy-cc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mortdeus___legacy-cc)
-09/01/2024 06:11:19 PM logger_mortdeus___legacy-cc INFO Analyzing repos/mortdeus___legacy-cc (install_repos.py:23) (mortdeus___legacy-cc)
-09/01/2024 06:11:19 PM logger_mortdeus___legacy-cc ERROR No Makefile found for mortdeus___legacy-cc (install_repos.py:53) (mortdeus___legacy-cc)

@@ -1,3 +1,0 @@
-09/01/2024 06:15:05 PM logger_andlabs___libui INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (andlabs___libui)
-09/01/2024 06:15:05 PM logger_andlabs___libui INFO Analyzing repos/andlabs___libui (install_repos.py:23) (andlabs___libui)
-09/01/2024 06:15:05 PM logger_andlabs___libui ERROR No Makefile found for andlabs___libui (install_repos.py:53) (andlabs___libui)

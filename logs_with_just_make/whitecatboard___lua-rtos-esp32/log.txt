@@ -1,5 +1,0 @@
-09/01/2024 05:57:24 PM logger_whitecatboard___lua-rtos-esp32 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (whitecatboard___lua-rtos-esp32)
-09/01/2024 05:57:24 PM logger_whitecatboard___lua-rtos-esp32 INFO Analyzing repos/whitecatboard___lua-rtos-esp32 (install_repos.py:23) (whitecatboard___lua-rtos-esp32)
-09/01/2024 05:57:24 PM logger_whitecatboard___lua-rtos-esp32 INFO Found Makefile: repos/whitecatboard___lua-rtos-esp32/Makefile (install_repos.py:43) (whitecatboard___lua-rtos-esp32)
-09/01/2024 05:57:24 PM logger_whitecatboard___lua-rtos-esp32 INFO Running naive installation (install_repos.py:44) (whitecatboard___lua-rtos-esp32)
-09/01/2024 05:57:24 PM logger_whitecatboard___lua-rtos-esp32 ERROR Error: make failed for whitecatboard___lua-rtos-esp32 (install_repos.py:47) (whitecatboard___lua-rtos-esp32)

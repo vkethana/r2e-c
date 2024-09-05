@@ -1,3 +1,0 @@
-09/01/2024 06:11:19 PM logger_mzzopublic___c INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mzzopublic___c)
-09/01/2024 06:11:19 PM logger_mzzopublic___c INFO Analyzing repos/mzzopublic___c (install_repos.py:23) (mzzopublic___c)
-09/01/2024 06:11:19 PM logger_mzzopublic___c ERROR No Makefile found for mzzopublic___c (install_repos.py:53) (mzzopublic___c)

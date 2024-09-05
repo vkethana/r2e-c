@@ -1,3 +1,0 @@
-09/01/2024 05:58:37 PM logger_irtimmer___moonlight-embedded INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (irtimmer___moonlight-embedded)
-09/01/2024 05:58:37 PM logger_irtimmer___moonlight-embedded INFO Analyzing repos/irtimmer___moonlight-embedded (install_repos.py:23) (irtimmer___moonlight-embedded)
-09/01/2024 05:58:37 PM logger_irtimmer___moonlight-embedded ERROR No Makefile found for irtimmer___moonlight-embedded (install_repos.py:53) (irtimmer___moonlight-embedded)

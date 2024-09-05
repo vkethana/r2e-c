@@ -1,5 +1,0 @@
-09/01/2024 05:54:34 PM logger_pellepl___spiffs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pellepl___spiffs)
-09/01/2024 05:54:34 PM logger_pellepl___spiffs INFO Analyzing repos/pellepl___spiffs (install_repos.py:23) (pellepl___spiffs)
-09/01/2024 05:54:34 PM logger_pellepl___spiffs INFO Found Makefile: repos/pellepl___spiffs/makefile (install_repos.py:43) (pellepl___spiffs)
-09/01/2024 05:54:34 PM logger_pellepl___spiffs INFO Running naive installation (install_repos.py:44) (pellepl___spiffs)
-09/01/2024 05:54:34 PM logger_pellepl___spiffs ERROR Error: make failed for pellepl___spiffs (install_repos.py:47) (pellepl___spiffs)

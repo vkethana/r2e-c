@@ -1,5 +1,0 @@
-09/01/2024 06:10:17 PM logger_session-replay-tools___tcpcopy INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (session-replay-tools___tcpcopy)
-09/01/2024 06:10:17 PM logger_session-replay-tools___tcpcopy INFO Analyzing repos/session-replay-tools___tcpcopy (install_repos.py:23) (session-replay-tools___tcpcopy)
-09/01/2024 06:10:19 PM logger_session-replay-tools___tcpcopy INFO Found Makefile: repos/session-replay-tools___tcpcopy/Makefile (install_repos.py:43) (session-replay-tools___tcpcopy)
-09/01/2024 06:10:19 PM logger_session-replay-tools___tcpcopy INFO Running naive installation (install_repos.py:44) (session-replay-tools___tcpcopy)
-09/01/2024 06:10:21 PM logger_session-replay-tools___tcpcopy INFO Success: make succeeded for session-replay-tools___tcpcopy (install_repos.py:50) (session-replay-tools___tcpcopy)

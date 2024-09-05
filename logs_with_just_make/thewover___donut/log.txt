@@ -1,5 +1,0 @@
-09/01/2024 06:09:40 PM logger_thewover___donut INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (thewover___donut)
-09/01/2024 06:09:40 PM logger_thewover___donut INFO Analyzing repos/thewover___donut (install_repos.py:23) (thewover___donut)
-09/01/2024 06:09:40 PM logger_thewover___donut INFO Found Makefile: repos/thewover___donut/Makefile (install_repos.py:43) (thewover___donut)
-09/01/2024 06:09:40 PM logger_thewover___donut INFO Running naive installation (install_repos.py:44) (thewover___donut)
-09/01/2024 06:09:41 PM logger_thewover___donut INFO Success: make succeeded for thewover___donut (install_repos.py:50) (thewover___donut)

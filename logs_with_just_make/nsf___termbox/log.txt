@@ -1,3 +1,0 @@
-09/01/2024 06:15:05 PM logger_nsf___termbox INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nsf___termbox)
-09/01/2024 06:15:05 PM logger_nsf___termbox INFO Analyzing repos/nsf___termbox (install_repos.py:23) (nsf___termbox)
-09/01/2024 06:15:05 PM logger_nsf___termbox ERROR No Makefile found for nsf___termbox (install_repos.py:53) (nsf___termbox)

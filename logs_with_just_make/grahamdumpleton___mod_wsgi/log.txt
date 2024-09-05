@@ -1,5 +1,0 @@
-09/01/2024 05:54:29 PM logger_grahamdumpleton___mod_wsgi INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (grahamdumpleton___mod_wsgi)
-09/01/2024 05:54:29 PM logger_grahamdumpleton___mod_wsgi INFO Analyzing repos/grahamdumpleton___mod_wsgi (install_repos.py:23) (grahamdumpleton___mod_wsgi)
-09/01/2024 05:54:29 PM logger_grahamdumpleton___mod_wsgi INFO Running autoreconf (install_repos.py:28) (grahamdumpleton___mod_wsgi)
-09/01/2024 05:54:31 PM logger_grahamdumpleton___mod_wsgi INFO Success: autoreconf succeeded for grahamdumpleton___mod_wsgi (install_repos.py:35) (grahamdumpleton___mod_wsgi)
-09/01/2024 05:54:31 PM logger_grahamdumpleton___mod_wsgi ERROR No Makefile found for grahamdumpleton___mod_wsgi (install_repos.py:53) (grahamdumpleton___mod_wsgi)

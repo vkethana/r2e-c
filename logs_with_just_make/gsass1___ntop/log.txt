@@ -1,3 +1,0 @@
-09/01/2024 06:10:52 PM logger_gsass1___ntop INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (gsass1___ntop)
-09/01/2024 06:10:52 PM logger_gsass1___ntop INFO Analyzing repos/gsass1___ntop (install_repos.py:23) (gsass1___ntop)
-09/01/2024 06:10:52 PM logger_gsass1___ntop ERROR No Makefile found for gsass1___ntop (install_repos.py:53) (gsass1___ntop)

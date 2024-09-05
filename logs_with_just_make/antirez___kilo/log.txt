@@ -1,5 +1,0 @@
-09/01/2024 06:15:05 PM logger_antirez___kilo INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (antirez___kilo)
-09/01/2024 06:15:05 PM logger_antirez___kilo INFO Analyzing repos/antirez___kilo (install_repos.py:23) (antirez___kilo)
-09/01/2024 06:15:05 PM logger_antirez___kilo INFO Found Makefile: repos/antirez___kilo/Makefile (install_repos.py:43) (antirez___kilo)
-09/01/2024 06:15:05 PM logger_antirez___kilo INFO Running naive installation (install_repos.py:44) (antirez___kilo)
-09/01/2024 06:15:05 PM logger_antirez___kilo INFO Success: make succeeded for antirez___kilo (install_repos.py:50) (antirez___kilo)

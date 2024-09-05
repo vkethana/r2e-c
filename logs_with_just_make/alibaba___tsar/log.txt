@@ -1,5 +1,0 @@
-09/01/2024 06:09:19 PM logger_alibaba___tsar INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (alibaba___tsar)
-09/01/2024 06:09:19 PM logger_alibaba___tsar INFO Analyzing repos/alibaba___tsar (install_repos.py:23) (alibaba___tsar)
-09/01/2024 06:09:19 PM logger_alibaba___tsar INFO Found Makefile: repos/alibaba___tsar/Makefile (install_repos.py:43) (alibaba___tsar)
-09/01/2024 06:09:19 PM logger_alibaba___tsar INFO Running naive installation (install_repos.py:44) (alibaba___tsar)
-09/01/2024 06:09:40 PM logger_alibaba___tsar INFO Success: make succeeded for alibaba___tsar (install_repos.py:50) (alibaba___tsar)

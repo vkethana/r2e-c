@@ -1,3 +1,0 @@
-09/01/2024 05:55:28 PM logger_nuand___bladerf INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nuand___bladerf)
-09/01/2024 05:55:28 PM logger_nuand___bladerf INFO Analyzing repos/nuand___bladerf (install_repos.py:23) (nuand___bladerf)
-09/01/2024 05:55:28 PM logger_nuand___bladerf ERROR No Makefile found for nuand___bladerf (install_repos.py:53) (nuand___bladerf)

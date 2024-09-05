@@ -1,3 +1,0 @@
-09/01/2024 05:54:34 PM logger_cmusphinx___pocketsphinx INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cmusphinx___pocketsphinx)
-09/01/2024 05:54:34 PM logger_cmusphinx___pocketsphinx INFO Analyzing repos/cmusphinx___pocketsphinx (install_repos.py:23) (cmusphinx___pocketsphinx)
-09/01/2024 05:54:34 PM logger_cmusphinx___pocketsphinx ERROR No Makefile found for cmusphinx___pocketsphinx (install_repos.py:53) (cmusphinx___pocketsphinx)

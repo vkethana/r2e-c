@@ -1,5 +1,0 @@
-09/01/2024 05:48:15 PM logger_antirez___linenoise INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (antirez___linenoise)
-09/01/2024 05:48:15 PM logger_antirez___linenoise INFO Analyzing repos/antirez___linenoise (install_repos.py:23) (antirez___linenoise)
-09/01/2024 05:48:15 PM logger_antirez___linenoise INFO Found Makefile: repos/antirez___linenoise/Makefile (install_repos.py:43) (antirez___linenoise)
-09/01/2024 05:48:15 PM logger_antirez___linenoise INFO Running naive installation (install_repos.py:44) (antirez___linenoise)
-09/01/2024 05:48:16 PM logger_antirez___linenoise INFO Success: make succeeded for antirez___linenoise (install_repos.py:50) (antirez___linenoise)

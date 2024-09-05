@@ -1,3 +1,0 @@
-09/01/2024 06:08:54 PM logger_nmikhailov___validity90 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nmikhailov___validity90)
-09/01/2024 06:08:54 PM logger_nmikhailov___validity90 INFO Analyzing repos/nmikhailov___validity90 (install_repos.py:23) (nmikhailov___validity90)
-09/01/2024 06:08:54 PM logger_nmikhailov___validity90 ERROR No Makefile found for nmikhailov___validity90 (install_repos.py:53) (nmikhailov___validity90)

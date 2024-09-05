@@ -1,3 +1,0 @@
-09/01/2024 05:52:47 PM logger_sp4cerat___fast-quadric-mesh-simplification INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sp4cerat___fast-quadric-mesh-simplification)
-09/01/2024 05:52:47 PM logger_sp4cerat___fast-quadric-mesh-simplification INFO Analyzing repos/sp4cerat___fast-quadric-mesh-simplification (install_repos.py:23) (sp4cerat___fast-quadric-mesh-simplification)
-09/01/2024 05:52:47 PM logger_sp4cerat___fast-quadric-mesh-simplification ERROR No Makefile found for sp4cerat___fast-quadric-mesh-simplification (install_repos.py:53) (sp4cerat___fast-quadric-mesh-simplification)

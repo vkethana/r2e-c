@@ -1,3 +1,0 @@
-09/01/2024 05:50:58 PM logger_rsms___markdown-wasm INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (rsms___markdown-wasm)
-09/01/2024 05:50:58 PM logger_rsms___markdown-wasm INFO Analyzing repos/rsms___markdown-wasm (install_repos.py:23) (rsms___markdown-wasm)
-09/01/2024 05:50:58 PM logger_rsms___markdown-wasm ERROR No Makefile found for rsms___markdown-wasm (install_repos.py:53) (rsms___markdown-wasm)

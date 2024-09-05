@@ -1,5 +1,0 @@
-09/01/2024 05:55:32 PM logger_wizteam___wizqtclient INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (wizteam___wizqtclient)
-09/01/2024 05:55:32 PM logger_wizteam___wizqtclient INFO Analyzing repos/wizteam___wizqtclient (install_repos.py:23) (wizteam___wizqtclient)
-09/01/2024 05:55:32 PM logger_wizteam___wizqtclient INFO Found Makefile: repos/wizteam___wizqtclient/Makefile (install_repos.py:43) (wizteam___wizqtclient)
-09/01/2024 05:55:32 PM logger_wizteam___wizqtclient INFO Running naive installation (install_repos.py:44) (wizteam___wizqtclient)
-09/01/2024 05:55:32 PM logger_wizteam___wizqtclient ERROR Error: make failed for wizteam___wizqtclient (install_repos.py:47) (wizteam___wizqtclient)

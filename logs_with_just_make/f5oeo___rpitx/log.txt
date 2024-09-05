@@ -1,3 +1,0 @@
-09/01/2024 06:09:40 PM logger_f5oeo___rpitx INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (f5oeo___rpitx)
-09/01/2024 06:09:40 PM logger_f5oeo___rpitx INFO Analyzing repos/f5oeo___rpitx (install_repos.py:23) (f5oeo___rpitx)
-09/01/2024 06:09:40 PM logger_f5oeo___rpitx ERROR No Makefile found for f5oeo___rpitx (install_repos.py:53) (f5oeo___rpitx)

@@ -1,3 +1,0 @@
-09/01/2024 06:11:29 PM logger_lotabout___write-a-c-interpreter INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (lotabout___write-a-c-interpreter)
-09/01/2024 06:11:29 PM logger_lotabout___write-a-c-interpreter INFO Analyzing repos/lotabout___write-a-c-interpreter (install_repos.py:23) (lotabout___write-a-c-interpreter)
-09/01/2024 06:11:29 PM logger_lotabout___write-a-c-interpreter ERROR No Makefile found for lotabout___write-a-c-interpreter (install_repos.py:53) (lotabout___write-a-c-interpreter)

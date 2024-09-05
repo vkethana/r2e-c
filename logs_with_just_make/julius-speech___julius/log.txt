@@ -1,5 +1,0 @@
-09/01/2024 05:56:28 PM logger_julius-speech___julius INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (julius-speech___julius)
-09/01/2024 05:56:28 PM logger_julius-speech___julius INFO Analyzing repos/julius-speech___julius (install_repos.py:23) (julius-speech___julius)
-09/01/2024 05:56:37 PM logger_julius-speech___julius INFO Found Makefile: repos/julius-speech___julius/Makefile (install_repos.py:43) (julius-speech___julius)
-09/01/2024 05:56:37 PM logger_julius-speech___julius INFO Running naive installation (install_repos.py:44) (julius-speech___julius)
-09/01/2024 05:57:03 PM logger_julius-speech___julius INFO Success: make succeeded for julius-speech___julius (install_repos.py:50) (julius-speech___julius)

@@ -1,5 +1,0 @@
-09/01/2024 06:11:09 PM logger_yodaos-project___yodaos INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yodaos-project___yodaos)
-09/01/2024 06:11:09 PM logger_yodaos-project___yodaos INFO Analyzing repos/yodaos-project___yodaos (install_repos.py:23) (yodaos-project___yodaos)
-09/01/2024 06:11:09 PM logger_yodaos-project___yodaos INFO Found Makefile: repos/yodaos-project___yodaos/Makefile (install_repos.py:43) (yodaos-project___yodaos)
-09/01/2024 06:11:09 PM logger_yodaos-project___yodaos INFO Running naive installation (install_repos.py:44) (yodaos-project___yodaos)
-09/01/2024 06:11:10 PM logger_yodaos-project___yodaos ERROR Error: make failed for yodaos-project___yodaos (install_repos.py:47) (yodaos-project___yodaos)

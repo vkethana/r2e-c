@@ -1,3 +1,0 @@
-09/01/2024 05:54:31 PM logger_lmdb___lmdb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (lmdb___lmdb)
-09/01/2024 05:54:31 PM logger_lmdb___lmdb INFO Analyzing repos/lmdb___lmdb (install_repos.py:23) (lmdb___lmdb)
-09/01/2024 05:54:31 PM logger_lmdb___lmdb ERROR No Makefile found for lmdb___lmdb (install_repos.py:53) (lmdb___lmdb)

@@ -1,3 +1,0 @@
-09/01/2024 05:57:24 PM logger_getdnsapi___stubby INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (getdnsapi___stubby)
-09/01/2024 05:57:24 PM logger_getdnsapi___stubby INFO Analyzing repos/getdnsapi___stubby (install_repos.py:23) (getdnsapi___stubby)
-09/01/2024 05:57:24 PM logger_getdnsapi___stubby ERROR No Makefile found for getdnsapi___stubby (install_repos.py:53) (getdnsapi___stubby)

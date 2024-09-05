@@ -1,7 +1,0 @@
-09/01/2024 06:15:30 PM logger_bitnine-oss___agensgraph INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bitnine-oss___agensgraph)
-09/01/2024 06:15:30 PM logger_bitnine-oss___agensgraph INFO Analyzing repos/bitnine-oss___agensgraph (install_repos.py:23) (bitnine-oss___agensgraph)
-09/01/2024 06:15:30 PM logger_bitnine-oss___agensgraph INFO Running autoreconf (install_repos.py:28) (bitnine-oss___agensgraph)
-09/01/2024 06:15:31 PM logger_bitnine-oss___agensgraph INFO Success: autoreconf succeeded for bitnine-oss___agensgraph (install_repos.py:35) (bitnine-oss___agensgraph)
-09/01/2024 06:15:43 PM logger_bitnine-oss___agensgraph INFO Found Makefile: repos/bitnine-oss___agensgraph/Makefile (install_repos.py:43) (bitnine-oss___agensgraph)
-09/01/2024 06:15:43 PM logger_bitnine-oss___agensgraph INFO Running naive installation (install_repos.py:44) (bitnine-oss___agensgraph)
-09/01/2024 06:15:44 PM logger_bitnine-oss___agensgraph ERROR Error: make failed for bitnine-oss___agensgraph (install_repos.py:47) (bitnine-oss___agensgraph)

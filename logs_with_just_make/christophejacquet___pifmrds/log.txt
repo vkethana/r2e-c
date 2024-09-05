@@ -1,3 +1,0 @@
-09/01/2024 05:55:32 PM logger_christophejacquet___pifmrds INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (christophejacquet___pifmrds)
-09/01/2024 05:55:32 PM logger_christophejacquet___pifmrds INFO Analyzing repos/christophejacquet___pifmrds (install_repos.py:23) (christophejacquet___pifmrds)
-09/01/2024 05:55:32 PM logger_christophejacquet___pifmrds ERROR No Makefile found for christophejacquet___pifmrds (install_repos.py:53) (christophejacquet___pifmrds)

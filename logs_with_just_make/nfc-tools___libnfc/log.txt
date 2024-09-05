@@ -1,5 +1,0 @@
-09/01/2024 05:52:54 PM logger_nfc-tools___libnfc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nfc-tools___libnfc)
-09/01/2024 05:52:54 PM logger_nfc-tools___libnfc INFO Analyzing repos/nfc-tools___libnfc (install_repos.py:23) (nfc-tools___libnfc)
-09/01/2024 05:52:54 PM logger_nfc-tools___libnfc INFO Running autoreconf (install_repos.py:28) (nfc-tools___libnfc)
-09/01/2024 05:53:00 PM logger_nfc-tools___libnfc INFO Success: autoreconf succeeded for nfc-tools___libnfc (install_repos.py:35) (nfc-tools___libnfc)
-09/01/2024 05:53:03 PM logger_nfc-tools___libnfc ERROR No Makefile found for nfc-tools___libnfc (install_repos.py:53) (nfc-tools___libnfc)

@@ -1,7 +1,0 @@
-09/01/2024 05:57:32 PM logger_ckolivas___cgminer INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ckolivas___cgminer)
-09/01/2024 05:57:32 PM logger_ckolivas___cgminer INFO Analyzing repos/ckolivas___cgminer (install_repos.py:23) (ckolivas___cgminer)
-09/01/2024 05:57:32 PM logger_ckolivas___cgminer INFO Running autoreconf (install_repos.py:28) (ckolivas___cgminer)
-09/01/2024 05:57:39 PM logger_ckolivas___cgminer INFO Success: autoreconf succeeded for ckolivas___cgminer (install_repos.py:35) (ckolivas___cgminer)
-09/01/2024 05:57:54 PM logger_ckolivas___cgminer INFO Found Makefile: repos/ckolivas___cgminer/Makefile (install_repos.py:43) (ckolivas___cgminer)
-09/01/2024 05:57:54 PM logger_ckolivas___cgminer INFO Running naive installation (install_repos.py:44) (ckolivas___cgminer)
-09/01/2024 05:58:05 PM logger_ckolivas___cgminer INFO Success: make succeeded for ckolivas___cgminer (install_repos.py:50) (ckolivas___cgminer)

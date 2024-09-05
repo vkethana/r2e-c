@@ -1,3 +1,0 @@
-09/01/2024 05:57:25 PM logger_msysgit___msysgit INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (msysgit___msysgit)
-09/01/2024 05:57:25 PM logger_msysgit___msysgit INFO Analyzing repos/msysgit___msysgit (install_repos.py:23) (msysgit___msysgit)
-09/01/2024 05:57:25 PM logger_msysgit___msysgit ERROR No Makefile found for msysgit___msysgit (install_repos.py:53) (msysgit___msysgit)

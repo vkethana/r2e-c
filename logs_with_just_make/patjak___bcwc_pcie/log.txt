@@ -1,5 +1,0 @@
-09/01/2024 05:49:52 PM logger_patjak___bcwc_pcie INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (patjak___bcwc_pcie)
-09/01/2024 05:49:52 PM logger_patjak___bcwc_pcie INFO Analyzing repos/patjak___bcwc_pcie (install_repos.py:23) (patjak___bcwc_pcie)
-09/01/2024 05:49:52 PM logger_patjak___bcwc_pcie INFO Found Makefile: repos/patjak___bcwc_pcie/Makefile (install_repos.py:43) (patjak___bcwc_pcie)
-09/01/2024 05:49:52 PM logger_patjak___bcwc_pcie INFO Running naive installation (install_repos.py:44) (patjak___bcwc_pcie)
-09/01/2024 05:49:59 PM logger_patjak___bcwc_pcie INFO Success: make succeeded for patjak___bcwc_pcie (install_repos.py:50) (patjak___bcwc_pcie)

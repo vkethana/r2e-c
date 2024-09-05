@@ -1,5 +1,0 @@
-09/01/2024 05:49:39 PM logger_nanomsg___nanomsg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nanomsg___nanomsg)
-09/01/2024 05:49:39 PM logger_nanomsg___nanomsg INFO Analyzing repos/nanomsg___nanomsg (install_repos.py:23) (nanomsg___nanomsg)
-09/01/2024 05:49:41 PM logger_nanomsg___nanomsg INFO Found Makefile: repos/nanomsg___nanomsg/Makefile (install_repos.py:43) (nanomsg___nanomsg)
-09/01/2024 05:49:41 PM logger_nanomsg___nanomsg INFO Running naive installation (install_repos.py:44) (nanomsg___nanomsg)
-09/01/2024 05:49:52 PM logger_nanomsg___nanomsg INFO Success: make succeeded for nanomsg___nanomsg (install_repos.py:50) (nanomsg___nanomsg)

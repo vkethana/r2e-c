@@ -1,5 +1,0 @@
-09/01/2024 05:54:20 PM logger_hashcat___hashcat-legacy INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hashcat___hashcat-legacy)
-09/01/2024 05:54:20 PM logger_hashcat___hashcat-legacy INFO Analyzing repos/hashcat___hashcat-legacy (install_repos.py:23) (hashcat___hashcat-legacy)
-09/01/2024 05:54:20 PM logger_hashcat___hashcat-legacy INFO Found Makefile: repos/hashcat___hashcat-legacy/Makefile (install_repos.py:43) (hashcat___hashcat-legacy)
-09/01/2024 05:54:20 PM logger_hashcat___hashcat-legacy INFO Running naive installation (install_repos.py:44) (hashcat___hashcat-legacy)
-09/01/2024 05:54:20 PM logger_hashcat___hashcat-legacy ERROR Error: make failed for hashcat___hashcat-legacy (install_repos.py:47) (hashcat___hashcat-legacy)

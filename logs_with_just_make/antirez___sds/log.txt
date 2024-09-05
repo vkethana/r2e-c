@@ -1,5 +1,0 @@
-09/01/2024 05:56:27 PM logger_antirez___sds INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (antirez___sds)
-09/01/2024 05:56:27 PM logger_antirez___sds INFO Analyzing repos/antirez___sds (install_repos.py:23) (antirez___sds)
-09/01/2024 05:56:27 PM logger_antirez___sds INFO Found Makefile: repos/antirez___sds/Makefile (install_repos.py:43) (antirez___sds)
-09/01/2024 05:56:27 PM logger_antirez___sds INFO Running naive installation (install_repos.py:44) (antirez___sds)
-09/01/2024 05:56:28 PM logger_antirez___sds INFO Success: make succeeded for antirez___sds (install_repos.py:50) (antirez___sds)

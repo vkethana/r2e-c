@@ -1,7 +1,0 @@
-09/01/2024 05:53:28 PM logger_sustrik___libdill INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sustrik___libdill)
-09/01/2024 05:53:28 PM logger_sustrik___libdill INFO Analyzing repos/sustrik___libdill (install_repos.py:23) (sustrik___libdill)
-09/01/2024 05:53:28 PM logger_sustrik___libdill INFO Running autoreconf (install_repos.py:28) (sustrik___libdill)
-09/01/2024 05:53:34 PM logger_sustrik___libdill INFO Success: autoreconf succeeded for sustrik___libdill (install_repos.py:35) (sustrik___libdill)
-09/01/2024 05:53:43 PM logger_sustrik___libdill INFO Found Makefile: repos/sustrik___libdill/Makefile (install_repos.py:43) (sustrik___libdill)
-09/01/2024 05:53:43 PM logger_sustrik___libdill INFO Running naive installation (install_repos.py:44) (sustrik___libdill)
-09/01/2024 05:54:02 PM logger_sustrik___libdill INFO Success: make succeeded for sustrik___libdill (install_repos.py:50) (sustrik___libdill)

@@ -1,5 +1,0 @@
-09/01/2024 06:11:08 PM logger_jart___sectorlisp INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jart___sectorlisp)
-09/01/2024 06:11:08 PM logger_jart___sectorlisp INFO Analyzing repos/jart___sectorlisp (install_repos.py:23) (jart___sectorlisp)
-09/01/2024 06:11:08 PM logger_jart___sectorlisp INFO Found Makefile: repos/jart___sectorlisp/Makefile (install_repos.py:43) (jart___sectorlisp)
-09/01/2024 06:11:08 PM logger_jart___sectorlisp INFO Running naive installation (install_repos.py:44) (jart___sectorlisp)
-09/01/2024 06:11:09 PM logger_jart___sectorlisp INFO Success: make succeeded for jart___sectorlisp (install_repos.py:50) (jart___sectorlisp)

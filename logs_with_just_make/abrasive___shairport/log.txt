@@ -1,5 +1,0 @@
-09/01/2024 05:58:06 PM logger_abrasive___shairport INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (abrasive___shairport)
-09/01/2024 05:58:06 PM logger_abrasive___shairport INFO Analyzing repos/abrasive___shairport (install_repos.py:23) (abrasive___shairport)
-09/01/2024 05:58:06 PM logger_abrasive___shairport INFO Found Makefile: repos/abrasive___shairport/Makefile (install_repos.py:43) (abrasive___shairport)
-09/01/2024 05:58:06 PM logger_abrasive___shairport INFO Running naive installation (install_repos.py:44) (abrasive___shairport)
-09/01/2024 05:58:08 PM logger_abrasive___shairport INFO Success: make succeeded for abrasive___shairport (install_repos.py:50) (abrasive___shairport)

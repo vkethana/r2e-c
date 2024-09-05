@@ -1,3 +1,0 @@
-09/01/2024 06:12:37 PM logger_begeekmyfriend___yasea INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (begeekmyfriend___yasea)
-09/01/2024 06:12:37 PM logger_begeekmyfriend___yasea INFO Analyzing repos/begeekmyfriend___yasea (install_repos.py:23) (begeekmyfriend___yasea)
-09/01/2024 06:12:37 PM logger_begeekmyfriend___yasea ERROR No Makefile found for begeekmyfriend___yasea (install_repos.py:53) (begeekmyfriend___yasea)

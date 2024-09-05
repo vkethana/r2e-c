@@ -1,5 +1,0 @@
-09/01/2024 05:51:14 PM logger_matz___streem INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (matz___streem)
-09/01/2024 05:51:14 PM logger_matz___streem INFO Analyzing repos/matz___streem (install_repos.py:23) (matz___streem)
-09/01/2024 05:51:14 PM logger_matz___streem INFO Found Makefile: repos/matz___streem/Makefile (install_repos.py:43) (matz___streem)
-09/01/2024 05:51:14 PM logger_matz___streem INFO Running naive installation (install_repos.py:44) (matz___streem)
-09/01/2024 05:51:14 PM logger_matz___streem ERROR Error: make failed for matz___streem (install_repos.py:47) (matz___streem)

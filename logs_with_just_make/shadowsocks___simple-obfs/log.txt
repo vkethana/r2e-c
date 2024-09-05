@@ -1,4 +1,0 @@
-09/01/2024 06:14:59 PM logger_shadowsocks___simple-obfs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (shadowsocks___simple-obfs)
-09/01/2024 06:14:59 PM logger_shadowsocks___simple-obfs INFO Analyzing repos/shadowsocks___simple-obfs (install_repos.py:23) (shadowsocks___simple-obfs)
-09/01/2024 06:14:59 PM logger_shadowsocks___simple-obfs INFO Running autoreconf (install_repos.py:28) (shadowsocks___simple-obfs)
-09/01/2024 06:15:04 PM logger_shadowsocks___simple-obfs ERROR Error: autoreconf failed for shadowsocks___simple-obfs (install_repos.py:31) (shadowsocks___simple-obfs)

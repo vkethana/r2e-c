@@ -1,3 +1,0 @@
-09/01/2024 05:58:14 PM logger_mozilla___mozjpeg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mozilla___mozjpeg)
-09/01/2024 05:58:14 PM logger_mozilla___mozjpeg INFO Analyzing repos/mozilla___mozjpeg (install_repos.py:23) (mozilla___mozjpeg)
-09/01/2024 05:58:14 PM logger_mozilla___mozjpeg ERROR No Makefile found for mozilla___mozjpeg (install_repos.py:53) (mozilla___mozjpeg)

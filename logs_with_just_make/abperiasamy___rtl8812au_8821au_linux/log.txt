@@ -1,5 +1,0 @@
-09/01/2024 06:14:22 PM logger_abperiasamy___rtl8812au_8821au_linux INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (abperiasamy___rtl8812au_8821au_linux)
-09/01/2024 06:14:22 PM logger_abperiasamy___rtl8812au_8821au_linux INFO Analyzing repos/abperiasamy___rtl8812au_8821au_linux (install_repos.py:23) (abperiasamy___rtl8812au_8821au_linux)
-09/01/2024 06:14:22 PM logger_abperiasamy___rtl8812au_8821au_linux INFO Found Makefile: repos/abperiasamy___rtl8812au_8821au_linux/Makefile (install_repos.py:43) (abperiasamy___rtl8812au_8821au_linux)
-09/01/2024 06:14:22 PM logger_abperiasamy___rtl8812au_8821au_linux INFO Running naive installation (install_repos.py:44) (abperiasamy___rtl8812au_8821au_linux)
-09/01/2024 06:14:40 PM logger_abperiasamy___rtl8812au_8821au_linux ERROR Error: make failed for abperiasamy___rtl8812au_8821au_linux (install_repos.py:47) (abperiasamy___rtl8812au_8821au_linux)

@@ -1,3 +1,0 @@
-09/01/2024 06:15:05 PM logger_pmq20___ruby-packer INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pmq20___ruby-packer)
-09/01/2024 06:15:05 PM logger_pmq20___ruby-packer INFO Analyzing repos/pmq20___ruby-packer (install_repos.py:23) (pmq20___ruby-packer)
-09/01/2024 06:15:05 PM logger_pmq20___ruby-packer ERROR No Makefile found for pmq20___ruby-packer (install_repos.py:53) (pmq20___ruby-packer)

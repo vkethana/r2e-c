@@ -1,3 +1,0 @@
-09/01/2024 06:15:05 PM logger_cesanta___elk INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cesanta___elk)
-09/01/2024 06:15:05 PM logger_cesanta___elk INFO Analyzing repos/cesanta___elk (install_repos.py:23) (cesanta___elk)
-09/01/2024 06:15:05 PM logger_cesanta___elk ERROR No Makefile found for cesanta___elk (install_repos.py:53) (cesanta___elk)

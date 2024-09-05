@@ -1,5 +1,0 @@
-09/01/2024 06:14:58 PM logger_machyve___xhyve INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (machyve___xhyve)
-09/01/2024 06:14:58 PM logger_machyve___xhyve INFO Analyzing repos/machyve___xhyve (install_repos.py:23) (machyve___xhyve)
-09/01/2024 06:14:58 PM logger_machyve___xhyve INFO Found Makefile: repos/machyve___xhyve/Makefile (install_repos.py:43) (machyve___xhyve)
-09/01/2024 06:14:58 PM logger_machyve___xhyve INFO Running naive installation (install_repos.py:44) (machyve___xhyve)
-09/01/2024 06:14:58 PM logger_machyve___xhyve ERROR Error: make failed for machyve___xhyve (install_repos.py:47) (machyve___xhyve)

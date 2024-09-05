@@ -1,3 +1,0 @@
-09/01/2024 05:58:31 PM logger_s-march___smarchwatch_public INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (s-march___smarchwatch_public)
-09/01/2024 05:58:31 PM logger_s-march___smarchwatch_public INFO Analyzing repos/s-march___smarchwatch_public (install_repos.py:23) (s-march___smarchwatch_public)
-09/01/2024 05:58:31 PM logger_s-march___smarchwatch_public ERROR No Makefile found for s-march___smarchwatch_public (install_repos.py:53) (s-march___smarchwatch_public)

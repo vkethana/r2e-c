@@ -1,5 +1,0 @@
-09/01/2024 06:11:19 PM logger_jeremycw___httpserver.h INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jeremycw___httpserver.h)
-09/01/2024 06:11:19 PM logger_jeremycw___httpserver.h INFO Analyzing repos/jeremycw___httpserver.h (install_repos.py:23) (jeremycw___httpserver.h)
-09/01/2024 06:11:19 PM logger_jeremycw___httpserver.h INFO Found Makefile: repos/jeremycw___httpserver.h/Makefile (install_repos.py:43) (jeremycw___httpserver.h)
-09/01/2024 06:11:19 PM logger_jeremycw___httpserver.h INFO Running naive installation (install_repos.py:44) (jeremycw___httpserver.h)
-09/01/2024 06:11:19 PM logger_jeremycw___httpserver.h ERROR Error: make failed for jeremycw___httpserver.h (install_repos.py:47) (jeremycw___httpserver.h)

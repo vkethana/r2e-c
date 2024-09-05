@@ -1,5 +1,0 @@
-09/01/2024 05:48:50 PM logger_yarrick___iodine INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yarrick___iodine)
-09/01/2024 05:48:50 PM logger_yarrick___iodine INFO Analyzing repos/yarrick___iodine (install_repos.py:23) (yarrick___iodine)
-09/01/2024 05:48:50 PM logger_yarrick___iodine INFO Found Makefile: repos/yarrick___iodine/Makefile (install_repos.py:43) (yarrick___iodine)
-09/01/2024 05:48:50 PM logger_yarrick___iodine INFO Running naive installation (install_repos.py:44) (yarrick___iodine)
-09/01/2024 05:48:51 PM logger_yarrick___iodine INFO Success: make succeeded for yarrick___iodine (install_repos.py:50) (yarrick___iodine)

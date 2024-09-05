@@ -1,5 +1,0 @@
-09/01/2024 05:55:36 PM logger_mtcp-stack___mtcp INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mtcp-stack___mtcp)
-09/01/2024 05:55:36 PM logger_mtcp-stack___mtcp INFO Analyzing repos/mtcp-stack___mtcp (install_repos.py:23) (mtcp-stack___mtcp)
-09/01/2024 05:55:36 PM logger_mtcp-stack___mtcp INFO Running autoreconf (install_repos.py:28) (mtcp-stack___mtcp)
-09/01/2024 05:55:39 PM logger_mtcp-stack___mtcp INFO Success: autoreconf succeeded for mtcp-stack___mtcp (install_repos.py:35) (mtcp-stack___mtcp)
-09/01/2024 05:55:40 PM logger_mtcp-stack___mtcp ERROR No Makefile found for mtcp-stack___mtcp (install_repos.py:53) (mtcp-stack___mtcp)

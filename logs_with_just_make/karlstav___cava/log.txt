@@ -1,5 +1,0 @@
-09/01/2024 06:09:12 PM logger_karlstav___cava INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (karlstav___cava)
-09/01/2024 06:09:12 PM logger_karlstav___cava INFO Analyzing repos/karlstav___cava (install_repos.py:23) (karlstav___cava)
-09/01/2024 06:09:12 PM logger_karlstav___cava INFO Running autoreconf (install_repos.py:28) (karlstav___cava)
-09/01/2024 06:09:15 PM logger_karlstav___cava INFO Success: autoreconf succeeded for karlstav___cava (install_repos.py:35) (karlstav___cava)
-09/01/2024 06:09:19 PM logger_karlstav___cava ERROR No Makefile found for karlstav___cava (install_repos.py:53) (karlstav___cava)

@@ -1,7 +1,0 @@
-09/01/2024 05:59:51 PM logger_libevent___libevent INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (libevent___libevent)
-09/01/2024 05:59:51 PM logger_libevent___libevent INFO Analyzing repos/libevent___libevent (install_repos.py:23) (libevent___libevent)
-09/01/2024 05:59:51 PM logger_libevent___libevent INFO Running autoreconf (install_repos.py:28) (libevent___libevent)
-09/01/2024 05:59:58 PM logger_libevent___libevent INFO Success: autoreconf succeeded for libevent___libevent (install_repos.py:35) (libevent___libevent)
-09/01/2024 06:00:14 PM logger_libevent___libevent INFO Found Makefile: repos/libevent___libevent/Makefile (install_repos.py:43) (libevent___libevent)
-09/01/2024 06:00:14 PM logger_libevent___libevent INFO Running naive installation (install_repos.py:44) (libevent___libevent)
-09/01/2024 06:00:56 PM logger_libevent___libevent INFO Success: make succeeded for libevent___libevent (install_repos.py:50) (libevent___libevent)

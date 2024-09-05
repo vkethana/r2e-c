@@ -1,3 +1,0 @@
-09/01/2024 06:09:40 PM logger_anestisb___vdexextractor INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (anestisb___vdexextractor)
-09/01/2024 06:09:40 PM logger_anestisb___vdexextractor INFO Analyzing repos/anestisb___vdexextractor (install_repos.py:23) (anestisb___vdexextractor)
-09/01/2024 06:09:40 PM logger_anestisb___vdexextractor ERROR No Makefile found for anestisb___vdexextractor (install_repos.py:53) (anestisb___vdexextractor)

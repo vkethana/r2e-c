@@ -1,5 +1,0 @@
-09/01/2024 06:11:10 PM logger_zavg___linux-0.01 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (zavg___linux-0.01)
-09/01/2024 06:11:10 PM logger_zavg___linux-0.01 INFO Analyzing repos/zavg___linux-0.01 (install_repos.py:23) (zavg___linux-0.01)
-09/01/2024 06:11:10 PM logger_zavg___linux-0.01 INFO Found Makefile: repos/zavg___linux-0.01/Makefile (install_repos.py:43) (zavg___linux-0.01)
-09/01/2024 06:11:10 PM logger_zavg___linux-0.01 INFO Running naive installation (install_repos.py:44) (zavg___linux-0.01)
-09/01/2024 06:11:10 PM logger_zavg___linux-0.01 ERROR Error: make failed for zavg___linux-0.01 (install_repos.py:47) (zavg___linux-0.01)

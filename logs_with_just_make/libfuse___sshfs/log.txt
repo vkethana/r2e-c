@@ -1,3 +1,0 @@
-09/01/2024 05:58:23 PM logger_libfuse___sshfs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (libfuse___sshfs)
-09/01/2024 05:58:23 PM logger_libfuse___sshfs INFO Analyzing repos/libfuse___sshfs (install_repos.py:23) (libfuse___sshfs)
-09/01/2024 05:58:23 PM logger_libfuse___sshfs ERROR No Makefile found for libfuse___sshfs (install_repos.py:53) (libfuse___sshfs)

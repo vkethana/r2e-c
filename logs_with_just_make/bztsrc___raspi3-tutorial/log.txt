@@ -1,3 +1,0 @@
-09/01/2024 05:54:11 PM logger_bztsrc___raspi3-tutorial INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bztsrc___raspi3-tutorial)
-09/01/2024 05:54:11 PM logger_bztsrc___raspi3-tutorial INFO Analyzing repos/bztsrc___raspi3-tutorial (install_repos.py:23) (bztsrc___raspi3-tutorial)
-09/01/2024 05:54:11 PM logger_bztsrc___raspi3-tutorial ERROR No Makefile found for bztsrc___raspi3-tutorial (install_repos.py:53) (bztsrc___raspi3-tutorial)

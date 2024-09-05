@@ -1,3 +1,0 @@
-09/01/2024 06:14:56 PM logger_laruence___yar INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (laruence___yar)
-09/01/2024 06:14:56 PM logger_laruence___yar INFO Analyzing repos/laruence___yar (install_repos.py:23) (laruence___yar)
-09/01/2024 06:14:56 PM logger_laruence___yar ERROR No Makefile found for laruence___yar (install_repos.py:53) (laruence___yar)

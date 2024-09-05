@@ -1,5 +1,0 @@
-09/01/2024 06:09:40 PM logger_nikhilm___uvbook INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nikhilm___uvbook)
-09/01/2024 06:09:40 PM logger_nikhilm___uvbook INFO Analyzing repos/nikhilm___uvbook (install_repos.py:23) (nikhilm___uvbook)
-09/01/2024 06:09:40 PM logger_nikhilm___uvbook INFO Found Makefile: repos/nikhilm___uvbook/Makefile (install_repos.py:43) (nikhilm___uvbook)
-09/01/2024 06:09:40 PM logger_nikhilm___uvbook INFO Running naive installation (install_repos.py:44) (nikhilm___uvbook)
-09/01/2024 06:09:40 PM logger_nikhilm___uvbook INFO Success: make succeeded for nikhilm___uvbook (install_repos.py:50) (nikhilm___uvbook)

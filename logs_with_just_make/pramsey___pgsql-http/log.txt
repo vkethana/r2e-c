@@ -1,5 +1,0 @@
-09/01/2024 06:15:05 PM logger_pramsey___pgsql-http INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pramsey___pgsql-http)
-09/01/2024 06:15:05 PM logger_pramsey___pgsql-http INFO Analyzing repos/pramsey___pgsql-http (install_repos.py:23) (pramsey___pgsql-http)
-09/01/2024 06:15:05 PM logger_pramsey___pgsql-http INFO Found Makefile: repos/pramsey___pgsql-http/Makefile (install_repos.py:43) (pramsey___pgsql-http)
-09/01/2024 06:15:05 PM logger_pramsey___pgsql-http INFO Running naive installation (install_repos.py:44) (pramsey___pgsql-http)
-09/01/2024 06:15:05 PM logger_pramsey___pgsql-http ERROR Error: make failed for pramsey___pgsql-http (install_repos.py:47) (pramsey___pgsql-http)

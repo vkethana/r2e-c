@@ -1,5 +1,0 @@
-09/01/2024 06:11:07 PM logger_bumptech___stud INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bumptech___stud)
-09/01/2024 06:11:07 PM logger_bumptech___stud INFO Analyzing repos/bumptech___stud (install_repos.py:23) (bumptech___stud)
-09/01/2024 06:11:07 PM logger_bumptech___stud INFO Found Makefile: repos/bumptech___stud/Makefile (install_repos.py:43) (bumptech___stud)
-09/01/2024 06:11:07 PM logger_bumptech___stud INFO Running naive installation (install_repos.py:44) (bumptech___stud)
-09/01/2024 06:11:07 PM logger_bumptech___stud ERROR Error: make failed for bumptech___stud (install_repos.py:47) (bumptech___stud)

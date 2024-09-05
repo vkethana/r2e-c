@@ -1,7 +1,0 @@
-09/01/2024 05:49:07 PM logger_fukuchi___libqrencode INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (fukuchi___libqrencode)
-09/01/2024 05:49:07 PM logger_fukuchi___libqrencode INFO Analyzing repos/fukuchi___libqrencode (install_repos.py:23) (fukuchi___libqrencode)
-09/01/2024 05:49:07 PM logger_fukuchi___libqrencode INFO Running autoreconf (install_repos.py:28) (fukuchi___libqrencode)
-09/01/2024 05:49:12 PM logger_fukuchi___libqrencode INFO Success: autoreconf succeeded for fukuchi___libqrencode (install_repos.py:35) (fukuchi___libqrencode)
-09/01/2024 05:49:17 PM logger_fukuchi___libqrencode INFO Found Makefile: repos/fukuchi___libqrencode/Makefile (install_repos.py:43) (fukuchi___libqrencode)
-09/01/2024 05:49:17 PM logger_fukuchi___libqrencode INFO Running naive installation (install_repos.py:44) (fukuchi___libqrencode)
-09/01/2024 05:49:19 PM logger_fukuchi___libqrencode INFO Success: make succeeded for fukuchi___libqrencode (install_repos.py:50) (fukuchi___libqrencode)

@@ -1,5 +1,0 @@
-09/01/2024 05:49:04 PM logger_rui314___8cc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (rui314___8cc)
-09/01/2024 05:49:04 PM logger_rui314___8cc INFO Analyzing repos/rui314___8cc (install_repos.py:23) (rui314___8cc)
-09/01/2024 05:49:04 PM logger_rui314___8cc INFO Found Makefile: repos/rui314___8cc/Makefile (install_repos.py:43) (rui314___8cc)
-09/01/2024 05:49:04 PM logger_rui314___8cc INFO Running naive installation (install_repos.py:44) (rui314___8cc)
-09/01/2024 05:49:06 PM logger_rui314___8cc INFO Success: make succeeded for rui314___8cc (install_repos.py:50) (rui314___8cc)

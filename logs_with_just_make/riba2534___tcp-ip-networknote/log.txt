@@ -1,3 +1,0 @@
-09/01/2024 05:57:32 PM logger_riba2534___tcp-ip-networknote INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (riba2534___tcp-ip-networknote)
-09/01/2024 05:57:32 PM logger_riba2534___tcp-ip-networknote INFO Analyzing repos/riba2534___tcp-ip-networknote (install_repos.py:23) (riba2534___tcp-ip-networknote)
-09/01/2024 05:57:32 PM logger_riba2534___tcp-ip-networknote ERROR No Makefile found for riba2534___tcp-ip-networknote (install_repos.py:53) (riba2534___tcp-ip-networknote)

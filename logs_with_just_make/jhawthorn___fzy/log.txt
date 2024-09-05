@@ -1,5 +1,0 @@
-09/01/2024 06:09:40 PM logger_jhawthorn___fzy INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jhawthorn___fzy)
-09/01/2024 06:09:40 PM logger_jhawthorn___fzy INFO Analyzing repos/jhawthorn___fzy (install_repos.py:23) (jhawthorn___fzy)
-09/01/2024 06:09:40 PM logger_jhawthorn___fzy INFO Found Makefile: repos/jhawthorn___fzy/Makefile (install_repos.py:43) (jhawthorn___fzy)
-09/01/2024 06:09:40 PM logger_jhawthorn___fzy INFO Running naive installation (install_repos.py:44) (jhawthorn___fzy)
-09/01/2024 06:09:40 PM logger_jhawthorn___fzy INFO Success: make succeeded for jhawthorn___fzy (install_repos.py:50) (jhawthorn___fzy)

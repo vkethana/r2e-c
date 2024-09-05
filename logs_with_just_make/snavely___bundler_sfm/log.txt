@@ -1,5 +1,0 @@
-09/01/2024 06:08:56 PM logger_snavely___bundler_sfm INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (snavely___bundler_sfm)
-09/01/2024 06:08:56 PM logger_snavely___bundler_sfm INFO Analyzing repos/snavely___bundler_sfm (install_repos.py:23) (snavely___bundler_sfm)
-09/01/2024 06:08:56 PM logger_snavely___bundler_sfm INFO Found Makefile: repos/snavely___bundler_sfm/Makefile (install_repos.py:43) (snavely___bundler_sfm)
-09/01/2024 06:08:56 PM logger_snavely___bundler_sfm INFO Running naive installation (install_repos.py:44) (snavely___bundler_sfm)
-09/01/2024 06:09:12 PM logger_snavely___bundler_sfm ERROR Error: make failed for snavely___bundler_sfm (install_repos.py:47) (snavely___bundler_sfm)

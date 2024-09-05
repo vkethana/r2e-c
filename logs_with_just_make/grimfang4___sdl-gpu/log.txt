@@ -1,3 +1,0 @@
-09/01/2024 05:54:25 PM logger_grimfang4___sdl-gpu INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (grimfang4___sdl-gpu)
-09/01/2024 05:54:25 PM logger_grimfang4___sdl-gpu INFO Analyzing repos/grimfang4___sdl-gpu (install_repos.py:23) (grimfang4___sdl-gpu)
-09/01/2024 05:54:25 PM logger_grimfang4___sdl-gpu ERROR No Makefile found for grimfang4___sdl-gpu (install_repos.py:53) (grimfang4___sdl-gpu)

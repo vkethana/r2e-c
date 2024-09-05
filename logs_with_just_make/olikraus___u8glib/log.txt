@@ -1,4 +1,0 @@
-09/01/2024 05:55:32 PM logger_olikraus___u8glib INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (olikraus___u8glib)
-09/01/2024 05:55:32 PM logger_olikraus___u8glib INFO Analyzing repos/olikraus___u8glib (install_repos.py:23) (olikraus___u8glib)
-09/01/2024 05:55:32 PM logger_olikraus___u8glib INFO Running autoreconf (install_repos.py:28) (olikraus___u8glib)
-09/01/2024 05:55:36 PM logger_olikraus___u8glib ERROR Error: autoreconf failed for olikraus___u8glib (install_repos.py:31) (olikraus___u8glib)

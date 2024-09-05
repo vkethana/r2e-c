@@ -1,3 +1,0 @@
-09/01/2024 05:54:11 PM logger_dekunukem___nintendo_switch_reverse_engineering INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (dekunukem___nintendo_switch_reverse_engineering)
-09/01/2024 05:54:11 PM logger_dekunukem___nintendo_switch_reverse_engineering INFO Analyzing repos/dekunukem___nintendo_switch_reverse_engineering (install_repos.py:23) (dekunukem___nintendo_switch_reverse_engineering)
-09/01/2024 05:54:11 PM logger_dekunukem___nintendo_switch_reverse_engineering ERROR No Makefile found for dekunukem___nintendo_switch_reverse_engineering (install_repos.py:53) (dekunukem___nintendo_switch_reverse_engineering)

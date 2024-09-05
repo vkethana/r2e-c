@@ -1,3 +1,0 @@
-09/01/2024 05:54:29 PM logger_imbushuo___mac-precision-touchpad INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (imbushuo___mac-precision-touchpad)
-09/01/2024 05:54:29 PM logger_imbushuo___mac-precision-touchpad INFO Analyzing repos/imbushuo___mac-precision-touchpad (install_repos.py:23) (imbushuo___mac-precision-touchpad)
-09/01/2024 05:54:29 PM logger_imbushuo___mac-precision-touchpad ERROR No Makefile found for imbushuo___mac-precision-touchpad (install_repos.py:53) (imbushuo___mac-precision-touchpad)

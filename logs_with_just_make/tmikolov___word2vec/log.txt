@@ -1,5 +1,0 @@
-09/01/2024 05:50:40 PM logger_tmikolov___word2vec INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tmikolov___word2vec)
-09/01/2024 05:50:40 PM logger_tmikolov___word2vec INFO Analyzing repos/tmikolov___word2vec (install_repos.py:23) (tmikolov___word2vec)
-09/01/2024 05:50:40 PM logger_tmikolov___word2vec INFO Found Makefile: repos/tmikolov___word2vec/makefile (install_repos.py:43) (tmikolov___word2vec)
-09/01/2024 05:50:40 PM logger_tmikolov___word2vec INFO Running naive installation (install_repos.py:44) (tmikolov___word2vec)
-09/01/2024 05:50:41 PM logger_tmikolov___word2vec INFO Success: make succeeded for tmikolov___word2vec (install_repos.py:50) (tmikolov___word2vec)

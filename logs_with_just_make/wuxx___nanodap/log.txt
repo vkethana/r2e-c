@@ -1,3 +1,0 @@
-09/01/2024 05:54:36 PM logger_wuxx___nanodap INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (wuxx___nanodap)
-09/01/2024 05:54:36 PM logger_wuxx___nanodap INFO Analyzing repos/wuxx___nanodap (install_repos.py:23) (wuxx___nanodap)
-09/01/2024 05:54:36 PM logger_wuxx___nanodap ERROR No Makefile found for wuxx___nanodap (install_repos.py:53) (wuxx___nanodap)

@@ -1,3 +1,0 @@
-09/01/2024 05:57:24 PM logger_jerryscript-project___iotjs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jerryscript-project___iotjs)
-09/01/2024 05:57:24 PM logger_jerryscript-project___iotjs INFO Analyzing repos/jerryscript-project___iotjs (install_repos.py:23) (jerryscript-project___iotjs)
-09/01/2024 05:57:24 PM logger_jerryscript-project___iotjs ERROR No Makefile found for jerryscript-project___iotjs (install_repos.py:53) (jerryscript-project___iotjs)
