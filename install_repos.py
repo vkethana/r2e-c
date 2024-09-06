@@ -7,7 +7,7 @@ import logging
 import subprocess
 
 class BuildSystem(ABC):
-    @abstractmethod
+    @abstractmethod 
     def detect(self, repo_path: str) -> bool:
         pass
 
@@ -173,10 +173,23 @@ def build_repo(repo_path: str, logger) -> bool:
         CustomScriptBuildSystem(),  # Add the new build system
     ]
 
+    repo_name = os.path.basename(os.path.normpath(repo_path))
+    possible_subdirs = [
+        "src",
+        "Source",
+        os.path.join(repo_name, "src")
+    ]
+
     for build_system in build_systems:
         if build_system.detect(repo_path):
-            #return build_system
             return build_system.build(repo_path, logger)
+        else:
+            for subdir in possible_subdirs:
+                    subdir_path = os.path.join(repo_path, subdir)
+                    if os.path.exists(subdir_path):
+                        logger.info(f"Checking for build system in {subdir_path}")
+                        if build_system.detect(subdir_path):
+                            return build_system.build(subdir_path, logger)
 
     logger.error(f"No supported build system found for {repo_path}")
     return False
