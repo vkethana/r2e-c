@@ -12,7 +12,7 @@ class BuildSystem(ABC):
         pass
 
     @abstractmethod
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         pass
 
     def run_command(self, command: str, repo_path: str, logger) -> bool:
@@ -45,7 +45,7 @@ class MakefileBuildSystem(BuildSystem):
         makefile_variants = ['Makefile', 'makefile', 'MAKEFILE']
         return any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants)
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         logger.info("Running make")
         self.run_command('make clean', repo_path, logger)
         self.run_command('make distclean', repo_path, logger)
@@ -68,7 +68,7 @@ class AutotoolsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'configure.ac'))
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         logger.info("Running autoreconf")
         if not self.run_command('autoreconf -i', repo_path, logger):
             return "autoreconf failed"
@@ -89,7 +89,7 @@ class CMakeBuildSystem(BuildSystem):
         return os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt'))
 
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         # Clear Existing files
         self.run_command('rm -rf build/', repo_path, logger)
         self.run_command('rm -rf CMakeCache.txt', repo_path, logger)
@@ -111,7 +111,7 @@ class GradleBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'gradlew'))
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         self.run_command('./gradlew clean', repo_path, logger)
         self.run_command('rm -rf .gradle/', repo_path, logger)
         self.run_command('rm -rf build/', repo_path, logger)
@@ -125,7 +125,7 @@ class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'SConstruct'))
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         logger.info("Running SCons build")
         if not self.run_command('scons', repo_path, logger):
             return "scons failed"
@@ -137,7 +137,7 @@ class BazelBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'WORKSPACE'))
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         self.run_command('bazel clean --expunge', repo_path, logger)
 
         logger.info("Running Bazel build")
@@ -152,7 +152,7 @@ class MesonBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'meson.build'))
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         self.run_command('rm -rf build/', repo_path, logger)
 
         logger.info("Running Meson build")
@@ -171,7 +171,7 @@ class CustomScriptBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'build.sh'))
 
-    def build(self, repo_path: str, logger) -> bool:
+    def build(self, repo_path: str, logger):
         logger.info("Running custom build.sh script")
         build_script = os.path.join(repo_path, 'build.sh')
         os.chmod(build_script, 0o755)  # Ensure the script is executable
@@ -181,7 +181,7 @@ class CustomScriptBuildSystem(BuildSystem):
         return "success"
 
 
-def build_repo(repo_path: str, logger) -> bool:
+def build_repo(repo_path: str, logger):
     build_systems = [
         AutotoolsBuildSystem(),
         MakefileBuildSystem(),
@@ -239,23 +239,22 @@ def main() -> Tuple[List[str], List[str]]:
     return successes, fails
 
 if __name__ == "__main__":
-
-
-    ''' 
-    Verify that scons is installed
-    '''
+    # Verify that scons is installed
     try:
         subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
-        raise Exception("SCons is not installed. Please install SCons before running this script.")
+        raise Exception("SCons is not installed. Please install before running this script.")
 
-    ''' 
-    Verify that bazel is installed
-    '''
+    # Verify that bazel is installed
     try:
         subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
-        raise Exception("Bazel is not installed. Please install Bazel before running this script.")
+        raise Exception("Bazel is not installed. Please install before running this script.")
+
+    try:
+        subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception("Ninja is not installed. Please install before running this script.")
 
     successes, fails = main()
 
