@@ -46,6 +46,12 @@ class MakefileBuildSystem(BuildSystem):
         return any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants)
 
     def build(self, repo_path: str, logger) -> bool:
+        logger.info("Running make")
+        self.run_command('make clean', repo_path, logger)
+        self.run_command('make distclean', repo_path, logger)
+        self.run_command('rm -rf autom4te.cache', repo_path, logger)
+        self.run_command('rm -f config.status config.cache config.log', repo_path, logger)
+
         logger.info("Running autogen")
         self.run_command('./autogen', repo_path, logger)
         
@@ -82,15 +88,21 @@ class CMakeBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         return os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt'))
 
+
     def build(self, repo_path: str, logger) -> bool:
+        # Clear Existing files
+        self.run_command('rm -rf build/', repo_path, logger)
+        self.run_command('rm -rf CMakeCache.txt', repo_path, logger)
+        self.run_command('rm -rf CMakeFiles/', repo_path, logger)
+
         logger.info("Running CMake")
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
 
-        if not self.run_command(f"cd {build_dir} && cmake ..", repo_path, logger):
+        if not self.run_command(f"cmake ..", build_dir, logger):
             return "cmake failed"
 
-        if not self.run_command(f"cd {build_dir} && cmake --build .", repo_path, logger):
+        if not self.run_command(f"cmake --build .", build_dir, logger):
             return "cmake build failed"
 
         return "success"
@@ -100,8 +112,12 @@ class GradleBuildSystem(BuildSystem):
         return os.path.isfile(os.path.join(repo_path, 'gradlew'))
 
     def build(self, repo_path: str, logger) -> bool:
+        self.run_command('./gradlew clean', repo_path, logger)
+        self.run_command('rm -rf .gradle/', repo_path, logger)
+        self.run_command('rm -rf build/', repo_path, logger)
+
         logger.info("Running Gradle build")
-        if not self.run_command(f'cd {repo_path} && ./gradlew build', repo_path, logger):
+        if not self.run_command(f'./gradlew build', repo_path, logger):
             return "gradle failed"
         return "success"
 
@@ -122,6 +138,8 @@ class BazelBuildSystem(BuildSystem):
         return os.path.isfile(os.path.join(repo_path, 'WORKSPACE'))
 
     def build(self, repo_path: str, logger) -> bool:
+        self.run_command('bazel clean --expunge', repo_path, logger)
+
         logger.info("Running Bazel build")
 
         if not self.run_command('bazel build //...', repo_path, logger):
@@ -135,6 +153,8 @@ class MesonBuildSystem(BuildSystem):
         return os.path.isfile(os.path.join(repo_path, 'meson.build'))
 
     def build(self, repo_path: str, logger) -> bool:
+        self.run_command('rm -rf build/', repo_path, logger)
+
         logger.info("Running Meson build")
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
@@ -206,6 +226,24 @@ def main() -> Tuple[List[str], List[str]]:
     return successes, fails
 
 if __name__ == "__main__":
+
+
+    ''' 
+    Verify that scons is installed
+    '''
+    try:
+        subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception("SCons is not installed. Please install SCons before running this script.")
+
+    ''' 
+    Verify that bazel is installed
+    '''
+    try:
+        subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception("Bazel is not installed. Please install Bazel before running this script.")
+
     successes, fails = main()
 
     print("Successes:", successes)
