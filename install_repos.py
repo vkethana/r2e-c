@@ -202,6 +202,7 @@ def build_repo(repo_path: str, logger):
 
     for build_system in build_systems:
         if build_system.detect(repo_path):
+            print("Build system detected: ", build_system)
             return build_system.build(repo_path, logger)
         else:
             for subdir in possible_subdirs:
@@ -209,6 +210,7 @@ def build_repo(repo_path: str, logger):
                     if os.path.exists(subdir_path):
                         logger.info(f"Checking for build system in {subdir_path}")
                         if build_system.detect(subdir_path):
+                            print("Build system detected: ", build_system)
                             return build_system.build(subdir_path, logger)
 
     logger.error(f"No supported build system found for {repo_path}")
@@ -255,6 +257,11 @@ if __name__ == "__main__":
         subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Ninja is not installed. Please install before running this script.")
+
+    try:
+        subprocess.run(['meson', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception("Meson is not installed. Please install before running this script.")
 
     successes, fails = main()
 
