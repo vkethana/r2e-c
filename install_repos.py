@@ -40,157 +40,44 @@ class BuildSystem(ABC):
             
         return return_code == 0
 
-class MakefileBuildSystem(BuildSystem):
+class MavenBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        makefile_variants = ['Makefile', 'makefile', 'MAKEFILE']
-        return any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants)
+        return os.path.isfile(os.path.join(repo_path, 'pom.xml'))
 
     def build(self, repo_path: str, logger):
-        logger.info("Running make")
-        self.run_command('make clean', repo_path, logger)
-        self.run_command('make distclean', repo_path, logger)
-        self.run_command('rm -rf autom4te.cache', repo_path, logger)
-        self.run_command('rm -f config.status config.cache config.log', repo_path, logger)
-
-        logger.info("Running autogen")
-        self.run_command('./autogen', repo_path, logger)
-        
-        logger.info("Running ./configure")
-        self.run_command('./configure', repo_path, logger)
-        
-        logger.info("Running make")
-        if not self.run_command('make', repo_path, logger):
-            return "make failed"
-
-        return "success"
-
-class AutotoolsBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'configure.ac'))
-
-    def build(self, repo_path: str, logger):
-        logger.info("Running autoreconf")
-        if not self.run_command('autoreconf -i', repo_path, logger):
-            return "autoreconf failed"
-        logger.info("Running autogen.sh")
-        self.run_command('./autogen.sh', repo_path, logger)
-        logger.info("Running configure")
-        if not self.run_command('./configure', repo_path, logger):
-            return "configure failed"
-        logger.info("Running make")
-        if not self.run_command('make', repo_path, logger):
-            return "make failed"
-
-        return "success"
-
-
-class CMakeBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt'))
-
-
-    def build(self, repo_path: str, logger):
-        # Clear Existing files
-        self.run_command('rm -rf build/', repo_path, logger)
-        self.run_command('rm -rf CMakeCache.txt', repo_path, logger)
-        self.run_command('rm -rf CMakeFiles/', repo_path, logger)
-
-        logger.info("Running CMake")
-        build_dir = os.path.join(repo_path, 'build')
-        os.makedirs(build_dir, exist_ok=True)
-
-        if not self.run_command(f"cmake ..", build_dir, logger):
-            return "cmake failed"
-
-        if not self.run_command(f"cmake --build .", build_dir, logger):
-            return "cmake build failed"
-
+        logger.info("Running Maven clean and build")
+        self.run_command('mvn clean', repo_path, logger)
+        if not self.run_command('mvn install', repo_path, logger):
+            return "maven build failed"
         return "success"
 
 class GradleBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'gradlew'))
+        return os.path.isfile(os.path.join(repo_path, 'build.gradle')) or os.path.isfile(os.path.join(repo_path, 'gradlew'))
 
     def build(self, repo_path: str, logger):
+        logger.info("Running Gradle clean and build")
         self.run_command('./gradlew clean', repo_path, logger)
-        self.run_command('rm -rf .gradle/', repo_path, logger)
-        self.run_command('rm -rf build/', repo_path, logger)
-
-        logger.info("Running Gradle build")
-        if not self.run_command(f'./gradlew build', repo_path, logger):
-            return "gradle failed"
+        if not self.run_command('./gradlew build', repo_path, logger):
+            return "gradle build failed"
         return "success"
 
-class SConsBuildSystem(BuildSystem):
+class AntBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'SConstruct'))
+        return os.path.isfile(os.path.join(repo_path, 'build.xml'))
 
     def build(self, repo_path: str, logger):
-        logger.info("Running SCons build")
-        if not self.run_command('scons', repo_path, logger):
-            return "scons failed"
-
+        logger.info("Running Ant clean and build")
+        self.run_command('ant clean', repo_path, logger)
+        if not self.run_command('ant', repo_path, logger):
+            return "ant build failed"
         return "success"
-
-
-class BazelBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'WORKSPACE'))
-
-    def build(self, repo_path: str, logger):
-        self.run_command('bazel clean --expunge', repo_path, logger)
-
-        logger.info("Running Bazel build")
-
-        if not self.run_command('bazel build //...', repo_path, logger):
-            return "bazel build failed"
-
-        return "success"
-
-
-class MesonBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'meson.build'))
-
-    def build(self, repo_path: str, logger):
-        self.run_command('rm -rf build/', repo_path, logger)
-
-        logger.info("Running Meson build")
-        build_dir = os.path.join(repo_path, 'build')
-        os.makedirs(build_dir, exist_ok=True)
-
-        if not self.run_command(f'meson ..', build_dir, logger):
-            return "meson failed"
-
-        if not self.run_command('ninja', build_dir, logger):
-            return "ninja failed"
-
-        return "success"
-
-class CustomScriptBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'build.sh'))
-
-    def build(self, repo_path: str, logger):
-        logger.info("Running custom build.sh script")
-        build_script = os.path.join(repo_path, 'build.sh')
-        os.chmod(build_script, 0o755)  # Ensure the script is executable
-        if not self.run_command('./build.sh', repo_path, logger):
-            return "build.sh failed"
-
-        return "success"
-
 
 def build_repo(repo_path: str, logger):
     build_systems = [
-        AutotoolsBuildSystem(),
-        MakefileBuildSystem(),
-        CMakeBuildSystem(),
+        MavenBuildSystem(),
         GradleBuildSystem(),
-        SConsBuildSystem(),
-        BazelBuildSystem(),
-        MesonBuildSystem(),
-        CustomScriptBuildSystem(),  # Add the new build system
+        AntBuildSystem(),
     ]
 
     repo_name = os.path.basename(os.path.normpath(repo_path))
@@ -202,7 +89,6 @@ def build_repo(repo_path: str, logger):
 
     for build_system in build_systems:
         if build_system.detect(repo_path):
-            print("Build system detected: ", build_system)
             return build_system.build(repo_path, logger)
         else:
             for subdir in possible_subdirs:
@@ -210,7 +96,6 @@ def build_repo(repo_path: str, logger):
                     if os.path.exists(subdir_path):
                         logger.info(f"Checking for build system in {subdir_path}")
                         if build_system.detect(subdir_path):
-                            print("Build system detected: ", build_system)
                             return build_system.build(subdir_path, logger)
 
     logger.error(f"No supported build system found for {repo_path}")
@@ -240,29 +125,18 @@ def main() -> Tuple[List[str], List[str]]:
 
     return successes, fails
 
+def check_java_installed():
+    try:
+        result = subprocess.run(['java', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if result.returncode == 0:
+            print("Java is installed.")
+        else:
+            print("Java is not installed.")
+    except FileNotFoundError:
+        print("Java is not installed.")
+
 if __name__ == "__main__":
-    # Verify that scons is installed
-    try:
-        subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("SCons is not installed. Please install before running this script.")
-
-    # Verify that bazel is installed
-    try:
-        subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Bazel is not installed. Please install before running this script.")
-
-    try:
-        subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Ninja is not installed. Please install before running this script.")
-
-    try:
-        subprocess.run(['meson', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Meson is not installed. Please install before running this script.")
-
+    check_java_installed()
     successes, fails = main()
 
     print("Successes:", successes)

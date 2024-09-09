@@ -3,7 +3,7 @@ import os
 from paths import REPOS_DIR
 
 # Open up a file called repos.json
-with open('repos.json') as f:
+with open('repos_java_500.json') as f:
     # Load the json data into a variable called repos
     repos = json.load(f)
 
