@@ -1,9 +1,9 @@
 import json
 import os
-from paths import REPOS_DIR
+from paths import REPOS_DIR, REPO_LIST
 
-# Open up a file called repos.json
-with open('repos.json') as f:
+# Get path to repo list
+with open(REPO_LIST) as f:
     # Load the json data into a variable called repos
     repos = json.load(f)
 

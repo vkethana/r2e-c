@@ -57,10 +57,14 @@ class MakefileBuildSystem(BuildSystem):
         logger.info("Running autogen")
         self.run_command('./autogen', repo_path, logger)
         
+
         logger.info("Running ./configure")
         success, output = self.run_command('./configure', repo_path, logger)
+        '''
+        # Sometimes configure fails because it dones't exist. so don't exclude repos just because configure failed
         if not success:
             return "configure failed", self.find_missing_headers(output), output
+        '''
         
         logger.info("Running make")
         success, output = self.run_command('make', repo_path, logger)
@@ -88,13 +92,35 @@ class AutotoolsBuildSystem(BuildSystem):
 
         logger.info("Running configure")
         success, output = self.run_command('./configure', repo_path, logger)
+        '''
         if not success:
             return "configure failed", self.find_missing_headers(output), output
+        '''
 
         logger.info("Running make")
         success, output = self.run_command('make', repo_path, logger)
         if not success:
             return "make failed", self.find_missing_headers(output), output
+
+        return "success", [], ""
+
+    def find_missing_headers(self, output: str) -> List[str]:
+        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        return list(set(missing_headers))
+
+class GradleBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'gradlew'))
+
+    def build(self, repo_path: str, logger):
+        self.run_command('./gradlew clean', repo_path, logger)
+        self.run_command('rm -rf .gradle/', repo_path, logger)
+        self.run_command('rm -rf build/', repo_path, logger)
+
+        logger.info("Running Gradle build")
+        success, output = self.run_command(f'chmod +x gradlew && ./gradlew build', repo_path, logger)
+        if not success:
+            return "gradle failed", self.find_missing_headers(output), output
 
         return "success", [], ""
 
@@ -154,7 +180,7 @@ class BazelBuildSystem(BuildSystem):
         self.run_command('bazel clean --expunge', repo_path, logger)
 
         logger.info("Running Bazel build")
-        success, output = self.run_command(f"bazel build //...", build_dir, logger)
+        success, output = self.run_command(f"bazel build //...", repo_path, logger)
 
         if not success:
             return "bazel build failed", self.find_missing_headers(output), output
@@ -177,10 +203,12 @@ class MesonBuildSystem(BuildSystem):
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
 
-        if not self.run_command(f'meson ..', build_dir, logger):
+        success, output = self.run_command(f'meson ..', build_dir, logger)
+        if not success:
             return "meson failed", self.find_missing_headers(output), output
 
-        if not self.run_command('ninja', build_dir, logger):
+        success, output = self.run_command('ninja', build_dir, logger)
+        if not success:
             return "ninja failed", self.find_missing_headers(output), output
 
         return "success", [], ""
@@ -197,7 +225,9 @@ class CustomScriptBuildSystem(BuildSystem):
         logger.info("Running custom build.sh script")
         build_script = os.path.join(repo_path, 'build.sh')
         os.chmod(build_script, 0o755)  # Ensure the script is executable
-        if not self.run_command('./build.sh', repo_path, logger):
+
+        success, output = self.run_command('./build.sh', repo_path, logger)
+        if not success:
             return "build.sh failed", self.find_missing_headers(output), output
 
         return "success", [], ""
@@ -279,7 +309,7 @@ def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], bu
 
     print("\033[92m")
     print(f"Overall success rate: {total_successes}/{total_repos}")
-    
+
     for build_system in build_system_counts:
         success_count = successes.get(build_system, 0)
         total_count = build_system_counts[build_system]
@@ -288,17 +318,17 @@ def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], bu
     print(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
     print(f"Number of repos with package not found error: {len(missing_headers)}")
     print(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
-    print(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers)}")
+    print(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
+
+    print(f"List of all missing headers so far: {missing_headers}")
     print("\033[0m")
 
 if __name__ == "__main__":
-    # Verify that scons is installed
     try:
         subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("SCons is not installed. Please install before running this script.")
 
-    # Verify that bazel is installed, doesn't seem to be needed
     try:
         subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
@@ -313,6 +343,12 @@ if __name__ == "__main__":
         subprocess.run(['meson', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Meson is not installed. Please install before running this script.")
+
+    try:
+        subprocess.run(['gradle', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception("Gradle is not installed. Please install before running this script.")
+
 
 
     successes, failures, build_system_counts, missing_headers = main()
