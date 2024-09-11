@@ -3,8 +3,9 @@ import os
 from typing import List, Tuple
 from paths import REPOS_DIR, LOGGER_DIR
 from utils import setup_logger
-import logging
 import subprocess
+
+
 
 class BuildSystem(ABC):
     @abstractmethod 
@@ -247,11 +248,13 @@ if __name__ == "__main__":
     except FileNotFoundError:
         raise Exception("SCons is not installed. Please install before running this script.")
 
-    # Verify that bazel is installed
+    # Verify that bazel is installed, doesn't seem to be needed
+    '''
     try:
         subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Bazel is not installed. Please install before running this script.")
+    '''
 
     try:
         subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)

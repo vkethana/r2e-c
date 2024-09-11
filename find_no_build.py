@@ -4,7 +4,7 @@ import json
 error_message = "ERROR No supported build system"
 
 # The directory containing the log files 
-log_directory = "/home/returningdiver/c_killer/logs/logs_with_make_cmake_gradlew_meson_scons_bazel"
+log_directory = "/home/returningdiver/c_killer/logs/repos_install_logs_with_make_cmake_gradlew_meson_scons_bazel"
 
 # List to store log files with the error
 logs_with_error = []
