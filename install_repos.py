@@ -118,7 +118,7 @@ class GradleBuildSystem(BuildSystem):
         self.run_command('rm -rf build/', repo_path, logger)
 
         logger.info("Running Gradle build")
-        if not self.run_command(f'./gradlew build', repo_path, logger):
+        if not self.run_command(f'chmod +x gradlew && ./gradlew build', repo_path, logger):
             return "gradle failed"
         return "success"
 
@@ -249,12 +249,10 @@ if __name__ == "__main__":
         raise Exception("SCons is not installed. Please install before running this script.")
 
     # Verify that bazel is installed, doesn't seem to be needed
-    '''
     try:
         subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Bazel is not installed. Please install before running this script.")
-    '''
 
     try:
         subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
