@@ -75,7 +75,7 @@ class MakefileBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 class AutotoolsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -106,7 +106,7 @@ class AutotoolsBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 class GradleBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -126,7 +126,7 @@ class GradleBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 class CMakeBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -154,7 +154,7 @@ class CMakeBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -162,7 +162,7 @@ class SConsBuildSystem(BuildSystem):
 
     def build(self, repo_path: str, logger):
         logger.info("Running SCons build")
-        success, output = self.run_command(f"scons", build_dir, logger)
+        success, output = self.run_command(f"scons", repo_path, logger)
         if not success:
             return "scons failed", self.find_missing_headers(output), output
 
@@ -170,7 +170,7 @@ class SConsBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 class BazelBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -189,7 +189,7 @@ class BazelBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 
 class MesonBuildSystem(BuildSystem):
@@ -215,7 +215,7 @@ class MesonBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 class CustomScriptBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -234,7 +234,7 @@ class CustomScriptBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(set(missing_headers))
+        return list(missing_headers)
 
 def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
     build_systems = [
@@ -300,7 +300,7 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
 
         print_running_totals(successes, failures, build_system_counts, all_missing_headers)
 
-    return successes, failures, build_system_counts, list(set(all_missing_headers))
+    return successes, failures, build_system_counts, list(all_missing_headers)
 
 def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], build_system_counts: Dict[str, int], missing_headers: List[str]):
     total_successes = sum(successes.values())
@@ -348,6 +348,12 @@ if __name__ == "__main__":
         subprocess.run(['gradle', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Gradle is not installed. Please install before running this script.")
+
+    try:
+        subprocess.run(['autoreconf', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception("Gradle is not installed. Please install before running this script.")
+
 
 
 
