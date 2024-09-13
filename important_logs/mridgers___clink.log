@@ -1,0 +1,5 @@
+09/12/2024 06:00:51 PM logger_mridgers___clink INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mridgers___clink)
+09/12/2024 06:00:51 PM logger_mridgers___clink INFO Analyzing repos/repos_400_c_round_two/mridgers___clink (install_repos.py:285) (mridgers___clink)
+09/12/2024 06:00:51 PM logger_mridgers___clink ERROR No supported build system found for repos/repos_400_c_round_two/mridgers___clink (install_repos.py:273) (mridgers___clink)
+09/12/2024 06:00:51 PM logger_mridgers___clink ERROR Error: Build failed for mridgers___clink
+Build failed for reason: no build system (install_repos.py:295) (mridgers___clink)

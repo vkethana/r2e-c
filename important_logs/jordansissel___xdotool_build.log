@@ -1,0 +1,34 @@
+Running command: make clean
+rm -f *.o xdotool xdotool.static xdotool.1 xdotool.html \
+      libxdo.so libxdo.so.3 libxdo.a libxdo.pc \
+      *.deb
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+pod2man -c "" -r "" xdotool.pod > xdotool.1
+cc -pipe -O2 -pedantic -Wall -W -Wundef -Wendif-labels -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wdisabled-optimization -Wno-missing-field-initializers -g    -std=c99 -I/usr/X11R6/include -I/usr/local/include -fPIC -c xdo.c
+xdo.c:24:10: fatal error: X11/Xlib.h: No such file or directory
+   24 | #include <X11/Xlib.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:131: xdo.o] Error 1
+Command finished with return code: 2
+

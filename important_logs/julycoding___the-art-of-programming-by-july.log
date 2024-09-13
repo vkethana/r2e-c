@@ -1,0 +1,5 @@
+09/12/2024 05:39:36 PM logger_julycoding___the-art-of-programming-by-july INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (julycoding___the-art-of-programming-by-july)
+09/12/2024 05:39:36 PM logger_julycoding___the-art-of-programming-by-july INFO Analyzing repos/repos_400_c_round_two/julycoding___the-art-of-programming-by-july (install_repos.py:285) (julycoding___the-art-of-programming-by-july)
+09/12/2024 05:39:36 PM logger_julycoding___the-art-of-programming-by-july ERROR No supported build system found for repos/repos_400_c_round_two/julycoding___the-art-of-programming-by-july (install_repos.py:273) (julycoding___the-art-of-programming-by-july)
+09/12/2024 05:39:36 PM logger_julycoding___the-art-of-programming-by-july ERROR Error: Build failed for julycoding___the-art-of-programming-by-july
+Build failed for reason: no build system (install_repos.py:295) (julycoding___the-art-of-programming-by-july)

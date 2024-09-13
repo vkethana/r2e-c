@@ -1,0 +1,5 @@
+09/12/2024 06:01:02 PM logger_armink___freemodbus_slave-master-rtt-stm32 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (armink___freemodbus_slave-master-rtt-stm32)
+09/12/2024 06:01:02 PM logger_armink___freemodbus_slave-master-rtt-stm32 INFO Analyzing repos/repos_400_c_round_two/armink___freemodbus_slave-master-rtt-stm32 (install_repos.py:285) (armink___freemodbus_slave-master-rtt-stm32)
+09/12/2024 06:01:02 PM logger_armink___freemodbus_slave-master-rtt-stm32 ERROR No supported build system found for repos/repos_400_c_round_two/armink___freemodbus_slave-master-rtt-stm32 (install_repos.py:273) (armink___freemodbus_slave-master-rtt-stm32)
+09/12/2024 06:01:02 PM logger_armink___freemodbus_slave-master-rtt-stm32 ERROR Error: Build failed for armink___freemodbus_slave-master-rtt-stm32
+Build failed for reason: no build system (install_repos.py:295) (armink___freemodbus_slave-master-rtt-stm32)

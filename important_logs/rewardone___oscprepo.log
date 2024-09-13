@@ -1,0 +1,5 @@
+09/12/2024 05:36:50 PM logger_rewardone___oscprepo INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (rewardone___oscprepo)
+09/12/2024 05:36:50 PM logger_rewardone___oscprepo INFO Analyzing repos/repos_400_c_round_two/rewardone___oscprepo (install_repos.py:285) (rewardone___oscprepo)
+09/12/2024 05:36:50 PM logger_rewardone___oscprepo ERROR No supported build system found for repos/repos_400_c_round_two/rewardone___oscprepo (install_repos.py:273) (rewardone___oscprepo)
+09/12/2024 05:36:50 PM logger_rewardone___oscprepo ERROR Error: Build failed for rewardone___oscprepo
+Build failed for reason: no build system (install_repos.py:295) (rewardone___oscprepo)

@@ -1,0 +1,130 @@
+Running command: autoreconf -i
+configure.ac:11: installing './compile'
+configure.ac:7: installing './install-sh'
+configure.ac:7: installing './missing'
+src/Makefile.am: installing './depcomp'
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+/bin/sh: 1: ./autogen.sh: not found
+Command finished with return code: 127
+
+Running command: ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/select.h... yes
+checking for sys/stat.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for X... no
+configure: WARNING: Not compiling gifview since X is not available.
+checking for random... yes
+checking for strerror... yes
+checking for strtoul... yes
+checking for mkstemp... yes
+checking for snprintf... yes
+checking for library containing pow... -lm
+checking for library containing cbrtf... none required
+checking for inttypes.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for uintptr_t... yes
+checking for int64_t... yes
+checking for uint64_t... yes
+checking size of float... 4
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking size of void *... 8
+checking for usable vector_size vector types... yes
+checking for usable ext_vector_type vector types... no
+checking for __builtin_shufflevector... no
+checking for library containing pthread_create... none required
+checking for __sync_add_and_fetch... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+Command finished with return code: 0
+
+Running command: make
+make  all-recursive
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/kohler___gifsicle'
+Making all in src
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/kohler___gifsicle/src'
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT clp.o -MD -MP -MF .deps/clp.Tpo -c -o clp.o clp.c
+clp.c: In function ‘Clp_vbsprintf’:
+clp.c:2135:45: warning: ‘%03o’ directive output may be truncated writing between 3 and 11 bytes into a region of size 4 [-Wformat-truncation=]
+ 2135 |                     snprintf(bs->pos, 5, "\\%03o", c & 0xFF);
+      |                                             ^~~~
+clp.c:2135:42: note: directive argument in the range [127, 2147483647]
+ 2135 |                     snprintf(bs->pos, 5, "\\%03o", c & 0xFF);
+      |                                          ^~~~~~~~
+clp.c:2135:21: note: ‘snprintf’ output between 5 and 13 bytes into a destination of size 5
+ 2135 |                     snprintf(bs->pos, 5, "\\%03o", c & 0xFF);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mv -f .deps/clp.Tpo .deps/clp.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT fmalloc.o -MD -MP -MF .deps/fmalloc.Tpo -c -o fmalloc.o fmalloc.c
+mv -f .deps/fmalloc.Tpo .deps/fmalloc.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT giffunc.o -MD -MP -MF .deps/giffunc.Tpo -c -o giffunc.o giffunc.c
+mv -f .deps/giffunc.Tpo .deps/giffunc.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT gifread.o -MD -MP -MF .deps/gifread.Tpo -c -o gifread.o gifread.c
+mv -f .deps/gifread.Tpo .deps/gifread.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT gifunopt.o -MD -MP -MF .deps/gifunopt.Tpo -c -o gifunopt.o gifunopt.c
+mv -f .deps/gifunopt.Tpo .deps/gifunopt.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT kcolor.o -MD -MP -MF .deps/kcolor.Tpo -c -o kcolor.o kcolor.c
+mv -f .deps/kcolor.Tpo .deps/kcolor.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT merge.o -MD -MP -MF .deps/merge.Tpo -c -o merge.o merge.c
+mv -f .deps/merge.Tpo .deps/merge.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT optimize.o -MD -MP -MF .deps/optimize.Tpo -c -o optimize.o optimize.c
+mv -f .deps/optimize.Tpo .deps/optimize.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT quantize.o -MD -MP -MF .deps/quantize.Tpo -c -o quantize.o quantize.c
+mv -f .deps/quantize.Tpo .deps/quantize.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT support.o -MD -MP -MF .deps/support.Tpo -c -o support.o support.c
+mv -f .deps/support.Tpo .deps/support.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT xform.o -MD -MP -MF .deps/xform.Tpo -c -o xform.o xform.c
+mv -f .deps/xform.Tpo .deps/xform.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT gifsicle.o -MD -MP -MF .deps/gifsicle.Tpo -c -o gifsicle.o gifsicle.c
+mv -f .deps/gifsicle.Tpo .deps/gifsicle.Po
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT gifwrite.o -MD -MP -MF .deps/gifwrite.Tpo -c -o gifwrite.o gifwrite.c
+mv -f .deps/gifwrite.Tpo .deps/gifwrite.Po
+gcc -W -Wall  -g -O2   -o gifsicle clp.o fmalloc.o giffunc.o gifread.o gifunopt.o kcolor.o merge.o optimize.o quantize.o support.o xform.o gifsicle.o  gifwrite.o -lm 
+gcc -W -Wall -DHAVE_CONFIG_H -I. -I..    -I../include   -g -O2 -MT gifdiff.o -MD -MP -MF .deps/gifdiff.Tpo -c -o gifdiff.o gifdiff.c
+mv -f .deps/gifdiff.Tpo .deps/gifdiff.Po
+gcc -W -Wall  -g -O2   -o gifdiff clp.o fmalloc.o giffunc.o gifread.o gifdiff.o  -lm 
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/kohler___gifsicle/src'
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/kohler___gifsicle'
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/kohler___gifsicle'
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/kohler___gifsicle'
+Command finished with return code: 0
+

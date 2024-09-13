@@ -1,0 +1,5 @@
+09/12/2024 05:59:05 PM logger_a0rtega___pafish INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (a0rtega___pafish)
+09/12/2024 05:59:05 PM logger_a0rtega___pafish INFO Analyzing repos/repos_400_c_round_two/a0rtega___pafish (install_repos.py:285) (a0rtega___pafish)
+09/12/2024 05:59:05 PM logger_a0rtega___pafish ERROR No supported build system found for repos/repos_400_c_round_two/a0rtega___pafish (install_repos.py:273) (a0rtega___pafish)
+09/12/2024 05:59:05 PM logger_a0rtega___pafish ERROR Error: Build failed for a0rtega___pafish
+Build failed for reason: no build system (install_repos.py:295) (a0rtega___pafish)

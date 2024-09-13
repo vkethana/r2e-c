@@ -1,0 +1,75 @@
+Running command: make clean
+rm -rf build bin lib src/adt/darray.o src/adt/dict.o src/adt/hash.o src/adt/list.o src/adt/radixmap.o src/adt/tst.o src/bstr/bsafe.o src/bstr/bstraux.o src/bstr/bstrlib.o src/config/config.o src/config/db.o src/config/module.o src/http11/http11_parser.o src/http11/httpclient_parser.o src/mem/halloc.o src/task/context.o src/task/fd.o src/task/net.o src/task/qlock.o src/task/rendez.o src/task/task.o src/bsd_specific.o src/cache.o src/chunked.o src/connection.o src/control.o src/dbg.o src/dir.o src/filter.o src/handler.o src/handler_parser.o src/headers.o src/host.o src/io.o src/log.o src/logrotate.o src/mime.o src/mongrel2.o src/pattern.o src/proxy.o src/register.o src/request.o src/response.o src/routing.o src/server.o src/setting.o src/state.o src/superpoll.o src/tnetstrings.o src/unixy.o src/upload.o src/websocket.o src/xrequest.o src/state.o src/http11/http11_parser.o src/handler_parser.o src/http11/httpclient_parser.o src/task/asm.o tests/bstr_tests tests/cache_tests tests/cert_tests tests/chunked_tests tests/config_tests tests/connection_tests tests/darray_tests tests/db_tests tests/dict_tests tests/dir_tests tests/filter_tests tests/handler_parser_tests tests/handler_tests tests/hash_tests tests/host_tests tests/http11_tests tests/httpclient_tests tests/io_tests tests/list_tests tests/mime_tests tests/pattern_tests tests/proxy_tests tests/radixmap_tests tests/register_tests tests/request_tests tests/response_tests tests/routing_tests tests/server_tests tests/setting_tests tests/state_tests tests/superpoll_tests tests/tnetstrings_tests tests/tst_tests tests/unixy_tests tests/config.sqlite
+rm -f tests/perf.log 
+rm -f tests/test.pid 
+rm -f tests/tests.log 
+rm -f tests/empty.sqlite 
+rm -f tools/lemon/lemon
+rm -f tools/m2sh/tests/tests.log 
+rm -rf release-scripts/output
+find . \( -name "*.gcno" -o -name "*.gcda" \) -exec rm {} \;
+make -C tools/m2sh OPTLIB= clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/m2sh'
+rm -rf src/*.o src/*/*.o build tests/*_tests tests/*.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/m2sh'
+make -C tools/filters OPTLIB= clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/filters'
+rm -f *.so
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/filters'
+make -C tests/filters OPTLIB= clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tests/filters'
+rm -f *.so
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tests/filters'
+make -C tools/config_modules OPTLIB= clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/config_modules'
+rm -f *.o *.so
+rm -Rf mongo-c-driver
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/config_modules'
+make -C tools/procer OPTLIB= clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/procer'
+rm -f *.o procer
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mongrel2___mongrel2/tools/procer'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/adt/darray.o src/adt/darray.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/adt/dict.o src/adt/dict.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/adt/hash.o src/adt/hash.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/adt/list.o src/adt/list.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/adt/radixmap.o src/adt/radixmap.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/adt/tst.o src/adt/tst.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/bstr/bsafe.o src/bstr/bsafe.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/bstr/bstraux.o src/bstr/bstraux.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/bstr/bstrlib.o src/bstr/bstrlib.c
+cc -g -O2 -Wall -Wextra -Wno-implicit-fallthrough -Wno-unused-const-variable -I./src -DNDEBUG -D_FILE_OFFSET_BITS=64 -pthread  -fPIC    -c -o src/config/config.o src/config/config.c
+In file included from ./src/task/task.h:13,
+                 from ./src/handler.h:40,
+                 from ./src/host.h:40,
+                 from ./src/server.h:40,
+                 from ./src/config/config.h:38,
+                 from src/config/config.c:34:
+./src/zmq_compat.h:39:10: fatal error: zmq.h: No such file or directory
+   39 | #include <zmq.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [<builtin>: src/config/config.o] Error 1
+Command finished with return code: 2
+

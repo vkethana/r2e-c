@@ -1,0 +1,5 @@
+09/12/2024 05:36:50 PM logger_alibaba___lvs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (alibaba___lvs)
+09/12/2024 05:36:50 PM logger_alibaba___lvs INFO Analyzing repos/repos_400_c_round_two/alibaba___lvs (install_repos.py:285) (alibaba___lvs)
+09/12/2024 05:36:50 PM logger_alibaba___lvs ERROR No supported build system found for repos/repos_400_c_round_two/alibaba___lvs (install_repos.py:273) (alibaba___lvs)
+09/12/2024 05:36:50 PM logger_alibaba___lvs ERROR Error: Build failed for alibaba___lvs
+Build failed for reason: no build system (install_repos.py:295) (alibaba___lvs)

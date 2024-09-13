@@ -1,0 +1,13 @@
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Analyzing repos/repos_400_c_round_two/krakjoe___pthreads (install_repos.py:285) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads INFO Checking for build system in repos/repos_400_c_round_two/krakjoe___pthreads/src (install_repos.py:267) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads ERROR No supported build system found for repos/repos_400_c_round_two/krakjoe___pthreads (install_repos.py:273) (krakjoe___pthreads)
+09/12/2024 06:03:38 PM logger_krakjoe___pthreads ERROR Error: Build failed for krakjoe___pthreads
+Build failed for reason: no build system (install_repos.py:295) (krakjoe___pthreads)

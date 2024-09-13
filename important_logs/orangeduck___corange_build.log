@@ -1,0 +1,91 @@
+Running command: make clean
+rm obj/casset.o obj/caudio.o obj/cengine.o obj/centity.o obj/cgraphics.o obj/cjoystick.o obj/cnet.o obj/corange.o obj/cphysics.o obj/cui.o obj/SDL_local.o obj/animation.o obj/cmesh.o obj/config.o obj/effect.o obj/font.o obj/image.o obj/lang.o obj/material.o obj/music.o obj/renderable.o obj/shader.o obj/skeleton.o obj/sound.o obj/terrain.o obj/texture.o obj/dict.o obj/int_list.o obj/list.o obj/randf.o obj/spline.o obj/vertex_hashtable.o obj/vertex_list.o obj/animated_object.o obj/camera.o obj/instance_object.o obj/landscape.o obj/light.o obj/particles.o obj/physics_object.o obj/static_object.o obj/renderer.o obj/sky.o obj/ui_browser.o obj/ui_button.o obj/ui_dialog.o obj/ui_listbox.o obj/ui_option.o obj/ui_rectangle.o obj/ui_slider.o obj/ui_spinner.o obj/ui_style.o obj/ui_text.o obj/ui_textbox.o obj/ui_toast.o libcorange.a libcorange.so
+rm: cannot remove 'obj/casset.o': No such file or directory
+rm: cannot remove 'obj/caudio.o': No such file or directory
+rm: cannot remove 'obj/cengine.o': No such file or directory
+rm: cannot remove 'obj/centity.o': No such file or directory
+rm: cannot remove 'obj/cgraphics.o': No such file or directory
+rm: cannot remove 'obj/cjoystick.o': No such file or directory
+rm: cannot remove 'obj/cnet.o': No such file or directory
+rm: cannot remove 'obj/corange.o': No such file or directory
+rm: cannot remove 'obj/cphysics.o': No such file or directory
+rm: cannot remove 'obj/cui.o': No such file or directory
+rm: cannot remove 'obj/SDL_local.o': No such file or directory
+rm: cannot remove 'obj/animation.o': No such file or directory
+rm: cannot remove 'obj/cmesh.o': No such file or directory
+rm: cannot remove 'obj/config.o': No such file or directory
+rm: cannot remove 'obj/effect.o': No such file or directory
+rm: cannot remove 'obj/font.o': No such file or directory
+rm: cannot remove 'obj/image.o': No such file or directory
+rm: cannot remove 'obj/lang.o': No such file or directory
+rm: cannot remove 'obj/material.o': No such file or directory
+rm: cannot remove 'obj/music.o': No such file or directory
+rm: cannot remove 'obj/renderable.o': No such file or directory
+rm: cannot remove 'obj/shader.o': No such file or directory
+rm: cannot remove 'obj/skeleton.o': No such file or directory
+rm: cannot remove 'obj/sound.o': No such file or directory
+rm: cannot remove 'obj/terrain.o': No such file or directory
+rm: cannot remove 'obj/texture.o': No such file or directory
+rm: cannot remove 'obj/dict.o': No such file or directory
+rm: cannot remove 'obj/int_list.o': No such file or directory
+rm: cannot remove 'obj/list.o': No such file or directory
+rm: cannot remove 'obj/randf.o': No such file or directory
+rm: cannot remove 'obj/spline.o': No such file or directory
+rm: cannot remove 'obj/vertex_hashtable.o': No such file or directory
+rm: cannot remove 'obj/vertex_list.o': No such file or directory
+rm: cannot remove 'obj/animated_object.o': No such file or directory
+rm: cannot remove 'obj/camera.o': No such file or directory
+rm: cannot remove 'obj/instance_object.o': No such file or directory
+rm: cannot remove 'obj/landscape.o': No such file or directory
+rm: cannot remove 'obj/light.o': No such file or directory
+rm: cannot remove 'obj/particles.o': No such file or directory
+rm: cannot remove 'obj/physics_object.o': No such file or directory
+rm: cannot remove 'obj/static_object.o': No such file or directory
+rm: cannot remove 'obj/renderer.o': No such file or directory
+rm: cannot remove 'obj/sky.o': No such file or directory
+rm: cannot remove 'obj/ui_browser.o': No such file or directory
+rm: cannot remove 'obj/ui_button.o': No such file or directory
+rm: cannot remove 'obj/ui_dialog.o': No such file or directory
+rm: cannot remove 'obj/ui_listbox.o': No such file or directory
+rm: cannot remove 'obj/ui_option.o': No such file or directory
+rm: cannot remove 'obj/ui_rectangle.o': No such file or directory
+rm: cannot remove 'obj/ui_slider.o': No such file or directory
+rm: cannot remove 'obj/ui_spinner.o': No such file or directory
+rm: cannot remove 'obj/ui_style.o': No such file or directory
+rm: cannot remove 'obj/ui_text.o': No such file or directory
+rm: cannot remove 'obj/ui_textbox.o': No such file or directory
+rm: cannot remove 'obj/ui_toast.o': No such file or directory
+rm: cannot remove 'libcorange.a': No such file or directory
+rm: cannot remove 'libcorange.so': No such file or directory
+make: *** [Makefile:55: clean] Error 1
+Command finished with return code: 2
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gcc src/casset.c -c -I ./include -std=gnu99 -Wall -Werror -Wno-unused -O3 -g -fPIC -o obj/casset.o
+In file included from ./include/casset.h:24,
+                 from src/casset.c:1:
+./include/cengine.h:29:10: fatal error: SDL2/SDL.h: No such file or directory
+   29 | #include <SDL2/SDL.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:43: obj/casset.o] Error 1
+Command finished with return code: 2
+

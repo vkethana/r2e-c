@@ -1,0 +1,5 @@
+09/12/2024 05:59:13 PM logger_easyhook___easyhook INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (easyhook___easyhook)
+09/12/2024 05:59:13 PM logger_easyhook___easyhook INFO Analyzing repos/repos_400_c_round_two/easyhook___easyhook (install_repos.py:285) (easyhook___easyhook)
+09/12/2024 05:59:13 PM logger_easyhook___easyhook ERROR No supported build system found for repos/repos_400_c_round_two/easyhook___easyhook (install_repos.py:273) (easyhook___easyhook)
+09/12/2024 05:59:13 PM logger_easyhook___easyhook ERROR Error: Build failed for easyhook___easyhook
+Build failed for reason: no build system (install_repos.py:295) (easyhook___easyhook)

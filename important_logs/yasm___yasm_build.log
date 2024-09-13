@@ -1,0 +1,637 @@
+Running command: autoreconf -i
+configure.ac: warning: AM_GNU_GETTEXT is used, but not AM_GNU_GETTEXT_VERSION or AM_GNU_GETTEXT_REQUIRE_VERSION
+configure.ac:12: warning: The macro `AC_CONFIG_HEADER' is obsolete.
+configure.ac:12: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:12: the top level
+configure.ac:21: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:21: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:21: the top level
+configure.ac:30: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:30: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:30: the top level
+configure.ac:38: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:38: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:38: the top level
+configure.ac:46: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:46: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:46: the top level
+configure.ac:54: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:54: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:54: the top level
+configure.ac:62: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:62: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:62: the top level
+configure.ac:73: warning: The macro `AC_PROG_CC_STDC' is obsolete.
+configure.ac:73: You should run autoupdate.
+./lib/autoconf/c.m4:1666: AC_PROG_CC_STDC is expanded from...
+configure.ac:73: the top level
+configure.ac:113: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:113: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+m4/ax_create_stdint_h.m4:119: AX_CREATE_STDINT_H is expanded from...
+configure.ac:113: the top level
+configure.ac:280: warning: The macro `AC_FD_CC' is obsolete.
+configure.ac:280: You should run autoupdate.
+./lib/autoconf/general.m4:399: AC_FD_CC is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+m4/cython.m4:6: CYTHON_CHECK_VERSION is expanded from...
+configure.ac:280: the top level
+configure.ac:285: warning: The macro `AC_TRY_CPP' is obsolete.
+configure.ac:285: You should run autoupdate.
+./lib/autoconf/general.m4:2762: AC_TRY_CPP is expanded from...
+m4/pythonhead.m4:5: AM_CHECK_PYTHON_HEADERS is expanded from...
+configure.ac:285: the top level
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+I am going to run ./configure with --enable-maintainer-mode
+If you wish to pass any other args to it, please specify them
+on the ./autogen.sh command line.
+Generating configuration files for yasm, please wait....
+  aclocal -I m4
+  autoheader
+  automake -a
+  autoconf
+configure.ac:12: warning: The macro `AC_CONFIG_HEADER' is obsolete.
+configure.ac:12: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:12: the top level
+configure.ac:21: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:21: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:21: the top level
+configure.ac:30: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:30: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:30: the top level
+configure.ac:38: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:38: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:38: the top level
+configure.ac:46: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:46: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:46: the top level
+configure.ac:54: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:54: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:54: the top level
+configure.ac:62: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:62: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:62: the top level
+configure.ac:73: warning: The macro `AC_PROG_CC_STDC' is obsolete.
+configure.ac:73: You should run autoupdate.
+./lib/autoconf/c.m4:1666: AC_PROG_CC_STDC is expanded from...
+configure.ac:73: the top level
+configure.ac:113: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:113: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+m4/ax_create_stdint_h.m4:119: AX_CREATE_STDINT_H is expanded from...
+configure.ac:113: the top level
+configure.ac:280: warning: The macro `AC_FD_CC' is obsolete.
+configure.ac:280: You should run autoupdate.
+./lib/autoconf/general.m4:399: AC_FD_CC is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+m4/cython.m4:6: CYTHON_CHECK_VERSION is expanded from...
+configure.ac:280: the top level
+configure.ac:285: warning: The macro `AC_TRY_CPP' is obsolete.
+configure.ac:285: You should run autoupdate.
+./lib/autoconf/general.m4:2762: AC_TRY_CPP is expanded from...
+m4/pythonhead.m4:5: AM_CHECK_PYTHON_HEADERS is expanded from...
+configure.ac:285: the top level
+  configure --enable-maintainer-mode 
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether ln -s works... yes
+checking for ar... ar
+checking for ranlib... ranlib
+checking for xmlto... no
+configure: WARNING: xmlto not found, manpages will not be rebuilt.
+checking if malloc debugging is wanted... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for strings.h... (cached) yes
+checking for libgen.h... yes
+checking for unistd.h... (cached) yes
+checking for direct.h... no
+checking for sys/stat.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for stdint types... stdint.h (shortcircuit)
+make use of stdint.h in libyasm-stdint.h (assuming C99 compatible system)
+checking for abort... yes
+checking for toascii... yes
+checking for vsnprintf... yes
+checking for strsep... yes
+checking for mergesort... no
+checking for getcwd... yes
+checking for popen... yes
+checking for ftruncate... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for stricmp... no
+checking for _stricmp... no
+checking for strcmpi... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+./configure: line 7461: gt_INTL_MACOSX: command not found
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for GNU C Library... yes
+configure: Checking for Python
+checking for a Python interpreter with version >= 2.4... python
+checking for python... /usr/local/bin/python
+checking for python version... 3.11
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.11/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.11/site-packages
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libyasm-stdint.h commands
+config.status: creating libyasm-stdint.h : _YASM_LIBYASM_STDINT_H
+config.status: libyasm-stdint.h is unchanged
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+Command finished with return code: 0
+
+Running command: ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether ln -s works... yes
+checking for ar... ar
+checking for ranlib... ranlib
+checking for xmlto... no
+configure: WARNING: xmlto not found, manpages will not be rebuilt.
+checking if malloc debugging is wanted... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for strings.h... (cached) yes
+checking for libgen.h... yes
+checking for unistd.h... (cached) yes
+checking for direct.h... no
+checking for sys/stat.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for stdint types... stdint.h (shortcircuit)
+make use of stdint.h in libyasm-stdint.h (assuming C99 compatible system)
+checking for abort... yes
+checking for toascii... yes
+checking for vsnprintf... yes
+checking for strsep... yes
+checking for mergesort... no
+checking for getcwd... yes
+checking for popen... yes
+checking for ftruncate... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for stricmp... no
+checking for _stricmp... no
+checking for strcmpi... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+./configure: line 7461: gt_INTL_MACOSX: command not found
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for GNU C Library... yes
+configure: Checking for Python
+checking for a Python interpreter with version >= 2.4... python
+checking for python... /usr/local/bin/python
+checking for python version... 3.11
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.11/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.11/site-packages
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libyasm-stdint.h commands
+config.status: creating libyasm-stdint.h : _YASM_LIBYASM_STDINT_H
+config.status: libyasm-stdint.h is unchanged
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+Command finished with return code: 0
+
+Running command: make
+Makefile:4334: warning: ignoring prerequisites on suffix rule definition
+make  all-recursive
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm'
+Makefile:4334: warning: ignoring prerequisites on suffix rule definition
+Making all in po
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm/po'
+make yasm.pot-update
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm/po'
+if { if (LC_ALL=C find --version) 2>/dev/null | grep GNU >/dev/null; then \
+       LC_ALL=C find -L .. -maxdepth 1 -type f -size -10000000c -exec grep 'GNU yasm' /dev/null '{}' ';' 2>/dev/null; \
+     else \
+       LC_ALL=C grep 'GNU yasm' ../* 2>/dev/null; \
+     fi; \
+   } | grep -v 'libtool:' >/dev/null; then \
+  package_gnu='GNU '; \
+else \
+  package_gnu=''; \
+fi; \
+if test -n 'bug-yasm@tortall.net' || test 'bug-yasm@tortall.net' = '@'PACKAGE_BUGREPORT'@'; then \
+  msgid_bugs_address='bug-yasm@tortall.net'; \
+else \
+  msgid_bugs_address='bug-yasm@tortall.net'; \
+fi; \
+case `: --version | sed 1q | sed -e 's,^[^0-9]*,,'` in \
+  '' | 0.[0-9] | 0.[0-9].* | 0.1[0-5] | 0.1[0-5].* | 0.16 | 0.16.[0-1]*) \
+    : --default-domain=yasm --directory=.. \
+      --add-comments=TRANSLATORS: --keyword=_ --keyword=N_  \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Peter Johnson and other YASM developers' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+  *) \
+    : --default-domain=yasm --directory=.. \
+      --add-comments=TRANSLATORS: --keyword=_ --keyword=N_  \
+      --files-from=./POTFILES.in \
+      --copyright-holder='Peter Johnson and other YASM developers' \
+      --package-name="${package_gnu}yasm" \
+      --package-version='1.3.0.87.g121a' \
+      --msgid-bugs-address="$msgid_bugs_address" \
+    ;; \
+esac
+test ! -f yasm.po || { \
+  if test -f ./yasm.pot; then \
+    sed -f remove-potcdate.sed < ./yasm.pot > yasm.1po && \
+    sed -f remove-potcdate.sed < yasm.po > yasm.2po && \
+    if cmp yasm.1po yasm.2po >/dev/null 2>&1; then \
+      rm -f yasm.1po yasm.2po yasm.po; \
+    else \
+      rm -f yasm.1po yasm.2po ./yasm.pot && \
+      mv yasm.po ./yasm.pot; \
+    fi; \
+  else \
+    mv yasm.po ./yasm.pot; \
+  fi; \
+}
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm/po'
+test ! -f ./yasm.pot || \
+  test -z "" || make 
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm/po'
+Making all in .
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm'
+Makefile:4334: warning: ignoring prerequisites on suffix rule definition
+depbase=`echo frontends/yasm/yasm.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT frontends/yasm/yasm.o -MD -MP -MF $depbase.Tpo -c -o frontends/yasm/yasm.o frontends/yasm/yasm.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo frontends/yasm/yasm-options.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT frontends/yasm/yasm-options.o -MD -MP -MF $depbase.Tpo -c -o frontends/yasm/yasm-options.o frontends/yasm/yasm-options.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/arch/x86/x86arch.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/arch/x86/x86arch.o -MD -MP -MF $depbase.Tpo -c -o modules/arch/x86/x86arch.o modules/arch/x86/x86arch.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/arch/x86/x86bc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/arch/x86/x86bc.o -MD -MP -MF $depbase.Tpo -c -o modules/arch/x86/x86bc.o modules/arch/x86/x86bc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/arch/x86/x86expr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/arch/x86/x86expr.o -MD -MP -MF $depbase.Tpo -c -o modules/arch/x86/x86expr.o modules/arch/x86/x86expr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/arch/x86/x86id.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/arch/x86/x86id.o -MD -MP -MF $depbase.Tpo -c -o modules/arch/x86/x86id.o modules/arch/x86/x86id.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/arch/lc3b/lc3barch.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/arch/lc3b/lc3barch.o -MD -MP -MF $depbase.Tpo -c -o modules/arch/lc3b/lc3barch.o modules/arch/lc3b/lc3barch.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/arch/lc3b/lc3bbc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/arch/lc3b/lc3bbc.o -MD -MP -MF $depbase.Tpo -c -o modules/arch/lc3b/lc3bbc.o modules/arch/lc3b/lc3bbc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/listfmts/nasm/nasm-listfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/listfmts/nasm/nasm-listfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/listfmts/nasm/nasm-listfmt.o modules/listfmts/nasm/nasm-listfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/parsers/gas/gas-parser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/parsers/gas/gas-parser.o -MD -MP -MF $depbase.Tpo -c -o modules/parsers/gas/gas-parser.o modules/parsers/gas/gas-parser.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/parsers/gas/gas-parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/parsers/gas/gas-parse.o -MD -MP -MF $depbase.Tpo -c -o modules/parsers/gas/gas-parse.o modules/parsers/gas/gas-parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/parsers/gas/gas-parse-intel.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/parsers/gas/gas-parse-intel.o -MD -MP -MF $depbase.Tpo -c -o modules/parsers/gas/gas-parse-intel.o modules/parsers/gas/gas-parse-intel.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/parsers/nasm/nasm-parser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/parsers/nasm/nasm-parser.o -MD -MP -MF $depbase.Tpo -c -o modules/parsers/nasm/nasm-parser.o modules/parsers/nasm/nasm-parser.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/parsers/nasm/nasm-parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/parsers/nasm/nasm-parse.o -MD -MP -MF $depbase.Tpo -c -o modules/parsers/nasm/nasm-parse.o modules/parsers/nasm/nasm-parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/nasm/nasm-preproc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/nasm/nasm-preproc.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/nasm/nasm-preproc.o modules/preprocs/nasm/nasm-preproc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/nasm/nasm-pp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/nasm/nasm-pp.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/nasm/nasm-pp.o modules/preprocs/nasm/nasm-pp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/nasm/nasmlib.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/nasm/nasmlib.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/nasm/nasmlib.o modules/preprocs/nasm/nasmlib.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/nasm/nasm-eval.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/nasm/nasm-eval.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/nasm/nasm-eval.o modules/preprocs/nasm/nasm-eval.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/raw/raw-preproc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/raw/raw-preproc.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/raw/raw-preproc.o modules/preprocs/raw/raw-preproc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/cpp/cpp-preproc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/cpp/cpp-preproc.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/cpp/cpp-preproc.o modules/preprocs/cpp/cpp-preproc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/gas/gas-preproc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/gas/gas-preproc.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/gas/gas-preproc.o modules/preprocs/gas/gas-preproc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/preprocs/gas/gas-eval.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/preprocs/gas/gas-eval.o -MD -MP -MF $depbase.Tpo -c -o modules/preprocs/gas/gas-eval.o modules/preprocs/gas/gas-eval.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/codeview/cv-dbgfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/codeview/cv-dbgfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/codeview/cv-dbgfmt.o modules/dbgfmts/codeview/cv-dbgfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/codeview/cv-symline.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/codeview/cv-symline.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/codeview/cv-symline.o modules/dbgfmts/codeview/cv-symline.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/codeview/cv-type.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/codeview/cv-type.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/codeview/cv-type.o modules/dbgfmts/codeview/cv-type.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/dwarf2/dwarf2-dbgfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/dwarf2/dwarf2-dbgfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/dwarf2/dwarf2-dbgfmt.o modules/dbgfmts/dwarf2/dwarf2-dbgfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/dwarf2/dwarf2-line.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/dwarf2/dwarf2-line.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/dwarf2/dwarf2-line.o modules/dbgfmts/dwarf2/dwarf2-line.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/dwarf2/dwarf2-aranges.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/dwarf2/dwarf2-aranges.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/dwarf2/dwarf2-aranges.o modules/dbgfmts/dwarf2/dwarf2-aranges.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/dwarf2/dwarf2-info.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/dwarf2/dwarf2-info.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/dwarf2/dwarf2-info.o modules/dbgfmts/dwarf2/dwarf2-info.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/null/null-dbgfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/null/null-dbgfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/null/null-dbgfmt.o modules/dbgfmts/null/null-dbgfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/dbgfmts/stabs/stabs-dbgfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/dbgfmts/stabs/stabs-dbgfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/dbgfmts/stabs/stabs-dbgfmt.o modules/dbgfmts/stabs/stabs-dbgfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/dbg/dbg-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/dbg/dbg-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/dbg/dbg-objfmt.o modules/objfmts/dbg/dbg-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/bin/bin-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/bin/bin-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/bin/bin-objfmt.o modules/objfmts/bin/bin-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/elf/elf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/elf/elf.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/elf/elf.o modules/objfmts/elf/elf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/elf/elf-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/elf/elf-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/elf/elf-objfmt.o modules/objfmts/elf/elf-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/elf/elf-x86-x86.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/elf/elf-x86-x86.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/elf/elf-x86-x86.o modules/objfmts/elf/elf-x86-x86.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/elf/elf-x86-amd64.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/elf/elf-x86-amd64.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/elf/elf-x86-amd64.o modules/objfmts/elf/elf-x86-amd64.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/elf/elf-x86-x32.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/elf/elf-x86-x32.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/elf/elf-x86-x32.o modules/objfmts/elf/elf-x86-x32.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/coff/coff-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/coff/coff-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/coff/coff-objfmt.o modules/objfmts/coff/coff-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/coff/win64-except.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/coff/win64-except.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/coff/win64-except.o modules/objfmts/coff/win64-except.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/macho/macho-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/macho/macho-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/macho/macho-objfmt.o modules/objfmts/macho/macho-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/rdf/rdf-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/rdf/rdf-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/rdf/rdf-objfmt.o modules/objfmts/rdf/rdf-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo modules/objfmts/xdf/xdf-objfmt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT modules/objfmts/xdf/xdf-objfmt.o -MD -MP -MF $depbase.Tpo -c -o modules/objfmts/xdf/xdf-objfmt.o modules/objfmts/xdf/xdf-objfmt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/assocdat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/assocdat.o -MD -MP -MF $depbase.Tpo -c -o libyasm/assocdat.o libyasm/assocdat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bitvect.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bitvect.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bitvect.o libyasm/bitvect.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bc-align.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bc-align.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bc-align.o libyasm/bc-align.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bc-data.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bc-data.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bc-data.o libyasm/bc-data.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bc-incbin.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bc-incbin.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bc-incbin.o libyasm/bc-incbin.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bc-org.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bc-org.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bc-org.o libyasm/bc-org.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bc-reserve.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bc-reserve.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bc-reserve.o libyasm/bc-reserve.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/bytecode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/bytecode.o -MD -MP -MF $depbase.Tpo -c -o libyasm/bytecode.o libyasm/bytecode.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/errwarn.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/errwarn.o -MD -MP -MF $depbase.Tpo -c -o libyasm/errwarn.o libyasm/errwarn.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/expr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/expr.o -MD -MP -MF $depbase.Tpo -c -o libyasm/expr.o libyasm/expr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/file.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/file.o -MD -MP -MF $depbase.Tpo -c -o libyasm/file.o libyasm/file.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/floatnum.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/floatnum.o -MD -MP -MF $depbase.Tpo -c -o libyasm/floatnum.o libyasm/floatnum.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/hamt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/hamt.o -MD -MP -MF $depbase.Tpo -c -o libyasm/hamt.o libyasm/hamt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/insn.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/insn.o -MD -MP -MF $depbase.Tpo -c -o libyasm/insn.o libyasm/insn.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/intnum.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/intnum.o -MD -MP -MF $depbase.Tpo -c -o libyasm/intnum.o libyasm/intnum.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/inttree.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/inttree.o -MD -MP -MF $depbase.Tpo -c -o libyasm/inttree.o libyasm/inttree.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/linemap.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/linemap.o -MD -MP -MF $depbase.Tpo -c -o libyasm/linemap.o libyasm/linemap.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/md5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/md5.o -MD -MP -MF $depbase.Tpo -c -o libyasm/md5.o libyasm/md5.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/mergesort.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/mergesort.o -MD -MP -MF $depbase.Tpo -c -o libyasm/mergesort.o libyasm/mergesort.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/phash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/phash.o -MD -MP -MF $depbase.Tpo -c -o libyasm/phash.o libyasm/phash.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/section.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/section.o -MD -MP -MF $depbase.Tpo -c -o libyasm/section.o libyasm/section.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/strcasecmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/strcasecmp.o -MD -MP -MF $depbase.Tpo -c -o libyasm/strcasecmp.o libyasm/strcasecmp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/strsep.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/strsep.o -MD -MP -MF $depbase.Tpo -c -o libyasm/strsep.o libyasm/strsep.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/symrec.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/symrec.o -MD -MP -MF $depbase.Tpo -c -o libyasm/symrec.o libyasm/symrec.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/valparam.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/valparam.o -MD -MP -MF $depbase.Tpo -c -o libyasm/valparam.o libyasm/valparam.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/value.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/value.o -MD -MP -MF $depbase.Tpo -c -o libyasm/value.o libyasm/value.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/xmalloc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/xmalloc.o -MD -MP -MF $depbase.Tpo -c -o libyasm/xmalloc.o libyasm/xmalloc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo libyasm/xstrdup.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT libyasm/xstrdup.o -MD -MP -MF $depbase.Tpo -c -o libyasm/xstrdup.o libyasm/xstrdup.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo x86cpu.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT x86cpu.o -MD -MP -MF $depbase.Tpo -c -o x86cpu.o x86cpu.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo x86regtmod.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT x86regtmod.o -MD -MP -MF $depbase.Tpo -c -o x86regtmod.o x86regtmod.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo lc3bid.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT lc3bid.o -MD -MP -MF $depbase.Tpo -c -o lc3bid.o lc3bid.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gas-token.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT gas-token.o -MD -MP -MF $depbase.Tpo -c -o gas-token.o gas-token.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo nasm-token.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT nasm-token.o -MD -MP -MF $depbase.Tpo -c -o nasm-token.o nasm-token.c &&\
+mv -f $depbase.Tpo $depbase.Po
+./genmodule ./libyasm/module.in Makefile
+depbase=`echo module.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT module.o -MD -MP -MF $depbase.Tpo -c -o module.o module.c &&\
+mv -f $depbase.Tpo $depbase.Po
+rm -f libyasm.a
+ar cru libyasm.a modules/arch/x86/x86arch.o modules/arch/x86/x86bc.o modules/arch/x86/x86expr.o modules/arch/x86/x86id.o modules/arch/lc3b/lc3barch.o modules/arch/lc3b/lc3bbc.o modules/listfmts/nasm/nasm-listfmt.o modules/parsers/gas/gas-parser.o modules/parsers/gas/gas-parse.o modules/parsers/gas/gas-parse-intel.o modules/parsers/nasm/nasm-parser.o modules/parsers/nasm/nasm-parse.o modules/preprocs/nasm/nasm-preproc.o modules/preprocs/nasm/nasm-pp.o modules/preprocs/nasm/nasmlib.o modules/preprocs/nasm/nasm-eval.o modules/preprocs/raw/raw-preproc.o modules/preprocs/cpp/cpp-preproc.o modules/preprocs/gas/gas-preproc.o modules/preprocs/gas/gas-eval.o modules/dbgfmts/codeview/cv-dbgfmt.o modules/dbgfmts/codeview/cv-symline.o modules/dbgfmts/codeview/cv-type.o modules/dbgfmts/dwarf2/dwarf2-dbgfmt.o modules/dbgfmts/dwarf2/dwarf2-line.o modules/dbgfmts/dwarf2/dwarf2-aranges.o modules/dbgfmts/dwarf2/dwarf2-info.o modules/dbgfmts/null/null-dbgfmt.o modules/dbgfmts/stabs/stabs-dbgfmt.o modules/objfmts/dbg/dbg-objfmt.o modules/objfmts/bin/bin-objfmt.o modules/objfmts/elf/elf.o modules/objfmts/elf/elf-objfmt.o modules/objfmts/elf/elf-x86-x86.o modules/objfmts/elf/elf-x86-amd64.o modules/objfmts/elf/elf-x86-x32.o modules/objfmts/coff/coff-objfmt.o modules/objfmts/coff/win64-except.o modules/objfmts/macho/macho-objfmt.o modules/objfmts/rdf/rdf-objfmt.o modules/objfmts/xdf/xdf-objfmt.o libyasm/assocdat.o libyasm/bitvect.o libyasm/bc-align.o libyasm/bc-data.o libyasm/bc-incbin.o libyasm/bc-org.o libyasm/bc-reserve.o libyasm/bytecode.o libyasm/errwarn.o libyasm/expr.o libyasm/file.o libyasm/floatnum.o libyasm/hamt.o libyasm/insn.o libyasm/intnum.o libyasm/inttree.o libyasm/linemap.o libyasm/md5.o libyasm/mergesort.o libyasm/phash.o libyasm/section.o libyasm/strcasecmp.o libyasm/strsep.o libyasm/symrec.o libyasm/valparam.o libyasm/value.o libyasm/xmalloc.o libyasm/xstrdup.o x86cpu.o x86regtmod.o lc3bid.o gas-token.o nasm-token.o module.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libyasm.a
+gcc  -g -O2   -o yasm frontends/yasm/yasm.o frontends/yasm/yasm-options.o libyasm.a  
+depbase=`echo frontends/tasm/tasm.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT frontends/tasm/tasm.o -MD -MP -MF $depbase.Tpo -c -o frontends/tasm/tasm.o frontends/tasm/tasm.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo frontends/tasm/tasm-options.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT frontends/tasm/tasm-options.o -MD -MP -MF $depbase.Tpo -c -o frontends/tasm/tasm-options.o frontends/tasm/tasm-options.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc  -g -O2   -o ytasm frontends/tasm/tasm.o frontends/tasm/tasm-options.o libyasm.a  
+depbase=`echo frontends/vsyasm/vsyasm.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT frontends/vsyasm/vsyasm.o -MD -MP -MF $depbase.Tpo -c -o frontends/vsyasm/vsyasm.o frontends/vsyasm/vsyasm.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc  -g -O2   -o vsyasm frontends/vsyasm/vsyasm.o frontends/yasm/yasm-options.o libyasm.a  
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm'
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yasm___yasm'
+Command finished with return code: 0
+

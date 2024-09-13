@@ -1,0 +1,5 @@
+09/12/2024 05:43:28 PM logger_pervognsen___bitwise INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pervognsen___bitwise)
+09/12/2024 05:43:28 PM logger_pervognsen___bitwise INFO Analyzing repos/repos_400_c_round_two/pervognsen___bitwise (install_repos.py:285) (pervognsen___bitwise)
+09/12/2024 05:43:28 PM logger_pervognsen___bitwise ERROR No supported build system found for repos/repos_400_c_round_two/pervognsen___bitwise (install_repos.py:273) (pervognsen___bitwise)
+09/12/2024 05:43:28 PM logger_pervognsen___bitwise ERROR Error: Build failed for pervognsen___bitwise
+Build failed for reason: no build system (install_repos.py:295) (pervognsen___bitwise)

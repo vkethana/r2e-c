@@ -1,0 +1,61 @@
+Running command: make clean
+cd src && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src'
+cd wcc && make clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wcc'
+rm -f wcc a.out wcc.o core wcc32 ls.o ls.so
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wcc'
+cd wld && make clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wld'
+rm -f wld wld32 a.out
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wld'
+cd wsh && make clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wsh'
+rm wsh helper.o wsh.o wshmain.o libwitch.so libwitch.a linenoise.o learnwitch.log -f
+cd openlibm && make clean
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wsh/openlibm'
+make[3]: *** No rule to make target 'clean'.  Stop.
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wsh/openlibm'
+make[2]: *** [Makefile:33: clean] Error 2
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wsh'
+make[1]: *** [Makefile:20: clean] Error 2
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src'
+make: *** [Makefile:31: clean] Error 2
+Command finished with return code: 2
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+mkdir -p bin
+cd src && make CFLAGS=" -W -Wall -Wno-discarded-qualifiers -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -fpie -pie -fPIC -g3 -ggdb -I../../include  -I./include/sflib/ -I./include -I../../include/  -Wno-incompatible-pointer-types  -fstack-protector-all -Wl,-z,relro,-z,now -DPACKAGE -DPACKAGE_VERSION -masm=intel -rdynamic -D_FORTIFY_SOURCE=2 -O2 "
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src'
+cd wcc && make CFLAGS=" -W -Wall -Wno-discarded-qualifiers -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -fpie -pie -fPIC -g3 -ggdb -I../../include  -I./include/sflib/ -I./include -I../../include/  -Wno-incompatible-pointer-types  -fstack-protector-all -Wl,-z,relro,-z,now -DPACKAGE -DPACKAGE_VERSION -masm=intel -rdynamic -D_FORTIFY_SOURCE=2 -O2 "
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wcc'
+cc -W -Wall -Wno-discarded-qualifiers -Wno-int-conversion -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -fpie -pie -fPIC -g3 -ggdb -I../../include  -I./include/sflib/ -I./include -I../../include/  -Wno-incompatible-pointer-types  -fstack-protector-all -Wl,-z,relro,-z,now -DPACKAGE -DPACKAGE_VERSION -masm=intel -rdynamic -D_FORTIFY_SOURCE=2 -O2  wcc.c -o wcc -lbfd -lelf -lcapstone
+wcc.c:33:10: fatal error: bfd.h: No such file or directory
+   33 | #include <bfd.h>
+      |          ^~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:29: all] Error 1
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src/wcc'
+make[1]: *** [Makefile:11: all] Error 2
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/endrazine___wcc/src'
+make: *** [Makefile:22: all] Error 2
+Command finished with return code: 2
+

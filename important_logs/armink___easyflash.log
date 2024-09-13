@@ -1,0 +1,5 @@
+09/12/2024 05:47:34 PM logger_armink___easyflash INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (armink___easyflash)
+09/12/2024 05:47:34 PM logger_armink___easyflash INFO Analyzing repos/repos_400_c_round_two/armink___easyflash (install_repos.py:285) (armink___easyflash)
+09/12/2024 05:47:34 PM logger_armink___easyflash ERROR No supported build system found for repos/repos_400_c_round_two/armink___easyflash (install_repos.py:273) (armink___easyflash)
+09/12/2024 05:47:34 PM logger_armink___easyflash ERROR Error: Build failed for armink___easyflash
+Build failed for reason: no build system (install_repos.py:295) (armink___easyflash)

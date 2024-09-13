@@ -1,0 +1,100 @@
+Running command: make clean
+rm -f *.timestamp
+rm -f config.mak op-i386.h opc-i386.h gen-op-i386.h op-arm.h opc-arm.h gen-op-arm.h
+rm -f qemu-options.def
+rm -f *.msi
+find . \( -name '*.so' -o -name '*.dll' -o -name '*.mo' -o -name '*.[oda]' \) -type f \
+	! -path ./roms/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a \
+	! -path ./roms/edk2/ArmPkg/Library/GccLto/liblto-arm.a \
+	! -path ./roms/edk2/BaseTools/Source/Python/UPT/Dll/sqlite3.dll \
+	-exec rm {} +
+rm -f pc-bios/edk2-aarch64-code.fd pc-bios/edk2-arm-code.fd pc-bios/edk2-arm-vars.fd pc-bios/edk2-i386-code.fd pc-bios/edk2-i386-secure-code.fd pc-bios/edk2-i386-vars.fd pc-bios/edk2-x86_64-code.fd pc-bios/edk2-x86_64-secure-code.fd
+rm -f   TAGS cscope.* *.pod *~ */*~
+rm -f fsdev/*.pod scsi/*.pod
+rm -f qemu-img-cmds.h
+rm -f ui/shader/*-vert.h ui/shader/*-frag.h
+rm -f trace/generated-tracers-dtrace.dtrace*
+rm -f trace/generated-tracers-dtrace.h*
+rm -f qemu-version.h qemu-version.h-timestamp config-host.h config-host.h-timestamp qemu-options.def qemu-options.def-timestamp qapi/qapi-builtin-types.h qapi/qapi-builtin-types.h-timestamp qapi/qapi-builtin-types.c qapi/qapi-builtin-types.c-timestamp qapi/qapi-types.h qapi/qapi-types.h-timestamp qapi/qapi-types.c qapi/qapi-types.c-timestamp qapi/qapi-builtin-visit.h qapi/qapi-builtin-visit.h-timestamp qapi/qapi-builtin-visit.c qapi/qapi-builtin-visit.c-timestamp qapi/qapi-visit.h qapi/qapi-visit.h-timestamp qapi/qapi-visit.c qapi/qapi-visit.c-timestamp qapi/qapi-commands.h qapi/qapi-commands.h-timestamp qapi/qapi-commands.c qapi/qapi-commands.c-timestamp qapi/qapi-emit-events.h qapi/qapi-emit-events.h-timestamp qapi/qapi-emit-events.c qapi/qapi-emit-events.c-timestamp qapi/qapi-events.h qapi/qapi-events.h-timestamp qapi/qapi-events.c qapi/qapi-events.c-timestamp qapi/qapi-introspect.c qapi/qapi-introspect.c-timestamp qapi/qapi-introspect.h qapi/qapi-introspect.h-timestamp qapi/qapi-doc.texi qapi/qapi-doc.texi-timestamp trace/generated-tcg-tracers.h trace/generated-tcg-tracers.h-timestamp trace/generated-helpers-wrappers.h trace/generated-helpers-wrappers.h-timestamp trace/generated-helpers.h trace/generated-helpers.h-timestamp trace/generated-helpers.c trace/generated-helpers.c-timestamp module_block.h module_block.h-timestamp trace-root.h trace-root.h-timestamp trace-root.c trace-root.c-timestamp /INSTALL_C/repos/repos_400_c_round_two/alephsecurity___xnu-qemu-arm64/trace-events-all /INSTALL_C/repos/repos_400_c_round_two/alephsecurity___xnu-qemu-arm64/trace-events-all-timestamp .git-submodule-status .git-submodule-status-timestamp
+rm -f qapi-gen-timestamp
+rm -rf qga/qapi-generated
+rm -f config-all-devices.mak
+Command finished with return code: 0
+
+Running command: make distclean
+rm -f *.timestamp
+rm -f config.mak op-i386.h opc-i386.h gen-op-i386.h op-arm.h opc-arm.h gen-op-arm.h
+rm -f qemu-options.def
+rm -f *.msi
+find . \( -name '*.so' -o -name '*.dll' -o -name '*.mo' -o -name '*.[oda]' \) -type f \
+	! -path ./roms/edk2/ArmPkg/Library/GccLto/liblto-aarch64.a \
+	! -path ./roms/edk2/ArmPkg/Library/GccLto/liblto-arm.a \
+	! -path ./roms/edk2/BaseTools/Source/Python/UPT/Dll/sqlite3.dll \
+	-exec rm {} +
+rm -f pc-bios/edk2-aarch64-code.fd pc-bios/edk2-arm-code.fd pc-bios/edk2-arm-vars.fd pc-bios/edk2-i386-code.fd pc-bios/edk2-i386-secure-code.fd pc-bios/edk2-i386-vars.fd pc-bios/edk2-x86_64-code.fd pc-bios/edk2-x86_64-secure-code.fd
+rm -f   TAGS cscope.* *.pod *~ */*~
+rm -f fsdev/*.pod scsi/*.pod
+rm -f qemu-img-cmds.h
+rm -f ui/shader/*-vert.h ui/shader/*-frag.h
+rm -f trace/generated-tracers-dtrace.dtrace*
+rm -f trace/generated-tracers-dtrace.h*
+rm -f qemu-version.h qemu-version.h-timestamp config-host.h config-host.h-timestamp qemu-options.def qemu-options.def-timestamp qapi/qapi-builtin-types.h qapi/qapi-builtin-types.h-timestamp qapi/qapi-builtin-types.c qapi/qapi-builtin-types.c-timestamp qapi/qapi-types.h qapi/qapi-types.h-timestamp qapi/qapi-types.c qapi/qapi-types.c-timestamp qapi/qapi-builtin-visit.h qapi/qapi-builtin-visit.h-timestamp qapi/qapi-builtin-visit.c qapi/qapi-builtin-visit.c-timestamp qapi/qapi-visit.h qapi/qapi-visit.h-timestamp qapi/qapi-visit.c qapi/qapi-visit.c-timestamp qapi/qapi-commands.h qapi/qapi-commands.h-timestamp qapi/qapi-commands.c qapi/qapi-commands.c-timestamp qapi/qapi-emit-events.h qapi/qapi-emit-events.h-timestamp qapi/qapi-emit-events.c qapi/qapi-emit-events.c-timestamp qapi/qapi-events.h qapi/qapi-events.h-timestamp qapi/qapi-events.c qapi/qapi-events.c-timestamp qapi/qapi-introspect.c qapi/qapi-introspect.c-timestamp qapi/qapi-introspect.h qapi/qapi-introspect.h-timestamp qapi/qapi-doc.texi qapi/qapi-doc.texi-timestamp trace/generated-tcg-tracers.h trace/generated-tcg-tracers.h-timestamp trace/generated-helpers-wrappers.h trace/generated-helpers-wrappers.h-timestamp trace/generated-helpers.h trace/generated-helpers.h-timestamp trace/generated-helpers.c trace/generated-helpers.c-timestamp module_block.h module_block.h-timestamp trace-root.h trace-root.h-timestamp trace-root.c trace-root.c-timestamp /INSTALL_C/repos/repos_400_c_round_two/alephsecurity___xnu-qemu-arm64/trace-events-all /INSTALL_C/repos/repos_400_c_round_two/alephsecurity___xnu-qemu-arm64/trace-events-all-timestamp .git-submodule-status .git-submodule-status-timestamp
+rm -f qapi-gen-timestamp
+rm -rf qga/qapi-generated
+rm -f config-all-devices.mak
+rm -f config-host.mak config-host.h* config-host.ld  qemu-options.texi qemu-img-cmds.texi qemu-monitor.texi qemu-monitor-info.texi
+rm -f tests/tcg/config-*.mak
+rm -f config-all-devices.mak config-all-disas.mak config.status
+rm -f 
+rm -f po/*.mo tests/qemu-iotests/common.env
+rm -f roms/seabios/config.mak roms/vgabios/config.mak
+rm -f qemu-doc.info qemu-doc.aux qemu-doc.cp qemu-doc.cps
+rm -f qemu-doc.fn qemu-doc.fns qemu-doc.info qemu-doc.ky qemu-doc.kys
+rm -f qemu-doc.log qemu-doc.pdf qemu-doc.pg qemu-doc.toc qemu-doc.tp
+rm -f qemu-doc.vr qemu-doc.txt
+rm -f qemu-plugins-ld.symbols qemu-plugins-ld64.symbols
+rm -f config.log
+rm -f linux-headers/asm
+rm -f docs/version.texi
+rm -f docs/interop/qemu-ga-qapi.texi docs/interop/qemu-qmp-qapi.texi
+rm -f docs/interop/qemu-qmp-ref.7 docs/interop/qemu-ga-ref.7
+rm -f docs/interop/qemu-qmp-ref.txt docs/interop/qemu-ga-ref.txt
+rm -f docs/interop/qemu-qmp-ref.pdf docs/interop/qemu-ga-ref.pdf
+rm -f docs/interop/qemu-qmp-ref.html docs/interop/qemu-ga-ref.html
+rm -f docs/qemu-block-drivers.7
+rm -f docs/qemu-cpu-models.7
+rm -rf .doctrees
+rm -rf docs/built/devel/_static
+rm -f docs/built/devel/objects.inv docs/built/devel/searchindex.js docs/built/devel/*.html
+rm -rf docs/built/interop/_static
+rm -f docs/built/interop/objects.inv docs/built/interop/searchindex.js docs/built/interop/*.html
+rm -rf docs/built/specs/_static
+rm -f docs/built/specs/objects.inv docs/built/specs/searchindex.js docs/built/specs/*.html
+for d in ; do \
+rm -rf $d || exit 1 ; \
+        done
+rm -Rf .sdk
+if test -f dtc/version_gen.h; then make -I./dtc VPATH=./dtc -C dtc V="" LIBFDT_srcdir=./dtc/libfdt clean; fi
+Command finished with return code: 0
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+
+ERROR: glib-2.48 gthread-2.0 is required to compile QEMU
+
+Command finished with return code: 1
+
+Running command: make
+Please call configure before running make!
+make: *** [Makefile:87: config-host.mak] Error 1
+Command finished with return code: 2
+

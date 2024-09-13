@@ -1,0 +1,35 @@
+Running command: make clean
+rm -rf build
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+mkdir -p build
+gcc -c src/vocab_count.c -o build/vocab_count.o -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc -c src/cooccur.c -o build/cooccur.o -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc -c src/shuffle.c -o build/shuffle.o -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc -c src/glove.c -o build/glove.o -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc -c src/common.c -o build/common.o -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc build/vocab_count.o build/common.o -o build/vocab_count -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc build/cooccur.o build/common.o -o build/cooccur -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc build/shuffle.o build/common.o -o build/shuffle -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+gcc build/glove.o build/common.o -o build/glove -lm -pthread -O3 -march=native -funroll-loops -Wall -Wextra -Wpedantic
+Command finished with return code: 0
+

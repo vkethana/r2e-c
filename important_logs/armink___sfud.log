@@ -1,0 +1,5 @@
+09/12/2024 05:46:37 PM logger_armink___sfud INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (armink___sfud)
+09/12/2024 05:46:37 PM logger_armink___sfud INFO Analyzing repos/repos_400_c_round_two/armink___sfud (install_repos.py:285) (armink___sfud)
+09/12/2024 05:46:37 PM logger_armink___sfud ERROR No supported build system found for repos/repos_400_c_round_two/armink___sfud (install_repos.py:273) (armink___sfud)
+09/12/2024 05:46:37 PM logger_armink___sfud ERROR Error: Build failed for armink___sfud
+Build failed for reason: no build system (install_repos.py:295) (armink___sfud)

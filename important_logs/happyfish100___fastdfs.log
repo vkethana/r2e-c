@@ -1,0 +1,5 @@
+09/12/2024 06:06:37 PM logger_happyfish100___fastdfs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (happyfish100___fastdfs)
+09/12/2024 06:06:37 PM logger_happyfish100___fastdfs INFO Analyzing repos/repos_400_c_round_two/happyfish100___fastdfs (install_repos.py:285) (happyfish100___fastdfs)
+09/12/2024 06:06:37 PM logger_happyfish100___fastdfs ERROR No supported build system found for repos/repos_400_c_round_two/happyfish100___fastdfs (install_repos.py:273) (happyfish100___fastdfs)
+09/12/2024 06:06:37 PM logger_happyfish100___fastdfs ERROR Error: Build failed for happyfish100___fastdfs
+Build failed for reason: no build system (install_repos.py:295) (happyfish100___fastdfs)

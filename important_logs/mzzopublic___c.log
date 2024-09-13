@@ -1,0 +1,5 @@
+09/12/2024 05:59:30 PM logger_mzzopublic___c INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mzzopublic___c)
+09/12/2024 05:59:30 PM logger_mzzopublic___c INFO Analyzing repos/repos_400_c_round_two/mzzopublic___c (install_repos.py:285) (mzzopublic___c)
+09/12/2024 05:59:30 PM logger_mzzopublic___c ERROR No supported build system found for repos/repos_400_c_round_two/mzzopublic___c (install_repos.py:273) (mzzopublic___c)
+09/12/2024 05:59:30 PM logger_mzzopublic___c ERROR Error: Build failed for mzzopublic___c
+Build failed for reason: no build system (install_repos.py:295) (mzzopublic___c)

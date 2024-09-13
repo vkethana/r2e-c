@@ -1,0 +1,6 @@
+Running command: ./build.sh
++ mkdir -p bin
++ i686-w64-mingw32-windres -o bin/altdrag.o include/altdrag.rc
+./build.sh: line 6: i686-w64-mingw32-windres: command not found
+Command finished with return code: 127
+

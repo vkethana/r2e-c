@@ -1,0 +1,5 @@
+09/12/2024 05:40:58 PM logger_sp4cerat___fast-quadric-mesh-simplification INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sp4cerat___fast-quadric-mesh-simplification)
+09/12/2024 05:40:58 PM logger_sp4cerat___fast-quadric-mesh-simplification INFO Analyzing repos/repos_400_c_round_two/sp4cerat___fast-quadric-mesh-simplification (install_repos.py:285) (sp4cerat___fast-quadric-mesh-simplification)
+09/12/2024 05:40:58 PM logger_sp4cerat___fast-quadric-mesh-simplification ERROR No supported build system found for repos/repos_400_c_round_two/sp4cerat___fast-quadric-mesh-simplification (install_repos.py:273) (sp4cerat___fast-quadric-mesh-simplification)
+09/12/2024 05:40:58 PM logger_sp4cerat___fast-quadric-mesh-simplification ERROR Error: Build failed for sp4cerat___fast-quadric-mesh-simplification
+Build failed for reason: no build system (install_repos.py:295) (sp4cerat___fast-quadric-mesh-simplification)

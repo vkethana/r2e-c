@@ -1,0 +1,49 @@
+Running command: ./gradlew clean
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Configure project :app
+WARNING: BuildType 'debug' is both debuggable and has 'isMinifyEnabled' set to true.
+Debuggable builds are no longer name minified and all code optimizations and obfuscation will be disabled.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.dir path in your project's local properties file at '/INSTALL_C/repos/repos_400_c_round_two/termux___termux-x11/local.properties'.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 11s
+Command finished with return code: 1
+
+Running command: rm -rf .gradle/
+Command finished with return code: 0
+
+Running command: rm -rf build/
+Command finished with return code: 0
+
+Running command: chmod +x gradlew && ./gradlew build
+
+> Configure project :app
+WARNING: BuildType 'debug' is both debuggable and has 'isMinifyEnabled' set to true.
+Debuggable builds are no longer name minified and all code optimizations and obfuscation will be disabled.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+A problem occurred configuring project ':app'.
+> SDK location not found. Define a valid SDK location with an ANDROID_HOME environment variable or by setting the sdk.dir path in your project's local properties file at '/INSTALL_C/repos/repos_400_c_round_two/termux___termux-x11/local.properties'.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1s
+Command finished with return code: 1
+

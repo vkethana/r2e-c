@@ -1,0 +1,32 @@
+Running command: ./gradlew clean
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine java version from '17.0.12'.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+Command finished with return code: 1
+
+Running command: rm -rf .gradle/
+Command finished with return code: 0
+
+Running command: rm -rf build/
+Command finished with return code: 0
+
+Running command: chmod +x gradlew && ./gradlew build
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine java version from '17.0.12'.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+Command finished with return code: 1
+

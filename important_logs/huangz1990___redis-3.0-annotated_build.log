@@ -1,0 +1,807 @@
+Running command: make clean
+cd src && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/src'
+Command finished with return code: 0
+
+Running command: make distclean
+cd src && make distclean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html
+(cd ../deps && make distclean)
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(rm -f .make-*)
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps'
+(rm -f .make-*)
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/src'
+Command finished with return code: 0
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cd src && make all
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html
+(cd ../deps && make distclean)
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(rm -f .make-*)
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps'
+(rm -f .make-*)
+echo STD=-std=c99 -pedantic >> .make-settings
+echo WARN=-Wall >> .make-settings
+echo OPT=-O2 >> .make-settings
+echo MALLOC=jemalloc >> .make-settings
+echo CFLAGS= >> .make-settings
+echo LDFLAGS= >> .make-settings
+echo REDIS_CFLAGS= >> .make-settings
+echo REDIS_LDFLAGS= >> .make-settings
+echo PREV_FINAL_CFLAGS=-std=c99 -pedantic -Wall -O2 -g -ggdb   -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -I../deps/jemalloc/include >> .make-settings
+echo PREV_FINAL_LDFLAGS=  -g -ggdb -rdynamic >> .make-settings
+(cd ../deps && make hiredis linenoise lua jemalloc)
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(rm -f .make-*)
+(echo "" > .make-cflags)
+(echo "" > .make-ldflags)
+[32;1mMAKE[0m [37;1mhiredis[0m
+cd hiredis && make static
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/hiredis'
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  net.c
+In file included from /usr/include/x86_64-linux-gnu/sys/types.h:25,
+                 from net.c:34:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  hiredis.c
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/string.h:26,
+                 from hiredis.c:33:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  sds.c
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  async.c
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdlib.h:26,
+                 from async.c:33:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+ar rcs libhiredis.a net.o hiredis.o sds.o async.o
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/hiredis'
+[32;1mMAKE[0m [37;1mlinenoise[0m
+cd linenoise && make
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/linenoise'
+cc  -Wall -Os -g  -c linenoise.c
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/linenoise'
+[32;1mMAKE[0m [37;1mlua[0m
+cd lua/src && make all CFLAGS="-O2 -Wall -DLUA_ANSI " MYLDFLAGS=""
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/lua/src'
+cc -O2 -Wall -DLUA_ANSI    -c -o lapi.o lapi.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lcode.o lcode.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ldebug.o ldebug.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ldo.o ldo.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ldump.o ldump.c
+ldump.c: In function ‘DumpString’:
+ldump.c:63:26: warning: the comparison will always evaluate as ‘false’ for the pointer operand in ‘s + 24’ must not be NULL [-Waddress]
+   63 |  if (s==NULL || getstr(s)==NULL)
+      |                          ^~
+cc -O2 -Wall -DLUA_ANSI    -c -o lfunc.o lfunc.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lgc.o lgc.c
+cc -O2 -Wall -DLUA_ANSI    -c -o llex.o llex.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lmem.o lmem.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lobject.o lobject.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lopcodes.o lopcodes.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lparser.o lparser.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lstate.o lstate.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lstring.o lstring.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ltable.o ltable.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ltm.o ltm.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lundump.o lundump.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lvm.o lvm.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lzio.o lzio.c
+cc -O2 -Wall -DLUA_ANSI    -c -o strbuf.o strbuf.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lauxlib.o lauxlib.c
+lauxlib.c: In function ‘luaL_loadfile’:
+lauxlib.c:577:4: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
+  577 |    while ((c = getc(lf.f)) != EOF && c != LUA_SIGNATURE[0]) ;
+      |    ^~~~~
+lauxlib.c:578:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+  578 |     lf.extraline = 0;
+      |     ^~
+cc -O2 -Wall -DLUA_ANSI    -c -o lbaselib.o lbaselib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ldblib.o ldblib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o liolib.o liolib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lmathlib.o lmathlib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o loslib.o loslib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o ltablib.o ltablib.c
+ltablib.c: In function ‘addfield’:
+ltablib.c:137:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  137 |   if (!lua_isstring(L, -1))
+      |   ^~
+ltablib.c:140:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  140 |     luaL_addvalue(b);
+      |     ^~~~~~~~~~~~~
+cc -O2 -Wall -DLUA_ANSI    -c -o lstrlib.o lstrlib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o loadlib.o loadlib.c
+cc -O2 -Wall -DLUA_ANSI    -c -o linit.o linit.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lua_cjson.o lua_cjson.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lua_struct.o lua_struct.c
+cc -O2 -Wall -DLUA_ANSI    -c -o lua_cmsgpack.o lua_cmsgpack.c
+lua_cmsgpack.c: In function ‘table_is_an_array’:
+lua_cmsgpack.c:370:21: warning: variable ‘max’ set but not used [-Wunused-but-set-variable]
+  370 |     long count = 0, max = 0, idx = 0;
+      |                     ^~~
+ar rcu liblua.a lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o strbuf.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua_cjson.o lua_struct.o lua_cmsgpack.o	# DLL needs all object files
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib liblua.a
+cc -O2 -Wall -DLUA_ANSI    -c -o lua.o lua.c
+cc -o lua  lua.o liblua.a -lm 
+/usr/bin/ld: liblua.a(loslib.o): in function `os_tmpname':
+loslib.c:(.text+0x2a0): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+cc -O2 -Wall -DLUA_ANSI    -c -o luac.o luac.c
+cc -O2 -Wall -DLUA_ANSI    -c -o print.o print.c
+cc -o luac  luac.o print.o liblua.a -lm 
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/lua/src'
+[32;1mMAKE[0m [37;1mjemalloc[0m
+cd jemalloc && ./configure --with-jemalloc-prefix=je_ --enable-cc-silence CFLAGS="-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops " LDFLAGS=""
+checking for xsltproc... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of void *... 8
+checking size of int... 4
+checking size of long... 8
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether __asm__ syntax is compilable... yes
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ranlib... ranlib
+checking for ar... /usr/bin/ar
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... no
+checking STATIC_PAGE_SHIFT... 12
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for TLS... yes
+checking whether a program using ffsl is compilable... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking whether Darwin OSSpin*() is compilable... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: executing include/jemalloc/internal/size_classes.h commands
+===============================================================================
+jemalloc version   : 3.2.0-0-g87499f6748ebe4817571e817e9f680ccb5bf54a9
+library revision   : 1
+
+CC                 : gcc
+CPPFLAGS           :  -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -fvisibility=hidden
+LDFLAGS            : 
+LIBS               :  -lm -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : 
+XSLROOT            : 
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : 
+abs_srcroot        : /INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/jemalloc/
+objroot            : 
+abs_objroot        : /INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/jemalloc/
+
+JEMALLOC_PREFIX    : je_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : 
+install_suffix     : 
+autogen            : 0
+experimental       : 1
+cc-silence         : 1
+debug              : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 1
+utrace             : 0
+valgrind           : 0
+xmalloc            : 0
+mremap             : 0
+munmap             : 0
+dss                : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+cd jemalloc && make CFLAGS="-std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops " LDFLAGS="" lib/libjemalloc.a
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/jemalloc'
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/jemalloc.o src/jemalloc.c
+src/jemalloc.c: In function ‘je_realloc’:
+src/jemalloc.c:1082:16: warning: variable ‘old_rzsize’ set but not used [-Wunused-but-set-variable]
+ 1082 |         size_t old_rzsize JEMALLOC_CC_SILENCE_INIT(0);
+      |                ^~~~~~~~~~
+src/jemalloc.c: In function ‘je_free’:
+src/jemalloc.c:1230:24: warning: variable ‘rzsize’ set but not used [-Wunused-but-set-variable]
+ 1230 |                 size_t rzsize JEMALLOC_CC_SILENCE_INIT(0);
+      |                        ^~~~~~
+src/jemalloc.c: In function ‘je_rallocm’:
+src/jemalloc.c:1477:16: warning: variable ‘old_rzsize’ set but not used [-Wunused-but-set-variable]
+ 1477 |         size_t old_rzsize JEMALLOC_CC_SILENCE_INIT(0);
+      |                ^~~~~~~~~~
+src/jemalloc.c: In function ‘je_dallocm’:
+src/jemalloc.c:1622:16: warning: variable ‘rzsize’ set but not used [-Wunused-but-set-variable]
+ 1622 |         size_t rzsize JEMALLOC_CC_SILENCE_INIT(0);
+      |                ^~~~~~
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/arena.o src/arena.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/atomic.o src/atomic.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/base.o src/base.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/bitmap.o src/bitmap.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk.o src/chunk.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk_dss.o src/chunk_dss.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/chunk_mmap.o src/chunk_mmap.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ckh.o src/ckh.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/ctl.o src/ctl.c
+src/ctl.c: In function ‘epoch_ctl’:
+src/ctl.c:1112:18: warning: variable ‘newval’ set but not used [-Wunused-but-set-variable]
+ 1112 |         uint64_t newval;
+      |                  ^~~~~~
+src/ctl.c: In function ‘arena_i_dss_ctl’:
+src/ctl.c:1332:21: warning: ‘dss’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1332 |                 if (strcmp(dss_prec_names[i], dss) == 0) {
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/ctl.c:1323:21: note: ‘dss’ declared here
+ 1323 |         const char *dss;
+      |                     ^~~
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/extent.o src/extent.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/hash.o src/hash.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/huge.o src/huge.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mb.o src/mb.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/mutex.o src/mutex.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/prof.o src/prof.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/quarantine.o src/quarantine.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/rtree.o src/rtree.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/stats.o src/stats.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tcache.o src/tcache.c
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/util.o src/util.c
+src/util.c: In function ‘malloc_vsnprintf’:
+src/util.c:339:9: warning: case label value exceeds maximum value for type [-Wswitch-outside-range]
+  339 |         case '?' | 0x80:                                                \
+      |         ^~~~
+src/util.c:551:33: note: in expansion of macro ‘GET_ARG_NUMERIC’
+  551 |                                 GET_ARG_NUMERIC(val, 'p');
+      |                                 ^~~~~~~~~~~~~~~
+src/util.c:345:9: warning: case label value exceeds maximum value for type [-Wswitch-outside-range]
+  345 |         case 'l' | 0x80:                                                \
+      |         ^~~~
+src/util.c:551:33: note: in expansion of macro ‘GET_ARG_NUMERIC’
+  551 |                                 GET_ARG_NUMERIC(val, 'p');
+      |                                 ^~~~~~~~~~~~~~~
+src/util.c:351:9: warning: case label value exceeds maximum value for type [-Wswitch-outside-range]
+  351 |         case 'q' | 0x80:                                                \
+      |         ^~~~
+src/util.c:551:33: note: in expansion of macro ‘GET_ARG_NUMERIC’
+  551 |                                 GET_ARG_NUMERIC(val, 'p');
+      |                                 ^~~~~~~~~~~~~~~
+src/util.c:363:9: warning: case label value exceeds maximum value for type [-Wswitch-outside-range]
+  363 |         case 'z' | 0x80:                                                \
+      |         ^~~~
+src/util.c:551:33: note: in expansion of macro ‘GET_ARG_NUMERIC’
+  551 |                                 GET_ARG_NUMERIC(val, 'p');
+      |                                 ^~~~~~~~~~~~~~~
+gcc -std=gnu99 -Wall -pipe -g3 -O3 -funroll-loops  -c -D_GNU_SOURCE -D_REENTRANT -Iinclude -Iinclude -o src/tsd.o src/tsd.c
+ar crus lib/libjemalloc.a src/jemalloc.o src/arena.o src/atomic.o src/base.o src/bitmap.o src/chunk.o src/chunk_dss.o src/chunk_mmap.o src/ckh.o src/ctl.o src/extent.o src/hash.o src/huge.o src/mb.o src/mutex.o src/prof.o src/quarantine.o src/rtree.o src/stats.o src/tcache.o src/util.o src/tsd.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps/jemalloc'
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/deps'
+    [34mCC[0m [33madlist.o[0m
+    [34mCC[0m [33mae.o[0m
+    [34mCC[0m [33manet.o[0m
+In file included from /usr/include/x86_64-linux-gnu/sys/types.h:25,
+                 from anet.c:33:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mdict.o[0m
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:27,
+                 from dict.c:38:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mredis.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from redis.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33msds.o[0m
+    [34mCC[0m [33mzmalloc.o[0m
+    [34mCC[0m [33mlzf_c.o[0m
+In file included from lzf_c.c:37:
+lzfP.h:131:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+  131 | #if !STRICT_ALIGN
+      |      ^~~~~~~~~~~~
+lzfP.h:131:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+lzf_c.c: In function ‘lzf_compress’:
+lzf_c.c:158:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+  158 | #if STRICT_ALIGN
+      |     ^~~~~~~~~~~~
+lzf_c.c:158:5: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+    [34mCC[0m [33mlzf_d.o[0m
+In file included from lzf_d.c:37:
+lzfP.h:131:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+  131 | #if !STRICT_ALIGN
+      |      ^~~~~~~~~~~~
+lzfP.h:131:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+    [34mCC[0m [33mpqsort.o[0m
+    [34mCC[0m [33mzipmap.o[0m
+    [34mCC[0m [33msha1.o[0m
+    [34mCC[0m [33mziplist.o[0m
+    [34mCC[0m [33mrelease.o[0m
+    [34mCC[0m [33mnetworking.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from networking.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mutil.o[0m
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdlib.h:26,
+                 from util.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mobject.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from object.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mdb.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from db.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mreplication.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from replication.c:34:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mrdb.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from rdb.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mt_string.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from t_string.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mt_list.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from t_list.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mt_set.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from t_set.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+t_set.c: In function ‘setTypeNextObject’:
+t_set.c:300:13: warning: ‘objele’ may be used uninitialized [-Wmaybe-uninitialized]
+  300 |             incrRefCount(objele);
+      |             ^~~~~~~~~~~~~~~~~~~~
+t_set.c:286:11: note: ‘objele’ was declared here
+  286 |     robj *objele;
+      |           ^~~~~~
+    [34mCC[0m [33mt_zset.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from t_zset.c:72:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+t_zset.c: In function ‘zremrangeGenericCommand’:
+t_zset.c:2094:9: warning: ‘deleted’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2094 |     if (deleted) {
+      |         ^~~~~~~
+t_zset.c:2008:19: note: ‘deleted’ declared here
+ 2008 |     unsigned long deleted;
+      |                   ^~~~~~~
+t_zset.c:2094:9: warning: ‘deleted’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2094 |     if (deleted) {
+      |         ^~~~~~~
+t_zset.c:2008:19: note: ‘deleted’ declared here
+ 2008 |     unsigned long deleted;
+      |                   ^~~~~~~
+    [34mCC[0m [33mt_hash.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from t_hash.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mconfig.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from config.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33maof.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from aof.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mpubsub.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from pubsub.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mmulti.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from multi.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mdebug.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from debug.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33msort.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from sort.c:32:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mintset.o[0m
+    [34mCC[0m [33msyncio.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from syncio.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mcluster.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from cluster.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mcrc16.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from crc16.c:1:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mendianconv.o[0m
+    [34mCC[0m [33mslowlog.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from slowlog.c:50:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mscripting.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from scripting.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mbio.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from bio.c:86:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mrio.o[0m
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/string.h:26,
+                 from rio.c:67:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mrand.o[0m
+    [34mCC[0m [33mmemtest.o[0m
+    [34mCC[0m [33mcrc64.o[0m
+    [34mCC[0m [33mbitops.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from bitops.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33msentinel.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from sentinel.c:31:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+sentinel.c:4919:1: warning: multi-line comment [-Wcomment]
+ 4919 | //             /  \
+      | ^
+    [34mCC[0m [33mnotify.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from notify.c:30:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33msetproctitle.o[0m
+setproctitle.c:46:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+   46 | #if !HAVE_SETPROCTITLE
+      |      ^~~~~~~~~~~~~~~~~
+setproctitle.c:46:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+setproctitle.c:46:6: warning: this use of "defined" may not be portable [-Wexpansion-to-defined]
+    [34mCC[0m [33mblocked.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from blocked.c:64:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34mCC[0m [33mhyperloglog.o[0m
+In file included from config.h:90,
+                 from redis.h:34,
+                 from hyperloglog.c:32:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34;1mLINK[0m [37;1mredis-server[0m
+    [34;1mINSTALL[0m [37;1mredis-sentinel[0m
+    [34mCC[0m [33mredis-cli.o[0m
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:27,
+                 from redis-cli.c:34:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34;1mLINK[0m [37;1mredis-cli[0m
+    [34mCC[0m [33mredis-benchmark.o[0m
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:27,
+                 from redis-benchmark.c:33:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+    [34;1mLINK[0m [37;1mredis-benchmark[0m
+    [34mCC[0m [33mredis-check-dump.o[0m
+    [34;1mLINK[0m [37;1mredis-check-dump[0m
+    [34mCC[0m [33mredis-check-aof.o[0m
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdlib.h:26,
+                 from redis-check-aof.c:32:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+redis-check-aof.c: In function ‘consumeNewline.part.0’:
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:58:9: note: in expansion of macro ‘ERROR’
+   58 |         ERROR("Expected \\r\\n, got: %02x%02x",buf[0],buf[1]);
+      |         ^~~~~
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:58:9: note: in expansion of macro ‘ERROR’
+   58 |         ERROR("Expected \\r\\n, got: %02x%02x",buf[0],buf[1]);
+      |         ^~~~~
+In function ‘consumeNewline’,
+    inlined from ‘consumeNewline’ at redis-check-aof.c:56:5,
+    inlined from ‘readLong’ at redis-check-aof.c:88:12:
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:58:9: note: in expansion of macro ‘ERROR’
+   58 |         ERROR("Expected \\r\\n, got: %02x%02x",buf[0],buf[1]);
+      |         ^~~~~
+redis-check-aof.c: In function ‘readLong’:
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+In function ‘consumeNewline’,
+    inlined from ‘consumeNewline’ at redis-check-aof.c:56:5,
+    inlined from ‘readLong’ at redis-check-aof.c:88:12:
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:58:9: note: in expansion of macro ‘ERROR’
+   58 |         ERROR("Expected \\r\\n, got: %02x%02x",buf[0],buf[1]);
+      |         ^~~~~
+redis-check-aof.c: In function ‘readLong’:
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:81:9: note: in expansion of macro ‘ERROR’
+   81 |         ERROR("Expected prefix '%c', got: '%c'",buf[0],prefix);
+      |         ^~~~~
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:81:9: note: in expansion of macro ‘ERROR’
+   81 |         ERROR("Expected prefix '%c', got: '%c'",buf[0],prefix);
+      |         ^~~~~
+redis-check-aof.c: In function ‘readBytes’:
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:104:9: note: in expansion of macro ‘ERROR’
+  104 |         ERROR("Expected to read %ld bytes, got %ld bytes",length,real);
+      |         ^~~~~
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:104:9: note: in expansion of macro ‘ERROR’
+  104 |         ERROR("Expected to read %ld bytes, got %ld bytes",length,real);
+      |         ^~~~~
+redis-check-aof.c: In function ‘process’:
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:200:25: note: in expansion of macro ‘ERROR’
+  200 |                         ERROR("Unexpected EXEC");
+      |                         ^~~~~
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:200:25: note: in expansion of macro ‘ERROR’
+  200 |                         ERROR("Unexpected EXEC");
+      |                         ^~~~~
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:193:25: note: in expansion of macro ‘ERROR’
+  193 |                         ERROR("Unexpected MULTI");
+      |                         ^~~~~
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:193:25: note: in expansion of macro ‘ERROR’
+  193 |                         ERROR("Unexpected MULTI");
+      |                         ^~~~~
+redis-check-aof.c:42:20: warning: ‘%s’ directive writing up to 1023 bytes into a region of size 1004 [-Wformat-overflow=]
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                    ^~~~~~~~~~~~~~                   ~~~~~
+redis-check-aof.c:222:9: note: in expansion of macro ‘ERROR’
+  222 |         ERROR("Reached EOF before reading EXEC for MULTI");
+      |         ^~~~~
+redis-check-aof.c:42:31: note: format string is defined here
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |                               ^~
+redis-check-aof.c:42:5: note: ‘sprintf’ output between 21 and 1044 bytes into a destination of size 1024
+   42 |     sprintf(error, "0x%16llx: %s", (long long)epos, __buf); \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+redis-check-aof.c:222:9: note: in expansion of macro ‘ERROR’
+  222 |         ERROR("Reached EOF before reading EXEC for MULTI");
+      |         ^~~~~
+    [34;1mLINK[0m [37;1mredis-check-aof[0m
+
+Hint: To run 'make test' is a good idea ;)
+
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/huangz1990___redis-3.0-annotated/src'
+Command finished with return code: 0
+

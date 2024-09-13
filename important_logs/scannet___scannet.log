@@ -1,0 +1,5 @@
+09/12/2024 05:47:34 PM logger_scannet___scannet INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (scannet___scannet)
+09/12/2024 05:47:34 PM logger_scannet___scannet INFO Analyzing repos/repos_400_c_round_two/scannet___scannet (install_repos.py:285) (scannet___scannet)
+09/12/2024 05:47:34 PM logger_scannet___scannet ERROR No supported build system found for repos/repos_400_c_round_two/scannet___scannet (install_repos.py:273) (scannet___scannet)
+09/12/2024 05:47:34 PM logger_scannet___scannet ERROR Error: Build failed for scannet___scannet
+Build failed for reason: no build system (install_repos.py:295) (scannet___scannet)

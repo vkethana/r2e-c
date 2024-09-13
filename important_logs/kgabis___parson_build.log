@@ -1,0 +1,49 @@
+Running command: make clean
+rm -f test *.o
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gcc -O0 -g -Wall -Wextra -std=c89 -pedantic-errors -DTESTS_MAIN -o test tests.c parson.c
+./test
+################################################################################
+Running parson tests
+Testing failing allocations: OK (tested 536 failing allocations)
+Tests failed: 0
+Tests passed: 349
+################################################################################
+g++ -O0 -g -Wall -Wextra -DTESTS_MAIN  -o testcpp tests.c parson.c
+./testcpp
+################################################################################
+Running parson tests
+Testing failing allocations: OK (tested 536 failing allocations)
+Tests failed: 0
+Tests passed: 349
+################################################################################
+gcc -O0 -g -Wall -Wextra -std=c89 -pedantic-errors -DTESTS_MAIN -DPARSON_FORCE_HASH_COLLISIONS -o test_hash_collisions tests.c parson.c
+./test_hash_collisions
+################################################################################
+Running parson tests
+Testing failing allocations: OK (tested 536 failing allocations)
+Tests failed: 0
+Tests passed: 349
+################################################################################
+Command finished with return code: 0
+

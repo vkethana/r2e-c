@@ -1,0 +1,50 @@
+Running command: make clean
+make -C example clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example'
+make -C DllLoader clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example/DllLoader'
+rm -rf DllLoader.o ../../MemoryModule.o DllLoaderLoader.o ../../MemoryModule.o DllLoader.exe DllLoaderLoader.exe
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example/DllLoader'
+make -C SampleDLL clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example/SampleDLL'
+rm -rf SampleDLL.o SampleDLL.res SampleDLL.dll
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example/SampleDLL'
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example'
+make -C tests clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/tests'
+rm -rf LoadDll.exe test-align-128.dll test-align-256.dll test-align-512.dll test-align-768.dll test-align-1024.dll test-align-2048.dll test-align-3072.dll test-align-4096.dll test-align-100.dll test-align-200.dll test-align-300.dll test-align-400.dll test-align-500.dll test-align-600.dll test-align-800.dll test-align-900.dll test-relocate.dll test-exports.dll LoadDll.o ../MemoryModule.o SampleDLL.o SampleDLL.res TestSuite.o ../MemoryModule.o SampleExports.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/tests'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make -C example
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example'
+make -C DllLoader
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example/DllLoader'
+i686-w64-mingw32-g++ -Wall -g -c DllLoader.cpp
+make[2]: i686-w64-mingw32-g++: No such file or directory
+make[2]: *** [Makefile:36: DllLoader.o] Error 127
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example/DllLoader'
+make[1]: *** [Makefile:8: DllLoader] Error 2
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/fancycode___memorymodule/example'
+make: *** [Makefile:8: example] Error 2
+Command finished with return code: 2
+

@@ -1,0 +1,169 @@
+Running command: make clean
+rm -f *.o *.exe example example2 example3 bench repl smoke_pr smoke
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gcc -Wall -Wshadow -O2 -o smoke smoke.c tinyexpr.c -lm
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:328:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  328 |             ret->bound = s->bound;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:325:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:317:19:
+tinyexpr.c:98:15: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+   98 |     ret->type = type;
+      |     ~~~~~~~~~~^~~~~~
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:320:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  320 |             ret->value = s->value;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:317:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:414:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  414 |             ret->value = NAN;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:410:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+./smoke
+	Results       pass:158   fail: 0      0ms
+	Syntax        pass:70   fail: 0      0ms
+	NaNs          pass:55   fail: 0      0ms
+	INFs          pass:50   fail: 0      0ms
+	Variables     pass:36   fail: 0      0ms
+	Functions     pass:4406   fail: 0      0ms
+	Dynamic       pass:44   fail: 0      0ms
+	Closure       pass:17   fail: 0      0ms
+	Optimize      pass:12   fail: 0      0ms
+	Pow           pass:42   fail: 0      0ms
+	Combinatorics pass:40   fail: 0      0ms
+ALL TESTS PASSED (4930/4930)
+gcc -Wall -Wshadow -O2 -DTE_POW_FROM_RIGHT -DTE_NAT_LOG -o smoke_pr smoke.c tinyexpr.c -lm
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:328:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  328 |             ret->bound = s->bound;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:325:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:317:19:
+tinyexpr.c:98:15: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+   98 |     ret->type = type;
+      |     ~~~~~~~~~~^~~~~~
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:320:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  320 |             ret->value = s->value;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:317:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:414:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  414 |             ret->value = NAN;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:410:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+./smoke_pr
+	Results       pass:162   fail: 0      0ms
+	Syntax        pass:70   fail: 0      0ms
+	NaNs          pass:55   fail: 0      0ms
+	INFs          pass:50   fail: 0      0ms
+	Variables     pass:36   fail: 0      0ms
+	Functions     pass:4406   fail: 0      0ms
+	Dynamic       pass:44   fail: 0      0ms
+	Closure       pass:17   fail: 0      0ms
+	Optimize      pass:12   fail: 0      0ms
+	Pow           pass:36   fail: 0      0ms
+	Combinatorics pass:40   fail: 0      0ms
+ALL TESTS PASSED (4928/4928)
+gcc -c -Wall -Wshadow -O2 repl.c -o repl.o
+gcc -c -Wall -Wshadow -O2 tinyexpr.c -o tinyexpr.o
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:328:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  328 |             ret->bound = s->bound;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:325:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:317:19:
+tinyexpr.c:98:15: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+   98 |     ret->type = type;
+      |     ~~~~~~~~~~^~~~~~
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:320:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  320 |             ret->value = s->value;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:317:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+tinyexpr.c: In function ‘base’:
+tinyexpr.c:414:16: warning: array subscript ‘te_expr[0]’ is partly outside array bounds of ‘unsigned char[16]’ [-Warray-bounds]
+  414 |             ret->value = NAN;
+      |                ^~
+In function ‘new_expr’,
+    inlined from ‘base’ at tinyexpr.c:410:19:
+tinyexpr.c:91:20: note: object of size 16 allocated by ‘malloc’
+   91 |     te_expr *ret = malloc(size);
+      |                    ^~~~~~~~~~~~
+gcc -Wall -Wshadow -O2 -o repl repl.o tinyexpr.o -lm
+gcc -c -Wall -Wshadow -O2 benchmark.c -o benchmark.o
+gcc -Wall -Wshadow -O2 -o bench benchmark.o tinyexpr.o -lm
+gcc -c -Wall -Wshadow -O2 example.c -o example.o
+gcc -Wall -Wshadow -O2 -o example example.o tinyexpr.o -lm
+gcc -c -Wall -Wshadow -O2 example2.c -o example2.o
+gcc -Wall -Wshadow -O2 -o example2 example2.o tinyexpr.o -lm
+gcc -c -Wall -Wshadow -O2 example3.c -o example3.o
+gcc -Wall -Wshadow -O2 -o example3 example3.o tinyexpr.o -lm
+Command finished with return code: 0
+

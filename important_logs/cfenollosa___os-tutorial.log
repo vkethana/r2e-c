@@ -1,0 +1,5 @@
+09/12/2024 05:43:32 PM logger_cfenollosa___os-tutorial INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cfenollosa___os-tutorial)
+09/12/2024 05:43:32 PM logger_cfenollosa___os-tutorial INFO Analyzing repos/repos_400_c_round_two/cfenollosa___os-tutorial (install_repos.py:285) (cfenollosa___os-tutorial)
+09/12/2024 05:43:32 PM logger_cfenollosa___os-tutorial ERROR No supported build system found for repos/repos_400_c_round_two/cfenollosa___os-tutorial (install_repos.py:273) (cfenollosa___os-tutorial)
+09/12/2024 05:43:32 PM logger_cfenollosa___os-tutorial ERROR Error: Build failed for cfenollosa___os-tutorial
+Build failed for reason: no build system (install_repos.py:295) (cfenollosa___os-tutorial)

@@ -1,0 +1,46 @@
+Running command: make clean
+rm -rf build dist site htmlcov .pytest_cache .eggs
+rm -f .coverage coverage.xml word2vec/_generated_version.py
+find . -type f -name '*.py[co]' -delete
+find . -type d -name __pycache__ -exec rm -rf {} +
+find . -type d -name .ipynb_checkpoints -exec rm -rf {} +
+rm -rf data/test-output*
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+[36mbuild                         [0m  Build package
+[36mcheck                         [0m  Check linting
+[36mclean                         [0m  Clean build files
+[36mcleanall                      [0m  Clean everything
+[36mdevelop                       [0m  Install package for development
+[36mdocker-img                    [0m  Build test docker container
+[36mdocker-run                    [0m  Run docker container
+[36menv                           [0m  Create Python env
+[36mfmt                           [0m  Format source
+[36mhelp                          [0m  Show this help menu
+[36mreport                        [0m  Generate coverage reports
+[36mtest-all                      [0m  Run all tests
+[36mtest-data                     [0m  Download test data
+[36mtest                          [0m  Run tests
+[36mupload-pypi                   [0m  Upload package to PyPI
+[36mupload-test                   [0m  Upload package to test PyPI
+Command finished with return code: 0
+

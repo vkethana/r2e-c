@@ -1,0 +1,5 @@
+09/12/2024 05:47:34 PM logger_0x90___wifi-arsenal INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (0x90___wifi-arsenal)
+09/12/2024 05:47:34 PM logger_0x90___wifi-arsenal INFO Analyzing repos/repos_400_c_round_two/0x90___wifi-arsenal (install_repos.py:285) (0x90___wifi-arsenal)
+09/12/2024 05:47:34 PM logger_0x90___wifi-arsenal ERROR No supported build system found for repos/repos_400_c_round_two/0x90___wifi-arsenal (install_repos.py:273) (0x90___wifi-arsenal)
+09/12/2024 05:47:34 PM logger_0x90___wifi-arsenal ERROR Error: Build failed for 0x90___wifi-arsenal
+Build failed for reason: no build system (install_repos.py:295) (0x90___wifi-arsenal)

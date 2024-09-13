@@ -1,0 +1,13 @@
+09/12/2024 05:36:48 PM logger_signal11___hidapi INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (signal11___hidapi)
+09/12/2024 05:36:48 PM logger_signal11___hidapi INFO Analyzing repos/repos_400_c_round_two/signal11___hidapi (install_repos.py:285) (signal11___hidapi)
+09/12/2024 05:36:48 PM logger_signal11___hidapi INFO Running autoreconf (install_repos.py:85) (signal11___hidapi)
+09/12/2024 05:36:48 PM logger_signal11___hidapi INFO Running command: autoreconf -i (install_repos.py:20) (signal11___hidapi)
+09/12/2024 05:36:48 PM logger_signal11___hidapi INFO Logging output to: logs/repos/repos_400_c_round_two_install_logs_with_make_cmake_gradlew_meson_scons_bazel_2024-09-12_17-35-05/signal11___hidapi_build.log (install_repos.py:21) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi DEBUG configure.ac:23: error: AC_CONFIG_MACRO_DIR can only be used once (install_repos.py:38) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi DEBUG ./lib/autoconf/general.m4:1970: AC_CONFIG_MACRO_DIR is expanded from... (install_repos.py:38) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi DEBUG configure.ac:23: the top level (install_repos.py:38) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi DEBUG autom4te: error: /usr/bin/m4 failed with exit status: 1 (install_repos.py:38) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi DEBUG aclocal: error: /usr/bin/autom4te failed with exit status: 1 (install_repos.py:38) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi DEBUG autoreconf: error: aclocal failed with exit status: 1 (install_repos.py:38) (signal11___hidapi)
+09/12/2024 05:36:49 PM logger_signal11___hidapi ERROR Error: Build failed for signal11___hidapi
+Build failed for reason: autoreconf failed (install_repos.py:295) (signal11___hidapi)

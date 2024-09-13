@@ -1,0 +1,29 @@
+Running command: make clean
+rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions \
+       modules.order Module.symvers
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make -C /lib/modules/`uname -r`/build M=$PWD modules
+make[1]: *** /lib/modules/5.15.0-1067-gcp/build: No such file or directory.  Stop.
+make: *** [Makefile:47: default] Error 2
+Command finished with return code: 2
+

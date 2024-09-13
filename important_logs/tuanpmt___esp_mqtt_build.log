@@ -1,0 +1,35 @@
+Running command: make clean
+rm -rf build/user build/driver build/mqtt build/modules
+rm -rf firmware
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+touch user/user_main.c
+mkdir -p build/user
+mkdir -p build/driver
+mkdir -p build/mqtt
+mkdir -p build/modules
+mkdir -p firmware
+xtensa-lx106-elf-gcc -Iuser -Idriver -Imqtt -Imodules -Iuser/include -Idriver/include -Imqtt/include -Imodules/include -Iinclude -I/tools/esp8266/sdk/ESP8266_NONOS_SDK/include -I/tools/esp8266/sdk/ESP8266_NONOS_SDK/include/json -g -Wpointer-arith -Wundef -Wl,-EL -Wno-implicit-function-declaration -fno-inline-functions -nostdlib -mlongcalls -mtext-section-literals -ffunction-sections -fdata-sections -fno-builtin-printf -DICACHE_FLASH -DBUID_TIME=\"2024-Sep-12_17:40:07_UTC\" -DMQTT_DEBUG_ON -DDEBUG_ON -D_STDINT_H  -c user/rfinit.c -o build/user/rfinit.o
+make: xtensa-lx106-elf-gcc: No such file or directory
+make: *** [Makefile:246: build/user/rfinit.o] Error 127
+Command finished with return code: 2
+

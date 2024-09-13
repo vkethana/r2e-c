@@ -1,0 +1,5 @@
+09/12/2024 05:46:41 PM logger_riba2534___tcp-ip-networknote INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (riba2534___tcp-ip-networknote)
+09/12/2024 05:46:41 PM logger_riba2534___tcp-ip-networknote INFO Analyzing repos/repos_400_c_round_two/riba2534___tcp-ip-networknote (install_repos.py:285) (riba2534___tcp-ip-networknote)
+09/12/2024 05:46:41 PM logger_riba2534___tcp-ip-networknote ERROR No supported build system found for repos/repos_400_c_round_two/riba2534___tcp-ip-networknote (install_repos.py:273) (riba2534___tcp-ip-networknote)
+09/12/2024 05:46:41 PM logger_riba2534___tcp-ip-networknote ERROR Error: Build failed for riba2534___tcp-ip-networknote
+Build failed for reason: no build system (install_repos.py:295) (riba2534___tcp-ip-networknote)

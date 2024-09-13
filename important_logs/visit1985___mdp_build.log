@@ -1,0 +1,43 @@
+Running command: make clean
+make -C src clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/visit1985___mdp/src'
+rm -f cstack.o cstring.o main.o markdown.o parser.o url.o viewer.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/visit1985___mdp/src'
+rm -f mdp
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make  -C src
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/visit1985___mdp/src'
+cc -O3 -Wall -I../include  -c -o cstack.o cstack.c
+cc -O3 -Wall -I../include  -c -o cstring.o cstring.c
+cc -O3 -Wall -I../include  -c -o main.o main.c
+In file included from ../include/main.h:24,
+                 from main.c:27:
+../include/viewer.h:41:10: fatal error: ncurses.h: No such file or directory
+   41 | #include <ncurses.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [<builtin>: main.o] Error 1
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/visit1985___mdp/src'
+make: *** [Makefile:60: src] Error 2
+Command finished with return code: 2
+

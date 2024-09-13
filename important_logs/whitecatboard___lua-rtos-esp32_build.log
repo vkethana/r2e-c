@@ -1,0 +1,57 @@
+Running command: make clean
+Makefile:231: /make/project.mk: No such file or directory
+make: *** No rule to make target '/make/project.mk'.  Stop.
+Command finished with return code: 2
+
+Running command: make distclean
+Makefile:231: /make/project.mk: No such file or directory
+make: *** No rule to make target '/make/project.mk'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+Please, select a board:
+
+   1: Whitecat ESP32N1
+   2: Whitecat ESP32N1 DEVKIT
+   3: Whitecat ESP32N2 DEVKIT
+   4: Whitecat ESP32 LORA GW
+   5: CITILAB ED1
+   6: Espressif Systems ESP32-CoreBoard
+   7: Espressif Systems ESP32 PICO KIT
+   8: Espressif Systems ESP-WROVER-KIT
+   9: SparkFun ESP32 Thing
+  10: Adafruit HUZZAH32
+  11: Pycom FIPY
+  12: Olimex ESP32-POE
+  13: Olimex ESP32-Gateway
+  14: Olimex ESP32-EVB
+  15: DOIT ESP32 DEVKIT V1
+  16: WeMos ESP32 with 128x64 OLED
+  17: EVK-NINA-W
+  18: Silicognition wESP32
+  19: M5Stack core board
+  20: TTGO Lora32 without OLED
+  21: Generic ESP32 board
+
+Selected board: Traceback (most recent call last):
+  File "/INSTALL_C/repos/repos_400_c_round_two/whitecatboard___lua-rtos-esp32/boards/selection.py", line 77, in <module>
+    sboard = raw_input()
+             ^^^^^^^^^
+NameError: name 'raw_input' is not defined
+Makefile:96: *** "No sdkconfig file".  Stop.
+Command finished with return code: 2
+

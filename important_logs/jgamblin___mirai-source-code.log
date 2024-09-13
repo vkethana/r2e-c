@@ -1,0 +1,5 @@
+09/12/2024 06:06:27 PM logger_jgamblin___mirai-source-code INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jgamblin___mirai-source-code)
+09/12/2024 06:06:27 PM logger_jgamblin___mirai-source-code INFO Analyzing repos/repos_400_c_round_two/jgamblin___mirai-source-code (install_repos.py:285) (jgamblin___mirai-source-code)
+09/12/2024 06:06:27 PM logger_jgamblin___mirai-source-code ERROR No supported build system found for repos/repos_400_c_round_two/jgamblin___mirai-source-code (install_repos.py:273) (jgamblin___mirai-source-code)
+09/12/2024 06:06:27 PM logger_jgamblin___mirai-source-code ERROR Error: Build failed for jgamblin___mirai-source-code
+Build failed for reason: no build system (install_repos.py:295) (jgamblin___mirai-source-code)

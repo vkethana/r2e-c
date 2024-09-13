@@ -1,0 +1,5 @@
+09/12/2024 05:46:04 PM logger_ming1016___study INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ming1016___study)
+09/12/2024 05:46:04 PM logger_ming1016___study INFO Analyzing repos/repos_400_c_round_two/ming1016___study (install_repos.py:285) (ming1016___study)
+09/12/2024 05:46:04 PM logger_ming1016___study ERROR No supported build system found for repos/repos_400_c_round_two/ming1016___study (install_repos.py:273) (ming1016___study)
+09/12/2024 05:46:04 PM logger_ming1016___study ERROR Error: Build failed for ming1016___study
+Build failed for reason: no build system (install_repos.py:295) (ming1016___study)

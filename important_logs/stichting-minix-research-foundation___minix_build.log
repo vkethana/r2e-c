@@ -1,0 +1,26 @@
+Running command: make clean
+Makefile:106: *** missing separator.  Stop.
+Command finished with return code: 2
+
+Running command: make distclean
+Makefile:106: *** missing separator.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+Makefile:106: *** missing separator.  Stop.
+Command finished with return code: 2
+

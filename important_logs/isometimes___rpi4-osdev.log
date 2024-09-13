@@ -1,0 +1,5 @@
+09/12/2024 05:41:24 PM logger_isometimes___rpi4-osdev INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (isometimes___rpi4-osdev)
+09/12/2024 05:41:24 PM logger_isometimes___rpi4-osdev INFO Analyzing repos/repos_400_c_round_two/isometimes___rpi4-osdev (install_repos.py:285) (isometimes___rpi4-osdev)
+09/12/2024 05:41:24 PM logger_isometimes___rpi4-osdev ERROR No supported build system found for repos/repos_400_c_round_two/isometimes___rpi4-osdev (install_repos.py:273) (isometimes___rpi4-osdev)
+09/12/2024 05:41:24 PM logger_isometimes___rpi4-osdev ERROR Error: Build failed for isometimes___rpi4-osdev
+Build failed for reason: no build system (install_repos.py:295) (isometimes___rpi4-osdev)

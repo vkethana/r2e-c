@@ -1,0 +1,5 @@
+09/12/2024 05:41:07 PM logger_agavrel___42_cheatsheet INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (agavrel___42_cheatsheet)
+09/12/2024 05:41:07 PM logger_agavrel___42_cheatsheet INFO Analyzing repos/repos_400_c_round_two/agavrel___42_cheatsheet (install_repos.py:285) (agavrel___42_cheatsheet)
+09/12/2024 05:41:07 PM logger_agavrel___42_cheatsheet ERROR No supported build system found for repos/repos_400_c_round_two/agavrel___42_cheatsheet (install_repos.py:273) (agavrel___42_cheatsheet)
+09/12/2024 05:41:07 PM logger_agavrel___42_cheatsheet ERROR Error: Build failed for agavrel___42_cheatsheet
+Build failed for reason: no build system (install_repos.py:295) (agavrel___42_cheatsheet)

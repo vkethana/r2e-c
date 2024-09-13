@@ -1,0 +1,5 @@
+09/12/2024 05:44:14 PM logger_doctorwkt___acwj INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (doctorwkt___acwj)
+09/12/2024 05:44:14 PM logger_doctorwkt___acwj INFO Analyzing repos/repos_400_c_round_two/doctorwkt___acwj (install_repos.py:285) (doctorwkt___acwj)
+09/12/2024 05:44:14 PM logger_doctorwkt___acwj ERROR No supported build system found for repos/repos_400_c_round_two/doctorwkt___acwj (install_repos.py:273) (doctorwkt___acwj)
+09/12/2024 05:44:14 PM logger_doctorwkt___acwj ERROR Error: Build failed for doctorwkt___acwj
+Build failed for reason: no build system (install_repos.py:295) (doctorwkt___acwj)

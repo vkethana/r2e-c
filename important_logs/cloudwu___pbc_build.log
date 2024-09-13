@@ -1,0 +1,50 @@
+Running command: make clean
+rm -rf build
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+mkdir -p build/o
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/context.o -MMD src/context.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/varint.o -MMD src/varint.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/array.o -MMD src/array.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/pattern.o -MMD src/pattern.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/register.o -MMD src/register.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/proto.o -MMD src/proto.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/map.o -MMD src/map.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/alloc.o -MMD src/alloc.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/rmessage.o -MMD src/rmessage.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/wmessage.o -MMD src/wmessage.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/bootstrap.o -MMD src/bootstrap.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/stringpool.o -MMD src/stringpool.c
+gcc -O2 -fPIC -Wall -c -Isrc -I. -o build/o/decode.o -MMD src/decode.c
+cd build && ar rc libpbc.a ../build/o/context.o ../build/o/varint.o ../build/o/array.o ../build/o/pattern.o ../build/o/register.o ../build/o/proto.o ../build/o/map.o ../build/o/alloc.o ../build/o/rmessage.o ../build/o/wmessage.o ../build/o/bootstrap.o ../build/o/stringpool.o ../build/o/decode.o
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o addressbook ../test/addressbook.c -lpbc
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o pattern ../test/pattern.c -lpbc
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o pbc ../test/pbc.c -lpbc
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o float ../test/float.c -lpbc
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o map ../test/map.c -lpbc
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o test ../test/test.c -lpbc
+cd build && gcc -O2 -fPIC -Wall -I.. -L. -o decode ../test/decode.c -lpbc
+protoc -obuild/addressbook.pb test/addressbook.proto
+make: protoc: No such file or directory
+make: *** [Makefile:79: build/addressbook.pb] Error 127
+Command finished with return code: 2
+

@@ -1,0 +1,262 @@
+Running command: make clean
+rm -rf -- build
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+mkdir -p build
+mkdir -p build/examples
+touch build/.dirstamp
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/doge.c mpc.c -lm -o build/examples/doge
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/foobar.c mpc.c -lm -o build/examples/foobar
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/line_reader.c mpc.c -lm -o build/examples/line_reader
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/lispy.c mpc.c -lm -o build/examples/lispy
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/maths.c mpc.c -lm -o build/examples/maths
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/smallc.c mpc.c -lm -o build/examples/smallc
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default examples/tree_traversal.c mpc.c -lm -o build/examples/tree_traversal
+cc -ansi -pedantic -O3 -g -Wall -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default tests/combinators.c tests/core.c tests/grammar.c tests/ptest.c tests/regex.c tests/test.c mpc.c -lm -o build/test-file
+tests/core.c: In function ‘test_sepby’:
+tests/core.c:261:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  261 |   mpc_parser_t* CommaSepIdent1 = mpc_sepby1(fold_vals, mpc_char(','), mpc_ident());
+      |   ^~~~~~~~~~~~
+tests/core.c:265:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  265 |   char **vals = r.output;
+      |   ^~~~
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default -c mpc.c -o build/mpc.o
+ar rcs build/libmpc.a build/mpc.o
+cc -ansi -pedantic -O3 -g -Wall -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default tests/combinators.c tests/core.c tests/grammar.c tests/ptest.c tests/regex.c tests/test.c -lm -Lbuild -lmpc -static -o build/test-static
+tests/core.c: In function ‘test_sepby’:
+tests/core.c:261:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  261 |   mpc_parser_t* CommaSepIdent1 = mpc_sepby1(fold_vals, mpc_char(','), mpc_ident());
+      |   ^~~~~~~~~~~~
+tests/core.c:265:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  265 |   char **vals = r.output;
+      |   ^~~~
+cc -ansi -pedantic -O3 -g -Wall -Werror -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default -fPIC -shared mpc.c -o build/libmpc.so
+cc -ansi -pedantic -O3 -g -Wall -Wextra -Wformat=2 -Wshadow -Wno-long-long -Wno-overlength-strings -Wno-format-nonliteral -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs -Wswitch-default tests/combinators.c tests/core.c tests/grammar.c tests/ptest.c tests/regex.c tests/test.c -lm -Lbuild -lmpc -o build/test-dynamic
+tests/core.c: In function ‘test_sepby’:
+tests/core.c:261:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  261 |   mpc_parser_t* CommaSepIdent1 = mpc_sepby1(fold_vals, mpc_char(','), mpc_ident());
+      |   ^~~~~~~~~~~~
+tests/core.c:265:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  265 |   char **vals = r.output;
+      |   ^~~~
+./build/test-file
+
+    +-------------------------------------------+
+    | ptest          MicroTesting Magic for C   |
+    |                                           |
+    | http://github.com/orangeduck/ptest        |
+    |                                           |
+    | Daniel Holden (contact@theorangeduck.com) |
+    +-------------------------------------------+
+
+
+  ===== Suite Core =====
+
+    | Test Ident ... [32mPassed!
+[39m    | Test Maths ... [32mPassed!
+[39m    | Test Strip ... [32mPassed!
+[39m    | Test Repeat ... [32mPassed!
+[39m    | Test Copy ... [32mPassed!
+[39m    | Test Reader ... [32mPassed!
+[39m    | Test Tokens ... [32mPassed!
+[39m    | Test EOI ... [32mPassed!
+[39m    | Test SepBy ... [32mPassed!
+[39m
+
+  ===== Suite Regex =====
+
+    | Test Regex Basic ... [32mPassed!
+[39m    | Test Regex Range ... [32mPassed!
+[39m    | Test Regex String ... [32mPassed!
+[39m    | Test Regex Lisp Comment ... [32mPassed!
+[39m    | Test Regex Boundary ... [32mPassed!
+[39m    | Test Regex Newline ... [32mPassed!
+[39m    | Test Regex Multiline ... [32mPassed!
+[39m    | Test Regex Dotall ... [32mPassed!
+[39m
+
+  ===== Suite Grammar =====
+
+    | Test Grammar ... [32mPassed!
+[39m    | Test Language ... [32mPassed!
+[39m    | Test Language File ... [32mPassed!
+[39m    | Test Doge ... [32mPassed!
+[39m    | Test Partial ... [32mPassed!
+[39m    | Test QScript ... [32mPassed!
+[39m    | Test Missing Rule ... [32mPassed!
+[39m    | Test Regex Mode ... [32mPassed!
+[39m    | Test Digits File ... [32mPassed!
+[39m
+
+  ===== Suite Combinators =====
+
+    | Test Check ... [32mPassed!
+[39m    | Test Check With ... [32mPassed!
+[39m    | Test Check F ... [32mPassed!
+[39m    | Test Check With F ... [32mPassed!
+[39m
+  +---------------------------------------------------+
+  |                      Summary                      |
+  +---------++------------+-------------+-------------+
+  | Suites  ||[33m Total    4 [39m|[32m Passed    4 [39m|[31m Failed    0 [39m|
+  | Tests   ||[33m Total   30 [39m|[32m Passed   30 [39m|[31m Failed    0 [39m|
+  | Asserts ||[33m Total  142 [39m|[32m Passed  142 [39m|[31m Failed    0 [39m|
+  +---------++------------+-------------+-------------+
+
+      Total Running Time: 0.007s
+
+./build/test-static
+
+    +-------------------------------------------+
+    | ptest          MicroTesting Magic for C   |
+    |                                           |
+    | http://github.com/orangeduck/ptest        |
+    |                                           |
+    | Daniel Holden (contact@theorangeduck.com) |
+    +-------------------------------------------+
+
+
+  ===== Suite Core =====
+
+    | Test Ident ... [32mPassed!
+[39m    | Test Maths ... [32mPassed!
+[39m    | Test Strip ... [32mPassed!
+[39m    | Test Repeat ... [32mPassed!
+[39m    | Test Copy ... [32mPassed!
+[39m    | Test Reader ... [32mPassed!
+[39m    | Test Tokens ... [32mPassed!
+[39m    | Test EOI ... [32mPassed!
+[39m    | Test SepBy ... [32mPassed!
+[39m
+
+  ===== Suite Regex =====
+
+    | Test Regex Basic ... [32mPassed!
+[39m    | Test Regex Range ... [32mPassed!
+[39m    | Test Regex String ... [32mPassed!
+[39m    | Test Regex Lisp Comment ... [32mPassed!
+[39m    | Test Regex Boundary ... [32mPassed!
+[39m    | Test Regex Newline ... [32mPassed!
+[39m    | Test Regex Multiline ... [32mPassed!
+[39m    | Test Regex Dotall ... [32mPassed!
+[39m
+
+  ===== Suite Grammar =====
+
+    | Test Grammar ... [32mPassed!
+[39m    | Test Language ... [32mPassed!
+[39m    | Test Language File ... [32mPassed!
+[39m    | Test Doge ... [32mPassed!
+[39m    | Test Partial ... [32mPassed!
+[39m    | Test QScript ... [32mPassed!
+[39m    | Test Missing Rule ... [32mPassed!
+[39m    | Test Regex Mode ... [32mPassed!
+[39m    | Test Digits File ... [32mPassed!
+[39m
+
+  ===== Suite Combinators =====
+
+    | Test Check ... [32mPassed!
+[39m    | Test Check With ... [32mPassed!
+[39m    | Test Check F ... [32mPassed!
+[39m    | Test Check With F ... [32mPassed!
+[39m
+  +---------------------------------------------------+
+  |                      Summary                      |
+  +---------++------------+-------------+-------------+
+  | Suites  ||[33m Total    4 [39m|[32m Passed    4 [39m|[31m Failed    0 [39m|
+  | Tests   ||[33m Total   30 [39m|[32m Passed   30 [39m|[31m Failed    0 [39m|
+  | Asserts ||[33m Total  142 [39m|[32m Passed  142 [39m|[31m Failed    0 [39m|
+  +---------++------------+-------------+-------------+
+
+      Total Running Time: 0.007s
+
+LD_LIBRARY_PATH=build ./build/test-dynamic
+
+    +-------------------------------------------+
+    | ptest          MicroTesting Magic for C   |
+    |                                           |
+    | http://github.com/orangeduck/ptest        |
+    |                                           |
+    | Daniel Holden (contact@theorangeduck.com) |
+    +-------------------------------------------+
+
+
+  ===== Suite Core =====
+
+    | Test Ident ... [32mPassed!
+[39m    | Test Maths ... [32mPassed!
+[39m    | Test Strip ... [32mPassed!
+[39m    | Test Repeat ... [32mPassed!
+[39m    | Test Copy ... [32mPassed!
+[39m    | Test Reader ... [32mPassed!
+[39m    | Test Tokens ... [32mPassed!
+[39m    | Test EOI ... [32mPassed!
+[39m    | Test SepBy ... [32mPassed!
+[39m
+
+  ===== Suite Regex =====
+
+    | Test Regex Basic ... [32mPassed!
+[39m    | Test Regex Range ... [32mPassed!
+[39m    | Test Regex String ... [32mPassed!
+[39m    | Test Regex Lisp Comment ... [32mPassed!
+[39m    | Test Regex Boundary ... [32mPassed!
+[39m    | Test Regex Newline ... [32mPassed!
+[39m    | Test Regex Multiline ... [32mPassed!
+[39m    | Test Regex Dotall ... [32mPassed!
+[39m
+
+  ===== Suite Grammar =====
+
+    | Test Grammar ... [32mPassed!
+[39m    | Test Language ... [32mPassed!
+[39m    | Test Language File ... [32mPassed!
+[39m    | Test Doge ... [32mPassed!
+[39m    | Test Partial ... [32mPassed!
+[39m    | Test QScript ... [32mPassed!
+[39m    | Test Missing Rule ... [32mPassed!
+[39m    | Test Regex Mode ... [32mPassed!
+[39m    | Test Digits File ... [32mPassed!
+[39m
+
+  ===== Suite Combinators =====
+
+    | Test Check ... [32mPassed!
+[39m    | Test Check With ... [32mPassed!
+[39m    | Test Check F ... [32mPassed!
+[39m    | Test Check With F ... [32mPassed!
+[39m
+  +---------------------------------------------------+
+  |                      Summary                      |
+  +---------++------------+-------------+-------------+
+  | Suites  ||[33m Total    4 [39m|[32m Passed    4 [39m|[31m Failed    0 [39m|
+  | Tests   ||[33m Total   30 [39m|[32m Passed   30 [39m|[31m Failed    0 [39m|
+  | Asserts ||[33m Total  142 [39m|[32m Passed  142 [39m|[31m Failed    0 [39m|
+  +---------++------------+-------------+-------------+
+
+      Total Running Time: 0.007s
+
+cp mpc.pc build/mpc.pc
+sed -i '1i\prefix=/usr/local/' build/mpc.pc
+Command finished with return code: 0
+

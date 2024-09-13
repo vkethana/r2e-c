@@ -1,0 +1,5 @@
+09/12/2024 06:07:24 PM logger_peng-zhihui___l-ink_card INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (peng-zhihui___l-ink_card)
+09/12/2024 06:07:24 PM logger_peng-zhihui___l-ink_card INFO Analyzing repos/repos_400_c_round_two/peng-zhihui___l-ink_card (install_repos.py:285) (peng-zhihui___l-ink_card)
+09/12/2024 06:07:24 PM logger_peng-zhihui___l-ink_card ERROR No supported build system found for repos/repos_400_c_round_two/peng-zhihui___l-ink_card (install_repos.py:273) (peng-zhihui___l-ink_card)
+09/12/2024 06:07:24 PM logger_peng-zhihui___l-ink_card ERROR Error: Build failed for peng-zhihui___l-ink_card
+Build failed for reason: no build system (install_repos.py:295) (peng-zhihui___l-ink_card)

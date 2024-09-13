@@ -1,0 +1,136 @@
+Running command: make clean
+Finished [1m[32mclean(B[m
+Command finished with return code: 0
+
+Running command: make distclean
+Finished [1m[32mdistclean(B[m
+Command finished with return code: 0
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+
+TARGET all
+VERBOSE no
+
+VERSION  7.0.291
+COMMIT  7afb44e
+DATE  20240912.1749
+HOST  Linux
+
+For a more verbose output
+  make [32mVERBOSE=yes (B[mall
+
+
+Building the [33mbundled(B[m dependencies.
+
+Starting at 05:49:15 PM on 09/12/24
+
+Finished spf2-extract at 05:49:16 PM on 09/12/24
+Finished googtap-extract at 05:49:16 PM on 09/12/24
+Finished googtest-extract at 05:49:16 PM on 09/12/24
+Finished bzip2-extract at 05:49:16 PM on 09/12/24
+Finished lzo-extract at 05:49:16 PM on 09/12/24
+Finished zlib-extract at 05:49:16 PM on 09/12/24
+Finished mariadb-extract at 05:49:16 PM on 09/12/24
+Finished jansson-extract at 05:49:16 PM on 09/12/24
+Finished checker-extract at 05:49:16 PM on 09/12/24
+Finished dspam-extract at 05:49:16 PM on 09/12/24
+Finished dkim-extract at 05:49:16 PM on 09/12/24
+Finished tokyocabinet-extract at 05:49:16 PM on 09/12/24
+Finished jpeg-extract at 05:49:16 PM on 09/12/24
+Finished png-extract at 05:49:16 PM on 09/12/24
+Finished geoip-extract at 05:49:16 PM on 09/12/24
+Finished memcached-extract at 05:49:16 PM on 09/12/24
+Finished gd-extract at 05:49:16 PM on 09/12/24
+Finished pcre-extract at 05:49:16 PM on 09/12/24
+Finished freetype-extract at 05:49:16 PM on 09/12/24
+Finished openssl-extract at 05:49:16 PM on 09/12/24
+Finished curl-extract at 05:49:16 PM on 09/12/24
+Finished clamav-extract at 05:49:16 PM on 09/12/24
+Finished utf8proc-extract at 05:49:17 PM on 09/12/24
+Finished xml2-extract at 05:49:18 PM on 09/12/24
+
+Finished extract at 05:49:18 PM on 09/12/24
+
+Finished zlib-prep at 05:49:18 PM on 09/12/24
+Finished pcre-prep at 05:49:18 PM on 09/12/24
+Finished lzo-prep at 05:49:18 PM on 09/12/24
+Finished png-prep at 05:49:18 PM on 09/12/24
+Finished freetype-prep at 05:49:18 PM on 09/12/24
+Finished bzip2-prep at 05:49:18 PM on 09/12/24
+Finished curl-prep at 05:49:18 PM on 09/12/24
+Finished googtap-prep at 05:49:18 PM on 09/12/24
+Finished jpeg-prep at 05:49:18 PM on 09/12/24
+Finished checker-prep at 05:49:18 PM on 09/12/24
+Finished mariadb-prep at 05:49:18 PM on 09/12/24
+Finished googtest-prep at 05:49:18 PM on 09/12/24
+Finished geoip-prep at 05:49:18 PM on 09/12/24
+Finished dspam-prep at 05:49:18 PM on 09/12/24
+Finished utf8proc-prep at 05:49:18 PM on 09/12/24
+Finished dkim-prep at 05:49:18 PM on 09/12/24
+Finished gd-prep at 05:49:18 PM on 09/12/24
+Finished xml2-prep at 05:49:18 PM on 09/12/24
+Finished tokyocabinet-prep at 05:49:18 PM on 09/12/24
+Finished jansson-prep at 05:49:18 PM on 09/12/24
+Finished openssl-prep at 05:49:18 PM on 09/12/24
+Finished spf2-prep at 05:49:18 PM on 09/12/24
+Finished memcached-prep at 05:49:18 PM on 09/12/24
+Finished clamav-prep at 05:49:18 PM on 09/12/24
+
+Finished prep at 05:49:18 PM on 09/12/24
+
+Finished googtap-build at 05:49:18 PM on 09/12/24
+Finished zlib-build at 05:49:23 PM on 09/12/24
+Finished bzip2-build at 05:49:27 PM on 09/12/24
+Finished jpeg-build at 05:49:32 PM on 09/12/24
+Finished jansson-build at 05:49:33 PM on 09/12/24
+Finished pcre-build at 05:49:34 PM on 09/12/24
+Finished png-build at 05:49:38 PM on 09/12/24
+Finished lzo-build at 05:49:50 PM on 09/12/24
+Finished spf2-build at 05:49:57 PM on 09/12/24
+Finished xml2-build at 05:50:00 PM on 09/12/24
+Finished geoip-build at 05:50:01 PM on 09/12/24
+
+
+googtest-build failed at 05:50:10 PM on 09/12/24
+
+
+Finished checker-build at 05:50:24 PM on 09/12/24
+Finished memcached-build at 05:50:43 PM on 09/12/24
+Finished openssl-build at 05:54:17 PM on 09/12/24
+Finished tokyocabinet-build at 05:54:29 PM on 09/12/24
+Finished freetype-build at 05:54:32 PM on 09/12/24
+
+
+dkim-build failed at 05:54:33 PM on 09/12/24
+
+
+
+
+mariadb-build failed at 05:54:40 PM on 09/12/24
+
+
+Finished curl-build at 05:55:09 PM on 09/12/24
+Finished gd-build at 05:55:17 PM on 09/12/24
+Finished clamav-build at 05:56:05 PM on 09/12/24
+(B[m[31m
+
+build failed at 05:56:05 PM on 09/12/24
+
+
+(B[mmake: *** [Makefile:625: magmad.so] Error 1
+Command finished with return code: 2
+

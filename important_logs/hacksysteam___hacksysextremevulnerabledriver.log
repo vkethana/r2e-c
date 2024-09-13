@@ -1,0 +1,5 @@
+09/12/2024 05:44:26 PM logger_hacksysteam___hacksysextremevulnerabledriver INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hacksysteam___hacksysextremevulnerabledriver)
+09/12/2024 05:44:26 PM logger_hacksysteam___hacksysextremevulnerabledriver INFO Analyzing repos/repos_400_c_round_two/hacksysteam___hacksysextremevulnerabledriver (install_repos.py:285) (hacksysteam___hacksysextremevulnerabledriver)
+09/12/2024 05:44:26 PM logger_hacksysteam___hacksysextremevulnerabledriver ERROR No supported build system found for repos/repos_400_c_round_two/hacksysteam___hacksysextremevulnerabledriver (install_repos.py:273) (hacksysteam___hacksysextremevulnerabledriver)
+09/12/2024 05:44:26 PM logger_hacksysteam___hacksysextremevulnerabledriver ERROR Error: Build failed for hacksysteam___hacksysextremevulnerabledriver
+Build failed for reason: no build system (install_repos.py:295) (hacksysteam___hacksysextremevulnerabledriver)

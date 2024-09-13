@@ -1,0 +1,36 @@
+Running command: make clean
+make -C ext clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/confluentinc___bottledwater-pg/ext'
+make[1]: pg_config: No such file or directory
+make[1]: *** No rule to make target 'clean'.  Stop.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/confluentinc___bottledwater-pg/ext'
+make: *** [Makefile:14: clean] Error 2
+Command finished with return code: 2
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make -C ext all
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/confluentinc___bottledwater-pg/ext'
+make[1]: pg_config: No such file or directory
+make[1]: *** No rule to make target 'all'.  Stop.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/confluentinc___bottledwater-pg/ext'
+make: *** [Makefile:6: all] Error 2
+Command finished with return code: 2
+

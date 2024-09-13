@@ -1,0 +1,60 @@
+Running command: make clean
+Package libsystemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsystemd.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsystemd', required by 'virtual:world', not found
+Package libsystemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsystemd.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsystemd', required by 'virtual:world', not found
+rm -f *.o
+rm -f isolate isolate-cg-keeper
+rm -f isolate.1 isolate.1.html
+rm -f docbook-xsl.css
+Command finished with return code: 0
+
+Running command: make distclean
+Package libsystemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsystemd.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsystemd', required by 'virtual:world', not found
+Package libsystemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsystemd.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsystemd', required by 'virtual:world', not found
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+Package libsystemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsystemd.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsystemd', required by 'virtual:world', not found
+Package libsystemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libsystemd.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libsystemd', required by 'virtual:world', not found
+gcc -std=gnu99 -Wall -Wextra -Wno-parentheses -Wno-unused-result -Wno-missing-field-initializers -Wstrict-prototypes -Wmissing-prototypes -D_GNU_SOURCE -DVERSION='"2.0"' -DYEAR='"2024"' -DBUILD_DATE='"2024-09-12"' -DBUILD_COMMIT='"v2.0-14-g758ab00"' -c -o isolate.o isolate.c
+gcc -std=gnu99 -Wall -Wextra -Wno-parentheses -Wno-unused-result -Wno-missing-field-initializers -Wstrict-prototypes -Wmissing-prototypes -D_GNU_SOURCE -c -o util.o util.c
+gcc -std=gnu99 -Wall -Wextra -Wno-parentheses -Wno-unused-result -Wno-missing-field-initializers -Wstrict-prototypes -Wmissing-prototypes -D_GNU_SOURCE -c -o rules.o rules.c
+rules.c:15:10: fatal error: sys/capability.h: No such file or directory
+   15 | #include <sys/capability.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:37: rules.o] Error 1
+Command finished with return code: 2
+

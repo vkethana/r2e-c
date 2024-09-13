@@ -1,0 +1,5 @@
+09/12/2024 06:07:21 PM logger_iqiyi___xhook INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (iqiyi___xhook)
+09/12/2024 06:07:21 PM logger_iqiyi___xhook INFO Analyzing repos/repos_400_c_round_two/iqiyi___xhook (install_repos.py:285) (iqiyi___xhook)
+09/12/2024 06:07:21 PM logger_iqiyi___xhook ERROR No supported build system found for repos/repos_400_c_round_two/iqiyi___xhook (install_repos.py:273) (iqiyi___xhook)
+09/12/2024 06:07:21 PM logger_iqiyi___xhook ERROR Error: Build failed for iqiyi___xhook
+Build failed for reason: no build system (install_repos.py:295) (iqiyi___xhook)

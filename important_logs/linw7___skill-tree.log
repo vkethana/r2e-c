@@ -1,0 +1,5 @@
+09/12/2024 05:43:32 PM logger_linw7___skill-tree INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (linw7___skill-tree)
+09/12/2024 05:43:32 PM logger_linw7___skill-tree INFO Analyzing repos/repos_400_c_round_two/linw7___skill-tree (install_repos.py:285) (linw7___skill-tree)
+09/12/2024 05:43:32 PM logger_linw7___skill-tree ERROR No supported build system found for repos/repos_400_c_round_two/linw7___skill-tree (install_repos.py:273) (linw7___skill-tree)
+09/12/2024 05:43:32 PM logger_linw7___skill-tree ERROR Error: Build failed for linw7___skill-tree
+Build failed for reason: no build system (install_repos.py:295) (linw7___skill-tree)

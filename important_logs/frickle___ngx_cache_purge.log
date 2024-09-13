@@ -1,0 +1,5 @@
+09/12/2024 05:47:20 PM logger_frickle___ngx_cache_purge INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (frickle___ngx_cache_purge)
+09/12/2024 05:47:20 PM logger_frickle___ngx_cache_purge INFO Analyzing repos/repos_400_c_round_two/frickle___ngx_cache_purge (install_repos.py:285) (frickle___ngx_cache_purge)
+09/12/2024 05:47:20 PM logger_frickle___ngx_cache_purge ERROR No supported build system found for repos/repos_400_c_round_two/frickle___ngx_cache_purge (install_repos.py:273) (frickle___ngx_cache_purge)
+09/12/2024 05:47:20 PM logger_frickle___ngx_cache_purge ERROR Error: Build failed for frickle___ngx_cache_purge
+Build failed for reason: no build system (install_repos.py:295) (frickle___ngx_cache_purge)

@@ -1,0 +1,51 @@
+Running command: make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/apple___homekitadk'
+make[1]: clang: No such file or directory
+rm -rf Output/Linux-
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/apple___homekitadk'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/apple___homekitadk'
+make[1]: clang: No such file or directory
+clang -Wall -Wextra -Werror -DHAP_ENABLE_DEVELOPMENT_ONLY_CODE=1  -ffunction-sections -fdata-sections -IHAP -IExternal/HTTP -IExternal/JSON -IExternal/Base64 -IPAL -I/include -O0 -g -DHAP_LOG_LEVEL=1      -DHAP_TESTING -IPAL/Mock   -DHAP_Test -c PAL/HAPPlatformSystemInit.c -o Output/Linux-/Test/PAL/HAPPlatformSystemInit.o
+make[1]: clang: No such file or directory
+make[1]: *** [Build/Makefile:108: Output/Linux-/Test/PAL/HAPPlatformSystemInit.o] Error 127
+make[1]: *** Waiting for unfinished jobs....
+clang -Wall -Wextra -Werror -DHAP_ENABLE_DEVELOPMENT_ONLY_CODE=1  -ffunction-sections -fdata-sections -IHAP -IExternal/HTTP -IExternal/JSON -IExternal/Base64 -IPAL -I/include -O0 -g -DHAP_LOG_LEVEL=1      -DHAP_TESTING -IPAL/Mock   -DHAP_Test -c Tests/HAPCryptoTest.c -o Output/Linux-/Test/Tests/HAPCryptoTest.o
+make[1]: clang: No such file or directory
+make[1]: *** [Build/Makefile:108: Output/Linux-/Test/Tests/HAPCryptoTest.o] Error 127
+clang -Wall -Wextra -Werror -DHAP_ENABLE_DEVELOPMENT_ONLY_CODE=1  -ffunction-sections -fdata-sections -IHAP -IExternal/HTTP -IExternal/JSON -IExternal/Base64 -IPAL -I/include -O0 -g -DHAP_LOG_LEVEL=1      -DHAP_TESTING -IPAL/Mock   -DHAP_Test -c HAP/HAPAccessory+Info.c -o Output/Linux-/Test/HAP/HAPAccessory+Info.o
+make[1]: clang: No such file or directory
+make[1]: *** [Build/Makefile:108: Output/Linux-/Test/HAP/HAPAccessory+Info.o] Error 127
+clang -Wall -Wextra -Werror -DHAP_ENABLE_DEVELOPMENT_ONLY_CODE=1  -ffunction-sections -fdata-sections -IHAP -IExternal/HTTP -IExternal/JSON -IExternal/Base64 -IPAL -I/include -O0 -g -DHAP_LOG_LEVEL=1      -DHAP_TESTING -IPAL/Mock   -DHAP_Test -c HAP/HAPAccessoryServer+Reset.c -o Output/Linux-/Test/HAP/HAPAccessoryServer+Reset.o
+make[1]: clang: No such file or directory
+make[1]: *** [Build/Makefile:108: Output/Linux-/Test/HAP/HAPAccessoryServer+Reset.o] Error 127
+clang -Wall -Wextra -Werror -DHAP_ENABLE_DEVELOPMENT_ONLY_CODE=1  -ffunction-sections -fdata-sections -IHAP -IExternal/HTTP -IExternal/JSON -IExternal/Base64 -IPAL -I/include -O0 -g -DHAP_LOG_LEVEL=1      -DHAP_TESTING -IPAL/Mock   -DHAP_Test -c HAP/HAPAccessoryServer.c -o Output/Linux-/Test/HAP/HAPAccessoryServer.o
+make[1]: clang: No such file or directory
+make[1]: *** [Build/Makefile:108: Output/Linux-/Test/HAP/HAPAccessoryServer.o] Error 127
+clang -Wall -Wextra -Werror -DHAP_ENABLE_DEVELOPMENT_ONLY_CODE=1  -ffunction-sections -fdata-sections -IHAP -IExternal/HTTP -IExternal/JSON -IExternal/Base64 -IPAL -I/include -O0 -g -DHAP_LOG_LEVEL=1      -DHAP_TESTING -IPAL/Mock   -DHAP_Test -c HAP/HAPAccessorySetup.c -o Output/Linux-/Test/HAP/HAPAccessorySetup.o
+make[1]: clang: No such file or directory
+make[1]: *** [Build/Makefile:108: Output/Linux-/Test/HAP/HAPAccessorySetup.o] Error 127
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/apple___homekitadk'
+make: *** [Makefile:67: all] Error 2
+Command finished with return code: 2
+

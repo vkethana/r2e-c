@@ -1,0 +1,5 @@
+09/12/2024 05:46:35 PM logger_mykter___afl-training INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mykter___afl-training)
+09/12/2024 05:46:35 PM logger_mykter___afl-training INFO Analyzing repos/repos_400_c_round_two/mykter___afl-training (install_repos.py:285) (mykter___afl-training)
+09/12/2024 05:46:35 PM logger_mykter___afl-training ERROR No supported build system found for repos/repos_400_c_round_two/mykter___afl-training (install_repos.py:273) (mykter___afl-training)
+09/12/2024 05:46:35 PM logger_mykter___afl-training ERROR Error: Build failed for mykter___afl-training
+Build failed for reason: no build system (install_repos.py:295) (mykter___afl-training)

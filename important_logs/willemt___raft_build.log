@@ -1,0 +1,31 @@
+Running command: make clean
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cc -Iinclude -Werror -Werror=return-type -Werror=uninitialized -Wcast-align -Wno-pointer-sign -fno-omit-frame-pointer -fno-common -fsigned-char -Wunused-variable -fprofile-arcs -ftest-coverage -I./CLinkedListQueue -Iinclude -g -O2 -fPIC   -c -o src/raft_server.o src/raft_server.c
+cc -Iinclude -Werror -Werror=return-type -Werror=uninitialized -Wcast-align -Wno-pointer-sign -fno-omit-frame-pointer -fno-common -fsigned-char -Wunused-variable -fprofile-arcs -ftest-coverage -I./CLinkedListQueue -Iinclude -g -O2 -fPIC   -c -o src/raft_server_properties.o src/raft_server_properties.c
+cc -Iinclude -Werror -Werror=return-type -Werror=uninitialized -Wcast-align -Wno-pointer-sign -fno-omit-frame-pointer -fno-common -fsigned-char -Wunused-variable -fprofile-arcs -ftest-coverage -I./CLinkedListQueue -Iinclude -g -O2 -fPIC   -c -o src/raft_node.o src/raft_node.c
+cc -Iinclude -Werror -Werror=return-type -Werror=uninitialized -Wcast-align -Wno-pointer-sign -fno-omit-frame-pointer -fno-common -fsigned-char -Wunused-variable -fprofile-arcs -ftest-coverage -I./CLinkedListQueue -Iinclude -g -O2 -fPIC   -c -o src/raft_log.o src/raft_log.c
+ar -r libraft.a src/raft_server.o src/raft_server_properties.o src/raft_node.o src/raft_log.o
+ar: creating libraft.a
+cc src/raft_server.o src/raft_server_properties.o src/raft_node.o src/raft_log.o  -Iinclude -Werror -Werror=return-type -Werror=uninitialized -Wcast-align -Wno-pointer-sign -fno-omit-frame-pointer -fno-common -fsigned-char -Wunused-variable -fprofile-arcs -ftest-coverage -I./CLinkedListQueue -Iinclude -g -O2 -fPIC -fPIC -shared -o libraft.so
+Command finished with return code: 0
+

@@ -1,0 +1,65 @@
+Running command: make clean
+rm -f *.bin *.exe *.app
+rm -f obj/osx64/*
+rm -f obj/freebsd32/*
+rm -f obj/freebsd64/*
+rm -f obj/freebsdXOP/*
+rm -f obj/linux32/*
+rm -f obj/linux64/*
+rm -f obj/linuxXOP/*
+rm -f obj/win32/*
+rm -f obj/win64/*
+rm -f obj/winXOP/*
+rm -f core out word hash hashcat.pot
+rm -rf release
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gcc -W -Wall -pipe -I include/ -O2 -s -fomit-frame-pointer -funroll-loops -Ideps/gmp/linux32/include -D__HC_x86_32__ -DLINUX -m32 -msse2 -c src/common.c -o obj/linux32/common.o
+gcc -W -Wall -pipe -I include/ -O2 -s -fomit-frame-pointer -funroll-loops -Ideps/gmp/linux64/include -D__HC_x86_64__ -DLINUX -m64 -msse2 -c src/common.c -o obj/linux64/common.o
+gcc -W -Wall -pipe -I include/ -O2 -s -fomit-frame-pointer -funroll-loops -Ideps/gmp/linux64/include -D__HC_XOP__ -DLINUX -m64 -mxop -c src/common.c -o obj/linuxXOP/common.o
+i686-w64-mingw32-gcc -W -Wall -pipe -I include/ -O2 -s -fomit-frame-pointer -funroll-loops -Ideps/gmp/win32/include -D__HC_x86_32__ -DWINDOWS -m32 -msse2 -D__USE_MINGW_ANSI_STDIO=1 -mstackrealign -c src/common.c -o obj/win32/common.o
+make: i686-w64-mingw32-gcc: No such file or directory
+make: *** [src/Makefile:265: obj/win32/common.o] Error 127
+make: *** Waiting for unfinished jobs....
+In file included from /usr/include/features.h:392,
+                 from /usr/include/assert.h:35,
+                 from include/common.h:13,
+                 from src/common.c:6:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/Makefile:175: obj/linux32/common.o] Error 1
+In file included from src/common.c:6:
+include/common.h:30:10: fatal error: gmp.h: No such file or directory
+   30 | #include <gmp.h>
+      |          ^~~~~~~
+compilation terminated.
+In file included from src/common.c:6:
+include/common.h:30:10: fatal error: gmp.h: No such file or directory
+   30 | #include <gmp.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [src/Makefile:235: obj/linuxXOP/common.o] Error 1
+make: *** [src/Makefile:205: obj/linux64/common.o] Error 1
+Command finished with return code: 2
+

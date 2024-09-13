@@ -1,0 +1,76 @@
+Running command: make clean
+  CLEAN
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+  CC       ansi.o
+  CC       basic.o
+  CC       bind.o
+  CC       buffer.o
+  CC       crypt.o
+  CC       display.o
+  CC       eval.o
+In function ‘getkill’,
+    inlined from ‘gtenv’ at eval.c:289:10:
+eval.c:344:17: warning: ‘strncpy’ output may be truncated copying between 0 and 127 bytes from a string of length 249 [-Wstringop-truncation]
+  344 |                 strncpy(value, kbufh->d_chunk, size);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+eval.c: In function ‘getkill’:
+eval.c:344:17: warning: ‘strncpy’ output may be truncated copying between 0 and 127 bytes from a string of length 249 [-Wstringop-truncation]
+  344 |                 strncpy(value, kbufh->d_chunk, size);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+eval.c: In function ‘gtfun’:
+eval.c:172:1: warning: function may return address of local variable [-Wreturn-local-addr]
+  172 | }
+      | ^
+eval.c:42:14: note: declared here
+   42 |         char arg1[NSTRING];     /* value of first argument */
+      |              ^~~~
+eval.c:42:14: note: declared here
+eval.c:42:14: note: declared here
+eval.c:42:14: note: declared here
+  CC       exec.o
+  CC       file.o
+  CC       fileio.o
+  CC       ibmpc.o
+  CC       input.o
+  CC       isearch.o
+isearch.c: In function ‘isearch’:
+isearch.c:158:9: warning: ‘strncpy’ specified bound 128 equals destination size [-Wstringop-truncation]
+  158 |         strncpy(pat_save, pat, NPAT);   /* Save the old pattern string        */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CC       line.o
+  CC       lock.o
+  CC       main.o
+  CC       pklock.o
+  CC       posix.o
+  CC       random.o
+  CC       region.o
+  CC       search.o
+  CC       spawn.o
+  CC       tcap.o
+tcap.c:16:10: fatal error: curses.h: No such file or directory
+   16 | #include <curses.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:125: tcap.o] Error 1
+Command finished with return code: 2
+

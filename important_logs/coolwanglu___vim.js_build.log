@@ -1,0 +1,629 @@
+Running command: make clean
+Starting make in the src directory.
+If there are problems, cd to the src directory and run make there
+cd src && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src'
+cd testdir; make -f Makefile clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/testdir'
+rm -rf *.out *.failed *.rej *.orig test.log test.out X* viminfo tiny.vim small.vim mbyte.vim mzscheme.vim lua.vim test.ok valgrind.*
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/testdir'
+if test -d po; then \
+	cd po; make checkclean; \
+fi
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f *.ck
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f *.o objects/* core vim.core vim vim xxd/*.o
+rm -f xxd/xxd auto/osdef.h auto/pathdef.c auto/if_perl.c
+rm -f conftest* *~ auto/link.sed
+rm -f memfile_test
+rm -f runtime pixmaps
+rm -rf vim.app
+rm -rf mzscheme_base.c
+if test -d po; then \
+	cd po; make prefix= clean; \
+fi
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f *.ck
+rm -f core core.* *.old.po *.mo *.pot sjiscorr
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src'
+Command finished with return code: 0
+
+Running command: make distclean
+Starting make in the src directory.
+If there are problems, cd to the src directory and run make there
+cd src && make distclean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src'
+cd testdir; make -f Makefile clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/testdir'
+rm -rf *.out *.failed *.rej *.orig test.log test.out X* viminfo tiny.vim small.vim mbyte.vim mzscheme.vim lua.vim test.ok valgrind.*
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/testdir'
+if test -d po; then \
+	cd po; make checkclean; \
+fi
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f *.ck
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f *.o objects/* core vim.core vim vim xxd/*.o
+rm -f xxd/xxd auto/osdef.h auto/pathdef.c auto/if_perl.c
+rm -f conftest* *~ auto/link.sed
+rm -f memfile_test
+rm -f runtime pixmaps
+rm -rf vim.app
+rm -rf mzscheme_base.c
+if test -d po; then \
+	cd po; make prefix= clean; \
+fi
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f *.ck
+rm -f core core.* *.old.po *.mo *.pot sjiscorr
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src/po'
+rm -f auto/config.status auto/config.cache config.log auto/config.log
+rm -f auto/config.h auto/link.log auto/link.sed auto/config.mk
+touch auto/config.h
+cp config.mk.dist auto/config.mk
+rm -f tags
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src'
+Command finished with return code: 0
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+configure: creating cache auto/config.cache
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for library containing strerror... none required
+checking for gawk... no
+checking for mawk... mawk
+checking for strip... strip
+checking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking --enable-fail-if-missing argument... no
+checking for recent clang version... no
+configure: checking for buggy tools...
+checking for BeOS... no
+checking for QNX... no
+checking for Darwin (Mac OS X)... no
+checking AvailabilityMacros.h usability... no
+checking AvailabilityMacros.h presence... no
+checking for AvailabilityMacros.h... no
+checking --with-local-dir argument... Defaulting to /usr/local
+checking --with-vim-name argument... Defaulting to vim
+checking --with-ex-name argument... Defaulting to ex
+checking --with-view-name argument... Defaulting to view
+checking --with-global-runtime argument... no
+checking --with-modified-by argument... no
+checking if character set is EBCDIC... no
+checking --disable-selinux argument... no
+checking for is_selinux_enabled in -lselinux... no
+checking --with-features argument... Defaulting to normal
+checking --with-compiledby argument... no
+checking --disable-xsmp argument... no
+checking --disable-xsmp-interact argument... no
+checking --enable-luainterp argument... no
+checking --enable-mzschemeinterp argument... no
+checking --enable-perlinterp argument... no
+checking --enable-pythoninterp argument... no
+checking --enable-python3interp argument... no
+checking --enable-tclinterp argument... no
+checking --enable-rubyinterp argument... no
+checking --enable-cscope argument... no
+checking --enable-workshop argument... no
+checking --disable-netbeans argument... no
+checking for socket in -lsocket... no
+checking for gethostbyname in -lnsl... yes
+checking whether compiling netbeans integration is possible... yes
+checking --enable-sniff argument... no
+checking --enable-multibyte argument... no
+checking --enable-hangulinput argument... no
+checking --enable-xim argument... defaulting to auto
+checking --enable-fontset argument... no
+checking testpig... OHPIG  OHPIG
+checking for xmkmf... no
+checking for X... no
+checking if X11 header files can be found... no
+checking --enable-gui argument... yes/auto - automatic GUI support
+checking whether or not to look for GTK+ 2... yes
+checking whether or not to look for GNOME... no
+checking whether or not to look for Motif... yes
+checking whether or not to look for Athena... yes
+checking whether or not to look for neXtaw... yes
+checking whether or not to look for Carbon... yes
+checking --disable-gtktest argument... gtk test enabled
+checking for pkg-config... /usr/bin/pkg-config
+checking for GTK - version >= 2.2.0... no
+checking for location of Motif GUI includes... <not found>
+checking if Athena header files can be found... no
+checking if neXtaw header files can be found... no
+checking X11/SM/SMlib.h usability... no
+checking X11/SM/SMlib.h presence... no
+checking for X11/SM/SMlib.h... no
+checking X11/xpm.h usability... no
+checking X11/xpm.h presence... no
+checking for X11/xpm.h... no
+checking X11/Sunkeysym.h usability... no
+checking X11/Sunkeysym.h presence... no
+checking for X11/Sunkeysym.h... no
+checking for XIMText in X11/Xlib.h... no; xim has been disabled
+auto/configure: line 9117: enable_xim: command not found
+checking for CYGWIN environment... no
+checking whether toupper is broken... no
+checking whether __DATE__ and __TIME__ work... yes
+checking whether __attribute__((unused)) is allowed... yes
+checking elf.h usability... yes
+checking elf.h presence... yes
+checking for elf.h... yes
+checking for main in -lelf... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdint.h usability... yes
+checking stdint.h presence... yes
+checking for stdint.h... yes
+checking stdlib.h usability... yes
+checking stdlib.h presence... yes
+checking for stdlib.h... yes
+checking string.h usability... yes
+checking string.h presence... yes
+checking for string.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking termcap.h usability... no
+checking termcap.h presence... no
+checking for termcap.h... no
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sgtty.h usability... yes
+checking sgtty.h presence... yes
+checking for sgtty.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/types.h usability... yes
+checking sys/types.h presence... yes
+checking for sys/types.h... yes
+checking termio.h usability... yes
+checking termio.h presence... yes
+checking for termio.h... yes
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking inttypes.h usability... yes
+checking inttypes.h presence... yes
+checking for inttypes.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking unistd.h usability... yes
+checking unistd.h presence... yes
+checking for unistd.h... yes
+checking stropts.h usability... no
+checking stropts.h presence... no
+checking for stropts.h... no
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/systeminfo.h usability... no
+checking sys/systeminfo.h presence... no
+checking for sys/systeminfo.h... no
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking sys/stream.h usability... no
+checking sys/stream.h presence... no
+checking for sys/stream.h... no
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking libc.h usability... no
+checking libc.h presence... no
+checking for libc.h... no
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking util/debug.h usability... no
+checking util/debug.h presence... no
+checking for util/debug.h... no
+checking util/msg18n.h usability... no
+checking util/msg18n.h presence... no
+checking for util/msg18n.h... no
+checking frame.h usability... no
+checking frame.h presence... no
+checking for frame.h... no
+checking sys/acl.h usability... no
+checking sys/acl.h presence... no
+checking for sys/acl.h... no
+checking sys/access.h usability... no
+checking sys/access.h presence... no
+checking for sys/access.h... no
+checking sys/sysinfo.h usability... yes
+checking sys/sysinfo.h presence... yes
+checking for sys/sysinfo.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for sys/ptem.h... no
+checking for sys/sysctl.h... no
+checking for pthread_np.h... no
+checking strings.h usability... yes
+checking strings.h presence... yes
+checking for strings.h... yes
+checking if strings.h can be included after string.h... yes
+checking whether gcc needs -traditional... no
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for uint32_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for ino_t... yes
+checking for dev_t... yes
+checking whether byte ordering is bigendian... no
+checking for rlim_t... yes
+checking for stack_t... yes
+checking whether stack_t has an ss_base field... no
+checking --with-tlib argument... empty: automatic terminal library selection
+checking for tgetent in -ltinfo... no
+checking for tgetent in -lncurses... no
+checking for tgetent in -ltermlib... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -lcurses... no
+no terminal library found
+checking for tgetent()... configure: error: NOT FOUND!
+      You need to install a terminal library; for example ncurses.
+      Or specify the name of the library with --with-tlib.
+Command finished with return code: 1
+
+Running command: make
+Starting make in the src directory.
+If there are problems, cd to the src directory and run make there
+cd src && make first
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src'
+rm -f auto/config.status auto/config.cache config.log auto/config.log
+rm -f auto/config.h auto/link.log auto/link.sed auto/config.mk
+touch auto/config.h
+cp config.mk.dist auto/config.mk
+if test -f auto/config.cache && \
+    grep '^ac_cv_env_CFLAGS_value=' auto/config.cache > /dev/null && \
+    ! grep -x -F 'ac_cv_env_CFLAGS_value=' auto/config.cache > /dev/null; then \
+	rm auto/config.cache; \
+fi
+GUI_INC_LOC="" GUI_LIB_LOC="" \
+	CC="" CPPFLAGS="" CFLAGS="" \
+	LDFLAGS=""  srcdir="." \
+	./configure    \
+	  \
+	   \
+	   \
+	   \
+	   \
+	   \
+	    \
+	   \
+	  \
+	
+configure: creating cache auto/config.cache
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for library containing strerror... none required
+checking for gawk... no
+checking for mawk... mawk
+checking for strip... strip
+checking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking --enable-fail-if-missing argument... no
+checking for recent clang version... no
+configure: checking for buggy tools...
+checking for BeOS... no
+checking for QNX... no
+checking for Darwin (Mac OS X)... no
+checking AvailabilityMacros.h usability... no
+checking AvailabilityMacros.h presence... no
+checking for AvailabilityMacros.h... no
+checking --with-local-dir argument... Defaulting to /usr/local
+checking --with-vim-name argument... Defaulting to vim
+checking --with-ex-name argument... Defaulting to ex
+checking --with-view-name argument... Defaulting to view
+checking --with-global-runtime argument... no
+checking --with-modified-by argument... no
+checking if character set is EBCDIC... no
+checking --disable-selinux argument... no
+checking for is_selinux_enabled in -lselinux... no
+checking --with-features argument... Defaulting to normal
+checking --with-compiledby argument... no
+checking --disable-xsmp argument... no
+checking --disable-xsmp-interact argument... no
+checking --enable-luainterp argument... no
+checking --enable-mzschemeinterp argument... no
+checking --enable-perlinterp argument... no
+checking --enable-pythoninterp argument... no
+checking --enable-python3interp argument... no
+checking --enable-tclinterp argument... no
+checking --enable-rubyinterp argument... no
+checking --enable-cscope argument... no
+checking --enable-workshop argument... no
+checking --disable-netbeans argument... no
+checking for socket in -lsocket... no
+checking for gethostbyname in -lnsl... yes
+checking whether compiling netbeans integration is possible... yes
+checking --enable-sniff argument... no
+checking --enable-multibyte argument... no
+checking --enable-hangulinput argument... no
+checking --enable-xim argument... defaulting to auto
+checking --enable-fontset argument... no
+checking testpig... OHPIG  OHPIG
+checking for xmkmf... no
+checking for X... no
+checking if X11 header files can be found... no
+checking --enable-gui argument... yes/auto - automatic GUI support
+checking whether or not to look for GTK+ 2... yes
+checking whether or not to look for GNOME... no
+checking whether or not to look for Motif... yes
+checking whether or not to look for Athena... yes
+checking whether or not to look for neXtaw... yes
+checking whether or not to look for Carbon... yes
+checking --disable-gtktest argument... gtk test enabled
+checking for pkg-config... /usr/bin/pkg-config
+checking for GTK - version >= 2.2.0... no
+checking for location of Motif GUI includes... <not found>
+checking if Athena header files can be found... no
+checking if neXtaw header files can be found... no
+checking X11/SM/SMlib.h usability... no
+checking X11/SM/SMlib.h presence... no
+checking for X11/SM/SMlib.h... no
+checking X11/xpm.h usability... no
+checking X11/xpm.h presence... no
+checking for X11/xpm.h... no
+checking X11/Sunkeysym.h usability... no
+checking X11/Sunkeysym.h presence... no
+checking for X11/Sunkeysym.h... no
+checking for XIMText in X11/Xlib.h... no; xim has been disabled
+auto/configure: line 9117: enable_xim: command not found
+checking for CYGWIN environment... no
+checking whether toupper is broken... no
+checking whether __DATE__ and __TIME__ work... yes
+checking whether __attribute__((unused)) is allowed... yes
+checking elf.h usability... yes
+checking elf.h presence... yes
+checking for elf.h... yes
+checking for main in -lelf... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdint.h usability... yes
+checking stdint.h presence... yes
+checking for stdint.h... yes
+checking stdlib.h usability... yes
+checking stdlib.h presence... yes
+checking for stdlib.h... yes
+checking string.h usability... yes
+checking string.h presence... yes
+checking for string.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking termcap.h usability... no
+checking termcap.h presence... no
+checking for termcap.h... no
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sgtty.h usability... yes
+checking sgtty.h presence... yes
+checking for sgtty.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/types.h usability... yes
+checking sys/types.h presence... yes
+checking for sys/types.h... yes
+checking termio.h usability... yes
+checking termio.h presence... yes
+checking for termio.h... yes
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking inttypes.h usability... yes
+checking inttypes.h presence... yes
+checking for inttypes.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking unistd.h usability... yes
+checking unistd.h presence... yes
+checking for unistd.h... yes
+checking stropts.h usability... no
+checking stropts.h presence... no
+checking for stropts.h... no
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/systeminfo.h usability... no
+checking sys/systeminfo.h presence... no
+checking for sys/systeminfo.h... no
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking sys/stream.h usability... no
+checking sys/stream.h presence... no
+checking for sys/stream.h... no
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking libc.h usability... no
+checking libc.h presence... no
+checking for libc.h... no
+checking sys/statfs.h usability... yes
+checking sys/statfs.h presence... yes
+checking for sys/statfs.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking util/debug.h usability... no
+checking util/debug.h presence... no
+checking for util/debug.h... no
+checking util/msg18n.h usability... no
+checking util/msg18n.h presence... no
+checking for util/msg18n.h... no
+checking frame.h usability... no
+checking frame.h presence... no
+checking for frame.h... no
+checking sys/acl.h usability... no
+checking sys/acl.h presence... no
+checking for sys/acl.h... no
+checking sys/access.h usability... no
+checking sys/access.h presence... no
+checking for sys/access.h... no
+checking sys/sysinfo.h usability... yes
+checking sys/sysinfo.h presence... yes
+checking for sys/sysinfo.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for sys/ptem.h... no
+checking for sys/sysctl.h... no
+checking for pthread_np.h... no
+checking strings.h usability... yes
+checking strings.h presence... yes
+checking for strings.h... yes
+checking if strings.h can be included after string.h... yes
+checking whether gcc needs -traditional... no
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for uint32_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for ino_t... yes
+checking for dev_t... yes
+checking whether byte ordering is bigendian... no
+checking for rlim_t... yes
+checking for stack_t... yes
+checking whether stack_t has an ss_base field... no
+checking --with-tlib argument... empty: automatic terminal library selection
+checking for tgetent in -ltinfo... no
+checking for tgetent in -lncurses... no
+checking for tgetent in -ltermlib... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -lcurses... no
+no terminal library found
+checking for tgetent()... configure: error: NOT FOUND!
+      You need to install a terminal library; for example ncurses.
+      Or specify the name of the library with --with-tlib.
+make[1]: *** [Makefile:1682: config] Error 1
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/coolwanglu___vim.js/src'
+make: *** [Makefile:29: first] Error 2
+Command finished with return code: 2
+

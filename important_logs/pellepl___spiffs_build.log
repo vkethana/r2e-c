@@ -1,0 +1,107 @@
+Running command: make clean
+/bin/sh: 2: cannot create build/testrunner.d.70422: Directory nonexistent
+/bin/sh: 3: cannot open build/testrunner.d.70422: No such file
+/bin/sh: 2: cannot create build/testsuites.d.70425: Directory nonexistent
+/bin/sh: 3: cannot open build/testsuites.d.70425: No such file
+/bin/sh: 2: cannot create build/test_bugreports.d.70428: Directory nonexistent
+/bin/sh: 3: cannot open build/test_bugreports.d.70428: No such file
+/bin/sh: 2: cannot create build/test_hydrogen.d.70431: Directory nonexistent
+/bin/sh: 3: cannot open build/test_hydrogen.d.70431: No such file
+/bin/sh: 2: cannot create build/test_check.d.70434: Directory nonexistent
+/bin/sh: 3: cannot open build/test_check.d.70434: No such file
+/bin/sh: 2: cannot create build/test_dev.d.70437: Directory nonexistent
+/bin/sh: 3: cannot open build/test_dev.d.70437: No such file
+/bin/sh: 2: cannot create build/test_spiffs.d.70440: Directory nonexistent
+/bin/sh: 3: cannot open build/test_spiffs.d.70440: No such file
+/bin/sh: 2: cannot create build/main.d.70443: Directory nonexistent
+/bin/sh: 3: cannot open build/main.d.70443: No such file
+/bin/sh: 2: cannot create build/spiffs_check.d.70446: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_check.d.70446: No such file
+/bin/sh: 2: cannot create build/spiffs_cache.d.70449: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_cache.d.70449: No such file
+/bin/sh: 2: cannot create build/spiffs_hydrogen.d.70452: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_hydrogen.d.70452: No such file
+/bin/sh: 2: cannot create build/spiffs_gc.d.70455: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_gc.d.70455: No such file
+/bin/sh: 2: cannot create build/spiffs_nucleus.d.70458: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_nucleus.d.70458: No such file
+... removing build files in build
+Command finished with return code: 0
+
+Running command: make distclean
+/bin/sh: 2: cannot create build/testrunner.d.70470: Directory nonexistent
+/bin/sh: 3: cannot open build/testrunner.d.70470: No such file
+/bin/sh: 2: cannot create build/testsuites.d.70473: Directory nonexistent
+/bin/sh: 3: cannot open build/testsuites.d.70473: No such file
+/bin/sh: 2: cannot create build/test_bugreports.d.70476: Directory nonexistent
+/bin/sh: 3: cannot open build/test_bugreports.d.70476: No such file
+/bin/sh: 2: cannot create build/test_hydrogen.d.70479: Directory nonexistent
+/bin/sh: 3: cannot open build/test_hydrogen.d.70479: No such file
+/bin/sh: 2: cannot create build/test_check.d.70482: Directory nonexistent
+/bin/sh: 3: cannot open build/test_check.d.70482: No such file
+/bin/sh: 2: cannot create build/test_dev.d.70485: Directory nonexistent
+/bin/sh: 3: cannot open build/test_dev.d.70485: No such file
+/bin/sh: 2: cannot create build/test_spiffs.d.70488: Directory nonexistent
+/bin/sh: 3: cannot open build/test_spiffs.d.70488: No such file
+/bin/sh: 2: cannot create build/main.d.70491: Directory nonexistent
+/bin/sh: 3: cannot open build/main.d.70491: No such file
+/bin/sh: 2: cannot create build/spiffs_check.d.70494: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_check.d.70494: No such file
+/bin/sh: 2: cannot create build/spiffs_cache.d.70497: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_cache.d.70497: No such file
+/bin/sh: 2: cannot create build/spiffs_hydrogen.d.70500: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_hydrogen.d.70500: No such file
+/bin/sh: 2: cannot create build/spiffs_gc.d.70503: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_gc.d.70503: No such file
+/bin/sh: 2: cannot create build/spiffs_nucleus.d.70506: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_nucleus.d.70506: No such file
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+/bin/sh: 2: cannot create build/testrunner.d.70519: Directory nonexistent
+/bin/sh: 3: cannot open build/testrunner.d.70519: No such file
+/bin/sh: 2: cannot create build/testsuites.d.70522: Directory nonexistent
+/bin/sh: 3: cannot open build/testsuites.d.70522: No such file
+/bin/sh: 2: cannot create build/test_bugreports.d.70525: Directory nonexistent
+/bin/sh: 3: cannot open build/test_bugreports.d.70525: No such file
+/bin/sh: 2: cannot create build/test_hydrogen.d.70528: Directory nonexistent
+/bin/sh: 3: cannot open build/test_hydrogen.d.70528: No such file
+/bin/sh: 2: cannot create build/test_check.d.70531: Directory nonexistent
+/bin/sh: 3: cannot open build/test_check.d.70531: No such file
+/bin/sh: 2: cannot create build/test_dev.d.70534: Directory nonexistent
+/bin/sh: 3: cannot open build/test_dev.d.70534: No such file
+/bin/sh: 2: cannot create build/test_spiffs.d.70537: Directory nonexistent
+/bin/sh: 3: cannot open build/test_spiffs.d.70537: No such file
+/bin/sh: 2: cannot create build/main.d.70540: Directory nonexistent
+/bin/sh: 3: cannot open build/main.d.70540: No such file
+/bin/sh: 2: cannot create build/spiffs_check.d.70543: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_check.d.70543: No such file
+/bin/sh: 2: cannot create build/spiffs_cache.d.70546: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_cache.d.70546: No such file
+/bin/sh: 2: cannot create build/spiffs_hydrogen.d.70549: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_hydrogen.d.70549: No such file
+/bin/sh: 2: cannot create build/spiffs_gc.d.70552: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_gc.d.70552: No such file
+/bin/sh: 2: cannot create build/spiffs_nucleus.d.70555: Directory nonexistent
+/bin/sh: 3: cannot open build/spiffs_nucleus.d.70555: No such file
+... compile build/spiffs_nucleus.o
+Assembler messages:
+Fatal error: can't create build/spiffs_nucleus.o: No such file or directory
+make: *** [makefile:89: build/spiffs_nucleus.o] Error 1
+Command finished with return code: 2
+

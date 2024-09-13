@@ -1,0 +1,255 @@
+Running command: autoreconf -i
+configure.ac:34: warning: The macro `AC_CONFIG_HEADER' is obsolete.
+configure.ac:34: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:34: the top level
+configure.ac:43: warning: The macro `AC_PROG_CC_C99' is obsolete.
+configure.ac:43: You should run autoupdate.
+./lib/autoconf/c.m4:1659: AC_PROG_CC_C99 is expanded from...
+configure.ac:43: the top level
+configure.ac:61: warning: The macro `AC_PROG_LIBTOOL' is obsolete.
+configure.ac:61: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:61: the top level
+configure.ac:142: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:142: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/sb_luajit.m4:20: SB_LUAJIT is expanded from...
+configure.ac:142: the top level
+configure.ac:145: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:145: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/sb_concurrency_kit.m4:20: SB_CONCURRENCY_KIT is expanded from...
+configure.ac:145: the top level
+configure.ac:186: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:186: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+m4/sb_check_mysql.m4:9: SB_CHECK_MYSQL is expanded from...
+configure.ac:186: the top level
+configure.ac:188: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:188: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/ac_check_pgsql.m4:7: AC_CHECK_PGSQL is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:188: the top level
+configure.ac:203: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:203: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:203: the top level
+configure.ac:228: warning: The macro `AC_HEADER_TIME' is obsolete.
+configure.ac:228: You should run autoupdate.
+./lib/autoconf/headers.m4:743: AC_HEADER_TIME is expanded from...
+configure.ac:228: the top level
+configure.ac:229: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:229: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:594: AS_CASE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+m4/ax_tls.m4:49: AX_TLS is expanded from...
+configure.ac:229: the top level
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal -I m4
+autoreconf: running: /usr/bin/autoconf
+configure.ac:34: warning: The macro `AC_CONFIG_HEADER' is obsolete.
+configure.ac:34: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:34: the top level
+configure.ac:43: warning: The macro `AC_PROG_CC_C99' is obsolete.
+configure.ac:43: You should run autoupdate.
+./lib/autoconf/c.m4:1659: AC_PROG_CC_C99 is expanded from...
+configure.ac:43: the top level
+configure.ac:61: warning: The macro `AC_PROG_LIBTOOL' is obsolete.
+configure.ac:61: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:61: the top level
+configure.ac:142: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:142: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/sb_luajit.m4:20: SB_LUAJIT is expanded from...
+configure.ac:142: the top level
+configure.ac:145: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:145: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/sb_concurrency_kit.m4:20: SB_CONCURRENCY_KIT is expanded from...
+configure.ac:145: the top level
+configure.ac:186: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:186: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+m4/sb_check_mysql.m4:9: SB_CHECK_MYSQL is expanded from...
+configure.ac:186: the top level
+configure.ac:188: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:188: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+m4/ac_check_pgsql.m4:7: AC_CHECK_PGSQL is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+configure.ac:188: the top level
+configure.ac:203: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:203: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:203: the top level
+configure.ac:228: warning: The macro `AC_HEADER_TIME' is obsolete.
+configure.ac:228: You should run autoupdate.
+./lib/autoconf/headers.m4:743: AC_HEADER_TIME is expanded from...
+configure.ac:228: the top level
+configure.ac:229: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:229: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+lib/m4sugar/m4sh.m4:594: AS_CASE is expanded from...
+lib/m4sugar/m4sh.m4:692: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:699: AS_IF is expanded from...
+./lib/autoconf/general.m4:2249: AC_CACHE_VAL is expanded from...
+m4/ax_tls.m4:49: AX_TLS is expanded from...
+configure.ac:229: the top level
+autoreconf: running: /usr/bin/autoheader
+autoreconf: running: automake --add-missing --copy --no-force
+autoreconf: Leaving directory '.'
+Command finished with return code: 0
+
+Running command: ./configure
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for C compiler vendor... gnu
+checking for gcc architecture flag... 
+checking for x86 cpuid 0 output... d:756e6547:6c65746e:49656e69
+checking for x86 cpuid 1 output... 50657:6080800:fefa3203:1f8bfbff
+checking whether C compiler accepts -march=core2... yes
+checking for gcc architecture flag... -march=core2
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for pkg-config... yes
+checking for C compiler vendor... (cached) gnu
+checking whether to compile with MySQL support... yes
+checking whether to compile with PostgreSQL support... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build with system or bundled LuaJIT... bundled
+checking whether to build with system or bundled Concurrency Kit... bundled
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether SHM_HUGETLB is declared... yes
+checking whether O_SYNC is declared... yes
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for sqrt in -lm... yes
+checking for mysql_config... no
+configure: error: mysql_config executable not found
+********************************************************************************
+ERROR: cannot find MySQL libraries. If you want to compile with MySQL support,
+       please install the package containing MySQL client libraries and headers.
+       On Debian-based systems the package name is libmysqlclient-dev.
+       On RedHat-based systems, it is mysql-devel.
+       If you have those libraries installed in non-standard locations,
+       you must either specify file locations explicitly using
+       --with-mysql-includes and --with-mysql-libs options, or make sure path to
+       mysql_config is listed in your PATH environment variable. If you want to
+       disable MySQL support, use --without-mysql option.
+********************************************************************************
+
+Command finished with return code: 1
+
+Running command: make
+make: *** No targets specified and no makefile found.  Stop.
+Command finished with return code: 2
+

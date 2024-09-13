@@ -1,0 +1,46 @@
+Running command: make clean
+rm -f *.o
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gcc -Wall -Os -DUSESDL `sdl-config --cflags` -c src/reciter.c
+/bin/sh: 1: sdl-config: not found
+gcc -Wall -Os -DUSESDL `sdl-config --cflags` -c src/sam.c
+/bin/sh: 1: sdl-config: not found
+src/sam.c: In function ‘AdjustLengths’:
+src/sam.c:1178:23: warning: array subscript 255 is above array bounds of ‘const unsigned char[81]’ [-Warray-bounds]
+ 1178 |             if ((flags[index] & 64) == 0)
+      |                  ~~~~~^~~~~~~
+In file included from src/sam.c:7:
+src/SamTabs.h:42:21: note: while referencing ‘flags’
+   42 | const unsigned char flags[]={
+      |                     ^~~~~
+gcc -Wall -Os -DUSESDL `sdl-config --cflags` -c src/render.c
+/bin/sh: 1: sdl-config: not found
+gcc -Wall -Os -DUSESDL `sdl-config --cflags` -c src/main.c
+/bin/sh: 1: sdl-config: not found
+src/main.c:11:10: fatal error: SDL.h: No such file or directory
+   11 | #include <SDL.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [Makefile:17: main.o] Error 1
+Command finished with return code: 2
+

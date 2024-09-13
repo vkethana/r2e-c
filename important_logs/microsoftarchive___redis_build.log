@@ -1,0 +1,124 @@
+Running command: make clean
+cd src && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/src'
+Command finished with return code: 0
+
+Running command: make distclean
+cd src && make distclean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html
+(cd ../deps && make distclean)
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(rm -f .make-*)
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps'
+(rm -f .make-*)
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/src'
+Command finished with return code: 0
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cd src && make all
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/src'
+rm -rf redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov redis.info lcov-html
+(cd ../deps && make distclean)
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(rm -f .make-*)
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps'
+(rm -f .make-*)
+echo STD=-std=c99 -pedantic >> .make-settings
+echo WARN=-Wall -W >> .make-settings
+echo OPT=-O2 >> .make-settings
+echo MALLOC=jemalloc >> .make-settings
+echo CFLAGS= >> .make-settings
+echo LDFLAGS= >> .make-settings
+echo REDIS_CFLAGS= >> .make-settings
+echo REDIS_LDFLAGS= >> .make-settings
+echo PREV_FINAL_CFLAGS=-std=c99 -pedantic -Wall -W -O2 -g -ggdb   -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -I../deps/jemalloc/include >> .make-settings
+echo PREV_FINAL_LDFLAGS=  -g -ggdb -rdynamic >> .make-settings
+(cd ../deps && make hiredis linenoise lua jemalloc)
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps'
+(cd hiredis && make clean) > /dev/null || true
+(cd linenoise && make clean) > /dev/null || true
+(cd lua && make clean) > /dev/null || true
+(cd jemalloc && [ -f Makefile ] && make distclean) > /dev/null || true
+(rm -f .make-*)
+(echo "" > .make-cflags)
+(echo "" > .make-ldflags)
+[32;1mMAKE[0m [37;1mhiredis[0m
+cd hiredis && make static
+make[3]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps/hiredis'
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  net.c
+In file included from /usr/include/x86_64-linux-gnu/sys/types.h:25,
+                 from net.c:34:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+In file included from net.h:36,
+                 from net.c:58:
+hiredis.h:104:5: error: unknown type name ‘PORT_LONGLONG’
+  104 |     PORT_LONGLONG integer; /* The integer when type is REDIS_REPLY_INTEGER */
+      |     ^~~~~~~~~~~~~
+hiredis.h:123:50: error: unknown type name ‘PORT_LONGLONG’
+  123 |     void *(*createInteger)(const redisReadTask*, PORT_LONGLONG);
+      |                                                  ^~~~~~~~~~~~~
+In file included from net.c:59:
+sds.h:93:21: error: unknown type name ‘PORT_LONGLONG’
+   93 | sds sdsfromlonglong(PORT_LONGLONG value);
+      |                     ^~~~~~~~~~~~~
+net.c: In function ‘redisContextWaitReady’:
+net.c:212:5: error: unknown type name ‘PORT_LONG’
+  212 |     PORT_LONG msec;
+      |     ^~~~~~~~~
+net.c:236:81: error: unknown type name ‘WIN_PORT_FIX’
+  236 |         if ((res = poll(wfd, 1, (int) msec)) == -1) {                           WIN_PORT_FIX /* cast (int) */
+      |                                                                                 ^~~~~~~~~~~~
+net.c:237:40: error: expected ‘)’ before numeric constant
+  237 |             __redisSetErrorFromErrno(c, REDIS_ERR_IO, "poll(2)");
+      |                                        ^
+      |                                        )
+make[3]: *** [Makefile:118: net.o] Error 1
+make[3]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps/hiredis'
+make[2]: *** [Makefile:46: hiredis] Error 2
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/deps'
+make[1]: [Makefile:152: persist-settings] Error 2 (ignored)
+    [34mCC[0m [33madlist.o[0m
+In file included from adlist.c:36:
+adlist.h:56:5: error: unknown type name ‘PORT_ULONG’
+   56 |     PORT_ULONG len;
+      |     ^~~~~~~~~~
+adlist.h:87:33: error: unknown type name ‘PORT_LONG’
+   87 | listNode *listIndex(list *list, PORT_LONG index);
+      |                                 ^~~~~~~~~
+In file included from adlist.c:37:
+zmalloc.h:54:10: fatal error: jemalloc/jemalloc.h: No such file or directory
+   54 | #include <jemalloc/jemalloc.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:197: adlist.o] Error 1
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/microsoftarchive___redis/src'
+make: *** [Makefile:6: all] Error 2
+Command finished with return code: 2
+

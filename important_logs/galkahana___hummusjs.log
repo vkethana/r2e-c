@@ -1,0 +1,13 @@
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Analyzing repos/repos_400_c_round_two/galkahana___hummusjs (install_repos.py:285) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs INFO Checking for build system in repos/repos_400_c_round_two/galkahana___hummusjs/src (install_repos.py:267) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs ERROR No supported build system found for repos/repos_400_c_round_two/galkahana___hummusjs (install_repos.py:273) (galkahana___hummusjs)
+09/12/2024 05:44:12 PM logger_galkahana___hummusjs ERROR Error: Build failed for galkahana___hummusjs
+Build failed for reason: no build system (install_repos.py:295) (galkahana___hummusjs)

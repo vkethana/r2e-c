@@ -1,0 +1,5 @@
+09/12/2024 05:41:24 PM logger_blindmindstudios___starruler2-source INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (blindmindstudios___starruler2-source)
+09/12/2024 05:41:24 PM logger_blindmindstudios___starruler2-source INFO Analyzing repos/repos_400_c_round_two/blindmindstudios___starruler2-source (install_repos.py:285) (blindmindstudios___starruler2-source)
+09/12/2024 05:41:24 PM logger_blindmindstudios___starruler2-source ERROR No supported build system found for repos/repos_400_c_round_two/blindmindstudios___starruler2-source (install_repos.py:273) (blindmindstudios___starruler2-source)
+09/12/2024 05:41:24 PM logger_blindmindstudios___starruler2-source ERROR Error: Build failed for blindmindstudios___starruler2-source
+Build failed for reason: no build system (install_repos.py:295) (blindmindstudios___starruler2-source)

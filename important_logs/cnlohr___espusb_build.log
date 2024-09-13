@@ -1,0 +1,53 @@
+Running command: make clean
+esp82xx/common.mf:37: Warning: No shell variable 'ESP_ROOT', using '/root/esp8266/esp-open-sdk'
+Makefile:10: warning: overriding recipe for target 'usbburn'
+esp82xx/main.mf:113: warning: ignoring old recipe for target 'usbburn'
+rm -f esp82xx/fwsrc/uart.o esp82xx/fwsrc/esp82xxutil.o esp82xx/fwsrc/flash_rewriter.o esp82xx/fwsrc/http.o esp82xx/fwsrc/commonservices.o esp82xx/fwsrc/http_custom.o esp82xx/fwsrc/mdns.o esp82xx/fwsrc/mfs.o user/custom_commands.o user/user_main.o user/usb_asm_1bit.o user/usb.o image.elf image.map image.lst 
+Command finished with return code: 0
+
+Running command: make distclean
+esp82xx/common.mf:37: Warning: No shell variable 'ESP_ROOT', using '/root/esp8266/esp-open-sdk'
+Makefile:10: warning: overriding recipe for target 'usbburn'
+esp82xx/main.mf:113: warning: ignoring old recipe for target 'usbburn'
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+esp82xx/common.mf:37: Warning: No shell variable 'ESP_ROOT', using '/root/esp8266/esp-open-sdk'
+Makefile:10: warning: overriding recipe for target 'usbburn'
+esp82xx/main.mf:113: warning: ignoring old recipe for target 'usbburn'
+Usage: make [command] [VARIABLES]
+
+all....... Build the binaries
+debug..... Build a .map and .lst file.  Useful for seeing what's going on
+           behind the scenes.
+burn ..... Write firmware to chip using a regular serial port
+burnweb .. Write data for the Web-GUI to chip using a regular serial
+           port
+netburn .. Same as 'burn' but transfer firmware over the network rather
+           than the serial port (if supported by the existing firmware
+           on the chip)
+netweb ... Same as 'burnweb' but transfer data over network if supported
+           by firmware currently on the chip
+getips ... Get a list with IPs of esp82xxs connected to your network
+usbburn .. Burn via PRE-RELEASE USB loader (will probably change)
+usbweb ... Burn webpage by PRE-RELEASE USB loader (will probably change)
+
+
+More commands: all, clean, purge, dumprom
+Command finished with return code: 0
+

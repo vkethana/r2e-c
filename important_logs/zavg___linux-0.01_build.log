@@ -1,0 +1,49 @@
+Running command: make clean
+rm -f Image System.map tmp_make boot/boot core
+rm -f init/*.o boot/*.o tools/system tools/build
+(cd mm;make clean)
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/mm'
+rm -f core *.o *.a tmp_make
+for i in *.c;do rm -f `basename $i .c`.s;done
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/mm'
+(cd fs;make clean)
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/fs'
+rm -f core *.o *.a tmp_make
+for i in *.c;do rm -f `basename $i .c`.s;done
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/fs'
+(cd kernel;make clean)
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/kernel'
+rm -f core *.o *.a tmp_make
+for i in *.c;do rm -f `basename $i .c`.s;done
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/kernel'
+(cd lib;make clean)
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/lib'
+rm -f core *.o *.a tmp_make
+for i in *.c;do rm -f `basename $i .c`.s;done
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/zavg___linux-0.01/lib'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gas -c -o boot/head.o boot/head.s
+make: gas: No such file or directory
+make: *** [Makefile:25: boot/head.o] Error 127
+Command finished with return code: 2
+

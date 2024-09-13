@@ -1,0 +1,13 @@
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Analyzing repos/repos_400_c_round_two/rsms___markdown-wasm (install_repos.py:285) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm INFO Checking for build system in repos/repos_400_c_round_two/rsms___markdown-wasm/src (install_repos.py:267) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm ERROR No supported build system found for repos/repos_400_c_round_two/rsms___markdown-wasm (install_repos.py:273) (rsms___markdown-wasm)
+09/12/2024 05:39:41 PM logger_rsms___markdown-wasm ERROR Error: Build failed for rsms___markdown-wasm
+Build failed for reason: no build system (install_repos.py:295) (rsms___markdown-wasm)

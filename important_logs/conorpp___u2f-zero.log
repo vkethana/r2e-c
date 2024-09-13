@@ -1,0 +1,5 @@
+09/12/2024 05:43:32 PM logger_conorpp___u2f-zero INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (conorpp___u2f-zero)
+09/12/2024 05:43:32 PM logger_conorpp___u2f-zero INFO Analyzing repos/repos_400_c_round_two/conorpp___u2f-zero (install_repos.py:285) (conorpp___u2f-zero)
+09/12/2024 05:43:32 PM logger_conorpp___u2f-zero ERROR No supported build system found for repos/repos_400_c_round_two/conorpp___u2f-zero (install_repos.py:273) (conorpp___u2f-zero)
+09/12/2024 05:43:32 PM logger_conorpp___u2f-zero ERROR Error: Build failed for conorpp___u2f-zero
+Build failed for reason: no build system (install_repos.py:295) (conorpp___u2f-zero)

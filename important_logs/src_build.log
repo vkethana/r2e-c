@@ -1,0 +1,597 @@
+Running command: make clean
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d clean; done
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/ap'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libap.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/ap'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcommon.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/common'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/crypto'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcrypto.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/crypto'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/drivers'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f build.wpa_supplicant build.hostapd
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/drivers'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_auth'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_auth.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_auth'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_supp.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_supp'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_common.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_common'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_peer'
+rm -f *~ *.o *.so *.d *.gcno *.gcda *.gcov libeap_peer.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_peer'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_server'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_server.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_server'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/l2_packet'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libl2_packet.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/l2_packet'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/p2p'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libp2p.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/p2p'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/pae'
+rm -f *~ *.o *.d
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/pae'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/radius'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libradius.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/radius'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/rsn_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov librsn_supp.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/rsn_supp'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/tls'
+rm -f *~ *.o *.d libtls.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/tls'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/utils'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libutils.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/utils'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/wps'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libwps.a
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/wps'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/fst'
+rm -f *~ *.o *.d
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/fst'
+rm -f *~
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d; done
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/ap'
+  CC  accounting.c
+  CC  ap_config.c
+  CC  ap_drv_ops.c
+  CC  ap_list.c
+  CC  ap_mlme.c
+  CC  authsrv.c
+  CC  beacon.c
+  CC  bss_load.c
+  CC  ctrl_iface_ap.c
+  CC  dfs.c
+  CC  dhcp_snoop.c
+  CC  drv_callbacks.c
+  CC  eap_user_db.c
+  CC  eth_p_oui.c
+  CC  gas_serv.c
+  CC  hostapd.c
+  CC  hs20.c
+  CC  hw_features.c
+  CC  iapp.c
+  CC  ieee802_11_auth.c
+  CC  ieee802_11.c
+  CC  ieee802_11_ht.c
+  CC  ieee802_11_shared.c
+  CC  ieee802_11_vht.c
+  CC  ieee802_1x.c
+  CC  neighbor_db.c
+  CC  ndisc_snoop.c
+  CC  p2p_hostapd.c
+  CC  pmksa_cache_auth.c
+  CC  preauth_auth.c
+  CC  rrm.c
+  CC  sta_info.c
+  CC  tkip_countermeasures.c
+  CC  utils.c
+  CC  vlan.c
+  CC  vlan_ifconfig.c
+vlan_init.c: In function ‘vlan_init’:
+vlan_init.c:149:68: warning: ‘.#’ directive output may be truncated writing 2 bytes into a region of size between 1 and 17 [-Wformat-truncation=]
+  149 |                 os_snprintf(vlan->ifname, sizeof(vlan->ifname), "%s.#",
+      |                                                                    ^~
+In file included from ../utils/common.h:12,
+                 from vlan_init.c:13:
+../utils/os.h:552:21: note: ‘snprintf’ output between 3 and 19 bytes into a destination of size 17
+  552 | #define os_snprintf snprintf
+vlan_init.c:149:17: note: in expansion of macro ‘os_snprintf’
+  149 |                 os_snprintf(vlan->ifname, sizeof(vlan->ifname), "%s.#",
+      |                 ^~~~~~~~~~~
+vlan_init.c: In function ‘vlan_add_dynamic’:
+vlan_init.c:201:58: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  201 |         os_snprintf(n->ifname, sizeof(n->ifname), "%s%d%s", ifname, vlan_id,
+      |                                                          ^
+../utils/os.h:552:21: note: ‘snprintf’ output 2 or more bytes (assuming 18) into a destination of size 17
+  552 | #define os_snprintf snprintf
+vlan_init.c:201:9: note: in expansion of macro ‘os_snprintf’
+  201 |         os_snprintf(n->ifname, sizeof(n->ifname), "%s%d%s", ifname, vlan_id,
+      |         ^~~~~~~~~~~
+  CC  vlan_init.c
+  CC  wmm.c
+  CC  wnm_ap.c
+  CC  wpa_auth.c
+  CC  wpa_auth_ft.c
+  CC  wpa_auth_glue.c
+  CC  wpa_auth_ie.c
+  CC  wps_hostapd.c
+  CC  x_snoop.c
+ar crT libap.a accounting.o ap_config.o ap_drv_ops.o ap_list.o ap_mlme.o authsrv.o beacon.o bss_load.o ctrl_iface_ap.o dfs.o dhcp_snoop.o drv_callbacks.o eap_user_db.o eth_p_oui.o gas_serv.o hostapd.o hs20.o hw_features.o iapp.o ieee802_11_auth.o ieee802_11.o ieee802_11_ht.o ieee802_11_shared.o ieee802_11_vht.o ieee802_1x.o neighbor_db.o ndisc_snoop.o p2p_hostapd.o pmksa_cache_auth.o preauth_auth.o rrm.o sta_info.o tkip_countermeasures.o utils.o vlan.o vlan_ifconfig.o vlan_init.o wmm.o wnm_ap.o wpa_auth.o wpa_auth_ft.o wpa_auth_glue.o wpa_auth_ie.o wps_hostapd.o x_snoop.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/ap'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/common'
+  CC  gas.c
+  CC  hw_features_common.c
+  CC  ieee802_11_common.c
+  CC  sae.c
+  CC  wpa_common.c
+ar crT libcommon.a gas.o hw_features_common.o ieee802_11_common.o sae.o wpa_common.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/common'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/crypto'
+  CC  aes-cbc.c
+  CC  aes-ccm.c
+  CC  aes-ctr.c
+  CC  aes-eax.c
+  CC  aes-encblock.c
+  CC  aes-gcm.c
+  CC  aes-internal.c
+  CC  aes-internal-dec.c
+  CC  aes-internal-enc.c
+  CC  aes-omac1.c
+  CC  aes-siv.c
+  CC  aes-unwrap.c
+  CC  aes-wrap.c
+  CC  des-internal.c
+  CC  dh_group5.c
+  CC  dh_groups.c
+  CC  md4-internal.c
+  CC  md5.c
+  CC  md5-internal.c
+  CC  milenage.c
+  CC  ms_funcs.c
+  CC  rc4.c
+  CC  sha1.c
+  CC  sha1-internal.c
+  CC  sha1-pbkdf2.c
+  CC  sha1-prf.c
+  CC  sha1-tlsprf.c
+  CC  sha1-tprf.c
+  CC  sha256.c
+  CC  sha256-prf.c
+  CC  sha256-tlsprf.c
+  CC  sha256-internal.c
+  CC  sha384.c
+  CC  sha384-prf.c
+  CC  sha384-internal.c
+  CC  sha512-internal.c
+  CC  crypto_internal.c
+  CC  crypto_internal-cipher.c
+  CC  crypto_internal-modexp.c
+  CC  crypto_internal-rsa.c
+  CC  tls_internal.c
+  CC  fips_prf_internal.c
+  CC  random.c
+ar crT libcrypto.a aes-cbc.o aes-ccm.o aes-ctr.o aes-eax.o aes-encblock.o aes-gcm.o aes-internal.o aes-internal-dec.o aes-internal-enc.o aes-omac1.o aes-siv.o aes-unwrap.o aes-wrap.o des-internal.o dh_group5.o dh_groups.o md4-internal.o md5.o md5-internal.o milenage.o ms_funcs.o rc4.o sha1.o sha1-internal.o sha1-pbkdf2.o sha1-prf.o sha1-tlsprf.o sha1-tprf.o sha256.o sha256-prf.o sha256-tlsprf.o sha256-internal.o sha384.o sha384-prf.o sha384-internal.o sha512-internal.o crypto_internal.o crypto_internal-cipher.o crypto_internal-modexp.o crypto_internal-rsa.o tls_internal.o fips_prf_internal.o random.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/crypto'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/drivers'
+Nothing to be made.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/drivers'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_auth'
+  CC  eapol_auth_sm.c
+  CC  eapol_auth_dump.c
+ar crT libeapol_auth.a eapol_auth_sm.o eapol_auth_dump.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_auth'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_supp'
+  CC  eapol_supp_sm.c
+ar crT libeapol_supp.a eapol_supp_sm.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eapol_supp'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_common'
+  CC  chap.c
+  CC  eap_common.c
+  CC  eap_eke_common.c
+  CC  eap_fast_common.c
+  CC  eap_gpsk_common.c
+  CC  eap_ikev2_common.c
+  CC  eap_pax_common.c
+  CC  eap_peap_common.c
+  CC  eap_psk_common.c
+  CC  eap_pwd_common.c
+  CC  eap_sake_common.c
+  CC  eap_sim_common.c
+  CC  eap_wsc_common.c
+  CC  ikev2_common.c
+ar crT libeap_common.a chap.o eap_common.o eap_eke_common.o eap_fast_common.o eap_gpsk_common.o eap_ikev2_common.o eap_pax_common.o eap_peap_common.o eap_psk_common.o eap_pwd_common.o eap_sake_common.o eap_sim_common.o eap_wsc_common.o ikev2_common.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_common'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_peer'
+  CC  eap.c
+  CC  eap_methods.c
+ar crT libeap_peer.a eap.o eap_methods.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_peer'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_server'
+  CC  eap_server.c
+  CC  eap_server_identity.c
+  CC  eap_server_methods.c
+ar crT libeap_server.a eap_server.o eap_server_identity.o eap_server_methods.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/eap_server'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/l2_packet'
+  CC  l2_packet_linux.c
+ar crT libl2_packet.a l2_packet_linux.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/l2_packet'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/p2p'
+  CC  p2p_build.c
+  CC  p2p.c
+  CC  p2p_dev_disc.c
+  CC  p2p_go_neg.c
+  CC  p2p_group.c
+  CC  p2p_invitation.c
+  CC  p2p_parse.c
+  CC  p2p_pd.c
+  CC  p2p_sd.c
+  CC  p2p_utils.c
+ar crT libp2p.a p2p_build.o p2p.o p2p_dev_disc.o p2p_go_neg.o p2p_group.o p2p_invitation.o p2p_parse.o p2p_pd.o p2p_sd.o p2p_utils.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/p2p'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/pae'
+Nothing to be made.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/pae'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/radius'
+  CC  radius.c
+  CC  radius_client.c
+  CC  radius_das.c
+  CC  radius_server.c
+ar crT libradius.a radius.o radius_client.o radius_das.o radius_server.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/radius'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/rsn_supp'
+  CC  pmksa_cache.c
+  CC  wpa_ft.c
+  CC  tdls.c
+  CC  preauth.c
+  CC  wpa.c
+  CC  wpa_ie.c
+ar crT librsn_supp.a pmksa_cache.o wpa_ft.o tdls.o preauth.o wpa.o wpa_ie.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/rsn_supp'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/tls'
+  CC  asn1.c
+  CC  bignum.c
+pkcs1.c: In function ‘pkcs1_v15_sig_ver’:
+pkcs1.c:315:33: warning: pointer ‘end’ may be used after ‘free’ [-Wuse-after-free]
+  315 |                             end - hdr.payload - hdr.length);
+      |                             ~~~~^~~~~~~~~~~~~
+In file included from ../utils/common.h:12,
+                 from pkcs1.c:11:
+../utils/os.h:491:20: note: call to ‘free’ here
+  491 | #define os_free(p) free((p))
+      |                    ^~~~~~~~~
+pkcs1.c:307:9: note: in expansion of macro ‘os_free’
+  307 |         os_free(decrypted);
+      |         ^~~~~~~
+  CC  pkcs1.c
+  CC  pkcs5.c
+  CC  pkcs8.c
+  CC  rsa.c
+  CC  tlsv1_client.c
+  CC  tlsv1_client_read.c
+  CC  tlsv1_client_write.c
+  CC  tlsv1_client_ocsp.c
+  CC  tlsv1_common.c
+  CC  tlsv1_cred.c
+  CC  tlsv1_record.c
+  CC  tlsv1_server.c
+  CC  tlsv1_server_read.c
+  CC  tlsv1_server_write.c
+  CC  x509v3.c
+ar crT libtls.a asn1.o bignum.o pkcs1.o pkcs5.o pkcs8.o rsa.o tlsv1_client.o tlsv1_client_read.o tlsv1_client_write.o tlsv1_client_ocsp.o tlsv1_common.o tlsv1_cred.o tlsv1_record.o tlsv1_server.o tlsv1_server_read.o tlsv1_server_write.o x509v3.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/tls'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/utils'
+  CC  base64.c
+  CC  bitfield.c
+  CC  common.c
+  CC  crc32.c
+  CC  ip_addr.c
+  CC  radiotap.c
+  CC  trace.c
+  CC  uuid.c
+  CC  wpa_debug.c
+  CC  wpabuf.c
+  CC  os_unix.c
+  CC  eloop.c
+  CC  edit.c
+ar crT libutils.a base64.o bitfield.o common.o crc32.o ip_addr.o radiotap.o trace.o uuid.o wpa_debug.o wpabuf.o os_unix.o eloop.o edit.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/utils'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/wps'
+  CC  http_client.c
+  CC  httpread.c
+  CC  http_server.c
+  CC  ndef.c
+  CC  upnp_xml.c
+  CC  wps_attr_build.c
+  CC  wps_attr_parse.c
+  CC  wps_attr_process.c
+  CC  wps.c
+  CC  wps_common.c
+  CC  wps_dev_attr.c
+  CC  wps_enrollee.c
+  CC  wps_er.c
+  CC  wps_er_ssdp.c
+  CC  wps_module_tests.c
+  CC  wps_registrar.c
+  CC  wps_upnp_ap.c
+  CC  wps_upnp.c
+  CC  wps_upnp_event.c
+  CC  wps_upnp_ssdp.c
+  CC  wps_upnp_web.c
+ar crT libwps.a http_client.o httpread.o http_server.o ndef.o upnp_xml.o wps_attr_build.o wps_attr_parse.o wps_attr_process.o wps.o wps_common.o wps_dev_attr.o wps_enrollee.o wps_er.o wps_er_ssdp.o wps_module_tests.o wps_registrar.o wps_upnp_ap.o wps_upnp.o wps_upnp_event.o wps_upnp_ssdp.o wps_upnp_web.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/wps'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/fst'
+Nothing to be made.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/vanhoefm___krackattacks-scripts/src/fst'
+Command finished with return code: 0
+
+Running command: make clean
+rm -f *.o utils/*.o
+rm -f goodbyedpi.exe
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+x86_64-w64-mingw32-gcc -std=c99 -pie -fPIE -pipe -I../../../include -L../../binary -O2 -D_FORTIFY_SOURCE=2 -fstack-protector -Wall -Wextra -Wpedantic -Wformat=2 -Wformat-overflow=2 -Wformat-truncation=2 -Wformat-security -Wno-format-nonliteral -Wshadow -Wstrict-aliasing=1 -Wnull-dereference -Warray-bounds=2 -Wimplicit-fallthrough=3 -Wstringop-overflow=4 -Wformat-signedness -Wstrict-overflow=2 -Wcast-align=strict -Wfloat-equal -Wcast-align -Wsign-conversion  -m32 -c blackwhitelist.c -o blackwhitelist.o
+make: x86_64-w64-mingw32-gcc: No such file or directory
+make: *** [Makefile:48: blackwhitelist.o] Error 127
+Command finished with return code: 2
+
+Running command: make clean
+cat: /proc/device-tree/model: No such file or directory
+expr: syntax error: unexpected argument ‘1’
+rm -f *.o *_test
+Command finished with return code: 0
+
+Running command: make distclean
+cat: /proc/device-tree/model: No such file or directory
+expr: syntax error: unexpected argument ‘1’
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cat: /proc/device-tree/model: No such file or directory
+expr: syntax error: unexpected argument ‘1’
+gcc -Wall -std=gnu99 -c -g -O3 -DRASPI=other rds_strings.c
+gcc -Wall -std=gnu99 -c -g -O3 -DRASPI=other rds.c
+gcc -Wall -std=gnu99 -c -g -O3 -DRASPI=other waveforms.c
+gcc -Wall -std=gnu99 -c -g -O3 -DRASPI=other rds_wav.c
+rds_wav.c:28:10: fatal error: sndfile.h: No such file or directory
+   28 | #include <sndfile.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:65: rds_wav.o] Error 1
+Command finished with return code: 2
+
+Running command: make clean
+make -C ./kernel clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/samypesse___how-to-make-a-computer-operating-system/src/kernel'
+rm -f arch/x86/start.o   runtime/cxx.o runtime/itoa.o runtime/buffer.o runtime/memory.o runtime/string.o core/class.o core/elf_loader.o core/file.o core/filesystem.o core/kernel.o core/api_posix.o core/process.o core/syscalls.o core/device.o core/system.o core/env.o core/user.o core/modulelink.o core/socket.o modules/module.o modules/null.o modules/stdtty.o modules/x86serial.o modules/ide.o modules/bochsvbe.o modules/ext2.o modules/dospartition.o modules/clock_x86.o modules/keys.o arch/x86/alloc.o arch/x86/architecture.o arch/x86/io.o arch/x86/vmm.o arch/x86/x86.o arch/x86/switch.o arch/x86/x86int.o  kernel.elf dasm.txt
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/samypesse___how-to-make-a-computer-operating-system/src/kernel'
+make -C ./userland clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/samypesse___how-to-make-a-computer-operating-system/src/userland'
+make -C "helloworld" clean
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/samypesse___how-to-make-a-computer-operating-system/src/userland/helloworld'
+rm -rf *.o hello
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/samypesse___how-to-make-a-computer-operating-system/src/userland/helloworld'
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/samypesse___how-to-make-a-computer-operating-system/src/userland'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+Makefile for Building Dev Operating System.
+Usage: make [ all | clean | help | build | run] 
+
+
+Command finished with return code: 0
+
+Running command: make clean
+make[1]: *** /lib/modules/5.15.0-1067-gcp/build: No such file or directory.  Stop.
+make: *** [Makefile:44: clean] Error 2
+Command finished with return code: 2
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make[1]: *** /lib/modules/5.15.0-1067-gcp/build: No such file or directory.  Stop.
+make: *** [Makefile:38: module] Error 2
+Command finished with return code: 2
+
+Running command: autoreconf -i
+configure.ac:16: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:16: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+configure.ac:16: the top level
+configure.ac:22: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:22: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+m4/as-compiler-flag.m4:13: AS_COMPILER_FLAG is expanded from...
+configure.ac:22: the top level
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+/bin/sh: 1: ./autogen.sh: not found
+Command finished with return code: 127
+
+Running command: ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for pcap_open_live in -lpcap... no
+error: pcap library not found!
+Command finished with return code: 255
+
+Running command: make
+cc -DCONF_DIR='""'  -Wno-unused-variable -Wno-unused-function -Wno-pointer-sign -Ilibwps -I. -Ilwe -DCONFIG_IPV6   -c -o globule.o globule.c
+In file included from globule.h:37,
+                 from globule.c:34:
+defs.h:43:10: fatal error: pcap.h: No such file or directory
+   43 | #include <pcap.h>
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [<builtin>: globule.o] Error 1
+Command finished with return code: 2
+
+Running command: make clean
+rm -f  ../dvbrf ../sendiq ../pissb ../pisstv ../pifsq ../pifm ../piam ../pidcf77 ../pichirp ../tune ../freedv ../piopera ../spectrumpaint ../pocsag ../pifmrds ../rpitx ../sendook
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+g++ -std=c++11 -Wall -g -O2 -Wno-unused-variable -o ../pisstv sstv/pisstv.cpp  -L/opt/vc/lib -lrpitx -lm -lrt -lpthread
+sstv/pisstv.cpp:18:10: fatal error: librpitx/librpitx.h: No such file or directory
+   18 | #include <librpitx/librpitx.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:18: ../pisstv] Error 1
+Command finished with return code: 2
+
+Running command: make clean
+rm -f *.o
+rm -f */*.o
+rm -f vdexExtractor
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cc -c -std=c11 -D_GNU_SOURCE -Wall -Wextra -Werror -DVERSION=\"dev-78f283b\" -c dex.c -o dex.o
+In file included from dex.c:23:
+dex.h:26:10: fatal error: zlib.h: No such file or directory
+   26 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Makefile:56: dex.o] Error 1
+Command finished with return code: 2
+

@@ -1,0 +1,30 @@
+Running command: make clean
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+gcc -O3 -Wall -Wextra -Wno-unknown-pragmas -Wcast-qual   -c -o pigz.o pigz.c
+pigz.c:418:10: fatal error: zlib.h: No such file or directory
+  418 | #include "zlib.h"       // deflateInit2(), deflateReset(), deflate(),
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [<builtin>: pigz.o] Error 1
+Command finished with return code: 2
+

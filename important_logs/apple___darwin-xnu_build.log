@@ -1,0 +1,171 @@
+Running command: make clean
+sysctl: cannot stat /proc/sys/hw/physicalcpu: No such file or directory
+sysctl: cannot stat /proc/sys/hw/logicalcpu: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: sw_vers: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/apple___darwin-xnu'
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: sw_vers: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+sysctl: cannot stat /proc/sys/hw/memsize: No such file or directory
+/bin/sh: 1: [: -le: unexpected operator
+/bin/sh: 1: arithmetic expression: expecting primary: " * 4294967296"
+/INSTALL_C/repos/repos_400_c_round_two/apple___darwin-xnu/makedefs/MakeInc.cmd:419: *** non-numeric second argument to 'wordlist' function: ''.  Stop.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/apple___darwin-xnu'
+make: *** [Makefile:218: clean] Error 2
+Command finished with return code: 2
+
+Running command: make distclean
+sysctl: cannot stat /proc/sys/hw/physicalcpu: No such file or directory
+sysctl: cannot stat /proc/sys/hw/logicalcpu: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: sw_vers: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+sysctl: cannot stat /proc/sys/hw/physicalcpu: No such file or directory
+sysctl: cannot stat /proc/sys/hw/logicalcpu: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: sw_vers: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make: /usr/bin/xcrun: No such file or directory
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/apple___darwin-xnu'
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: sw_vers: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+make[1]: /usr/bin/xcrun: No such file or directory
+sysctl: cannot stat /proc/sys/hw/memsize: No such file or directory
+/bin/sh: 1: [: -le: unexpected operator
+/bin/sh: 1: arithmetic expression: expecting primary: " * 4294967296"
+/INSTALL_C/repos/repos_400_c_round_two/apple___darwin-xnu/makedefs/MakeInc.cmd:419: *** non-numeric second argument to 'wordlist' function: ''.  Stop.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/apple___darwin-xnu'
+make: *** [Makefile:218: all] Error 2
+Command finished with return code: 2
+

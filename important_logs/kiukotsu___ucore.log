@@ -1,0 +1,5 @@
+09/12/2024 05:47:28 PM logger_kiukotsu___ucore INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kiukotsu___ucore)
+09/12/2024 05:47:28 PM logger_kiukotsu___ucore INFO Analyzing repos/repos_400_c_round_two/kiukotsu___ucore (install_repos.py:285) (kiukotsu___ucore)
+09/12/2024 05:47:28 PM logger_kiukotsu___ucore ERROR No supported build system found for repos/repos_400_c_round_two/kiukotsu___ucore (install_repos.py:273) (kiukotsu___ucore)
+09/12/2024 05:47:28 PM logger_kiukotsu___ucore ERROR Error: Build failed for kiukotsu___ucore
+Build failed for reason: no build system (install_repos.py:295) (kiukotsu___ucore)

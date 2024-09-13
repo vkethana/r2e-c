@@ -1,0 +1,5 @@
+09/12/2024 05:35:26 PM logger_antirez___hping INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (antirez___hping)
+09/12/2024 05:35:26 PM logger_antirez___hping INFO Analyzing repos/repos_400_c_round_two/antirez___hping (install_repos.py:285) (antirez___hping)
+09/12/2024 05:35:26 PM logger_antirez___hping ERROR No supported build system found for repos/repos_400_c_round_two/antirez___hping (install_repos.py:273) (antirez___hping)
+09/12/2024 05:35:26 PM logger_antirez___hping ERROR Error: Build failed for antirez___hping
+Build failed for reason: no build system (install_repos.py:295) (antirez___hping)

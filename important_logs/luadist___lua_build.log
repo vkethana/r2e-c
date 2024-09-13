@@ -1,0 +1,33 @@
+Running command: make clean
+cd src && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/luadist___lua/src'
+rm -f liblua.a lua luac lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua.o luac.o print.o
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/luadist___lua/src'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+Please do
+   make PLATFORM
+where PLATFORM is one of these:
+   aix ansi bsd freebsd generic linux macosx mingw posix solaris
+See INSTALL for complete instructions.
+Command finished with return code: 0
+

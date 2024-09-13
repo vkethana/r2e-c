@@ -1,0 +1,15 @@
+Running command: autoreconf -i
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+configure.ac:21: warning: The macro `AC_PROG_LIBTOOL' is obsolete.
+configure.ac:21: You should run autoupdate.
+aclocal.m4:122: AC_PROG_LIBTOOL is expanded from...
+configure.ac:21: the top level
+Makefile.am:34: warning: shell cd "$(top_srcdir: non-POSIX variable name
+Makefile.am:34: (probably a GNU make extension)
+Makefile.am: error: required file './AUTHORS' not found
+Makefile.am: error: required file './NEWS' not found
+autoreconf: error: automake failed with exit status: 1
+Command finished with return code: 1
+

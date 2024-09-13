@@ -1,0 +1,5 @@
+09/12/2024 05:36:48 PM logger_kn007___silk-v3-decoder INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kn007___silk-v3-decoder)
+09/12/2024 05:36:48 PM logger_kn007___silk-v3-decoder INFO Analyzing repos/repos_400_c_round_two/kn007___silk-v3-decoder (install_repos.py:285) (kn007___silk-v3-decoder)
+09/12/2024 05:36:48 PM logger_kn007___silk-v3-decoder ERROR No supported build system found for repos/repos_400_c_round_two/kn007___silk-v3-decoder (install_repos.py:273) (kn007___silk-v3-decoder)
+09/12/2024 05:36:48 PM logger_kn007___silk-v3-decoder ERROR Error: Build failed for kn007___silk-v3-decoder
+Build failed for reason: no build system (install_repos.py:295) (kn007___silk-v3-decoder)

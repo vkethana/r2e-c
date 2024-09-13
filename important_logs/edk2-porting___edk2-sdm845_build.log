@@ -1,0 +1,26 @@
+Running command: ./build.sh
+Usage: build.sh --device DEV
+
+Build edk2 for Qualcomm Snapdragon platforms.
+
+Options: 
+	--device DEV, -d DEV:    build for DEV.
+	--all, -a:               build all devices.
+	--chinese, -c:           use hub.nuaa.cf for submodule cloning.
+	--release MODE, -r MODE: Release mode for building, default is 'RELEASE', 'DEBUG' alternatively.
+	--toolchain TOOLCHAIN:   Set toolchain, default is 'CLANG38'.
+	--uart, -u:              compile with UART support, print debug messages to uart debug port.
+ 	--skip-rootfs-gen:       skip generating SimpleInit rootfs to speed up building.
+ 	--no-exception-disp:     do not display exception information in DEBUG builds.
+	--acpi, -A:              compile DSDT using MS asl with wine.
+	--clean, -C:             clean workspace and output.
+	--distclean, -D:         clean up all files that are not in repo.
+	--outputdir, -O:         output folder.
+	--boot, -b:              fastboot boot image.
+	--fixclang, -f:          fix build using Clang by suppressing -Os flag.
+	--installer-zip, -z:     generate flashable installer zip.
+	--help, -h:              show this help.
+
+MainPage: https://github.com/edk2-porting/edk2-msm
+Command finished with return code: 1
+

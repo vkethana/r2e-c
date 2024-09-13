@@ -1,0 +1,5 @@
+09/12/2024 05:59:05 PM logger_pelya___android-keyboard-gadget INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pelya___android-keyboard-gadget)
+09/12/2024 05:59:05 PM logger_pelya___android-keyboard-gadget INFO Analyzing repos/repos_400_c_round_two/pelya___android-keyboard-gadget (install_repos.py:285) (pelya___android-keyboard-gadget)
+09/12/2024 05:59:05 PM logger_pelya___android-keyboard-gadget ERROR No supported build system found for repos/repos_400_c_round_two/pelya___android-keyboard-gadget (install_repos.py:273) (pelya___android-keyboard-gadget)
+09/12/2024 05:59:05 PM logger_pelya___android-keyboard-gadget ERROR Error: Build failed for pelya___android-keyboard-gadget
+Build failed for reason: no build system (install_repos.py:295) (pelya___android-keyboard-gadget)

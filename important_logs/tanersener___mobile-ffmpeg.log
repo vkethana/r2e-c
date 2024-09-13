@@ -1,0 +1,13 @@
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Analyzing repos/repos_400_c_round_two/tanersener___mobile-ffmpeg (install_repos.py:285) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg INFO Checking for build system in repos/repos_400_c_round_two/tanersener___mobile-ffmpeg/src (install_repos.py:267) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg ERROR No supported build system found for repos/repos_400_c_round_two/tanersener___mobile-ffmpeg (install_repos.py:273) (tanersener___mobile-ffmpeg)
+09/12/2024 05:46:35 PM logger_tanersener___mobile-ffmpeg ERROR Error: Build failed for tanersener___mobile-ffmpeg
+Build failed for reason: no build system (install_repos.py:295) (tanersener___mobile-ffmpeg)

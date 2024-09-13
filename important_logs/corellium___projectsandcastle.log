@@ -1,0 +1,5 @@
+09/12/2024 05:43:23 PM logger_corellium___projectsandcastle INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (corellium___projectsandcastle)
+09/12/2024 05:43:23 PM logger_corellium___projectsandcastle INFO Analyzing repos/repos_400_c_round_two/corellium___projectsandcastle (install_repos.py:285) (corellium___projectsandcastle)
+09/12/2024 05:43:23 PM logger_corellium___projectsandcastle ERROR No supported build system found for repos/repos_400_c_round_two/corellium___projectsandcastle (install_repos.py:273) (corellium___projectsandcastle)
+09/12/2024 05:43:23 PM logger_corellium___projectsandcastle ERROR Error: Build failed for corellium___projectsandcastle
+Build failed for reason: no build system (install_repos.py:295) (corellium___projectsandcastle)

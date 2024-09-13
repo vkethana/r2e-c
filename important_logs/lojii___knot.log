@@ -1,0 +1,5 @@
+09/12/2024 06:04:17 PM logger_lojii___knot INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (lojii___knot)
+09/12/2024 06:04:17 PM logger_lojii___knot INFO Analyzing repos/repos_400_c_round_two/lojii___knot (install_repos.py:285) (lojii___knot)
+09/12/2024 06:04:17 PM logger_lojii___knot ERROR No supported build system found for repos/repos_400_c_round_two/lojii___knot (install_repos.py:273) (lojii___knot)
+09/12/2024 06:04:17 PM logger_lojii___knot ERROR Error: Build failed for lojii___knot
+Build failed for reason: no build system (install_repos.py:295) (lojii___knot)

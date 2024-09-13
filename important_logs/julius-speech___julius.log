@@ -1,0 +1,5 @@
+09/12/2024 05:46:04 PM logger_julius-speech___julius INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (julius-speech___julius)
+09/12/2024 05:46:04 PM logger_julius-speech___julius INFO Analyzing repos/repos_400_c_round_two/julius-speech___julius (install_repos.py:285) (julius-speech___julius)
+09/12/2024 05:46:04 PM logger_julius-speech___julius ERROR No supported build system found for repos/repos_400_c_round_two/julius-speech___julius (install_repos.py:273) (julius-speech___julius)
+09/12/2024 05:46:04 PM logger_julius-speech___julius ERROR Error: Build failed for julius-speech___julius
+Build failed for reason: no build system (install_repos.py:295) (julius-speech___julius)

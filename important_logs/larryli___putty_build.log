@@ -1,0 +1,9 @@
+Running command: rm -rf build/
+Command finished with return code: 0
+
+Running command: rm -rf CMakeCache.txt
+Command finished with return code: 0
+
+Running command: rm -rf CMakeFiles/
+Command finished with return code: 0
+

@@ -1,0 +1,74 @@
+Running command: make clean
+cd src && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/src'
+rm -rf redis-server redis-benchmark redis-cli redis-check-dump redis-check-aof *.o *.gcda *.gcno *.gcov. *.exe
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/src'
+cd deps/hiredis && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/hiredis'
+rm -rf libhiredis.so libhiredis.a hiredis-example hiredis-test hiredis-example* *.o *.gcda *.gcno *.gcov *.dll *.exe
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/hiredis'
+cd deps/linenoise && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/linenoise'
+rm -f linenoise_example *.o *.exe
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/linenoise'
+(cd deps/jemalloc && make distclean)
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/jemalloc'
+make[1]: *** No rule to make target 'distclean'.  Stop.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/jemalloc'
+make: [Makefile:15: clean] Error 2 (ignored)
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cd src && make all
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/src'
+[32;1mMAKE[0m [37;1mhiredis[0m
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/hiredis'
+cc -c -std=c99 -pedantic -O3 -fPIC -Wall -W -Wstrict-prototypes -Wwrite-strings    -g -ggdb  net.c
+In file included from /usr/include/x86_64-linux-gnu/sys/types.h:25,
+                 from net.c:34:
+/usr/include/features.h:194:3: warning: #warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-Wcpp]
+  194 | # warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+      |   ^~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/sys/types.h:179:
+net.c: In function ‘redisContextWaitReady’:
+net.c:199:17: error: ‘SOCKET’ undeclared (first use in this function)
+  199 |         FD_SET((SOCKET)fd, &wfd);
+      |                 ^~~~~~
+net.c:199:17: note: each undeclared identifier is reported only once for each function it appears in
+net.c:199:24: error: expected ‘)’ before ‘fd’
+  199 |         FD_SET((SOCKET)fd, &wfd);
+      |                        ^~
+net.c:199:9: note: to match this ‘(’
+  199 |         FD_SET((SOCKET)fd, &wfd);
+      |         ^~~~~~
+net.c:199:24: error: expected ‘)’ before ‘fd’
+  199 |         FD_SET((SOCKET)fd, &wfd);
+      |                        ^~
+net.c:199:9: note: to match this ‘(’
+  199 |         FD_SET((SOCKET)fd, &wfd);
+      |         ^~~~~~
+make[2]: *** [Makefile:103: net.o] Error 1
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/deps/hiredis'
+make[1]: *** [Makefile:172: dependencies] Error 2
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/dmajkic___redis/src'
+make: *** [Makefile:6: all] Error 2
+Command finished with return code: 2
+

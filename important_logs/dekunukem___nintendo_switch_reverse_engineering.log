@@ -1,0 +1,5 @@
+09/12/2024 05:41:46 PM logger_dekunukem___nintendo_switch_reverse_engineering INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (dekunukem___nintendo_switch_reverse_engineering)
+09/12/2024 05:41:46 PM logger_dekunukem___nintendo_switch_reverse_engineering INFO Analyzing repos/repos_400_c_round_two/dekunukem___nintendo_switch_reverse_engineering (install_repos.py:285) (dekunukem___nintendo_switch_reverse_engineering)
+09/12/2024 05:41:46 PM logger_dekunukem___nintendo_switch_reverse_engineering ERROR No supported build system found for repos/repos_400_c_round_two/dekunukem___nintendo_switch_reverse_engineering (install_repos.py:273) (dekunukem___nintendo_switch_reverse_engineering)
+09/12/2024 05:41:46 PM logger_dekunukem___nintendo_switch_reverse_engineering ERROR Error: Build failed for dekunukem___nintendo_switch_reverse_engineering
+Build failed for reason: no build system (install_repos.py:295) (dekunukem___nintendo_switch_reverse_engineering)

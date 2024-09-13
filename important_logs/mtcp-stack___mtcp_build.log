@@ -1,0 +1,47 @@
+Running command: autoreconf -i
+configure.ac:20: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:20: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:20: the top level
+configure.ac:163: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+aclocal.m4:429: AM_INIT_AUTOMAKE is expanded from...
+configure.ac:163: the top level
+configure.ac:165: warning: AC_OUTPUT should be used without arguments.
+configure.ac:165: You should run autoupdate.
+configure.ac:166: warning: AC_OUTPUT should be used without arguments.
+configure.ac:166: You should run autoupdate.
+configure.ac:167: warning: AC_OUTPUT should be used without arguments.
+configure.ac:167: You should run autoupdate.
+configure.ac:168: warning: AC_OUTPUT should be used without arguments.
+configure.ac:168: You should run autoupdate.
+configure.ac:169: warning: AC_OUTPUT should be used without arguments.
+configure.ac:169: You should run autoupdate.
+configure.ac:163: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.  For more info, see:
+configure.ac:163: https://www.gnu.org/software/automake/manual/automake.html#Modernize-AM_005fINIT_005fAUTOMAKE-invocation
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+/bin/sh: 1: ./autogen.sh: not found
+Command finished with return code: 127
+
+Running command: ./configure
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking for ranlib... ranlib
+checking for bc... no
+configure: error: Please install bc before compiling mTCP.
+Command finished with return code: 1
+
+Running command: make
+make: *** No targets specified and no makefile found.  Stop.
+Command finished with return code: 2
+

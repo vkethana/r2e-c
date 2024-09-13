@@ -1,0 +1,10 @@
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag INFO Analyzing repos/repos_400_c_round_two/stefansundin___altdrag (install_repos.py:285) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag INFO Running custom build.sh script (install_repos.py:225) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag INFO Running command: ./build.sh (install_repos.py:20) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag INFO Logging output to: logs/repos/repos_400_c_round_two_install_logs_with_make_cmake_gradlew_meson_scons_bazel_2024-09-12_17-35-05/stefansundin___altdrag_build.log (install_repos.py:21) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag DEBUG + mkdir -p bin (install_repos.py:38) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag DEBUG + i686-w64-mingw32-windres -o bin/altdrag.o include/altdrag.rc (install_repos.py:38) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag DEBUG ./build.sh: line 6: i686-w64-mingw32-windres: command not found (install_repos.py:38) (stefansundin___altdrag)
+09/12/2024 05:39:52 PM logger_stefansundin___altdrag ERROR Error: Build failed for stefansundin___altdrag
+Build failed for reason: build.sh failed (install_repos.py:295) (stefansundin___altdrag)

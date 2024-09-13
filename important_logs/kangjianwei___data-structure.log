@@ -1,0 +1,5 @@
+09/12/2024 05:36:50 PM logger_kangjianwei___data-structure INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kangjianwei___data-structure)
+09/12/2024 05:36:50 PM logger_kangjianwei___data-structure INFO Analyzing repos/repos_400_c_round_two/kangjianwei___data-structure (install_repos.py:285) (kangjianwei___data-structure)
+09/12/2024 05:36:50 PM logger_kangjianwei___data-structure ERROR No supported build system found for repos/repos_400_c_round_two/kangjianwei___data-structure (install_repos.py:273) (kangjianwei___data-structure)
+09/12/2024 05:36:50 PM logger_kangjianwei___data-structure ERROR Error: Build failed for kangjianwei___data-structure
+Build failed for reason: no build system (install_repos.py:295) (kangjianwei___data-structure)

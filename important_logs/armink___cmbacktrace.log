@@ -1,0 +1,5 @@
+09/12/2024 06:07:23 PM logger_armink___cmbacktrace INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (armink___cmbacktrace)
+09/12/2024 06:07:23 PM logger_armink___cmbacktrace INFO Analyzing repos/repos_400_c_round_two/armink___cmbacktrace (install_repos.py:285) (armink___cmbacktrace)
+09/12/2024 06:07:23 PM logger_armink___cmbacktrace ERROR No supported build system found for repos/repos_400_c_round_two/armink___cmbacktrace (install_repos.py:273) (armink___cmbacktrace)
+09/12/2024 06:07:23 PM logger_armink___cmbacktrace ERROR Error: Build failed for armink___cmbacktrace
+Build failed for reason: no build system (install_repos.py:295) (armink___cmbacktrace)

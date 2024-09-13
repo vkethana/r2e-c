@@ -1,0 +1,5 @@
+09/12/2024 05:39:29 PM logger_google___eddystone INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (google___eddystone)
+09/12/2024 05:39:29 PM logger_google___eddystone INFO Analyzing repos/repos_400_c_round_two/google___eddystone (install_repos.py:285) (google___eddystone)
+09/12/2024 05:39:29 PM logger_google___eddystone ERROR No supported build system found for repos/repos_400_c_round_two/google___eddystone (install_repos.py:273) (google___eddystone)
+09/12/2024 05:39:29 PM logger_google___eddystone ERROR Error: Build failed for google___eddystone
+Build failed for reason: no build system (install_repos.py:295) (google___eddystone)

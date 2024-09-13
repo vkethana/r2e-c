@@ -1,0 +1,5 @@
+09/12/2024 06:07:33 PM logger_mopemope___meinheld INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mopemope___meinheld)
+09/12/2024 06:07:33 PM logger_mopemope___meinheld INFO Analyzing repos/repos_400_c_round_two/mopemope___meinheld (install_repos.py:285) (mopemope___meinheld)
+09/12/2024 06:07:33 PM logger_mopemope___meinheld ERROR No supported build system found for repos/repos_400_c_round_two/mopemope___meinheld (install_repos.py:273) (mopemope___meinheld)
+09/12/2024 06:07:33 PM logger_mopemope___meinheld ERROR Error: Build failed for mopemope___meinheld
+Build failed for reason: no build system (install_repos.py:295) (mopemope___meinheld)

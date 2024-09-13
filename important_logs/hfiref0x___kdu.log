@@ -1,0 +1,13 @@
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Analyzing repos/repos_400_c_round_two/hfiref0x___kdu (install_repos.py:285) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___kdu/Source (install_repos.py:267) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu ERROR No supported build system found for repos/repos_400_c_round_two/hfiref0x___kdu (install_repos.py:273) (hfiref0x___kdu)
+09/12/2024 06:06:33 PM logger_hfiref0x___kdu ERROR Error: Build failed for hfiref0x___kdu
+Build failed for reason: no build system (install_repos.py:295) (hfiref0x___kdu)

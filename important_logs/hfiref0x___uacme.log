@@ -1,0 +1,13 @@
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Analyzing repos/repos_400_c_round_two/hfiref0x___uacme (install_repos.py:285) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme INFO Checking for build system in repos/repos_400_c_round_two/hfiref0x___uacme/Source (install_repos.py:267) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme ERROR No supported build system found for repos/repos_400_c_round_two/hfiref0x___uacme (install_repos.py:273) (hfiref0x___uacme)
+09/12/2024 06:07:30 PM logger_hfiref0x___uacme ERROR Error: Build failed for hfiref0x___uacme
+Build failed for reason: no build system (install_repos.py:295) (hfiref0x___uacme)

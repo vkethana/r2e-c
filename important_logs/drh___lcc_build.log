@@ -1,0 +1,47 @@
+Running command: make clean
+rm -f //tst/8q //tst/8q.s //tst/8q.2 //tst/8q.1
+rm -f //tst/array //tst/array.s //tst/array.2 //tst/array.1
+rm -f //tst/cf //tst/cf.s //tst/cf.2 //tst/cf.1
+rm -f //tst/cq //tst/cq.s //tst/cq.2 //tst/cq.1
+rm -f //tst/cvt //tst/cvt.s //tst/cvt.2 //tst/cvt.1
+rm -f //tst/fields //tst/fields.s //tst/fields.2 //tst/fields.1
+rm -f //tst/front //tst/front.s //tst/front.2 //tst/front.1
+rm -f //tst/incr //tst/incr.s //tst/incr.2 //tst/incr.1
+rm -f //tst/init //tst/init.s //tst/init.2 //tst/init.1
+rm -f //tst/limits //tst/limits.s //tst/limits.2 //tst/limits.1
+rm -f //tst/paranoia //tst/paranoia.s //tst/paranoia.2 //tst/paranoia.1
+rm -f //tst/sort //tst/sort.s //tst/sort.2 //tst/sort.1
+rm -f //tst/spill //tst/spill.s //tst/spill.2 //tst/spill.1
+rm -f //tst/stdarg //tst/stdarg.s //tst/stdarg.2 //tst/stdarg.1
+rm -f //tst/struct //tst/struct.s //tst/struct.2 //tst/struct.1
+rm -f //tst/switch //tst/switch.s //tst/switch.2 //tst/switch.1
+rm -f //tst/wf1 //tst/wf1.s //tst/wf1.2 //tst/wf1.1
+rm -f //tst/yacc //tst/yacc.s //tst/yacc.2 //tst/yacc.1
+rm -f /*.o
+rm -f /dagcheck.c /alpha.c /mips.c /x86.c /sparc.c /x86linux.c
+rm -f /rcc1 /rcc1 /1rcc /2rcc
+rm -f /*.ilk
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make all rcc lburg cpp lcc bprint liblcc triple clean clobber
+Command finished with return code: 0
+

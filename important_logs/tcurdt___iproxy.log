@@ -1,0 +1,5 @@
+09/12/2024 05:44:12 PM logger_tcurdt___iproxy INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tcurdt___iproxy)
+09/12/2024 05:44:12 PM logger_tcurdt___iproxy INFO Analyzing repos/repos_400_c_round_two/tcurdt___iproxy (install_repos.py:285) (tcurdt___iproxy)
+09/12/2024 05:44:12 PM logger_tcurdt___iproxy ERROR No supported build system found for repos/repos_400_c_round_two/tcurdt___iproxy (install_repos.py:273) (tcurdt___iproxy)
+09/12/2024 05:44:12 PM logger_tcurdt___iproxy ERROR Error: Build failed for tcurdt___iproxy
+Build failed for reason: no build system (install_repos.py:295) (tcurdt___iproxy)

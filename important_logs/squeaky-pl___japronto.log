@@ -1,0 +1,13 @@
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Analyzing repos/repos_400_c_round_two/squeaky-pl___japronto (install_repos.py:285) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto INFO Checking for build system in repos/repos_400_c_round_two/squeaky-pl___japronto/src (install_repos.py:267) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto ERROR No supported build system found for repos/repos_400_c_round_two/squeaky-pl___japronto (install_repos.py:273) (squeaky-pl___japronto)
+09/12/2024 05:43:26 PM logger_squeaky-pl___japronto ERROR Error: Build failed for squeaky-pl___japronto
+Build failed for reason: no build system (install_repos.py:295) (squeaky-pl___japronto)

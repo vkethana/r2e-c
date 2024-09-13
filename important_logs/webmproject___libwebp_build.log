@@ -1,0 +1,453 @@
+Running command: autoreconf -i
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:10: installing './ar-lib'
+configure.ac:10: installing './compile'
+configure.ac:4: installing './config.guess'
+configure.ac:4: installing './config.sub'
+configure.ac:6: installing './install-sh'
+configure.ac:6: installing './missing'
+examples/Makefile.am: installing './depcomp'
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:10: installing './compile'
+configure.ac:6: installing './missing'
+examples/Makefile.am: installing './depcomp'
+Command finished with return code: 0
+
+Running command: ./configure
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking whether make supports nested variables... (cached) yes
+checking whether byte ordering is bigendian... no
+checking whether libwebpmux is to be built... yes
+checking whether libwebpdemux is to be built... yes
+checking whether decoder library is to be built... no
+checking whether libwebpextras is to be built... no
+checking whether asserts are enabled... no
+checking whether gcc supports -fvisibility=hidden... yes
+checking whether gcc supports -Wall... yes
+checking whether gcc supports -Wconstant-conversion... no
+checking whether gcc supports -Wdeclaration-after-statement... yes
+checking whether gcc supports -Wextra... yes
+checking whether gcc supports -Wextra-semi-stmt... no
+checking whether gcc supports -Wfloat-conversion... yes
+checking whether gcc supports -Wformat -Wformat-nonliteral... yes
+checking whether gcc supports -Wformat -Wformat-security... yes
+checking whether gcc supports -Wmissing-declarations... yes
+checking whether gcc supports -Wmissing-prototypes... yes
+checking whether gcc supports -Wold-style-definition... yes
+checking whether gcc supports -Wparentheses-equality... no
+checking whether gcc supports -Wshadow... yes
+checking whether gcc supports -Wshorten-64-to-32... no
+checking whether gcc supports -Wstrict-prototypes... yes
+checking whether gcc supports -Wundef... yes
+checking whether gcc supports -Wunreachable-code-aggressive... no
+checking whether gcc supports -Wunreachable-code... yes
+checking whether gcc supports -Wunused-but-set-variable... yes
+checking whether gcc supports -Wunused... yes
+checking whether gcc supports -Wvla... yes
+checking whether gcc supports -msse4.1... yes
+checking for smmintrin.h... yes
+checking whether gcc supports -msse2... yes
+checking for emmintrin.h... yes
+checking for __builtin_bswap16... yes
+checking for __builtin_bswap32... yes
+checking for __builtin_bswap64... yes
+configure: checking for threading support...
+checking if compiler needs -Werror to reject unknown flags... no
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+configure: checking if threading is enabled... yes
+checking for GL/glut.h... no
+checking for GLUT/glut.h... no
+checking for OpenGL/glut.h... no
+configure: Not building vwebp. OpenGL libraries and --enable-libwebpdemux are required.
+checking for sdl2-config... no
+checking for SDL2/SDL.h... no
+configure: WARNING: SDL2 library not available - no SDL.h
+configure: Not building vwebp-sdl. SDL library is required.
+checking for libpng-config... no
+checking for libpng16-config... no
+checking for libpng15-config... no
+checking for libpng14-config... no
+checking for libpng12-config... no
+checking for png.h... no
+configure: WARNING: png library not available - no png.h
+checking for jpeglib.h... no
+configure: WARNING: jpeg library not available - no jpeglib.h
+checking for tiffio.h... no
+configure: WARNING: tiff library not available - no tiffio.h
+checking for gif_lib.h... no
+configure: WARNING: gif library not available - no gif_lib.h
+configure: Not building anim_diff. libgif and --enable-libwebpdemux are required.
+configure: Not building gif2webp. libgif and --enable-libwebpmux are required.
+checking if --enable-swap-16bit-csp option is specified... no
+checking if --disable-near-lossless option is specified... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating examples/Makefile
+config.status: creating extras/Makefile
+config.status: creating imageio/Makefile
+config.status: creating sharpyuv/Makefile
+config.status: creating sharpyuv/libsharpyuv.pc
+config.status: creating src/dec/Makefile
+config.status: creating src/enc/Makefile
+config.status: creating src/dsp/Makefile
+config.status: creating src/demux/Makefile
+config.status: creating src/mux/Makefile
+config.status: creating src/utils/Makefile
+config.status: creating src/libwebp.pc
+config.status: creating src/libwebpdecoder.pc
+config.status: creating src/demux/libwebpdemux.pc
+config.status: creating src/mux/libwebpmux.pc
+config.status: creating src/webp/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure:
+WebP Configuration Summary
+--------------------------
+
+Shared libraries: yes
+Static libraries: yes
+Threading support: yes
+libwebp: yes
+libwebpdecoder: no
+libwebpdemux: yes
+libwebpmux: yes
+libwebpextras: no
+
+Tools:
+cwebp : yes
+  Input format support
+  ====================
+  JPEG : no
+  PNG  : no
+  TIFF : no
+  WIC  : no
+dwebp : yes
+  Output format support
+  =====================
+  PNG  : no
+  WIC  : no
+GIF support : no
+anim_diff   : no
+gif2webp    : no
+img2webp    : yes
+webpmux     : yes
+vwebp       : no
+webpinfo    : yes
+SDL support : no
+vwebp_sdl   : no
+
+Command finished with return code: 0
+
+Running command: make
+Making all in sharpyuv
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/sharpyuv'
+  CC       libsharpyuv_la-sharpyuv_cpu.lo
+  CC       libsharpyuv_la-sharpyuv_csp.lo
+  CC       libsharpyuv_la-sharpyuv_dsp.lo
+  CC       libsharpyuv_la-sharpyuv_gamma.lo
+  CC       libsharpyuv_la-sharpyuv.lo
+  CC       libsharpyuv_sse2_la-sharpyuv_sse2.lo
+  CCLD     libsharpyuv_sse2.la
+  CC       libsharpyuv_neon_la-sharpyuv_neon.lo
+  CCLD     libsharpyuv_neon.la
+  CCLD     libsharpyuv.la
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/sharpyuv'
+Making all in src
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src'
+Making all in dec
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/dec'
+  CC       libwebpdecode_la-alpha_dec.lo
+  CC       libwebpdecode_la-buffer_dec.lo
+  CC       libwebpdecode_la-frame_dec.lo
+  CC       libwebpdecode_la-idec_dec.lo
+  CC       libwebpdecode_la-io_dec.lo
+  CC       libwebpdecode_la-quant_dec.lo
+  CC       libwebpdecode_la-tree_dec.lo
+  CC       libwebpdecode_la-vp8_dec.lo
+  CC       libwebpdecode_la-vp8l_dec.lo
+  CC       libwebpdecode_la-webp_dec.lo
+  CCLD     libwebpdecode.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/dec'
+Making all in enc
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/enc'
+  CC       libwebpencode_la-alpha_enc.lo
+  CC       libwebpencode_la-analysis_enc.lo
+  CC       libwebpencode_la-backward_references_cost_enc.lo
+  CC       libwebpencode_la-backward_references_enc.lo
+  CC       libwebpencode_la-config_enc.lo
+  CC       libwebpencode_la-cost_enc.lo
+  CC       libwebpencode_la-filter_enc.lo
+  CC       libwebpencode_la-frame_enc.lo
+  CC       libwebpencode_la-histogram_enc.lo
+  CC       libwebpencode_la-iterator_enc.lo
+  CC       libwebpencode_la-near_lossless_enc.lo
+  CC       libwebpencode_la-picture_enc.lo
+  CC       libwebpencode_la-picture_csp_enc.lo
+  CC       libwebpencode_la-picture_psnr_enc.lo
+  CC       libwebpencode_la-picture_rescale_enc.lo
+  CC       libwebpencode_la-picture_tools_enc.lo
+  CC       libwebpencode_la-predictor_enc.lo
+  CC       libwebpencode_la-quant_enc.lo
+  CC       libwebpencode_la-syntax_enc.lo
+  CC       libwebpencode_la-token_enc.lo
+  CC       libwebpencode_la-tree_enc.lo
+  CC       libwebpencode_la-vp8l_enc.lo
+  CC       libwebpencode_la-webp_enc.lo
+  CCLD     libwebpencode.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/enc'
+Making all in dsp
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/dsp'
+  CC       libwebpdsp_la-alpha_processing.lo
+  CC       libwebpdsp_la-cpu.lo
+  CC       libwebpdsp_la-dec.lo
+  CC       libwebpdsp_la-dec_clip_tables.lo
+  CC       libwebpdsp_la-filters.lo
+  CC       libwebpdsp_la-lossless.lo
+  CC       libwebpdsp_la-rescaler.lo
+  CC       libwebpdsp_la-upsampling.lo
+  CC       libwebpdsp_la-yuv.lo
+  CC       libwebpdsp_la-cost.lo
+  CC       libwebpdsp_la-enc.lo
+  CC       libwebpdsp_la-lossless_enc.lo
+  CC       libwebpdsp_la-ssim.lo
+  CC       libwebpdsp_sse2_la-cost_sse2.lo
+  CC       libwebpdsp_sse2_la-enc_sse2.lo
+  CC       libwebpdsp_sse2_la-lossless_enc_sse2.lo
+  CC       libwebpdsp_sse2_la-ssim_sse2.lo
+  CC       libwebpdspdecode_sse2_la-alpha_processing_sse2.lo
+  CC       libwebpdspdecode_sse2_la-dec_sse2.lo
+  CC       libwebpdspdecode_sse2_la-filters_sse2.lo
+  CC       libwebpdspdecode_sse2_la-lossless_sse2.lo
+  CC       libwebpdspdecode_sse2_la-rescaler_sse2.lo
+  CC       libwebpdspdecode_sse2_la-upsampling_sse2.lo
+  CC       libwebpdspdecode_sse2_la-yuv_sse2.lo
+  CCLD     libwebpdspdecode_sse2.la
+  CCLD     libwebpdsp_sse2.la
+  CC       libwebpdsp_sse41_la-enc_sse41.lo
+  CC       libwebpdsp_sse41_la-lossless_enc_sse41.lo
+  CC       libwebpdspdecode_sse41_la-alpha_processing_sse41.lo
+  CC       libwebpdspdecode_sse41_la-dec_sse41.lo
+  CC       libwebpdspdecode_sse41_la-lossless_sse41.lo
+  CC       libwebpdspdecode_sse41_la-upsampling_sse41.lo
+  CC       libwebpdspdecode_sse41_la-yuv_sse41.lo
+  CCLD     libwebpdspdecode_sse41.la
+  CCLD     libwebpdsp_sse41.la
+  CC       libwebpdsp_neon_la-cost_neon.lo
+  CC       libwebpdsp_neon_la-enc_neon.lo
+  CC       libwebpdsp_neon_la-lossless_enc_neon.lo
+  CC       libwebpdspdecode_neon_la-alpha_processing_neon.lo
+  CC       libwebpdspdecode_neon_la-dec_neon.lo
+  CC       libwebpdspdecode_neon_la-filters_neon.lo
+  CC       libwebpdspdecode_neon_la-lossless_neon.lo
+  CC       libwebpdspdecode_neon_la-rescaler_neon.lo
+  CC       libwebpdspdecode_neon_la-upsampling_neon.lo
+  CC       libwebpdspdecode_neon_la-yuv_neon.lo
+  CCLD     libwebpdspdecode_neon.la
+  CCLD     libwebpdsp_neon.la
+  CC       libwebpdsp_msa_la-enc_msa.lo
+  CC       libwebpdsp_msa_la-lossless_enc_msa.lo
+  CC       libwebpdspdecode_msa_la-dec_msa.lo
+  CC       libwebpdspdecode_msa_la-filters_msa.lo
+  CC       libwebpdspdecode_msa_la-lossless_msa.lo
+  CC       libwebpdspdecode_msa_la-rescaler_msa.lo
+  CC       libwebpdspdecode_msa_la-upsampling_msa.lo
+  CCLD     libwebpdspdecode_msa.la
+  CCLD     libwebpdsp_msa.la
+  CC       libwebpdsp_mips32_la-cost_mips32.lo
+  CC       libwebpdsp_mips32_la-enc_mips32.lo
+  CC       libwebpdsp_mips32_la-lossless_enc_mips32.lo
+  CC       libwebpdspdecode_mips32_la-dec_mips32.lo
+  CC       libwebpdspdecode_mips32_la-rescaler_mips32.lo
+  CC       libwebpdspdecode_mips32_la-yuv_mips32.lo
+  CCLD     libwebpdspdecode_mips32.la
+  CCLD     libwebpdsp_mips32.la
+  CC       libwebpdsp_mips_dsp_r2_la-cost_mips_dsp_r2.lo
+  CC       libwebpdsp_mips_dsp_r2_la-enc_mips_dsp_r2.lo
+  CC       libwebpdsp_mips_dsp_r2_la-lossless_enc_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-alpha_processing_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-dec_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-filters_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-lossless_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-rescaler_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-upsampling_mips_dsp_r2.lo
+  CC       libwebpdspdecode_mips_dsp_r2_la-yuv_mips_dsp_r2.lo
+  CCLD     libwebpdspdecode_mips_dsp_r2.la
+  CCLD     libwebpdsp_mips_dsp_r2.la
+  CCLD     libwebpdsp.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/dsp'
+Making all in utils
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/utils'
+  CC       bit_reader_utils.lo
+  CC       color_cache_utils.lo
+  CC       filters_utils.lo
+  CC       huffman_utils.lo
+  CC       palette.lo
+  CC       quant_levels_dec_utils.lo
+  CC       rescaler_utils.lo
+  CC       random_utils.lo
+  CC       thread_utils.lo
+  CC       utils.lo
+  CC       bit_writer_utils.lo
+  CC       huffman_encode_utils.lo
+  CC       quant_levels_utils.lo
+  CCLD     libwebputils.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/utils'
+Making all in .
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src'
+  CCLD     libwebp.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src'
+Making all in mux
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/mux'
+  CC       anim_encode.lo
+  CC       muxedit.lo
+  CC       muxinternal.lo
+  CC       muxread.lo
+  CCLD     libwebpmux.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/mux'
+Making all in demux
+make[2]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/demux'
+  CC       anim_decode.lo
+  CC       demux.lo
+  CCLD     libwebpdemux.la
+make[2]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src/demux'
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/src'
+Making all in imageio
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/imageio'
+  CC       imageio_util.lo
+  CCLD     libimageio_util.la
+  CC       libimagedec_la-image_dec.lo
+  CC       libimagedec_la-jpegdec.lo
+  CC       libimagedec_la-metadata.lo
+  CC       libimagedec_la-pngdec.lo
+  CC       libimagedec_la-pnmdec.lo
+  CC       libimagedec_la-tiffdec.lo
+  CC       libimagedec_la-webpdec.lo
+  CC       libimagedec_la-wicdec.lo
+  CCLD     libimagedec.la
+  CC       libimageenc_la-image_enc.lo
+  CCLD     libimageenc.la
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/imageio'
+Making all in man
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/man'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/man'
+Making all in examples
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/examples'
+  CC       dwebp-dwebp.o
+  CC       example_util.lo
+  CCLD     libexample_util.la
+  CCLD     dwebp
+  CC       cwebp-cwebp.o
+  CCLD     cwebp
+  CC       img2webp-img2webp.o
+  CCLD     img2webp
+  CC       webpmux-webpmux.o
+  CCLD     webpmux
+  CC       webpinfo-webpinfo.o
+  CCLD     webpinfo
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp/examples'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/webmproject___libwebp'
+Command finished with return code: 0
+

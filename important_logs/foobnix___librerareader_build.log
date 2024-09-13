@@ -1,0 +1,61 @@
+Running command: ./gradlew clean
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Configure project :app
+ --------------------
+ taskName: [DefaultTaskExecutionRequest{args=[clean],projectPath='null',rootDir='null'}]
+ --------------------
+
+Version: [8.9.177 - 6098]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/INSTALL_C/repos/repos_400_c_round_two/foobnix___librerareader/app/build.gradle' line: 67
+
+* What went wrong:
+A problem occurred evaluating project ':app'.
+> Could not get unknown property 'RELEASE_STORE_FILE' for SigningConfig$AgpDecorated_Decorated{name=release, storeFile=null, storePassword=null, keyAlias=null, keyPassword=null, storeType=pkcs12, v1SigningEnabled=true, v2SigningEnabled=true, enableV1Signing=null, enableV2Signing=null, enableV3Signing=null, enableV4Signing=null} of type com.android.build.gradle.internal.dsl.SigningConfig$AgpDecorated.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 9s
+Command finished with return code: 1
+
+Running command: rm -rf .gradle/
+Command finished with return code: 0
+
+Running command: rm -rf build/
+Command finished with return code: 0
+
+Running command: chmod +x gradlew && ./gradlew build
+
+> Configure project :app
+ --------------------
+ taskName: [DefaultTaskExecutionRequest{args=[build],projectPath='null',rootDir='null'}]
+ --------------------
+
+Version: [8.9.177 - 6098]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/INSTALL_C/repos/repos_400_c_round_two/foobnix___librerareader/app/build.gradle' line: 67
+
+* What went wrong:
+A problem occurred evaluating project ':app'.
+> Could not get unknown property 'RELEASE_STORE_FILE' for SigningConfig$AgpDecorated_Decorated{name=release, storeFile=null, storePassword=null, keyAlias=null, keyPassword=null, storeType=pkcs12, v1SigningEnabled=true, v2SigningEnabled=true, enableV1Signing=null, enableV2Signing=null, enableV3Signing=null, enableV4Signing=null} of type com.android.build.gradle.internal.dsl.SigningConfig$AgpDecorated.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 932ms
+Command finished with return code: 1
+

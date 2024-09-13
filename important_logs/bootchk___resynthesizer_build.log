@@ -1,0 +1,29 @@
+Running command: autoreconf -i
+configure.ac:82: warning: macro 'AM_GLIB_GNU_GETTEXT' not found in library
+configure.ac:31: warning: 'AM_CONFIG_HEADER': this macro is obsolete.
+configure.ac:31: You should use the 'AC_CONFIG_HEADERS' macro instead.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+aclocal.m4:1125: AM_CONFIG_HEADER is expanded from...
+configure.ac:31: the top level
+configure.ac:35: warning: The macro `AC_ISC_POSIX' is obsolete.
+configure.ac:35: You should run autoupdate.
+./lib/autoconf/specific.m4:550: AC_ISC_POSIX is expanded from...
+configure.ac:35: the top level
+configure.ac:37: warning: 'AM_PROG_CC_STDC': this macro is obsolete.
+configure.ac:37: You should simply use the 'AC_PROG_CC' macro instead.
+configure.ac:37: Also, your code should no longer depend upon 'am_cv_prog_cc_stdc',
+configure.ac:37: but upon 'ac_cv_prog_cc_stdc'.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+aclocal.m4:1131: AM_PROG_CC_STDC is expanded from...
+configure.ac:37: the top level
+configure.ac:38: warning: The macro `AC_HEADER_STDC' is obsolete.
+configure.ac:38: You should run autoupdate.
+./lib/autoconf/headers.m4:704: AC_HEADER_STDC is expanded from...
+configure.ac:38: the top level
+configure.ac:81: error: possibly undefined macro: AC_PROG_INTLTOOL
+      If this token and others are legitimate, please use m4_pattern_allow.
+      See the Autoconf documentation.
+configure.ac:82: error: possibly undefined macro: AM_GLIB_GNU_GETTEXT
+autoreconf: error: /usr/bin/autoconf failed with exit status: 1
+Command finished with return code: 1
+

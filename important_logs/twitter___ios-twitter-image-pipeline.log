@@ -1,0 +1,8 @@
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (twitter___ios-twitter-image-pipeline)
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline INFO Analyzing repos/repos_400_c_round_two/twitter___ios-twitter-image-pipeline (install_repos.py:285) (twitter___ios-twitter-image-pipeline)
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline INFO Running custom build.sh script (install_repos.py:225) (twitter___ios-twitter-image-pipeline)
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline INFO Running command: ./build.sh (install_repos.py:20) (twitter___ios-twitter-image-pipeline)
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline INFO Logging output to: logs/repos/repos_400_c_round_two_install_logs_with_make_cmake_gradlew_meson_scons_bazel_2024-09-12_17-35-05/twitter___ios-twitter-image-pipeline_build.log (install_repos.py:21) (twitter___ios-twitter-image-pipeline)
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline DEBUG ./build.sh: 5: Syntax error: "(" unexpected (install_repos.py:38) (twitter___ios-twitter-image-pipeline)
+09/12/2024 05:41:24 PM logger_twitter___ios-twitter-image-pipeline ERROR Error: Build failed for twitter___ios-twitter-image-pipeline
+Build failed for reason: build.sh failed (install_repos.py:295) (twitter___ios-twitter-image-pipeline)

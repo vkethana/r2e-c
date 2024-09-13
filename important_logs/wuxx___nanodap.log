@@ -1,0 +1,5 @@
+09/12/2024 05:44:26 PM logger_wuxx___nanodap INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (wuxx___nanodap)
+09/12/2024 05:44:26 PM logger_wuxx___nanodap INFO Analyzing repos/repos_400_c_round_two/wuxx___nanodap (install_repos.py:285) (wuxx___nanodap)
+09/12/2024 05:44:26 PM logger_wuxx___nanodap ERROR No supported build system found for repos/repos_400_c_round_two/wuxx___nanodap (install_repos.py:273) (wuxx___nanodap)
+09/12/2024 05:44:26 PM logger_wuxx___nanodap ERROR Error: Build failed for wuxx___nanodap
+Build failed for reason: no build system (install_repos.py:295) (wuxx___nanodap)

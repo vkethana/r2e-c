@@ -1,0 +1,89 @@
+Running command: make clean
+Package libavformat was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavformat.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libavformat', required by 'virtual:world', not found
+Package 'libavcodec', required by 'virtual:world', not found
+Package 'libswresample', required by 'virtual:world', not found
+Package 'libswscale', required by 'virtual:world', not found
+Package 'libavutil', required by 'virtual:world', not found
+Package 'sdl', required by 'virtual:world', not found
+Package libavformat was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavformat.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libavformat', required by 'virtual:world', not found
+Package 'libavcodec', required by 'virtual:world', not found
+Package 'libswresample', required by 'virtual:world', not found
+Package 'libswscale', required by 'virtual:world', not found
+Package 'libavutil', required by 'virtual:world', not found
+Package 'sdl', required by 'virtual:world', not found
+rm -f obj/*
+rm -f bin/*
+rm -f tags
+Command finished with return code: 0
+
+Running command: make distclean
+Package libavformat was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavformat.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libavformat', required by 'virtual:world', not found
+Package 'libavcodec', required by 'virtual:world', not found
+Package 'libswresample', required by 'virtual:world', not found
+Package 'libswscale', required by 'virtual:world', not found
+Package 'libavutil', required by 'virtual:world', not found
+Package 'sdl', required by 'virtual:world', not found
+Package libavformat was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavformat.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libavformat', required by 'virtual:world', not found
+Package 'libavcodec', required by 'virtual:world', not found
+Package 'libswresample', required by 'virtual:world', not found
+Package 'libswscale', required by 'virtual:world', not found
+Package 'libavutil', required by 'virtual:world', not found
+Package 'sdl', required by 'virtual:world', not found
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+Package libavformat was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavformat.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libavformat', required by 'virtual:world', not found
+Package 'libavcodec', required by 'virtual:world', not found
+Package 'libswresample', required by 'virtual:world', not found
+Package 'libswscale', required by 'virtual:world', not found
+Package 'libavutil', required by 'virtual:world', not found
+Package 'sdl', required by 'virtual:world', not found
+Package libavformat was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libavformat.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libavformat', required by 'virtual:world', not found
+Package 'libavcodec', required by 'virtual:world', not found
+Package 'libswresample', required by 'virtual:world', not found
+Package 'libswscale', required by 'virtual:world', not found
+Package 'libavutil', required by 'virtual:world', not found
+Package 'sdl', required by 'virtual:world', not found
+mkdir -p obj
+mkdir -p bin
+gcc -Wall -ggdb tutorial01.c  -c -o obj/tutorial01.o
+tutorial01.c:20:10: fatal error: libavcodec/avcodec.h: No such file or directory
+   20 | #include <libavcodec/avcodec.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:34: obj/tutorial01.o] Error 1
+Command finished with return code: 2
+

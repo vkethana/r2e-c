@@ -1,0 +1,5 @@
+09/12/2024 05:47:28 PM logger_s-march___smarchwatch_public INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (s-march___smarchwatch_public)
+09/12/2024 05:47:28 PM logger_s-march___smarchwatch_public INFO Analyzing repos/repos_400_c_round_two/s-march___smarchwatch_public (install_repos.py:285) (s-march___smarchwatch_public)
+09/12/2024 05:47:28 PM logger_s-march___smarchwatch_public ERROR No supported build system found for repos/repos_400_c_round_two/s-march___smarchwatch_public (install_repos.py:273) (s-march___smarchwatch_public)
+09/12/2024 05:47:28 PM logger_s-march___smarchwatch_public ERROR Error: Build failed for s-march___smarchwatch_public
+Build failed for reason: no build system (install_repos.py:295) (s-march___smarchwatch_public)

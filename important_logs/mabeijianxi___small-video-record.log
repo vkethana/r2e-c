@@ -1,0 +1,5 @@
+09/12/2024 05:36:51 PM logger_mabeijianxi___small-video-record INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mabeijianxi___small-video-record)
+09/12/2024 05:36:51 PM logger_mabeijianxi___small-video-record INFO Analyzing repos/repos_400_c_round_two/mabeijianxi___small-video-record (install_repos.py:285) (mabeijianxi___small-video-record)
+09/12/2024 05:36:51 PM logger_mabeijianxi___small-video-record ERROR No supported build system found for repos/repos_400_c_round_two/mabeijianxi___small-video-record (install_repos.py:273) (mabeijianxi___small-video-record)
+09/12/2024 05:36:51 PM logger_mabeijianxi___small-video-record ERROR Error: Build failed for mabeijianxi___small-video-record
+Build failed for reason: no build system (install_repos.py:295) (mabeijianxi___small-video-record)

@@ -1,0 +1,5 @@
+09/12/2024 06:00:51 PM logger_planck-repl___planck INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (planck-repl___planck)
+09/12/2024 06:00:51 PM logger_planck-repl___planck INFO Analyzing repos/repos_400_c_round_two/planck-repl___planck (install_repos.py:285) (planck-repl___planck)
+09/12/2024 06:00:51 PM logger_planck-repl___planck ERROR No supported build system found for repos/repos_400_c_round_two/planck-repl___planck (install_repos.py:273) (planck-repl___planck)
+09/12/2024 06:00:51 PM logger_planck-repl___planck ERROR Error: Build failed for planck-repl___planck
+Build failed for reason: no build system (install_repos.py:295) (planck-repl___planck)

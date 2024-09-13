@@ -1,0 +1,67 @@
+Running command: make clean
+rm -f *.o *.a *.so *.so.*
+cd test && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mborgerding___kissfft/test'
+rm -f *~ bm-* st-* tr-* kf-* tkfc-* ff-* fastfilt-* *.pyc *.pyo *.dat testcpp-* testsimd testsimd-* _test_library_dummy _test_library_dummy.c
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mborgerding___kissfft/test'
+cd tools && make clean
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mborgerding___kissfft/tools'
+rm -f *~ fft fft-* fastconv fastconv-* fastconvr fastconvr-* psdpng psdpng-* _test_library_dummy _test_library_dummy.c
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mborgerding___kissfft/tools'
+rm -f kiss_fft*.tar.gz *~ *.pyc kiss_fft*.zip
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cc -Wall -fPIC \
+	-o kfc.c.o \
+	 -Dkiss_fft_scalar=float -DKISS_FFT_SHARED -DKISS_FFT_BUILD \
+	-c kfc.c
+cc -Wall -fPIC \
+	-o kiss_fft.c.o \
+	 -Dkiss_fft_scalar=float -DKISS_FFT_SHARED -DKISS_FFT_BUILD \
+	-c kiss_fft.c
+cc -Wall -fPIC \
+	-o kiss_fftnd.c.o \
+	 -Dkiss_fft_scalar=float -DKISS_FFT_SHARED -DKISS_FFT_BUILD \
+	-c kiss_fftnd.c
+cc -Wall -fPIC \
+	-o kiss_fftndr.c.o \
+	 -Dkiss_fft_scalar=float -DKISS_FFT_SHARED -DKISS_FFT_BUILD \
+	-c kiss_fftndr.c
+cc -Wall -fPIC \
+	-o kiss_fftr.c.o \
+	 -Dkiss_fft_scalar=float -DKISS_FFT_SHARED -DKISS_FFT_BUILD \
+	-c kiss_fftr.c
+cc -shared -Wl,-soname,libkissfft-float.so.131 -o libkissfft-float.so.131.1.0 kfc.c.o kiss_fft.c.o kiss_fftnd.c.o kiss_fftndr.c.o kiss_fftr.c.o
+ln -sf libkissfft-float.so.131.1.0 libkissfft-float.so.131
+ln -sf libkissfft-float.so.131.1.0 libkissfft-float.so
+make -C tools CFLAGADD="" all
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/mborgerding___kissfft/tools'
+/usr/bin/ld: cannot find -lpng: No such file or directory
+collect2: error: ld returned 1 exit status
+cc -o fft-float -Wall -O3 -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wcast-align -Wcast-qual -Wnested-externs -Wshadow -Wbad-function-cast -Wwrite-strings  -I.. -Dkiss_fft_scalar=float -DKISS_FFT_SHARED fftutil.c -L.. -lkissfft-float -lm
+cc -o fastconv-float -Wall -O3 -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wcast-align -Wcast-qual -Wnested-externs -Wshadow -Wbad-function-cast -Wwrite-strings  -I.. -Dkiss_fft_scalar=float -DKISS_FFT_SHARED kiss_fastfir.c  -DFAST_FILT_UTIL -L.. -lkissfft-float -lm
+cc -o fastconvr-float -Wall -O3 -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wcast-align -Wcast-qual -Wnested-externs -Wshadow -Wbad-function-cast -Wwrite-strings  -I.. -Dkiss_fft_scalar=float -DKISS_FFT_SHARED -DREAL_FASTFIR kiss_fastfir.c -DFAST_FILT_UTIL -L.. -lkissfft-float -lm
+Makefile:75: *** ERROR: no libpng development files found!.  Stop.
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/mborgerding___kissfft/tools'
+make: *** [Makefile:201: all] Error 2
+Command finished with return code: 2
+

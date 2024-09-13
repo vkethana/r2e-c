@@ -1,0 +1,13 @@
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Analyzing repos/repos_400_c_round_two/white-tiger___t-clock (install_repos.py:285) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock INFO Checking for build system in repos/repos_400_c_round_two/white-tiger___t-clock/src (install_repos.py:267) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock ERROR No supported build system found for repos/repos_400_c_round_two/white-tiger___t-clock (install_repos.py:273) (white-tiger___t-clock)
+09/12/2024 05:59:03 PM logger_white-tiger___t-clock ERROR Error: Build failed for white-tiger___t-clock
+Build failed for reason: no build system (install_repos.py:295) (white-tiger___t-clock)

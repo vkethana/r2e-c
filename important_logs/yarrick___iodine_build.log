@@ -1,0 +1,54 @@
+Running command: make clean
+Cleaning...
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yarrick___iodine/src'
+Cleaning src/
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yarrick___iodine/src'
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yarrick___iodine/tests'
+Cleaning tests/
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yarrick___iodine/tests'
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+make[1]: Entering directory '/INSTALL_C/repos/repos_400_c_round_two/yarrick___iodine/src'
+OS is LINUX, arch is x86_64
+CC tun.c
+CC dns.c
+CC read.c
+CC encoding.c
+CC login.c
+CC base32.c
+CC base64.c
+Making base64u.c
+CC base64u.c
+CC base128.c
+CC md5.c
+CC common.c
+CC iodine.c
+CC client.c
+client.c:29:10: fatal error: zlib.h: No such file or directory
+   29 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+make[1]: *** [Makefile:33: client.o] Error 1
+make[1]: Leaving directory '/INSTALL_C/repos/repos_400_c_round_two/yarrick___iodine/src'
+make: *** [Makefile:21: all] Error 2
+Command finished with return code: 2
+

@@ -1,0 +1,56 @@
+Running command: make clean
+/bin/sh: 1: [[: not found
+rm -rf build
+Command finished with return code: 0
+
+Running command: make distclean
+/bin/sh: 1: [[: not found
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+/bin/sh: 1: [[: not found
+Makefile:39: !!PACKAGE MAINTAINER NOTICE!!
+Makefile:40: Configuring build for compatibility with old makefile. Some new features may be missing.
+Makefile:41: If you are a package maintainer consider using meson directly!
+meson build
+The Meson build system
+Version: 1.5.1
+Source dir: /INSTALL_C/repos/repos_400_c_round_two/jarcode-foss___glava
+Build dir: /INSTALL_C/repos/repos_400_c_round_two/jarcode-foss___glava/build
+Build type: native build
+WARNING: You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in future releases of meson.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Project name: glava
+Project version: v1.6.3-90-g6fc0e32
+C compiler for the host machine: cc (gcc 12.2.0 "cc (Debian 12.2.0-14) 12.2.0")
+C linker for the host machine: cc ld.bfd 2.40
+C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (Debian 12.2.0-14) 12.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.40
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Run-time dependency threads found: YES
+
+meson.build:23:5: ERROR: C shared or static library 'pulse' not found
+
+A full log can be found at /INSTALL_C/repos/repos_400_c_round_two/jarcode-foss___glava/build/meson-logs/meson-log.txt
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+make: *** [Makefile:43: build] Error 1
+Command finished with return code: 2
+

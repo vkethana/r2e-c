@@ -1,0 +1,5 @@
+09/12/2024 05:39:19 PM logger_teamwin___team-win-recovery-project INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (teamwin___team-win-recovery-project)
+09/12/2024 05:39:19 PM logger_teamwin___team-win-recovery-project INFO Analyzing repos/repos_400_c_round_two/teamwin___team-win-recovery-project (install_repos.py:285) (teamwin___team-win-recovery-project)
+09/12/2024 05:39:19 PM logger_teamwin___team-win-recovery-project ERROR No supported build system found for repos/repos_400_c_round_two/teamwin___team-win-recovery-project (install_repos.py:273) (teamwin___team-win-recovery-project)
+09/12/2024 05:39:19 PM logger_teamwin___team-win-recovery-project ERROR Error: Build failed for teamwin___team-win-recovery-project
+Build failed for reason: no build system (install_repos.py:295) (teamwin___team-win-recovery-project)

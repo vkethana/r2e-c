@@ -1,0 +1,10 @@
+Running command: autoreconf -i
+configure.ac:22: error: Autoconf version 2.69 is required.
+Untested combinations of 'autoconf' and PostgreSQL versions are not
+recommended.  You can remove the check from 'configure.ac' but it is then
+your responsibility whether the result works or not.
+configure.ac:22: the top level
+autom4te: error: /usr/bin/m4 failed with exit status: 1
+autoreconf: error: /usr/bin/autoconf failed with exit status: 1
+Command finished with return code: 1
+

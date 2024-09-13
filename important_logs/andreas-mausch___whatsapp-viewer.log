@@ -1,0 +1,5 @@
+09/12/2024 06:07:33 PM logger_andreas-mausch___whatsapp-viewer INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (andreas-mausch___whatsapp-viewer)
+09/12/2024 06:07:33 PM logger_andreas-mausch___whatsapp-viewer INFO Analyzing repos/repos_400_c_round_two/andreas-mausch___whatsapp-viewer (install_repos.py:285) (andreas-mausch___whatsapp-viewer)
+09/12/2024 06:07:33 PM logger_andreas-mausch___whatsapp-viewer ERROR No supported build system found for repos/repos_400_c_round_two/andreas-mausch___whatsapp-viewer (install_repos.py:273) (andreas-mausch___whatsapp-viewer)
+09/12/2024 06:07:33 PM logger_andreas-mausch___whatsapp-viewer ERROR Error: Build failed for andreas-mausch___whatsapp-viewer
+Build failed for reason: no build system (install_repos.py:295) (andreas-mausch___whatsapp-viewer)

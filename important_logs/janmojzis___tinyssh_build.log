@@ -1,0 +1,245 @@
+Running command: make clean
+rm -rf build
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+sh -e make-tinyssh.sh
+=== Thu Sep 12 17:38:17 UTC 2024 === obtaining compiler
+=== Thu Sep 12 17:38:17 UTC 2024 ===   cc ok
+=== Thu Sep 12 17:38:17 UTC 2024 === finishing
+=== Thu Sep 12 17:38:17 UTC 2024 === checking compiler options
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -pedantic ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wall ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wno-long-long ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wno-overlength-strings ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wno-unused-function ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wshadow ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wdeclaration-after-statement ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wwrite-strings ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wmissing-declarations ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wmissing-prototypes ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wstrict-prototypes ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wunused-value ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wunused-parameter ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Wundef ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -fstack-protector-strong ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -fwrapv ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -fno-strict-overflow ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -Os ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -fomit-frame-pointer ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -funroll-loops ok
+=== Thu Sep 12 17:38:17 UTC 2024 ===   cc -pedantic -Wall -Wno-long-long -Wno-overlength-strings -Wno-unused-function -Wshadow -Wdeclaration-after-statement -Wwrite-strings -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wunused-value -Wunused-parameter -Wundef -fstack-protector-strong -fwrapv -fno-strict-overflow -Os -fomit-frame-pointer -funroll-loops
+=== Thu Sep 12 17:38:17 UTC 2024 === finishing
+=== Thu Sep 12 17:38:17 UTC 2024 === checking libs
+=== Thu Sep 12 17:38:17 UTC 2024 ===   -lutil ok
+=== Thu Sep 12 17:38:18 UTC 2024 ===   -lsocket -lnsl failed
+=== Thu Sep 12 17:38:18 UTC 2024 === finishing
+=== Thu Sep 12 17:38:18 UTC 2024 === checking $LIBS
+=== Thu Sep 12 17:38:18 UTC 2024 === finishing
+=== Thu Sep 12 17:38:18 UTC 2024 === building sysdep headers
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasasmvolatilememory.h hasasmvolatilememory.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasmlock.h hasmlock.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   haslibutilh.h default.h-no
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutilh.h default.h-no
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasopenpty.h hasopenpty.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   haslogintty.h haslogintty.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpx.h hasutmpx.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpxupdwtmpx.h hasutmpxupdwtmpx.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpxsyslen.h default.h-no
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpxaddrv6.h hasutmpxaddrv6.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmp.h hasutmp.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpname.h hasutmpname.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpuser.h hasutmpuser.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmphost.h hasutmphost.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmptime.h hasutmptime.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmptv.h hasutmptv.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmppid.h hasutmppid.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmptype.h hasutmptype.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmplogwtmp.h hasutmplogwtmp.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmploginlogout.h hasutmploginlogout.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   hasutmpaddrv6.h hasutmpaddrv6.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 ===   haslimits.h haslimits.h-yes
+=== Thu Sep 12 17:38:18 UTC 2024 === finishing
+=== Thu Sep 12 17:38:18 UTC 2024 === starting crypto lib
+=== Thu Sep 12 17:38:20 UTC 2024 ===   libtinysshcrypto.a ok
+=== Thu Sep 12 17:38:20 UTC 2024 === finishing
+=== Thu Sep 12 17:38:20 UTC 2024 === starting crypto headers
+=== Thu Sep 12 17:38:20 UTC 2024 ===   crypto_stream_chacha20.h (tinyssh) ok
+=== Thu Sep 12 17:38:20 UTC 2024 ===   crypto_onetimeauth_poly1305.h (tinyssh) ok
+=== Thu Sep 12 17:38:20 UTC 2024 ===   crypto_hash_sha512.h (tinyssh) ok
+=== Thu Sep 12 17:38:20 UTC 2024 ===   crypto_hash_sha256.h (tinyssh) ok
+=== Thu Sep 12 17:38:21 UTC 2024 ===   crypto_verify_16.h (tinyssh) ok
+=== Thu Sep 12 17:38:21 UTC 2024 ===   crypto_verify_32.h (tinyssh) ok
+=== Thu Sep 12 17:38:22 UTC 2024 ===   crypto_scalarmult_curve25519.h (tinyssh) ok
+=== Thu Sep 12 17:38:25 UTC 2024 ===   crypto_sign_ed25519.h (tinyssh) ok
+=== Thu Sep 12 17:38:25 UTC 2024 ===   crypto_sort_uint32.h (tinyssh) ok
+=== Thu Sep 12 17:38:27 UTC 2024 ===   crypto_kem_sntrup761.h (tinyssh) ok
+=== Thu Sep 12 17:38:30 UTC 2024 ===   crypto_kem_sntrup761x25519.h (tinyssh) ok
+=== Thu Sep 12 17:38:30 UTC 2024 === finishing
+=== Thu Sep 12 17:38:30 UTC 2024 === starting tinyssh objects
+=== Thu Sep 12 17:38:30 UTC 2024 ===   blocking.o ok
+=== Thu Sep 12 17:38:30 UTC 2024 ===   buf.o ok
+=== Thu Sep 12 17:38:30 UTC 2024 ===   byte.o ok
+=== Thu Sep 12 17:38:30 UTC 2024 ===   channel.o ok
+=== Thu Sep 12 17:38:30 UTC 2024 ===   channel_drop.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   channel_fork.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   channel_forkpty.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   channel_subsystem.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   coe.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   connectioninfo.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   die.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   dropuidgid.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   e.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   env.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   getln.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   global.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   iptostr.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   load.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   log.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   loginshell.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   logsys.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   main_tinysshd.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   main_tinysshd_makekey.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   main_tinysshd_printkey.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   newenv.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   numtostr.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   open.o ok
+=== Thu Sep 12 17:38:31 UTC 2024 ===   packet.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_auth.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_channel_open.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_channel_recv.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_channel_request.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_channel_send.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_get.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_hello.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_kex.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_kexdh.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_put.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_recv.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_send.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packet_unimplemented.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   packetparser.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   porttostr.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   randommod.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   readall.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   savesync.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   ssh.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   sshcrypto.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   sshcrypto_cipher.o ok
+=== Thu Sep 12 17:38:32 UTC 2024 ===   sshcrypto_cipher_chachapoly.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   sshcrypto_kex.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   sshcrypto_kex_curve25519.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   sshcrypto_kex_sntrup761x25519.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   sshcrypto_key.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   sshcrypto_key_ed25519.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   str.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   stringparser.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   subprocess_auth.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   subprocess_sign.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshd.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshd-makekey.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshd-printkey.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   trymlock.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   writeall.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshd.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshnoneauthd.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshd-makekey.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   tinysshd-printkey.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-printkex.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-unauthenticated.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-test-hello1.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-test-hello2.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-test-kex1.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-test-kex2.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 ===   _tinysshd-speed.o ok
+=== Thu Sep 12 17:38:33 UTC 2024 === finishing
+=== Thu Sep 12 17:38:33 UTC 2024 === starting tinyssh-tests
+=== Thu Sep 12 17:38:34 UTC 2024 ===   blockingtest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   buftest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   bytetest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   channeltest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   channel_forktest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   channel_subsystemtest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   coetest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   connectioninfotest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   dropuidgidtest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   etest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   envtest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   getlntest ok
+=== Thu Sep 12 17:38:34 UTC 2024 ===   globaltest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   iptostrtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   loadtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   logtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   loginshelltest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   newenvtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   numtostrtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   opentest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   packetparsertest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   porttostrtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   randommodtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   readalltest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   savesynctest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   sshtest ok
+=== Thu Sep 12 17:38:35 UTC 2024 ===   sshcryptotest ok
+=== Thu Sep 12 17:38:36 UTC 2024 ===   strtest ok
+=== Thu Sep 12 17:38:36 UTC 2024 ===   stringparsertest ok
+=== Thu Sep 12 17:38:36 UTC 2024 ===   subprocess_authtest ok
+=== Thu Sep 12 17:38:36 UTC 2024 ===   subprocess_signtest ok
+=== Thu Sep 12 17:38:36 UTC 2024 ===   trymlocktest ok
+=== Thu Sep 12 17:38:36 UTC 2024 ===   writealltest ok
+=== Thu Sep 12 17:38:36 UTC 2024 === finishing
+=== Thu Sep 12 17:38:36 UTC 2024 === starting _tinyssh
+=== Thu Sep 12 17:38:36 UTC 2024 ===   _tinysshd-printkex ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinysshd-unauthenticated ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinysshd-test-hello1 ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinysshd-test-hello2 ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinysshd-test-kex1 ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinysshd-test-kex2 ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinysshd-speed ok
+=== Thu Sep 12 17:38:37 UTC 2024 === finishing
+=== Thu Sep 12 17:38:37 UTC 2024 === starting tinyssh
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshd ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshnoneauthd ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshd-makekey ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshd-printkey ok
+=== Thu Sep 12 17:38:37 UTC 2024 === finishing
+=== Thu Sep 12 17:38:37 UTC 2024 === starting tinyssh regression tests
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshd ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshnoneauthd ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshd-makekey ok
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinysshd-printkey ok
+=== Thu Sep 12 17:38:37 UTC 2024 === finishing
+=== Thu Sep 12 17:38:37 UTC 2024 === starting manpages
+=== Thu Sep 12 17:38:37 UTC 2024 === finishing
+=== Thu Sep 12 17:38:37 UTC 2024 === counting words of code - tests
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinyssh-tests 60720
+=== Thu Sep 12 17:38:37 UTC 2024 ===   crypto-tests 7271
+=== Thu Sep 12 17:38:37 UTC 2024 ===   _tinyssh 5865
+=== Thu Sep 12 17:38:37 UTC 2024 ===   73842 words of code
+=== Thu Sep 12 17:38:37 UTC 2024 === finishing
+=== Thu Sep 12 17:38:37 UTC 2024 === counting words of code
+=== Thu Sep 12 17:38:37 UTC 2024 ===   sysdep 1150
+=== Thu Sep 12 17:38:37 UTC 2024 ===   tinyssh 40559
+=== Thu Sep 12 17:38:37 UTC 2024 ===   crypto 22211
+=== Thu Sep 12 17:38:37 UTC 2024 ===   63906 words of code
+=== Thu Sep 12 17:38:37 UTC 2024 === finishing
+Command finished with return code: 0
+

@@ -1,0 +1,5 @@
+09/12/2024 05:39:41 PM logger_attractivechaos___klib INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (attractivechaos___klib)
+09/12/2024 05:39:41 PM logger_attractivechaos___klib INFO Analyzing repos/repos_400_c_round_two/attractivechaos___klib (install_repos.py:285) (attractivechaos___klib)
+09/12/2024 05:39:41 PM logger_attractivechaos___klib ERROR No supported build system found for repos/repos_400_c_round_two/attractivechaos___klib (install_repos.py:273) (attractivechaos___klib)
+09/12/2024 05:39:41 PM logger_attractivechaos___klib ERROR Error: Build failed for attractivechaos___klib
+Build failed for reason: no build system (install_repos.py:295) (attractivechaos___klib)

@@ -1,0 +1,13 @@
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Analyzing repos/repos_400_c_round_two/jp9000___obs (install_repos.py:285) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs INFO Checking for build system in repos/repos_400_c_round_two/jp9000___obs/Source (install_repos.py:267) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs ERROR No supported build system found for repos/repos_400_c_round_two/jp9000___obs (install_repos.py:273) (jp9000___obs)
+09/12/2024 05:36:51 PM logger_jp9000___obs ERROR Error: Build failed for jp9000___obs
+Build failed for reason: no build system (install_repos.py:295) (jp9000___obs)

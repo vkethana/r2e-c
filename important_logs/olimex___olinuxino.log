@@ -1,0 +1,5 @@
+09/12/2024 05:38:08 PM logger_olimex___olinuxino INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (olimex___olinuxino)
+09/12/2024 05:38:08 PM logger_olimex___olinuxino INFO Analyzing repos/repos_400_c_round_two/olimex___olinuxino (install_repos.py:285) (olimex___olinuxino)
+09/12/2024 05:38:08 PM logger_olimex___olinuxino ERROR No supported build system found for repos/repos_400_c_round_two/olimex___olinuxino (install_repos.py:273) (olimex___olinuxino)
+09/12/2024 05:38:08 PM logger_olimex___olinuxino ERROR Error: Build failed for olimex___olinuxino
+Build failed for reason: no build system (install_repos.py:295) (olimex___olinuxino)

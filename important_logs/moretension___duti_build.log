@@ -1,0 +1,48 @@
+Running command: autoreconf -i
+configure.ac:17: warning: The macro `AC_CANONICAL_SYSTEM' is obsolete.
+configure.ac:17: You should run autoupdate.
+./lib/autoconf/general.m4:2081: AC_CANONICAL_SYSTEM is expanded from...
+configure.ac:17: the top level
+configure.ac:18: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:18: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+aclocal.m4:1: DUTI_CHECK_SDK is expanded from...
+configure.ac:18: the top level
+configure.ac:19: warning: The macro `AC_HELP_STRING' is obsolete.
+configure.ac:19: You should run autoupdate.
+./lib/autoconf/general.m4:204: AC_HELP_STRING is expanded from...
+aclocal.m4:71: DUTI_CHECK_DEPLOYMENT_TARGET is expanded from...
+configure.ac:19: the top level
+configure.ac:24: warning: The macro `AC_ERROR' is obsolete.
+configure.ac:24: You should run autoupdate.
+./lib/autoconf/oldnames.m4:34: AC_ERROR is expanded from...
+configure.ac:24: the top level
+Command finished with return code: 0
+
+Running command: ./autogen.sh
+/bin/sh: 1: ./autogen.sh: not found
+Command finished with return code: 127
+
+Running command: ./configure
+checking for gawk... no
+checking for mawk... mawk
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking which SDK to use... configure: error: linux-gnu is not a supported system
+Command finished with return code: 1
+
+Running command: make
+make: *** No targets specified and no makefile found.  Stop.
+Command finished with return code: 2
+

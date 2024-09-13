@@ -1,0 +1,31 @@
+Running command: make clean
+rm -rf objs dep objs/bin || true
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+cc  -O3 -std=gnu11 -Wall -mpclmul -march=core2 -mfpmath=sse -mssse3 -fno-strict-aliasing -fno-strict-overflow -fwrapv -DAES=1 -DCOMMIT=\"dc0c7f3de40530053189c572936ae4fd1567269b\" -D_GNU_SOURCE=1 -D_FILE_OFFSET_BITS=64 -iquote common -iquote . -c -MP -MD -MF dep/mtproto/mtproto-proxy.d -MQ objs/mtproto/mtproto-proxy.o -o objs/mtproto/mtproto-proxy.o mtproto/mtproto-proxy.c
+mtproto/mtproto-proxy.c:42:10: fatal error: openssl/rand.h: No such file or directory
+   42 | #include <openssl/rand.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:86: objs/mtproto/mtproto-proxy.o] Error 1
+Command finished with return code: 2
+

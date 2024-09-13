@@ -1,0 +1,5 @@
+09/12/2024 05:59:33 PM logger_lotabout___write-a-c-interpreter INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (lotabout___write-a-c-interpreter)
+09/12/2024 05:59:33 PM logger_lotabout___write-a-c-interpreter INFO Analyzing repos/repos_400_c_round_two/lotabout___write-a-c-interpreter (install_repos.py:285) (lotabout___write-a-c-interpreter)
+09/12/2024 05:59:33 PM logger_lotabout___write-a-c-interpreter ERROR No supported build system found for repos/repos_400_c_round_two/lotabout___write-a-c-interpreter (install_repos.py:273) (lotabout___write-a-c-interpreter)
+09/12/2024 05:59:33 PM logger_lotabout___write-a-c-interpreter ERROR Error: Build failed for lotabout___write-a-c-interpreter
+Build failed for reason: no build system (install_repos.py:295) (lotabout___write-a-c-interpreter)

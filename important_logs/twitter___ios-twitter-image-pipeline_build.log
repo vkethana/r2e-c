@@ -1,0 +1,4 @@
+Running command: ./build.sh
+./build.sh: 5: Syntax error: "(" unexpected
+Command finished with return code: 2
+
