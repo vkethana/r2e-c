@@ -1,9 +1,9 @@
 import os
 import time
 
-REPOS_DIR = 'repos/repos_test_4'
+REPOS_DIR = '...'
 LOGGER_DIR = f'logs/{REPOS_DIR}_install_logs_with_make_cmake_gradlew_meson_scons_bazel_{time.strftime("%Y-%m-%d_%H-%M-%S")}'
-REPO_LIST = 'repos4.json'
+REPO_LIST = '...'
 
 # Check if REPORS_DIR exists
 if not os.path.exists(REPOS_DIR):
