@@ -1,6 +1,6 @@
 import os
 import subprocess
-from typing import List, Dict, Tuple
+from typing import List
 from install_repos import build_repo  # Assuming your existing code is in a file called build_script.py
 from utils import setup_logger  # Assumed to be available from your original script
 from paths import REPOS_DIR, LOGGER_DIR  # Assumed to be available from your original script
@@ -69,33 +69,37 @@ def get_package_name(header: str) -> str:
 
     Returns:
         str: Suggested package name (e.g., 'libbfd-dev').
+
+    EXAMPLES:
+    - bfd.h -> libbfd-dev
+    - jpeglib.h -> libjpeg-dev
+
     """
     # Strip potential directory paths and file extensions
     header_name = header.split('/')[-1].replace('.h', '')
 
     # Heuristics to map headers to likely package names
-    # ChatGPT gives some example hardcoded mappings, but I prefer to not use hardcoded package mappings
     header_to_package_map = {} 
-    '''{
-        'bfd': 'libbfd-dev',
-        'gmp': 'libgmp-dev',
-        'ev': 'libev-dev',
-        'lua': 'liblua5.3-dev',  # Adjust version as needed
-        'avcodec': 'libavcodec-dev',
-        'osdef': 'libxosd-dev',  # Example heuristic, adjust if necessary
-        'c++-config': 'libstdc++-dev',  # Common C++ header
-        'sys/capability': 'libcap-dev',  # For sys/capability.h
-        'bits': 'libc6-dev',  # For bits headers commonly found in libc
-    }
-    '''
-    # Commented out because hardcoded package mappings aren't sustainable or scalable in the long run
-
+    # Custom heuristics can be added as needed
+    
     # Check for exact matches first
     if header_name in header_to_package_map:
         return header_to_package_map[header_name]
 
+    header_name = header_name.replace('lib', '') # don't want two 'lib's in the package name
+
+    header_name = header_name.lower() # package names are case sensitive!
     # Apply general heuristic
     return f"lib{header_name}-dev"
+
+def can_package_name_be_resolved(package_name: str) -> bool:
+    '''
+    Checks whether package_name can be resolved to a package name using apt
+    '''
+    # Run sudo apt update first
+    #subprocess.run(['sudo', 'apt', 'update'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    result = subprocess.run(['apt-cache', 'show', package_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return result.returncode == 0
 
 def install_missing_headers(missing_headers: List[str], logger) -> bool:
     """
@@ -128,12 +132,11 @@ def retry_build(repo_path: str, logger, stats: StatsTracker, max_retries: int = 
     Attempt to build the repo, retrying up to max_retries times if missing header errors occur.
     """
     build_system, result, missing_headers, output = build_repo(repo_path, logger)
-    error_type = "other"
+    error_type = "other" if not missing_headers else "missing_header"
 
     retries = 0
     while missing_headers and retries < max_retries:
         logger.info(f"Attempt {retries + 1}/{max_retries} to fix missing headers: {missing_headers}")
-        error_type = "missing_header"
         if not install_missing_headers(missing_headers, logger):
             logger.error("Failed to resolve missing headers. Aborting retries.")
             break
@@ -142,14 +145,17 @@ def retry_build(repo_path: str, logger, stats: StatsTracker, max_retries: int = 
         build_system, result, missing_headers, output = build_repo(repo_path, logger)
         retries += 1
 
-    if missing_headers:
-        logger.error(f"Build failed after {retries} retries due to unresolved missing headers: {missing_headers}")
-        # Print in red color
-        print(f"\033[91mBuild failed after {retries} retries due to unresolved missing headers: {missing_headers}\033[00m")
-    else:
+    # Update the error type based on the final result
+    if not result and not missing_headers:
+        error_type = "configure_error" if "./configure" in output else "other"
+
+    # Log the result of the final build attempt
+    if result:
         logger.info(f"Build completed successfully after {retries} retries.")
-        # Print in green color
         print(f"\033[92mBuild completed successfully after {retries} retries.\033[00m")
+    else:
+        logger.error(f"Build failed after {retries} retries due to unresolved missing headers: {missing_headers}")
+        print(f"\033[91mBuild failed after {retries} retries due to unresolved missing headers: {missing_headers}\033[00m")
 
     # Update stats with the results of the build attempt
     stats.update_stats(build_system, result, missing_headers, error_type)
