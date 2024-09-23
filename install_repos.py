@@ -46,7 +46,9 @@ class BuildSystem(ABC):
 class MakefileBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         makefile_variants = ['Makefile', 'makefile', 'MAKEFILE']
-        return any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants)
+        if any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants):
+            return True
+        return search_in_depth(repo_path, makefile_variants)
 
     def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
         logger.info("Running make")
@@ -80,7 +82,9 @@ class MakefileBuildSystem(BuildSystem):
 
 class AutotoolsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'configure.ac'))
+        if os.path.isfile(os.path.join(repo_path, 'configure.ac')):
+            return True
+        return search_in_depth(repo_path, ['configure.ac'])
 
     def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
         logger.info("Running autoreconf")
@@ -111,7 +115,9 @@ class AutotoolsBuildSystem(BuildSystem):
 
 class GradleBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'gradlew'))
+        if os.path.isfile(os.path.join(repo_path, 'gradlew')):
+            return True
+        return search_in_depth(repo_path, ['gradlew'])
 
     def build(self, repo_path: str, logger):
         self.run_command('./gradlew clean', repo_path, logger)
@@ -131,7 +137,9 @@ class GradleBuildSystem(BuildSystem):
 
 class CMakeBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt'))
+        if os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt')):
+            return True
+        return search_in_depth(repo_path, ['CMakeLists.txt'])
 
     def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
         # Clear Existing files
@@ -162,7 +170,9 @@ class CMakeBuildSystem(BuildSystem):
 
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'SConstruct'))
+        if os.path.isfile(os.path.join(repo_path, 'SConstruct')):
+            return True
+        return search_in_depth(repo_path, ['CMakeLists.txt'])
 
     def build(self, repo_path: str, logger):
         logger.info("Running SCons build")
@@ -178,7 +188,9 @@ class SConsBuildSystem(BuildSystem):
 
 class BazelBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'WORKSPACE'))
+        if os.path.isfile(os.path.join(repo_path, 'WORKSPACE')):
+            return True
+        return search_in_depth(repo_path, ['WORKSPACE'])
 
     def build(self, repo_path: str, logger):
         self.run_command('bazel clean --expunge', repo_path, logger)
@@ -198,7 +210,9 @@ class BazelBuildSystem(BuildSystem):
 
 class MesonBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'meson.build'))
+        if os.path.isfile(os.path.join(repo_path, 'meson.build')):
+            return True
+        return search_in_depth(repo_path, ['meson.build'])
 
     def build(self, repo_path: str, logger):
         self.run_command('rm -rf build/', repo_path, logger)
@@ -223,7 +237,9 @@ class MesonBuildSystem(BuildSystem):
 
 class CustomScriptBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        return os.path.isfile(os.path.join(repo_path, 'build.sh'))
+        if os.path.isfile(os.path.join(repo_path, 'build.sh')):
+            return True
+        return search_in_depth(repo_path, ['build.sh'])
 
     def build(self, repo_path: str, logger):
         logger.info("Running custom build.sh script")
@@ -239,6 +255,12 @@ class CustomScriptBuildSystem(BuildSystem):
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
         return list(missing_headers)
 
+def search_in_depth(repo_path: str, build_file_names: List[str]) -> bool:
+    for root, dirs, files in os.walk(repo_path):
+        if any(build_file in files for build_file in build_file_names):
+            return True
+    return False
+
 def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
     build_systems = [
         AutotoolsBuildSystem(),
@@ -251,27 +273,11 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         CustomScriptBuildSystem(),
     ]
 
-    repo_name = os.path.basename(os.path.normpath(repo_path))
-    possible_subdirs = [
-        "src",
-        "Source",
-        os.path.join(repo_name, "src")
-    ]
-
     for build_system in build_systems:
         if build_system.detect(repo_path):
             print(f"Build system detected: {build_system.__class__.__name__}")
             result, missing_headers, output = build_system.build(repo_path, logger)
             return build_system.__class__.__name__, result, missing_headers, output
-        else:
-            for subdir in possible_subdirs:
-                subdir_path = os.path.join(repo_path, subdir)
-                if os.path.exists(subdir_path):
-                    logger.info(f"Checking for build system in {subdir_path}")
-                    if build_system.detect(subdir_path):
-                        print(f"Build system detected: {build_system.__class__.__name__}")
-                        result, missing_headers, output = build_system.build(subdir_path, logger)
-                        return build_system.__class__.__name__, result, missing_headers, output
 
     logger.error(f"No supported build system found for {repo_path}")
     return "Unknown", "no build system", [], ""
