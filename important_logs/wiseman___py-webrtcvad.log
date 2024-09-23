@@ -1,5 +1,0 @@
-09/12/2024 05:36:38 PM logger_wiseman___py-webrtcvad INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (wiseman___py-webrtcvad)
-09/12/2024 05:36:38 PM logger_wiseman___py-webrtcvad INFO Analyzing repos/repos_400_c_round_two/wiseman___py-webrtcvad (install_repos.py:285) (wiseman___py-webrtcvad)
-09/12/2024 05:36:38 PM logger_wiseman___py-webrtcvad ERROR No supported build system found for repos/repos_400_c_round_two/wiseman___py-webrtcvad (install_repos.py:273) (wiseman___py-webrtcvad)
-09/12/2024 05:36:38 PM logger_wiseman___py-webrtcvad ERROR Error: Build failed for wiseman___py-webrtcvad
-Build failed for reason: no build system (install_repos.py:295) (wiseman___py-webrtcvad)

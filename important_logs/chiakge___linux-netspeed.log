@@ -1,5 +1,0 @@
-09/12/2024 05:41:25 PM logger_chiakge___linux-netspeed INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (chiakge___linux-netspeed)
-09/12/2024 05:41:25 PM logger_chiakge___linux-netspeed INFO Analyzing repos/repos_400_c_round_two/chiakge___linux-netspeed (install_repos.py:285) (chiakge___linux-netspeed)
-09/12/2024 05:41:25 PM logger_chiakge___linux-netspeed ERROR No supported build system found for repos/repos_400_c_round_two/chiakge___linux-netspeed (install_repos.py:273) (chiakge___linux-netspeed)
-09/12/2024 05:41:25 PM logger_chiakge___linux-netspeed ERROR Error: Build failed for chiakge___linux-netspeed
-Build failed for reason: no build system (install_repos.py:295) (chiakge___linux-netspeed)

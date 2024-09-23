@@ -1,5 +1,0 @@
-09/12/2024 05:40:58 PM logger_loyinglin___learnopengles INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (loyinglin___learnopengles)
-09/12/2024 05:40:58 PM logger_loyinglin___learnopengles INFO Analyzing repos/repos_400_c_round_two/loyinglin___learnopengles (install_repos.py:285) (loyinglin___learnopengles)
-09/12/2024 05:40:58 PM logger_loyinglin___learnopengles ERROR No supported build system found for repos/repos_400_c_round_two/loyinglin___learnopengles (install_repos.py:273) (loyinglin___learnopengles)
-09/12/2024 05:40:58 PM logger_loyinglin___learnopengles ERROR Error: Build failed for loyinglin___learnopengles
-Build failed for reason: no build system (install_repos.py:295) (loyinglin___learnopengles)

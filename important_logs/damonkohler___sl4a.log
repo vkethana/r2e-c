@@ -1,5 +1,0 @@
-09/12/2024 06:06:35 PM logger_damonkohler___sl4a INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (damonkohler___sl4a)
-09/12/2024 06:06:35 PM logger_damonkohler___sl4a INFO Analyzing repos/repos_400_c_round_two/damonkohler___sl4a (install_repos.py:285) (damonkohler___sl4a)
-09/12/2024 06:06:35 PM logger_damonkohler___sl4a ERROR No supported build system found for repos/repos_400_c_round_two/damonkohler___sl4a (install_repos.py:273) (damonkohler___sl4a)
-09/12/2024 06:06:35 PM logger_damonkohler___sl4a ERROR Error: Build failed for damonkohler___sl4a
-Build failed for reason: no build system (install_repos.py:295) (damonkohler___sl4a)

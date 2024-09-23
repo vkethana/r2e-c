@@ -1,5 +1,0 @@
-09/12/2024 06:00:51 PM logger_kosua20___herebedragons INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kosua20___herebedragons)
-09/12/2024 06:00:51 PM logger_kosua20___herebedragons INFO Analyzing repos/repos_400_c_round_two/kosua20___herebedragons (install_repos.py:285) (kosua20___herebedragons)
-09/12/2024 06:00:51 PM logger_kosua20___herebedragons ERROR No supported build system found for repos/repos_400_c_round_two/kosua20___herebedragons (install_repos.py:273) (kosua20___herebedragons)
-09/12/2024 06:00:51 PM logger_kosua20___herebedragons ERROR Error: Build failed for kosua20___herebedragons
-Build failed for reason: no build system (install_repos.py:295) (kosua20___herebedragons)

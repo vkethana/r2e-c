@@ -1,9 +1,11 @@
 import os
 import time
 
-REPOS_DIR = 'repos/repos_50_c'
-LOGGER_DIR = f'logs/{REPOS_DIR}_install_logs_with_make_cmake_gradlew_meson_scons_bazel_{time.strftime("%Y-%m-%d_%H-%M-%S")}'
-REPO_LIST = 'repos50.json'
+CLONED_REPO_ID = "repos_400_c_round_two" # don't change this unless you want to test a different set of cloned repo
+TEST_ID = "with_manual_installation_of_missing_packages" # you can change this
+REPOS_DIR = f'repos/{CLONED_REPO_ID}'
+LOGGER_DIR = f'logs/{CLONED_REPO_ID}_{TEST_ID}_{time.strftime("%Y-%m-%d_%H-%M-%S")}'
+REPO_LIST = 'repos500.json'
 
 # Check if REPORS_DIR exists
 if not os.path.exists(REPOS_DIR):

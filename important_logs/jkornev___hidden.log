@@ -1,5 +1,0 @@
-09/12/2024 05:36:48 PM logger_jkornev___hidden INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (jkornev___hidden)
-09/12/2024 05:36:48 PM logger_jkornev___hidden INFO Analyzing repos/repos_400_c_round_two/jkornev___hidden (install_repos.py:285) (jkornev___hidden)
-09/12/2024 05:36:48 PM logger_jkornev___hidden ERROR No supported build system found for repos/repos_400_c_round_two/jkornev___hidden (install_repos.py:273) (jkornev___hidden)
-09/12/2024 05:36:48 PM logger_jkornev___hidden ERROR Error: Build failed for jkornev___hidden
-Build failed for reason: no build system (install_repos.py:295) (jkornev___hidden)

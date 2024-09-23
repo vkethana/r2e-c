@@ -1,5 +1,0 @@
-09/12/2024 05:59:30 PM logger_yianwillis___vimcdoc INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yianwillis___vimcdoc)
-09/12/2024 05:59:30 PM logger_yianwillis___vimcdoc INFO Analyzing repos/repos_400_c_round_two/yianwillis___vimcdoc (install_repos.py:285) (yianwillis___vimcdoc)
-09/12/2024 05:59:30 PM logger_yianwillis___vimcdoc ERROR No supported build system found for repos/repos_400_c_round_two/yianwillis___vimcdoc (install_repos.py:273) (yianwillis___vimcdoc)
-09/12/2024 05:59:30 PM logger_yianwillis___vimcdoc ERROR Error: Build failed for yianwillis___vimcdoc
-Build failed for reason: no build system (install_repos.py:295) (yianwillis___vimcdoc)

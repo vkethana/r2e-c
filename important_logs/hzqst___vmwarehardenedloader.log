@@ -1,5 +1,0 @@
-09/12/2024 06:07:24 PM logger_hzqst___vmwarehardenedloader INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hzqst___vmwarehardenedloader)
-09/12/2024 06:07:24 PM logger_hzqst___vmwarehardenedloader INFO Analyzing repos/repos_400_c_round_two/hzqst___vmwarehardenedloader (install_repos.py:285) (hzqst___vmwarehardenedloader)
-09/12/2024 06:07:24 PM logger_hzqst___vmwarehardenedloader ERROR No supported build system found for repos/repos_400_c_round_two/hzqst___vmwarehardenedloader (install_repos.py:273) (hzqst___vmwarehardenedloader)
-09/12/2024 06:07:24 PM logger_hzqst___vmwarehardenedloader ERROR Error: Build failed for hzqst___vmwarehardenedloader
-Build failed for reason: no build system (install_repos.py:295) (hzqst___vmwarehardenedloader)

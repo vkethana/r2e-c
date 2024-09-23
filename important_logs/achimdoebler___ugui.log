@@ -1,5 +1,0 @@
-09/12/2024 05:39:29 PM logger_achimdoebler___ugui INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (achimdoebler___ugui)
-09/12/2024 05:39:29 PM logger_achimdoebler___ugui INFO Analyzing repos/repos_400_c_round_two/achimdoebler___ugui (install_repos.py:285) (achimdoebler___ugui)
-09/12/2024 05:39:29 PM logger_achimdoebler___ugui ERROR No supported build system found for repos/repos_400_c_round_two/achimdoebler___ugui (install_repos.py:273) (achimdoebler___ugui)
-09/12/2024 05:39:29 PM logger_achimdoebler___ugui ERROR Error: Build failed for achimdoebler___ugui
-Build failed for reason: no build system (install_repos.py:295) (achimdoebler___ugui)

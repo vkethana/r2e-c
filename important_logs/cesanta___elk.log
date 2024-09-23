@@ -1,5 +1,0 @@
-09/12/2024 06:07:24 PM logger_cesanta___elk INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cesanta___elk)
-09/12/2024 06:07:24 PM logger_cesanta___elk INFO Analyzing repos/repos_400_c_round_two/cesanta___elk (install_repos.py:285) (cesanta___elk)
-09/12/2024 06:07:24 PM logger_cesanta___elk ERROR No supported build system found for repos/repos_400_c_round_two/cesanta___elk (install_repos.py:273) (cesanta___elk)
-09/12/2024 06:07:24 PM logger_cesanta___elk ERROR Error: Build failed for cesanta___elk
-Build failed for reason: no build system (install_repos.py:295) (cesanta___elk)

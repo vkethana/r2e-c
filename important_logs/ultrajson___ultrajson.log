@@ -1,5 +1,0 @@
-09/12/2024 05:49:12 PM logger_ultrajson___ultrajson INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ultrajson___ultrajson)
-09/12/2024 05:49:12 PM logger_ultrajson___ultrajson INFO Analyzing repos/repos_400_c_round_two/ultrajson___ultrajson (install_repos.py:285) (ultrajson___ultrajson)
-09/12/2024 05:49:12 PM logger_ultrajson___ultrajson ERROR No supported build system found for repos/repos_400_c_round_two/ultrajson___ultrajson (install_repos.py:273) (ultrajson___ultrajson)
-09/12/2024 05:49:12 PM logger_ultrajson___ultrajson ERROR Error: Build failed for ultrajson___ultrajson
-Build failed for reason: no build system (install_repos.py:295) (ultrajson___ultrajson)

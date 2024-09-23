@@ -1,5 +1,0 @@
-09/12/2024 05:47:30 PM logger_0voice___algorithm-structure INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (0voice___algorithm-structure)
-09/12/2024 05:47:30 PM logger_0voice___algorithm-structure INFO Analyzing repos/repos_400_c_round_two/0voice___algorithm-structure (install_repos.py:285) (0voice___algorithm-structure)
-09/12/2024 05:47:30 PM logger_0voice___algorithm-structure ERROR No supported build system found for repos/repos_400_c_round_two/0voice___algorithm-structure (install_repos.py:273) (0voice___algorithm-structure)
-09/12/2024 05:47:30 PM logger_0voice___algorithm-structure ERROR Error: Build failed for 0voice___algorithm-structure
-Build failed for reason: no build system (install_repos.py:295) (0voice___algorithm-structure)

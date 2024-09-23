@@ -1,5 +1,0 @@
-09/12/2024 05:41:03 PM logger_nkolban___esp32-snippets INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nkolban___esp32-snippets)
-09/12/2024 05:41:03 PM logger_nkolban___esp32-snippets INFO Analyzing repos/repos_400_c_round_two/nkolban___esp32-snippets (install_repos.py:285) (nkolban___esp32-snippets)
-09/12/2024 05:41:03 PM logger_nkolban___esp32-snippets ERROR No supported build system found for repos/repos_400_c_round_two/nkolban___esp32-snippets (install_repos.py:273) (nkolban___esp32-snippets)
-09/12/2024 05:41:03 PM logger_nkolban___esp32-snippets ERROR Error: Build failed for nkolban___esp32-snippets
-Build failed for reason: no build system (install_repos.py:295) (nkolban___esp32-snippets)

@@ -1,5 +1,0 @@
-09/12/2024 05:39:37 PM logger_mbebenita___broadway INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mbebenita___broadway)
-09/12/2024 05:39:37 PM logger_mbebenita___broadway INFO Analyzing repos/repos_400_c_round_two/mbebenita___broadway (install_repos.py:285) (mbebenita___broadway)
-09/12/2024 05:39:37 PM logger_mbebenita___broadway ERROR No supported build system found for repos/repos_400_c_round_two/mbebenita___broadway (install_repos.py:273) (mbebenita___broadway)
-09/12/2024 05:39:37 PM logger_mbebenita___broadway ERROR Error: Build failed for mbebenita___broadway
-Build failed for reason: no build system (install_repos.py:295) (mbebenita___broadway)

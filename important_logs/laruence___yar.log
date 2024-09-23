@@ -1,5 +1,0 @@
-09/12/2024 06:06:32 PM logger_laruence___yar INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (laruence___yar)
-09/12/2024 06:06:32 PM logger_laruence___yar INFO Analyzing repos/repos_400_c_round_two/laruence___yar (install_repos.py:285) (laruence___yar)
-09/12/2024 06:06:32 PM logger_laruence___yar ERROR No supported build system found for repos/repos_400_c_round_two/laruence___yar (install_repos.py:273) (laruence___yar)
-09/12/2024 06:06:32 PM logger_laruence___yar ERROR Error: Build failed for laruence___yar
-Build failed for reason: no build system (install_repos.py:295) (laruence___yar)

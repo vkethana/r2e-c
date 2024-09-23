@@ -1,5 +1,0 @@
-09/12/2024 05:45:50 PM logger_sparklemotion___nokogiri INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sparklemotion___nokogiri)
-09/12/2024 05:45:50 PM logger_sparklemotion___nokogiri INFO Analyzing repos/repos_400_c_round_two/sparklemotion___nokogiri (install_repos.py:285) (sparklemotion___nokogiri)
-09/12/2024 05:45:50 PM logger_sparklemotion___nokogiri ERROR No supported build system found for repos/repos_400_c_round_two/sparklemotion___nokogiri (install_repos.py:273) (sparklemotion___nokogiri)
-09/12/2024 05:45:50 PM logger_sparklemotion___nokogiri ERROR Error: Build failed for sparklemotion___nokogiri
-Build failed for reason: no build system (install_repos.py:295) (sparklemotion___nokogiri)

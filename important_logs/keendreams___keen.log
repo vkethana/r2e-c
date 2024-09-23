@@ -1,5 +1,0 @@
-09/12/2024 06:06:37 PM logger_keendreams___keen INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (keendreams___keen)
-09/12/2024 06:06:37 PM logger_keendreams___keen INFO Analyzing repos/repos_400_c_round_two/keendreams___keen (install_repos.py:285) (keendreams___keen)
-09/12/2024 06:06:37 PM logger_keendreams___keen ERROR No supported build system found for repos/repos_400_c_round_two/keendreams___keen (install_repos.py:273) (keendreams___keen)
-09/12/2024 06:06:37 PM logger_keendreams___keen ERROR Error: Build failed for keendreams___keen
-Build failed for reason: no build system (install_repos.py:295) (keendreams___keen)

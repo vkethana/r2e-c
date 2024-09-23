@@ -1,5 +1,0 @@
-09/12/2024 05:39:29 PM logger_cundong___smartappupdates INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cundong___smartappupdates)
-09/12/2024 05:39:29 PM logger_cundong___smartappupdates INFO Analyzing repos/repos_400_c_round_two/cundong___smartappupdates (install_repos.py:285) (cundong___smartappupdates)
-09/12/2024 05:39:29 PM logger_cundong___smartappupdates ERROR No supported build system found for repos/repos_400_c_round_two/cundong___smartappupdates (install_repos.py:273) (cundong___smartappupdates)
-09/12/2024 05:39:29 PM logger_cundong___smartappupdates ERROR Error: Build failed for cundong___smartappupdates
-Build failed for reason: no build system (install_repos.py:295) (cundong___smartappupdates)

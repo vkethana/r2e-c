@@ -1,5 +1,0 @@
-09/12/2024 05:46:00 PM logger_mntmn___interim INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mntmn___interim)
-09/12/2024 05:46:00 PM logger_mntmn___interim INFO Analyzing repos/repos_400_c_round_two/mntmn___interim (install_repos.py:285) (mntmn___interim)
-09/12/2024 05:46:00 PM logger_mntmn___interim ERROR No supported build system found for repos/repos_400_c_round_two/mntmn___interim (install_repos.py:273) (mntmn___interim)
-09/12/2024 05:46:00 PM logger_mntmn___interim ERROR Error: Build failed for mntmn___interim
-Build failed for reason: no build system (install_repos.py:295) (mntmn___interim)

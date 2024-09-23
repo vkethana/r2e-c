@@ -1,9 +1,0 @@
-Running command: autoreconf -i
-configure.ac:23: error: AC_CONFIG_MACRO_DIR can only be used once
-./lib/autoconf/general.m4:1970: AC_CONFIG_MACRO_DIR is expanded from...
-configure.ac:23: the top level
-autom4te: error: /usr/bin/m4 failed with exit status: 1
-aclocal: error: /usr/bin/autom4te failed with exit status: 1
-autoreconf: error: aclocal failed with exit status: 1
-Command finished with return code: 1
-

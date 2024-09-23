@@ -1,5 +1,0 @@
-09/12/2024 05:59:13 PM logger_ziparchive___ziparchive INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ziparchive___ziparchive)
-09/12/2024 05:59:13 PM logger_ziparchive___ziparchive INFO Analyzing repos/repos_400_c_round_two/ziparchive___ziparchive (install_repos.py:285) (ziparchive___ziparchive)
-09/12/2024 05:59:13 PM logger_ziparchive___ziparchive ERROR No supported build system found for repos/repos_400_c_round_two/ziparchive___ziparchive (install_repos.py:273) (ziparchive___ziparchive)
-09/12/2024 05:59:13 PM logger_ziparchive___ziparchive ERROR Error: Build failed for ziparchive___ziparchive
-Build failed for reason: no build system (install_repos.py:295) (ziparchive___ziparchive)

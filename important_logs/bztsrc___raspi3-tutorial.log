@@ -1,5 +1,0 @@
-09/12/2024 05:41:46 PM logger_bztsrc___raspi3-tutorial INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (bztsrc___raspi3-tutorial)
-09/12/2024 05:41:46 PM logger_bztsrc___raspi3-tutorial INFO Analyzing repos/repos_400_c_round_two/bztsrc___raspi3-tutorial (install_repos.py:285) (bztsrc___raspi3-tutorial)
-09/12/2024 05:41:46 PM logger_bztsrc___raspi3-tutorial ERROR No supported build system found for repos/repos_400_c_round_two/bztsrc___raspi3-tutorial (install_repos.py:273) (bztsrc___raspi3-tutorial)
-09/12/2024 05:41:46 PM logger_bztsrc___raspi3-tutorial ERROR Error: Build failed for bztsrc___raspi3-tutorial
-Build failed for reason: no build system (install_repos.py:295) (bztsrc___raspi3-tutorial)

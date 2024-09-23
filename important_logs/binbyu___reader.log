@@ -1,5 +1,0 @@
-09/12/2024 05:44:12 PM logger_binbyu___reader INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (binbyu___reader)
-09/12/2024 05:44:12 PM logger_binbyu___reader INFO Analyzing repos/repos_400_c_round_two/binbyu___reader (install_repos.py:285) (binbyu___reader)
-09/12/2024 05:44:12 PM logger_binbyu___reader ERROR No supported build system found for repos/repos_400_c_round_two/binbyu___reader (install_repos.py:273) (binbyu___reader)
-09/12/2024 05:44:12 PM logger_binbyu___reader ERROR Error: Build failed for binbyu___reader
-Build failed for reason: no build system (install_repos.py:295) (binbyu___reader)

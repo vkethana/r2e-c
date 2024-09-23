@@ -1,5 +1,0 @@
-09/12/2024 05:36:48 PM logger_koush___superuser INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (koush___superuser)
-09/12/2024 05:36:48 PM logger_koush___superuser INFO Analyzing repos/repos_400_c_round_two/koush___superuser (install_repos.py:285) (koush___superuser)
-09/12/2024 05:36:48 PM logger_koush___superuser ERROR No supported build system found for repos/repos_400_c_round_two/koush___superuser (install_repos.py:273) (koush___superuser)
-09/12/2024 05:36:48 PM logger_koush___superuser ERROR Error: Build failed for koush___superuser
-Build failed for reason: no build system (install_repos.py:295) (koush___superuser)

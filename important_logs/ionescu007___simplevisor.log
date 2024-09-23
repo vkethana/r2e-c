@@ -1,5 +1,0 @@
-09/12/2024 05:47:16 PM logger_ionescu007___simplevisor INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (ionescu007___simplevisor)
-09/12/2024 05:47:16 PM logger_ionescu007___simplevisor INFO Analyzing repos/repos_400_c_round_two/ionescu007___simplevisor (install_repos.py:285) (ionescu007___simplevisor)
-09/12/2024 05:47:16 PM logger_ionescu007___simplevisor ERROR No supported build system found for repos/repos_400_c_round_two/ionescu007___simplevisor (install_repos.py:273) (ionescu007___simplevisor)
-09/12/2024 05:47:16 PM logger_ionescu007___simplevisor ERROR Error: Build failed for ionescu007___simplevisor
-Build failed for reason: no build system (install_repos.py:295) (ionescu007___simplevisor)

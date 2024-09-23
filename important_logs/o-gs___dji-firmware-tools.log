@@ -1,5 +1,0 @@
-09/12/2024 05:59:30 PM logger_o-gs___dji-firmware-tools INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (o-gs___dji-firmware-tools)
-09/12/2024 05:59:30 PM logger_o-gs___dji-firmware-tools INFO Analyzing repos/repos_400_c_round_two/o-gs___dji-firmware-tools (install_repos.py:285) (o-gs___dji-firmware-tools)
-09/12/2024 05:59:30 PM logger_o-gs___dji-firmware-tools ERROR No supported build system found for repos/repos_400_c_round_two/o-gs___dji-firmware-tools (install_repos.py:273) (o-gs___dji-firmware-tools)
-09/12/2024 05:59:30 PM logger_o-gs___dji-firmware-tools ERROR Error: Build failed for o-gs___dji-firmware-tools
-Build failed for reason: no build system (install_repos.py:295) (o-gs___dji-firmware-tools)

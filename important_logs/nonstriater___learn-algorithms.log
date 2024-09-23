@@ -1,5 +1,0 @@
-09/12/2024 06:04:17 PM logger_nonstriater___learn-algorithms INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nonstriater___learn-algorithms)
-09/12/2024 06:04:17 PM logger_nonstriater___learn-algorithms INFO Analyzing repos/repos_400_c_round_two/nonstriater___learn-algorithms (install_repos.py:285) (nonstriater___learn-algorithms)
-09/12/2024 06:04:17 PM logger_nonstriater___learn-algorithms ERROR No supported build system found for repos/repos_400_c_round_two/nonstriater___learn-algorithms (install_repos.py:273) (nonstriater___learn-algorithms)
-09/12/2024 06:04:17 PM logger_nonstriater___learn-algorithms ERROR Error: Build failed for nonstriater___learn-algorithms
-Build failed for reason: no build system (install_repos.py:295) (nonstriater___learn-algorithms)

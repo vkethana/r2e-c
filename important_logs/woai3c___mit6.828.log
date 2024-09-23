@@ -1,5 +1,0 @@
-09/12/2024 05:58:50 PM logger_woai3c___mit6.828 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (woai3c___mit6.828)
-09/12/2024 05:58:50 PM logger_woai3c___mit6.828 INFO Analyzing repos/repos_400_c_round_two/woai3c___mit6.828 (install_repos.py:285) (woai3c___mit6.828)
-09/12/2024 05:58:50 PM logger_woai3c___mit6.828 ERROR No supported build system found for repos/repos_400_c_round_two/woai3c___mit6.828 (install_repos.py:273) (woai3c___mit6.828)
-09/12/2024 05:58:50 PM logger_woai3c___mit6.828 ERROR Error: Build failed for woai3c___mit6.828
-Build failed for reason: no build system (install_repos.py:295) (woai3c___mit6.828)

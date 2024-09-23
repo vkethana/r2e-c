@@ -1,5 +1,0 @@
-09/12/2024 06:07:24 PM logger_cezanne___usbip-win INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (cezanne___usbip-win)
-09/12/2024 06:07:24 PM logger_cezanne___usbip-win INFO Analyzing repos/repos_400_c_round_two/cezanne___usbip-win (install_repos.py:285) (cezanne___usbip-win)
-09/12/2024 06:07:24 PM logger_cezanne___usbip-win ERROR No supported build system found for repos/repos_400_c_round_two/cezanne___usbip-win (install_repos.py:273) (cezanne___usbip-win)
-09/12/2024 06:07:24 PM logger_cezanne___usbip-win ERROR Error: Build failed for cezanne___usbip-win
-Build failed for reason: no build system (install_repos.py:295) (cezanne___usbip-win)

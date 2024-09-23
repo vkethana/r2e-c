@@ -1,5 +1,0 @@
-09/12/2024 05:41:24 PM logger_awesome-harmonyos___harmonyos INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (awesome-harmonyos___harmonyos)
-09/12/2024 05:41:24 PM logger_awesome-harmonyos___harmonyos INFO Analyzing repos/repos_400_c_round_two/awesome-harmonyos___harmonyos (install_repos.py:285) (awesome-harmonyos___harmonyos)
-09/12/2024 05:41:24 PM logger_awesome-harmonyos___harmonyos ERROR No supported build system found for repos/repos_400_c_round_two/awesome-harmonyos___harmonyos (install_repos.py:273) (awesome-harmonyos___harmonyos)
-09/12/2024 05:41:24 PM logger_awesome-harmonyos___harmonyos ERROR Error: Build failed for awesome-harmonyos___harmonyos
-Build failed for reason: no build system (install_repos.py:295) (awesome-harmonyos___harmonyos)

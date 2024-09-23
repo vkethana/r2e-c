@@ -1,5 +1,0 @@
-09/12/2024 05:58:50 PM logger_sandboxie___sandboxie INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (sandboxie___sandboxie)
-09/12/2024 05:58:50 PM logger_sandboxie___sandboxie INFO Analyzing repos/repos_400_c_round_two/sandboxie___sandboxie (install_repos.py:285) (sandboxie___sandboxie)
-09/12/2024 05:58:50 PM logger_sandboxie___sandboxie ERROR No supported build system found for repos/repos_400_c_round_two/sandboxie___sandboxie (install_repos.py:273) (sandboxie___sandboxie)
-09/12/2024 05:58:50 PM logger_sandboxie___sandboxie ERROR Error: Build failed for sandboxie___sandboxie
-Build failed for reason: no build system (install_repos.py:295) (sandboxie___sandboxie)

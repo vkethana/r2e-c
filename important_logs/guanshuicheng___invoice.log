@@ -1,5 +1,0 @@
-09/12/2024 05:46:04 PM logger_guanshuicheng___invoice INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (guanshuicheng___invoice)
-09/12/2024 05:46:04 PM logger_guanshuicheng___invoice INFO Analyzing repos/repos_400_c_round_two/guanshuicheng___invoice (install_repos.py:285) (guanshuicheng___invoice)
-09/12/2024 05:46:04 PM logger_guanshuicheng___invoice ERROR No supported build system found for repos/repos_400_c_round_two/guanshuicheng___invoice (install_repos.py:273) (guanshuicheng___invoice)
-09/12/2024 05:46:04 PM logger_guanshuicheng___invoice ERROR Error: Build failed for guanshuicheng___invoice
-Build failed for reason: no build system (install_repos.py:295) (guanshuicheng___invoice)

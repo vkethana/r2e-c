@@ -1,5 +1,0 @@
-09/12/2024 06:07:24 PM logger_mrkn___pycall.rb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mrkn___pycall.rb)
-09/12/2024 06:07:24 PM logger_mrkn___pycall.rb INFO Analyzing repos/repos_400_c_round_two/mrkn___pycall.rb (install_repos.py:285) (mrkn___pycall.rb)
-09/12/2024 06:07:24 PM logger_mrkn___pycall.rb ERROR No supported build system found for repos/repos_400_c_round_two/mrkn___pycall.rb (install_repos.py:273) (mrkn___pycall.rb)
-09/12/2024 06:07:24 PM logger_mrkn___pycall.rb ERROR Error: Build failed for mrkn___pycall.rb
-Build failed for reason: no build system (install_repos.py:295) (mrkn___pycall.rb)

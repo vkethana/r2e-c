@@ -1,5 +1,0 @@
-09/12/2024 05:39:52 PM logger_googlecreativelab___anypixel INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (googlecreativelab___anypixel)
-09/12/2024 05:39:52 PM logger_googlecreativelab___anypixel INFO Analyzing repos/repos_400_c_round_two/googlecreativelab___anypixel (install_repos.py:285) (googlecreativelab___anypixel)
-09/12/2024 05:39:52 PM logger_googlecreativelab___anypixel ERROR No supported build system found for repos/repos_400_c_round_two/googlecreativelab___anypixel (install_repos.py:273) (googlecreativelab___anypixel)
-09/12/2024 05:39:52 PM logger_googlecreativelab___anypixel ERROR Error: Build failed for googlecreativelab___anypixel
-Build failed for reason: no build system (install_repos.py:295) (googlecreativelab___anypixel)

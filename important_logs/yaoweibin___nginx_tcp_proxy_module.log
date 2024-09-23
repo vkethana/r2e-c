@@ -1,5 +1,0 @@
-09/12/2024 05:41:07 PM logger_yaoweibin___nginx_tcp_proxy_module INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yaoweibin___nginx_tcp_proxy_module)
-09/12/2024 05:41:07 PM logger_yaoweibin___nginx_tcp_proxy_module INFO Analyzing repos/repos_400_c_round_two/yaoweibin___nginx_tcp_proxy_module (install_repos.py:285) (yaoweibin___nginx_tcp_proxy_module)
-09/12/2024 05:41:07 PM logger_yaoweibin___nginx_tcp_proxy_module ERROR No supported build system found for repos/repos_400_c_round_two/yaoweibin___nginx_tcp_proxy_module (install_repos.py:273) (yaoweibin___nginx_tcp_proxy_module)
-09/12/2024 05:41:07 PM logger_yaoweibin___nginx_tcp_proxy_module ERROR Error: Build failed for yaoweibin___nginx_tcp_proxy_module
-Build failed for reason: no build system (install_repos.py:295) (yaoweibin___nginx_tcp_proxy_module)

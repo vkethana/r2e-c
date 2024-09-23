@@ -1,0 +1,1 @@
+sudo apt-get update && apt-get install -y zlib1g-dev libgmp-dev libcap-dev libx11-dev libjemalloc-dev libjpeg-dev libnetfilter-queue-dev libevent-dev libzmq3-dev libreadline-dev libsdl2-dev libssl-dev portaudio19-dev libxcb1-dev libavcodec-dev liblua5.3-dev libsndfile1-dev libncurses5-dev libpcap-dev libfuse-dev libedit-dev libbfd-dev nvidia-cuda-dev libncurses-dev

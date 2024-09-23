@@ -1,5 +1,0 @@
-09/12/2024 05:59:05 PM logger_networkprotocol___netcode INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (networkprotocol___netcode)
-09/12/2024 05:59:05 PM logger_networkprotocol___netcode INFO Analyzing repos/repos_400_c_round_two/networkprotocol___netcode (install_repos.py:285) (networkprotocol___netcode)
-09/12/2024 05:59:05 PM logger_networkprotocol___netcode ERROR No supported build system found for repos/repos_400_c_round_two/networkprotocol___netcode (install_repos.py:273) (networkprotocol___netcode)
-09/12/2024 05:59:05 PM logger_networkprotocol___netcode ERROR Error: Build failed for networkprotocol___netcode
-Build failed for reason: no build system (install_repos.py:295) (networkprotocol___netcode)

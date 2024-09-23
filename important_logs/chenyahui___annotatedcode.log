@@ -1,5 +1,0 @@
-09/12/2024 05:44:01 PM logger_chenyahui___annotatedcode INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (chenyahui___annotatedcode)
-09/12/2024 05:44:01 PM logger_chenyahui___annotatedcode INFO Analyzing repos/repos_400_c_round_two/chenyahui___annotatedcode (install_repos.py:285) (chenyahui___annotatedcode)
-09/12/2024 05:44:01 PM logger_chenyahui___annotatedcode ERROR No supported build system found for repos/repos_400_c_round_two/chenyahui___annotatedcode (install_repos.py:273) (chenyahui___annotatedcode)
-09/12/2024 05:44:01 PM logger_chenyahui___annotatedcode ERROR Error: Build failed for chenyahui___annotatedcode
-Build failed for reason: no build system (install_repos.py:295) (chenyahui___annotatedcode)

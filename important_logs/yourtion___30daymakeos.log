@@ -1,5 +1,0 @@
-09/12/2024 05:36:35 PM logger_yourtion___30daymakeos INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (yourtion___30daymakeos)
-09/12/2024 05:36:35 PM logger_yourtion___30daymakeos INFO Analyzing repos/repos_400_c_round_two/yourtion___30daymakeos (install_repos.py:285) (yourtion___30daymakeos)
-09/12/2024 05:36:35 PM logger_yourtion___30daymakeos ERROR No supported build system found for repos/repos_400_c_round_two/yourtion___30daymakeos (install_repos.py:273) (yourtion___30daymakeos)
-09/12/2024 05:36:35 PM logger_yourtion___30daymakeos ERROR Error: Build failed for yourtion___30daymakeos
-Build failed for reason: no build system (install_repos.py:295) (yourtion___30daymakeos)

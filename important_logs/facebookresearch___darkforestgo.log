@@ -1,5 +1,0 @@
-09/12/2024 05:57:51 PM logger_facebookresearch___darkforestgo INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (facebookresearch___darkforestgo)
-09/12/2024 05:57:51 PM logger_facebookresearch___darkforestgo INFO Analyzing repos/repos_400_c_round_two/facebookresearch___darkforestgo (install_repos.py:285) (facebookresearch___darkforestgo)
-09/12/2024 05:57:51 PM logger_facebookresearch___darkforestgo ERROR No supported build system found for repos/repos_400_c_round_two/facebookresearch___darkforestgo (install_repos.py:273) (facebookresearch___darkforestgo)
-09/12/2024 05:57:51 PM logger_facebookresearch___darkforestgo ERROR Error: Build failed for facebookresearch___darkforestgo
-Build failed for reason: no build system (install_repos.py:295) (facebookresearch___darkforestgo)

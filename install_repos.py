@@ -5,6 +5,7 @@ from paths import REPOS_DIR, LOGGER_DIR
 from utils import setup_logger
 import subprocess
 import re
+from collections import defaultdict
 
 class BuildSystem(ABC):
     @abstractmethod 
@@ -153,8 +154,11 @@ class CMakeBuildSystem(BuildSystem):
         return "success", [], ""
 
     def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(missing_headers)
+        # Just find all lines with #Include and extrct the header file name
+        missing_headers = list(re.findall(r'fatal error: (.+?): No such file or directory', output))
+        #missing_headers.extend(re.findall(r'#include <(.+?)>', output))
+
+        return missing_headers
 
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -169,7 +173,7 @@ class SConsBuildSystem(BuildSystem):
         return "success", [], ""
 
     def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers = list(re.findall(r'fatal error: (.+?): No such file or directory', output))
         return list(missing_headers)
 
 class BazelBuildSystem(BuildSystem):
@@ -224,9 +228,8 @@ class CustomScriptBuildSystem(BuildSystem):
     def build(self, repo_path: str, logger):
         logger.info("Running custom build.sh script")
         build_script = os.path.join(repo_path, 'build.sh')
-        os.chmod(build_script, 0o755)  # Ensure the script is executable
 
-        success, output = self.run_command('./build.sh', repo_path, logger)
+        success, output = self.run_command('chmod +x build.sh && ./build.sh', repo_path, logger)
         if not success:
             return "build.sh failed", self.find_missing_headers(output), output
 
@@ -278,6 +281,7 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
     failures = {}
     build_system_counts = {}
     all_missing_headers = []
+    buildsystem_categories = defaultdict(list)
 
     for repo_name in os.listdir(REPOS_DIR):
         logger = setup_logger(LOGGER_DIR, repo_name)
@@ -287,6 +291,8 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
         build_system, result, missing_headers, output = build_repo(repo_path, logger)
 
         build_system_counts[build_system] = build_system_counts.get(build_system, 0) + 1
+
+        buildsystem_categories[build_system].append(repo_name)
 
         if result == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
@@ -299,6 +305,7 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
         all_missing_headers.extend(missing_headers)
 
         print_running_totals(successes, failures, build_system_counts, all_missing_headers)
+        overall_logger.info(f"Buildsystem categories {buildsystem_categories}")
 
     return successes, failures, build_system_counts, list(all_missing_headers)
 
@@ -310,29 +317,46 @@ def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], bu
     print("\033[92m")
     print(f"Overall success rate: {total_successes}/{total_repos}")
 
+    overall_logger.info(f"Overall success rate: {total_successes}/{total_repos}")
+
     for build_system in build_system_counts:
         success_count = successes.get(build_system, 0)
         total_count = build_system_counts[build_system]
         print(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
+        overall_logger.info(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
 
     print(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
+    overall_logger.info(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
+
     print(f"Number of repos with package not found error: {len(missing_headers)}")
+    overall_logger.info(f"Number of repos with package not found error: {len(missing_headers)}")
+
     print(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
+    overall_logger.info(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
+
     print(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
+    overall_logger.info(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
 
     print(f"List of all missing headers so far: {missing_headers}")
+    overall_logger.info(f"List of all missing headers so far: {missing_headers}")
     print("\033[0m")
 
 if __name__ == "__main__":
+    overall_logger = setup_logger(LOGGER_DIR, "overall_stats")
+    overall_logger.info("Overall logger has been initialized; this file contains running stats for all repos")
+
     try:
         subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("SCons is not installed. Please install before running this script.")
 
+    '''
+    # Bazel installation is not working in docker container (unfortunately)
     try:
         subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Bazel is not installed. Please install before running this script.")
+    '''
 
     try:
         subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -354,11 +378,9 @@ if __name__ == "__main__":
     except FileNotFoundError:
         raise Exception("Gradle is not installed. Please install before running this script.")
 
-
-
-
     successes, failures, build_system_counts, missing_headers = main()
 
-    print("\nFinal Summary:")
+    overall_logger.info("\nFinal Summary:")
     print_running_totals(successes, failures, build_system_counts, missing_headers)
-    print("Missing headers:", missing_headers)
+    overall_logger.info(f"Missing headers:{missing_headers}")
+

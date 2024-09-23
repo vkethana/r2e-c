@@ -1,5 +1,0 @@
-09/12/2024 06:07:24 PM logger_pangweiwei___slua INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (pangweiwei___slua)
-09/12/2024 06:07:24 PM logger_pangweiwei___slua INFO Analyzing repos/repos_400_c_round_two/pangweiwei___slua (install_repos.py:285) (pangweiwei___slua)
-09/12/2024 06:07:24 PM logger_pangweiwei___slua ERROR No supported build system found for repos/repos_400_c_round_two/pangweiwei___slua (install_repos.py:273) (pangweiwei___slua)
-09/12/2024 06:07:24 PM logger_pangweiwei___slua ERROR Error: Build failed for pangweiwei___slua
-Build failed for reason: no build system (install_repos.py:295) (pangweiwei___slua)

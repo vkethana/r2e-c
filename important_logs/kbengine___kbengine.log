@@ -1,5 +1,0 @@
-09/12/2024 05:38:03 PM logger_kbengine___kbengine INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (kbengine___kbengine)
-09/12/2024 05:38:03 PM logger_kbengine___kbengine INFO Analyzing repos/repos_400_c_round_two/kbengine___kbengine (install_repos.py:285) (kbengine___kbengine)
-09/12/2024 05:38:03 PM logger_kbengine___kbengine ERROR No supported build system found for repos/repos_400_c_round_two/kbengine___kbengine (install_repos.py:273) (kbengine___kbengine)
-09/12/2024 05:38:03 PM logger_kbengine___kbengine ERROR Error: Build failed for kbengine___kbengine
-Build failed for reason: no build system (install_repos.py:295) (kbengine___kbengine)

@@ -1,5 +1,0 @@
-09/12/2024 05:46:36 PM logger_theofficialflow___adrenaline INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (theofficialflow___adrenaline)
-09/12/2024 05:46:36 PM logger_theofficialflow___adrenaline INFO Analyzing repos/repos_400_c_round_two/theofficialflow___adrenaline (install_repos.py:285) (theofficialflow___adrenaline)
-09/12/2024 05:46:36 PM logger_theofficialflow___adrenaline ERROR No supported build system found for repos/repos_400_c_round_two/theofficialflow___adrenaline (install_repos.py:273) (theofficialflow___adrenaline)
-09/12/2024 05:46:36 PM logger_theofficialflow___adrenaline ERROR Error: Build failed for theofficialflow___adrenaline
-Build failed for reason: no build system (install_repos.py:295) (theofficialflow___adrenaline)

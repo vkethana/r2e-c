@@ -1,5 +1,0 @@
-09/12/2024 05:40:28 PM logger_go-gl___glfw INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (go-gl___glfw)
-09/12/2024 05:40:28 PM logger_go-gl___glfw INFO Analyzing repos/repos_400_c_round_two/go-gl___glfw (install_repos.py:285) (go-gl___glfw)
-09/12/2024 05:40:28 PM logger_go-gl___glfw ERROR No supported build system found for repos/repos_400_c_round_two/go-gl___glfw (install_repos.py:273) (go-gl___glfw)
-09/12/2024 05:40:28 PM logger_go-gl___glfw ERROR Error: Build failed for go-gl___glfw
-Build failed for reason: no build system (install_repos.py:295) (go-gl___glfw)

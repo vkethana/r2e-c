@@ -1,5 +1,0 @@
-09/12/2024 05:35:18 PM logger_chentao0707___qrcodescan INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (chentao0707___qrcodescan)
-09/12/2024 05:35:18 PM logger_chentao0707___qrcodescan INFO Analyzing repos/repos_400_c_round_two/chentao0707___qrcodescan (install_repos.py:285) (chentao0707___qrcodescan)
-09/12/2024 05:35:18 PM logger_chentao0707___qrcodescan ERROR No supported build system found for repos/repos_400_c_round_two/chentao0707___qrcodescan (install_repos.py:273) (chentao0707___qrcodescan)
-09/12/2024 05:35:18 PM logger_chentao0707___qrcodescan ERROR Error: Build failed for chentao0707___qrcodescan
-Build failed for reason: no build system (install_repos.py:295) (chentao0707___qrcodescan)

@@ -1,5 +1,0 @@
-09/12/2024 05:56:05 PM logger_nmikhailov___validity90 INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nmikhailov___validity90)
-09/12/2024 05:56:05 PM logger_nmikhailov___validity90 INFO Analyzing repos/repos_400_c_round_two/nmikhailov___validity90 (install_repos.py:285) (nmikhailov___validity90)
-09/12/2024 05:56:05 PM logger_nmikhailov___validity90 ERROR No supported build system found for repos/repos_400_c_round_two/nmikhailov___validity90 (install_repos.py:273) (nmikhailov___validity90)
-09/12/2024 05:56:05 PM logger_nmikhailov___validity90 ERROR Error: Build failed for nmikhailov___validity90
-Build failed for reason: no build system (install_repos.py:295) (nmikhailov___validity90)

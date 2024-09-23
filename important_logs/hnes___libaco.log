@@ -1,5 +1,0 @@
-09/12/2024 05:40:07 PM logger_hnes___libaco INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (hnes___libaco)
-09/12/2024 05:40:07 PM logger_hnes___libaco INFO Analyzing repos/repos_400_c_round_two/hnes___libaco (install_repos.py:285) (hnes___libaco)
-09/12/2024 05:40:07 PM logger_hnes___libaco ERROR No supported build system found for repos/repos_400_c_round_two/hnes___libaco (install_repos.py:273) (hnes___libaco)
-09/12/2024 05:40:07 PM logger_hnes___libaco ERROR Error: Build failed for hnes___libaco
-Build failed for reason: no build system (install_repos.py:295) (hnes___libaco)

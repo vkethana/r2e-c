@@ -1,5 +1,0 @@
-09/12/2024 05:36:49 PM logger_leixiaohua1020___simplest_ffmpeg_mobile INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (leixiaohua1020___simplest_ffmpeg_mobile)
-09/12/2024 05:36:49 PM logger_leixiaohua1020___simplest_ffmpeg_mobile INFO Analyzing repos/repos_400_c_round_two/leixiaohua1020___simplest_ffmpeg_mobile (install_repos.py:285) (leixiaohua1020___simplest_ffmpeg_mobile)
-09/12/2024 05:36:49 PM logger_leixiaohua1020___simplest_ffmpeg_mobile ERROR No supported build system found for repos/repos_400_c_round_two/leixiaohua1020___simplest_ffmpeg_mobile (install_repos.py:273) (leixiaohua1020___simplest_ffmpeg_mobile)
-09/12/2024 05:36:49 PM logger_leixiaohua1020___simplest_ffmpeg_mobile ERROR Error: Build failed for leixiaohua1020___simplest_ffmpeg_mobile
-Build failed for reason: no build system (install_repos.py:295) (leixiaohua1020___simplest_ffmpeg_mobile)
