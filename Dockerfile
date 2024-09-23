@@ -39,9 +39,11 @@ RUN chmod +x install_repos.py
 #RUN pip install -r requirements.txt
 
 RUN apt-get update \ 
-    && apt-get install -y zlib1g-dev libgmp-dev libcap-dev libx11-dev libjemalloc-dev libjpeg-dev libnetfilter-queue-dev libevent-dev libzmq3-dev libreadline-dev libsdl2-dev libssl-dev portaudio19-dev libxcb1-dev libavcodec-dev liblua5.3-dev libsndfile1-dev libncurses5-dev libpcap-dev libfuse-dev libedit-dev libbfd-dev libncurses-dev
+    && apt-get install -y zlib1g-dev libgmp3-dev libcap-dev libx11-dev libjemalloc-dev libjpeg-dev libnetfilter-queue-dev libevent-dev libzmq3-dev libreadline-dev libsdl2-dev libssl-dev portaudio19-dev libxcb1-dev libavcodec-dev liblua5.3-dev libsndfile1-dev libncurses5-dev libpcap-dev libfuse-dev libedit-dev libbfd-dev libncurses-dev libjudy-dev
 
-RUN apt-get update && apt-get install fuse3 libgtk-3-dev libpixman-1-dev libpng-dev gcc-multilib librdkafka-dev libelf-dev libmbedtls-dev libsdl1.2-dev -y
+RUN apt-get update && apt-get install fuse3 libgtk-3-dev libpixman-1-dev libpng-dev gcc-multilib g++-multilib librdkafka-dev libelf-dev libmbedtls-dev libsdl1.2-dev -y
+
+RUN apt-get update && apt-get install libbpf-dev apt-file libxcb-util0-dev libxcb-keysyms1-dev libavformat-dev lua5.3 libev-dev curl libcapstone-dev libsqlite3-dev -y
 
 RUN python install_repos.py
 CMD ["/bin/bash"]
