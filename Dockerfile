@@ -43,7 +43,7 @@ RUN apt-get update \
 
 RUN apt-get update && apt-get install fuse3 libgtk-3-dev libpixman-1-dev libpng-dev gcc-multilib g++-multilib librdkafka-dev libelf-dev libmbedtls-dev libsdl1.2-dev -y
 
-RUN apt-get update && apt-get install libbpf-dev apt-file libxcb-util0-dev libxcb-keysyms1-dev libavformat-dev lua5.3 libev-dev curl libcapstone-dev libsqlite3-dev -y
+RUN apt-get update && apt-get install libbpf-dev apt-file libxcb-util0-dev libxcb-keysyms1-dev libavformat-dev lua5.3 libev-dev curl libcapstone-dev libsqlite3-dev libcurl-dev libswscale-dev libhiredis-dev -y
 
 RUN python install_repos.py
 CMD ["/bin/bash"]

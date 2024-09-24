@@ -78,6 +78,7 @@ class MakefileBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
         return list(missing_headers)
 
 class AutotoolsBuildSystem(BuildSystem):
@@ -111,6 +112,7 @@ class AutotoolsBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
         return list(missing_headers)
 
 class GradleBuildSystem(BuildSystem):
@@ -133,6 +135,7 @@ class GradleBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
         return list(missing_headers)
 
 class CMakeBuildSystem(BuildSystem):
@@ -164,7 +167,7 @@ class CMakeBuildSystem(BuildSystem):
     def find_missing_headers(self, output: str) -> List[str]:
         # Just find all lines with #Include and extrct the header file name
         missing_headers = list(re.findall(r'fatal error: (.+?): No such file or directory', output))
-        #missing_headers.extend(re.findall(r'#include <(.+?)>', output))
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
 
         return missing_headers
 
@@ -205,6 +208,7 @@ class BazelBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
         return list(missing_headers)
 
 
@@ -233,6 +237,7 @@ class MesonBuildSystem(BuildSystem):
 
     def find_missing_headers(self, output: str) -> List[str]:
         missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
         return list(missing_headers)
 
 class CustomScriptBuildSystem(BuildSystem):
@@ -277,6 +282,7 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         if build_system.detect(repo_path):
             print(f"Build system detected: {build_system.__class__.__name__}")
             result, missing_headers, output = build_system.build(repo_path, logger)
+            #result, missing_headers, output = True, [], ""
             return build_system.__class__.__name__, result, missing_headers, output
 
     logger.error(f"No supported build system found for {repo_path}")
@@ -298,7 +304,10 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
 
         build_system_counts[build_system] = build_system_counts.get(build_system, 0) + 1
 
-        buildsystem_categories[build_system].append(repo_name)
+        buildsystem_categories[build_system].append({
+            "repo_name": repo_name,
+            "result": result=="success",
+        })
 
         if result == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
@@ -311,7 +320,7 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
         all_missing_headers.extend(missing_headers)
 
         print_running_totals(successes, failures, build_system_counts, all_missing_headers)
-        overall_logger.info(f"Buildsystem categories {buildsystem_categories}")
+        overall_logger.info(f"Repos categorized by buildsystem: {buildsystem_categories}")
 
     return successes, failures, build_system_counts, list(all_missing_headers)
 
