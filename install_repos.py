@@ -171,6 +171,40 @@ class CMakeBuildSystem(BuildSystem):
 
         return missing_headers
 
+class SlnBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        # Check if there's a .sln file in the repo directory or search in depth
+        return any(f.endswith('.sln') for f in os.listdir(repo_path)) or search_in_depth(repo_path, ['*.sln'])
+
+    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
+        # Locate the solution file
+        solution_file = self.find_solution_file(repo_path)
+        if not solution_file:
+            return "No .sln file found", [], ""
+
+        logger.info(f"Building {solution_file}")
+        build_command = f"msbuild {solution_file} /p:Configuration=Release"
+
+        success, output = self.run_command(build_command, repo_path, logger)
+        if not success:
+            return "sln build failed", self.find_missing_references(output), output
+
+        return "success", [], ""
+
+    def find_solution_file(self, repo_path: str) -> str:
+        # Return the first .sln file found in the directory or subdirectories
+        for root, dirs, files in os.walk(repo_path):
+            for file in files:
+                if file.endswith(".sln"):
+                    return os.path.join(root, file)
+        return ""
+
+    def find_missing_references(self, output: str) -> List[str]:
+        # Extract missing project references or header files from the output
+        missing_references = re.findall(r"error: (.+?): No such file or directory", output)
+        return missing_references
+
+
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         if os.path.isfile(os.path.join(repo_path, 'SConstruct')):
@@ -271,6 +305,7 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         CustomScriptBuildSystem(),
         SConsBuildSystem(),
         CMakeBuildSystem(),
+        SlnBuildSystem(),
         MakefileBuildSystem(),
         GradleBuildSystem(),
         BazelBuildSystem(),

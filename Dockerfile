@@ -1,4 +1,4 @@
-FROM r2e:base_dockerfile
+FROM r2e:base_dockerfile_2
 
 RUN pip install scons
 
