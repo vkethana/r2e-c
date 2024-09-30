@@ -268,13 +268,13 @@ def search_in_depth(repo_path: str, build_file_names: List[str]) -> bool:
 
 def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
     build_systems = [
-        AutotoolsBuildSystem(),
-        MakefileBuildSystem(),
-        CMakeBuildSystem(),
-        GradleBuildSystem(),
         SConsBuildSystem(),
+        CMakeBuildSystem(),
+        MakefileBuildSystem(),
+        GradleBuildSystem(),
         BazelBuildSystem(),
         MesonBuildSystem(),
+        AutotoolsBuildSystem(),
         CustomScriptBuildSystem(),
     ]
 
