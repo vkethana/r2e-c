@@ -270,12 +270,12 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
     build_systems = [
         CustomScriptBuildSystem(),
         SConsBuildSystem(),
+        AutotoolsBuildSystem(),
         CMakeBuildSystem(),
         MakefileBuildSystem(),
         GradleBuildSystem(),
         BazelBuildSystem(),
         MesonBuildSystem(),
-        AutotoolsBuildSystem(),
     ]
 
     for build_system in build_systems:
