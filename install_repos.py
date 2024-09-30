@@ -175,7 +175,7 @@ class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
         if os.path.isfile(os.path.join(repo_path, 'SConstruct')):
             return True
-        return search_in_depth(repo_path, ['CMakeLists.txt'])
+        return search_in_depth(repo_path, ['SConstruct'])
 
     def build(self, repo_path: str, logger):
         logger.info("Running SCons build")
@@ -268,6 +268,7 @@ def search_in_depth(repo_path: str, build_file_names: List[str]) -> bool:
 
 def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
     build_systems = [
+        CustomScriptBuildSystem(),
         SConsBuildSystem(),
         CMakeBuildSystem(),
         MakefileBuildSystem(),
@@ -275,7 +276,6 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         BazelBuildSystem(),
         MesonBuildSystem(),
         AutotoolsBuildSystem(),
-        CustomScriptBuildSystem(),
     ]
 
     for build_system in build_systems:
