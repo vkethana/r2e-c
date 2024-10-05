@@ -89,7 +89,7 @@ class AutotoolsBuildSystem(BuildSystem):
 
     def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
         logger.info("Running autoreconf")
-        success, output = self.run_command('autoreconf -i', repo_path, logger)
+        success, output = self.run_command('autoreconf -vif', repo_path, logger)
         if not success:
             return "autoreconf failed", self.find_missing_headers(output), output
 
@@ -278,15 +278,28 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         MesonBuildSystem(),
     ]
 
+    # turn into a dictionary
+    res = {
+        "build_system": "Unknown",
+        "result": "no build system",
+        "missing_headers": [],
+        "output": "",
+        "additional_buildsystems": []
+    }
     for build_system in build_systems:
         if build_system.detect(repo_path):
             print(f"Build system detected: {build_system.__class__.__name__}")
+            res["additional_buildsystems"].append(build_system.__class__.__name__)
             result, missing_headers, output = build_system.build(repo_path, logger)
-            #result, missing_headers, output = True, [], ""
-            return build_system.__class__.__name__, result, missing_headers, output
+            res["build_system"] = build_system.__class__.__name__
+            res["result"] = result
+            res["missing_headers"] = missing_headers
+            res["output"] = output
+            if result == "success":
+                return res
 
     logger.error(f"No supported build system found for {repo_path}")
-    return "Unknown", "no build system", [], ""
+    return res
 
 def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
     successes = {}
@@ -300,7 +313,13 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
         repo_path = os.path.join(REPOS_DIR, repo_name)
         logger.info(f"Analyzing {repo_path}")
 
-        build_system, result, missing_headers, output = build_repo(repo_path, logger)
+        # "res" is a dictionary which contains the following
+        # "build_system": the name of the build system that was detected
+        # "result": the result of the build (success or failure)
+        # "missing_headers": a list of missing headers that were detected during the build
+        # "output": the output of the build process
+        res = build_repo(repo_path, logger)
+        build_system, result, missing_headers, output, additional_buildsystems = res["build_system"], res["result"], res["missing_headers"], res["output"], res["additional_buildsystems"]
 
         build_system_counts[build_system] = build_system_counts.get(build_system, 0) + 1
 
@@ -308,7 +327,7 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
             "repo_name": repo_name,
             "result": result=="success",
         })
-
+        logger.info(f"Additional build systems detected for repo: " + str(additional_buildsystems))
         if result == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
             successes[build_system] = successes.get(build_system, 0) + 1
@@ -320,7 +339,13 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
         all_missing_headers.extend(missing_headers)
 
         print_running_totals(successes, failures, build_system_counts, all_missing_headers)
-        overall_logger.info(f"Repos categorized by buildsystem: {buildsystem_categories}")
+        overall_logger.info(f"Repos categorized by buildsystem....")
+        # Print out all the repos categorized by build system, with line breaks in between for human readability
+        for build_system, repos in buildsystem_categories.items():
+            overall_logger.info(f"Build system: {build_system}")
+            for repo in repos:
+                overall_logger.info(f"Repo: {repo['repo_name']} - Success: {repo['result']}")
+            overall_logger.info("\n")
 
     return successes, failures, build_system_counts, list(all_missing_headers)
 
