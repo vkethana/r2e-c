@@ -1,0 +1,5 @@
+10/07/2024 12:43:55 AM logger_mirror___ncurses INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (mirror___ncurses)
+10/07/2024 12:43:55 AM logger_mirror___ncurses INFO Analyzing repos/mirror___ncurses (install_repos.py:338) (mirror___ncurses)
+10/07/2024 12:43:55 AM logger_mirror___ncurses ERROR No supported build system found for repos/mirror___ncurses (install_repos.py:325) (mirror___ncurses)
+10/07/2024 12:43:55 AM logger_mirror___ncurses ERROR Error: Build failed for mirror___ncurses
+Build failed for reason: no build system (install_repos.py:353) (mirror___ncurses)

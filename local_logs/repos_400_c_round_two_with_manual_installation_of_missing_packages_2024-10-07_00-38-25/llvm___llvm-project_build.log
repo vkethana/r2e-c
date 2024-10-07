@@ -1,0 +1,4 @@
+Running command: chmod +x build.sh && ./build.sh
+chmod: cannot access 'build.sh': No such file or directory
+Command finished with return code: 1
+

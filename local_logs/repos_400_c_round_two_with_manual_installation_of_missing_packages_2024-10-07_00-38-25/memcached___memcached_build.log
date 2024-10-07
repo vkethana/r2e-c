@@ -1,0 +1,5 @@
+Running command: autoreconf -i
+aclocal: error: configure.ac:2: file 'version.m4' does not exist
+autoreconf: aclocal failed with exit status: 1
+Command finished with return code: 1
+

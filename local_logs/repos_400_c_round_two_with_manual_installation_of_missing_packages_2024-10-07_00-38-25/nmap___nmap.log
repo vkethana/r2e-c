@@ -1,0 +1,8 @@
+10/07/2024 12:49:46 AM logger_nmap___nmap INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (nmap___nmap)
+10/07/2024 12:49:46 AM logger_nmap___nmap INFO Analyzing repos/nmap___nmap (install_repos.py:338) (nmap___nmap)
+10/07/2024 12:49:46 AM logger_nmap___nmap INFO Running custom build.sh script (install_repos.py:284) (nmap___nmap)
+10/07/2024 12:49:46 AM logger_nmap___nmap INFO Running command: chmod +x build.sh && ./build.sh (install_repos.py:21) (nmap___nmap)
+10/07/2024 12:49:46 AM logger_nmap___nmap INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/nmap___nmap_build.log (install_repos.py:22) (nmap___nmap)
+10/07/2024 12:49:46 AM logger_nmap___nmap DEBUG chmod: cannot access 'build.sh': No such file or directory (install_repos.py:39) (nmap___nmap)
+10/07/2024 12:49:46 AM logger_nmap___nmap ERROR Error: Build failed for nmap___nmap
+Build failed for reason: build.sh failed (install_repos.py:353) (nmap___nmap)

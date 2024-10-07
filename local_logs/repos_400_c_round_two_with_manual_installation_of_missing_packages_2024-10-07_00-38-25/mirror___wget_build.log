@@ -1,0 +1,6 @@
+Running command: autoreconf -i
+Can't exec "autopoint": No such file or directory at /usr/share/autoconf/Autom4te/FileUtils.pm line 345.
+autoreconf: failed to run autopoint: No such file or directory
+autoreconf: autopoint is needed because this package uses Gettext
+Command finished with return code: 1
+

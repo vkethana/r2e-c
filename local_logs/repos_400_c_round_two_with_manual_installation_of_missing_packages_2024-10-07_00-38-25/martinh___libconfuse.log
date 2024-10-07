@@ -1,0 +1,10 @@
+10/07/2024 12:50:58 AM logger_martinh___libconfuse INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (martinh___libconfuse)
+10/07/2024 12:50:58 AM logger_martinh___libconfuse INFO Analyzing repos/martinh___libconfuse (install_repos.py:338) (martinh___libconfuse)
+10/07/2024 12:50:58 AM logger_martinh___libconfuse INFO Running autoreconf (install_repos.py:91) (martinh___libconfuse)
+10/07/2024 12:50:58 AM logger_martinh___libconfuse INFO Running command: autoreconf -i (install_repos.py:21) (martinh___libconfuse)
+10/07/2024 12:50:58 AM logger_martinh___libconfuse INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/martinh___libconfuse_build.log (install_repos.py:22) (martinh___libconfuse)
+10/07/2024 12:50:59 AM logger_martinh___libconfuse DEBUG Can't exec "autopoint": No such file or directory at /usr/share/autoconf/Autom4te/FileUtils.pm line 345. (install_repos.py:39) (martinh___libconfuse)
+10/07/2024 12:50:59 AM logger_martinh___libconfuse DEBUG autoreconf: failed to run autopoint: No such file or directory (install_repos.py:39) (martinh___libconfuse)
+10/07/2024 12:50:59 AM logger_martinh___libconfuse DEBUG autoreconf: autopoint is needed because this package uses Gettext (install_repos.py:39) (martinh___libconfuse)
+10/07/2024 12:50:59 AM logger_martinh___libconfuse ERROR Error: Build failed for martinh___libconfuse
+Build failed for reason: autoreconf failed (install_repos.py:353) (martinh___libconfuse)

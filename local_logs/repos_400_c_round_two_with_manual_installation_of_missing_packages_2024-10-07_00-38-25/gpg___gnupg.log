@@ -1,0 +1,10 @@
+10/07/2024 12:51:38 AM logger_gpg___gnupg INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg INFO Analyzing repos/gpg___gnupg (install_repos.py:338) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg INFO Running autoreconf (install_repos.py:91) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg INFO Running command: autoreconf -i (install_repos.py:21) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/gpg___gnupg_build.log (install_repos.py:22) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg DEBUG Can't exec "autopoint": No such file or directory at /usr/share/autoconf/Autom4te/FileUtils.pm line 345. (install_repos.py:39) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg DEBUG autoreconf: failed to run autopoint: No such file or directory (install_repos.py:39) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg DEBUG autoreconf: autopoint is needed because this package uses Gettext (install_repos.py:39) (gpg___gnupg)
+10/07/2024 12:51:38 AM logger_gpg___gnupg ERROR Error: Build failed for gpg___gnupg
+Build failed for reason: autoreconf failed (install_repos.py:353) (gpg___gnupg)

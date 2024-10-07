@@ -1,0 +1,5 @@
+Running command: autoreconf -i
+aclocal: error: configure.ac:18: file 'm4/libuv-extra-automake-flags.m4' does not exist
+autoreconf: aclocal failed with exit status: 1
+Command finished with return code: 1
+

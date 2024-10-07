@@ -1,0 +1,4 @@
+Running command: autoreconf -i
+autoreconf: 'configure.ac' or 'configure.in' is required
+Command finished with return code: 1
+

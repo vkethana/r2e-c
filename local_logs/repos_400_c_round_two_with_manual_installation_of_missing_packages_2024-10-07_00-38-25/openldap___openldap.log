@@ -1,0 +1,10 @@
+10/07/2024 12:51:33 AM logger_openldap___openldap INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (openldap___openldap)
+10/07/2024 12:51:33 AM logger_openldap___openldap INFO Analyzing repos/openldap___openldap (install_repos.py:338) (openldap___openldap)
+10/07/2024 12:51:33 AM logger_openldap___openldap INFO Running autoreconf (install_repos.py:91) (openldap___openldap)
+10/07/2024 12:51:33 AM logger_openldap___openldap INFO Running command: autoreconf -i (install_repos.py:21) (openldap___openldap)
+10/07/2024 12:51:33 AM logger_openldap___openldap INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/openldap___openldap_build.log (install_repos.py:22) (openldap___openldap)
+10/07/2024 12:51:36 AM logger_openldap___openldap DEBUG libtoolize: Consider adding '-I build' to ACLOCAL_AMFLAGS in Makefile.am. (install_repos.py:39) (openldap___openldap)
+10/07/2024 12:51:38 AM logger_openldap___openldap DEBUG autoheader: cannot rename /tmp/ar6Nf2fB/ahYR1rNO/config.hin as include/portable.hin:include/slapd-modules.hin: No such file or directory (install_repos.py:39) (openldap___openldap)
+10/07/2024 12:51:38 AM logger_openldap___openldap DEBUG autoreconf: /usr/bin/autoheader failed with exit status: 1 (install_repos.py:39) (openldap___openldap)
+10/07/2024 12:51:38 AM logger_openldap___openldap ERROR Error: Build failed for openldap___openldap
+Build failed for reason: autoreconf failed (install_repos.py:353) (openldap___openldap)

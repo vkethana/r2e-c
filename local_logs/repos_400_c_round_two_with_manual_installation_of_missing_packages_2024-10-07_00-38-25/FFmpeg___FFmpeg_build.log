@@ -1,0 +1,35 @@
+Running command: make clean
+Makefile:199: /tests/Makefile: No such file or directory
+make: *** No rule to make target '/tests/Makefile'.  Stop.
+Command finished with return code: 2
+
+Running command: make distclean
+Makefile:199: /tests/Makefile: No such file or directory
+make: *** No rule to make target '/tests/Makefile'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+nasm/yasm not found or too old. Use --disable-x86asm for a crippled build.
+
+If you think configure made a mistake, make sure you are using the latest
+version from Git.  If the latest version fails, report the problem to the
+ffmpeg-user@ffmpeg.org mailing list or IRC #ffmpeg on irc.libera.chat.
+Include the log file "ffbuild/config.log" produced by configure as this will help
+solve the problem.
+Command finished with return code: 1
+
+Running command: make
+Makefile:199: /tests/Makefile: No such file or directory
+make: *** No rule to make target '/tests/Makefile'.  Stop.
+Command finished with return code: 2
+

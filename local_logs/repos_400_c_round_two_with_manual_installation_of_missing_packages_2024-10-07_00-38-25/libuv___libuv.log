@@ -1,0 +1,9 @@
+10/07/2024 12:51:10 AM logger_libuv___libuv INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (libuv___libuv)
+10/07/2024 12:51:10 AM logger_libuv___libuv INFO Analyzing repos/libuv___libuv (install_repos.py:338) (libuv___libuv)
+10/07/2024 12:51:10 AM logger_libuv___libuv INFO Running autoreconf (install_repos.py:91) (libuv___libuv)
+10/07/2024 12:51:10 AM logger_libuv___libuv INFO Running command: autoreconf -i (install_repos.py:21) (libuv___libuv)
+10/07/2024 12:51:10 AM logger_libuv___libuv INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/libuv___libuv_build.log (install_repos.py:22) (libuv___libuv)
+10/07/2024 12:51:11 AM logger_libuv___libuv DEBUG aclocal: error: configure.ac:18: file 'm4/libuv-extra-automake-flags.m4' does not exist (install_repos.py:39) (libuv___libuv)
+10/07/2024 12:51:11 AM logger_libuv___libuv DEBUG autoreconf: aclocal failed with exit status: 1 (install_repos.py:39) (libuv___libuv)
+10/07/2024 12:51:11 AM logger_libuv___libuv ERROR Error: Build failed for libuv___libuv
+Build failed for reason: autoreconf failed (install_repos.py:353) (libuv___libuv)

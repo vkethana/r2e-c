@@ -1,0 +1,438 @@
+Running command: make clean
+Command finished with return code: 0
+
+Running command: make distclean
+make: *** No rule to make target 'distclean'.  Stop.
+Command finished with return code: 2
+
+Running command: rm -rf autom4te.cache
+Command finished with return code: 0
+
+Running command: rm -f config.status config.cache config.log
+Command finished with return code: 0
+
+Running command: ./autogen
+/bin/sh: 1: ./autogen: not found
+Command finished with return code: 127
+
+Running command: ./configure
+/bin/sh: 1: ./configure: not found
+Command finished with return code: 127
+
+Running command: make
+SOPHIA 2.2 (git: 941cc49)
+
+sophia/build
+cc sophia.c -c -DSS_INJECTION_ENABLE -g -O2 -std=c99 -pedantic -Wextra -Wall
+sophia/std/ss_lz4filter.c: In function ‘ss_lz4filter_init’:
+sophia/std/ss_lz4filter.c:5224:38: warning: taking address of packed member of ‘struct sslz4filter’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 5224 |   rc = LZ4F_createCompressionContext(&z->ctx, LZ4F_VERSION);
+      |                                      ^~~~~~~
+sophia/std/ss_lz4filter.c:5227:40: warning: taking address of packed member of ‘struct sslz4filter’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+ 5227 |   rc = LZ4F_createDecompressionContext(&z->ctx, LZ4F_VERSION);
+      |                                        ^~~~~~~
+sophia/format/sf.h: In function ‘sf_comparable_write’:
+sophia/format/sf.h:216:38: warning: taking address of packed member of ‘struct sfvar’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  216 |   char *ptr = sf_fieldptr(s, f, src, &var->size);
+      |                                      ^~~~~~~~~~
+sophia/version/sv_merge.h: In function ‘sv_mergeadd’:
+sophia/version/sv_merge.h:68:10: warning: taking address of packed member of ‘struct svmergesrc’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   68 |   s->i = &s->src;
+      |          ^~~~~~~
+sophia/version/sv_indexiter.h: In function ‘sv_indexiter_open’:
+sophia/version/sv_indexiter.h:38:56: warning: taking address of packed member of ‘struct svindexiter’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   38 |   rc = sv_indexmatch(&ii->index->i, r->scheme, key, 0, &ii->v);
+      |                                                        ^~~~~~
+sophia/version/sv_indexiter.h:58:56: warning: taking address of packed member of ‘struct svindexiter’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   58 |   rc = sv_indexmatch(&ii->index->i, r->scheme, key, 0, &ii->v);
+      |                                                        ^~~~~~
+sophia/wal/sw_iter.c: In function ‘sw_iter_open’:
+sophia/wal/sw_iter.c:149:30: warning: taking address of packed member of ‘struct switer’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  149 |  int rc = ss_vfsmmap(r->vfs, &li->map, li->log->fd, li->log->size, 1);
+      |                              ^~~~~~~~
+sophia/std/ss_vfs.h:81:68: note: in definition of macro ‘ss_vfsmmap’
+   81 | #define ss_vfsmmap(fs, m, fd, size, ro)          (fs)->i->mmap(fs, m, fd, size, ro)
+      |                                                                    ^
+sophia/wal/sw_iter.c:158:24: warning: taking address of packed member of ‘struct switer’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  158 |   ss_vfsmunmap(r->vfs, &li->map);
+      |                        ^~~~~~~~
+sophia/std/ss_vfs.h:84:70: note: in definition of macro ‘ss_vfsmunmap’
+   84 | #define ss_vfsmunmap(fs, m)                      (fs)->i->munmap(fs, m)
+      |                                                                      ^
+sophia/wal/sw_iter.c: In function ‘sw_iter_close’:
+sophia/wal/sw_iter.c:166:27: warning: taking address of packed member of ‘struct switer’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  166 |  ss_vfsmunmap(li->r->vfs, &li->map);
+      |                           ^~~~~~~~
+sophia/std/ss_vfs.h:84:70: note: in definition of macro ‘ss_vfsmunmap’
+   84 | #define ss_vfsmunmap(fs, m)                      (fs)->i->munmap(fs, m)
+      |                                                                      ^
+sophia/database/sd_read.h: In function ‘sd_read_page’:
+sophia/database/sd_read.h:47:19: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   47 |  sdreadarg *arg = &i->ra;
+      |                   ^~~~~~
+sophia/database/sd_read.h:98:15: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   98 |   sd_pageinit(&i->page, (sdpageheader*)arg->buf->s);
+      |               ^~~~~~~~
+sophia/database/sd_read.h:106:16: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  106 |    sd_pageinit(&i->page, (sdpageheader*)(arg->buf->s));
+      |                ^~~~~~~~
+sophia/database/sd_read.h:108:16: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  108 |    sd_pageinit(&i->page, (sdpageheader*)(arg->mmap->p + ref->offset));
+      |                ^~~~~~~~
+sophia/database/sd_read.h:121:14: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  121 |  sd_pageinit(&i->page, (sdpageheader*)page_pointer);
+      |              ^~~~~~~~
+sophia/database/sd_read.h: In function ‘sd_read_openpage’:
+sophia/database/sd_read.h:128:19: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  128 |  sdreadarg *arg = &i->ra;
+      |                   ^~~~~~
+sophia/database/sd_read.h:135:21: warning: taking address of packed member of ‘struct sdread’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  135 |                     &i->page, arg->o, key);
+      |                     ^~~~~~~~
+sophia/std/ss_iter.h:32:64: note: in definition of macro ‘ss_iteropen’
+   32 | #define ss_iteropen(iterator_if, i, ...) iterator_if##_open(i, __VA_ARGS__)
+      |                                                                ^~~~~~~~~~~
+sophia/database/sd_iter.c: In function ‘sd_iter_open’:
+sophia/database/sd_iter.c:74:30: warning: taking address of packed member of ‘struct sditer’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   74 |  int rc = ss_vfsmmap(r->vfs, &ri->map, ri->file->fd, ri->file->size, 1);
+      |                              ^~~~~~~~
+sophia/std/ss_vfs.h:81:68: note: in definition of macro ‘ss_vfsmmap’
+   81 | #define ss_vfsmmap(fs, m, fd, size, ro)          (fs)->i->mmap(fs, m, fd, size, ro)
+      |                                                                    ^
+sophia/database/sd_iter.c:86:24: warning: taking address of packed member of ‘struct sditer’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   86 |   ss_vfsmunmap(r->vfs, &ri->map);
+      |                        ^~~~~~~~
+sophia/std/ss_vfs.h:84:70: note: in definition of macro ‘ss_vfsmunmap’
+   84 | #define ss_vfsmunmap(fs, m)                      (fs)->i->munmap(fs, m)
+      |                                                                      ^
+sophia/database/sd_iter.c: In function ‘sd_iterclose’:
+sophia/database/sd_iter.c:94:27: warning: taking address of packed member of ‘struct sditer’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   94 |  ss_vfsmunmap(ri->r->vfs, &ri->map);
+      |                           ^~~~~~~~
+sophia/std/ss_vfs.h:84:70: note: in definition of macro ‘ss_vfsmunmap’
+   84 | #define ss_vfsmunmap(fs, m)                      (fs)->i->munmap(fs, m)
+      |                                                                      ^
+sophia/index/si_node.h: In function ‘si_nodecmp’:
+sophia/index/si_node.h:139:33: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  139 |  sdindexpage *min = sd_indexmin(&n->index);
+      |                                 ^~~~~~~~~
+sophia/index/si_node.h:140:33: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  140 |  sdindexpage *max = sd_indexmax(&n->index);
+      |                                 ^~~~~~~~~
+sophia/index/si_node.h:141:41: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  141 |  int l = sf_compare(s, sd_indexpage_min(&n->index, min), key);
+      |                                         ^~~~~~~~~
+sophia/index/si_node.h:142:41: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  142 |  int r = sf_compare(s, sd_indexpage_max(&n->index, max), key);
+      |                                         ^~~~~~~~~
+sophia/index/si_tx.h: In function ‘si_txtrack’:
+sophia/index/si_tx.h:25:19: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   25 |  if (ss_listempty(&n->commit))
+      |                   ^~~~~~~~~~
+sophia/index/si_tx.h:26:31: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   26 |   ss_listappend(&x->nodelist, &n->commit);
+      |                               ^~~~~~~~~~
+sophia/index/si_iter.h: In function ‘si_iter_open’:
+sophia/index/si_iter.h:56:58: warning: taking address of packed member of ‘struct siiter’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   56 |  rc = si_itermatch(&ii->index->i, r->scheme, ii->key, 0, &ii->v);
+      |                                                          ^~~~~~
+sophia/index/si.c: In function ‘si_match’:
+sophia/index/si.c:79:50: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   79 |                                      sd_indexmin(&(sscast(n, sinode, node))->index)),
+      |                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_rb.h:50:18: note: in definition of macro ‘ss_rbget’
+   50 |   switch ((rc = (compare))) { \
+      |                  ^~~~~~~
+sophia/index/si.c:78:38: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   78 |                     sd_indexpage_min(&(sscast(n, sinode, node))->index,
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_rb.h:50:18: note: in definition of macro ‘ss_rbget’
+   50 |   switch ((rc = (compare))) { \
+      |                  ^~~~~~~
+sophia/index/si.c: In function ‘si_insert’:
+sophia/index/si.c:84:33: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   84 |  sdindexpage *min = sd_indexmin(&n->index);
+      |                                 ^~~~~~~~~
+sophia/index/si.c:87:37: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   87 |                    sd_indexpage_min(&n->index, min),
+      |                                     ^~~~~~~~~
+sophia/index/si_compaction.c: In function ‘si_redistribute’:
+sophia/index/si_compaction.c:61:36: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   61 |    sdindexpage *page = sd_indexmin(&p->index);
+      |                                    ^~~~~~~~~
+sophia/index/si_compaction.c:63:37: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   63 |                    sd_indexpage_min(&p->index, page));
+      |                                     ^~~~~~~~~
+sophia/index/si_compaction.c: In function ‘si_merge’:
+sophia/index/si_compaction.c:374:29: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  374 |   ss_listappend(&index->gc, &node->gc);
+      |                             ^~~~~~~~~
+sophia/index/si_compaction.c: In function ‘si_compaction’:
+sophia/index/si_compaction.c:453:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  453 |   .index               = &node->index,
+      |                          ^~~~~~~~~~~~
+sophia/index/si_compaction.c:467:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  467 |   .mmap                = &node->map,
+      |                          ^~~~~~~~~~
+sophia/index/si_compaction.c:472:28: warning: taking address of packed member of ‘struct svmergesrc’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  472 |  rc = ss_iteropen(sd_read, &s->src, &arg, NULL);
+      |                            ^~~~~~~
+sophia/std/ss_iter.h:32:61: note: in definition of macro ‘ss_iteropen’
+   32 | #define ss_iteropen(iterator_if, i, ...) iterator_if##_open(i, __VA_ARGS__)
+      |                                                             ^
+sophia/index/si_compaction.c:475:31: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  475 |  size_stream += sd_indextotal(&node->index);
+      |                               ^~~~~~~~~~~~
+sophia/index/si_compaction.c:481:29: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  481 |                sd_indexkeys(&node->index));
+      |                             ^~~~~~~~~~~~
+sophia/index/si_node.c: In function ‘si_nodenew’:
+sophia/index/si_node.c:34:15: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   34 |  sd_indexinit(&n->index);
+      |               ^~~~~~~~~
+sophia/index/si_node.c:36:14: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   36 |  ss_mmapinit(&n->map);
+      |              ^~~~~~~
+sophia/index/si_node.c:37:14: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   37 |  ss_mmapinit(&n->map_swap);
+      |              ^~~~~~~~~~~~
+sophia/index/si_node.c:41:16: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   41 |  ss_rqinitnode(&n->nodememory);
+      |                ^~~~~~~~~~~~~~
+sophia/index/si_node.c:42:14: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   42 |  ss_listinit(&n->gc);
+      |              ^~~~~~
+sophia/index/si_node.c:43:14: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   43 |  ss_listinit(&n->commit);
+      |              ^~~~~~~~~~
+sophia/index/si_node.c: In function ‘si_nodeclose’:
+sophia/index/si_node.c:63:32: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   63 |  int rc = ss_vfsmunmap(r->vfs, &n->map);
+      |                                ^~~~~~~
+sophia/std/ss_vfs.h:84:70: note: in definition of macro ‘ss_vfsmunmap’
+   84 | #define ss_vfsmunmap(fs, m)                      (fs)->i->munmap(fs, m)
+      |                                                                      ^
+sophia/index/si_node.c: In function ‘si_nodemap’:
+sophia/index/si_node.c:166:30: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  166 |  int rc = ss_vfsmmap(r->vfs, &n->map, n->file.fd, n->file.size, 1);
+      |                              ^~~~~~~
+sophia/std/ss_vfs.h:81:68: note: in definition of macro ‘ss_vfsmmap’
+   81 | #define ss_vfsmmap(fs, m, fd, size, ro)          (fs)->i->mmap(fs, m, fd, size, ro)
+      |                                                                    ^
+sophia/index/si_node.c: In function ‘si_nodefree’:
+sophia/index/si_node.c:190:15: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  190 |  sd_indexfree(&n->index, r);
+      |               ^~~~~~~~~
+sophia/index/si_planner.c: In function ‘si_plannerupdate’:
+sophia/index/si_planner.c:75:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   75 |  ss_rqupdate(&p->memory, &n->nodememory, n->used);
+      |                          ^~~~~~~~~~~~~~
+sophia/index/si_planner.c: In function ‘si_plannerremove’:
+sophia/index/si_planner.c:81:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   81 |  ss_rqdelete(&p->memory, &n->nodememory);
+      |                          ^~~~~~~~~~~~~~
+sophia/index/si_planner.c: In function ‘si_plannerpeek_nodegc’:
+sophia/index/si_planner.c:243:18: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  243 |    ss_listunlink(&n->gc);
+      |                  ^~~~~~
+sophia/index/si_read.c: In function ‘si_getfile’:
+sophia/index/si_read.c:150:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  150 |   .index               = &n->index,
+      |                          ^~~~~~~~~
+sophia/index/si_read.c:164:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  164 |   .mmap                = &n->map,
+      |                          ^~~~~~~
+sophia/index/si_read.c: In function ‘si_rangefile’:
+sophia/index/si_read.c:250:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  250 |   .index               = &n->index,
+      |                          ^~~~~~~~~
+sophia/index/si_read.c:264:26: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  264 |   .mmap                = &n->map,
+      |                          ^~~~~~~
+sophia/index/si_read.c: In function ‘si_range’:
+sophia/index/si_read.c:314:30: warning: taking address of packed member of ‘struct svmergesrc’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  314 |   ss_iteropen(ss_bufiterref, &s->src, &upsert_stream, sizeof(char**));
+      |                              ^~~~~~~
+sophia/std/ss_iter.h:32:61: note: in definition of macro ‘ss_iteropen’
+   32 | #define ss_iteropen(iterator_if, i, ...) iterator_if##_open(i, __VA_ARGS__)
+      |                                                             ^
+sophia/index/si_read.c:323:29: warning: taking address of packed member of ‘struct svmergesrc’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  323 |   ss_iteropen(sv_indexiter, &s->src, q->r, first, q->order,
+      |                             ^~~~~~~
+sophia/std/ss_iter.h:32:61: note: in definition of macro ‘ss_iteropen’
+   32 | #define ss_iteropen(iterator_if, i, ...) iterator_if##_open(i, __VA_ARGS__)
+      |                                                             ^
+sophia/index/si_read.c:329:29: warning: taking address of packed member of ‘struct svmergesrc’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  329 |   ss_iteropen(sv_indexiter, &s->src, q->r, second, q->order,
+      |                             ^~~~~~~
+sophia/std/ss_iter.h:32:61: note: in definition of macro ‘ss_iteropen’
+   32 | #define ss_iteropen(iterator_if, i, ...) iterator_if##_open(i, __VA_ARGS__)
+      |                                                             ^
+sophia/index/si_read.c: In function ‘si_readcommited’:
+sophia/index/si_read.c:417:35: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  417 |  ss_iteropen(sd_indexiter, &i, r, &node->index, SS_GTE,
+      |                                   ^~~~~~~~~~~~
+sophia/std/ss_iter.h:32:64: note: in definition of macro ‘ss_iteropen’
+   32 | #define ss_iteropen(iterator_if, i, ...) iterator_if##_open(i, __VA_ARGS__)
+      |                                                                ^~~~~~~~~~~
+sophia/index/si_tx.c: In function ‘si_commit’:
+sophia/index/si_tx.c:32:15: warning: taking address of packed member of ‘struct sinode’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   32 |   ss_listinit(&node->commit);
+      |               ^~~~~~~~~~~~~
+sophia/scheduler/sc_worker.h: In function ‘sc_workerpool_push’:
+sophia/scheduler/sc_worker.h:60:28: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   60 |  ss_listpush(&p->listidle, &w->linkidle);
+      |                            ^~~~~~~~~~~~
+sophia/scheduler/sc_backup.c: In function ‘sc_backupend’:
+sophia/scheduler/sc_backup.c:105:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  105 |  ss_trace(&w->trace, "%s", "log rotation for backup");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_backup.c:111:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  111 |  ss_trace(&w->trace, "%s", "log files backup");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_backup.c:116:35: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  116 |  rc = sw_managercopy(s->wm, path, &w->dc.c);
+      |                                   ^~~~~~~~
+sophia/scheduler/sc_ctl.c: In function ‘sc_ctl_compaction’:
+sophia/scheduler/sc_ctl.c:49:26: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   49 |   rc = si_execute(index, &w->dc, &plan, vlsn);
+      |                          ^~~~~~
+sophia/scheduler/sc_step.c: In function ‘sc_rotate’:
+sophia/scheduler/sc_step.c:24:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   24 |  ss_trace(&w->trace, "%s", "log rotation");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_step.c: In function ‘sc_gc’:
+sophia/scheduler/sc_step.c:37:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   37 |  ss_trace(&w->trace, "%s", "log gc");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_step.c: In function ‘sc_execute’:
+sophia/scheduler/sc_step.c:48:46: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   48 |  si_plannertrace(&t->plan, index->scheme.id, &w->trace);
+      |                                              ^~~~~~~~~
+sophia/scheduler/sc_step.c:49:27: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   49 |  return si_execute(index, &w->dc, &t->plan, vlsn);
+      |                           ^~~~~~
+sophia/scheduler/sc_step.c: In function ‘sc_do’:
+sophia/scheduler/sc_step.c:111:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  111 |  ss_trace(&task->w->trace, "%s", "schedule");
+      |           ^~~~~~~~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_step.c: In function ‘sc_step’:
+sophia/scheduler/sc_step.c:310:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  310 |  ss_trace(&w->trace, "%s", "sleep");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_step.c:313:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  313 |  ss_trace(&w->trace, "%s", "malfunction");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_worker.c: In function ‘sc_workernew’:
+sophia/scheduler/sc_worker.c:30:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   30 |  sd_cinit(&w->dc);
+      |           ^~~~~~
+sophia/scheduler/sc_worker.c:31:14: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   31 |  ss_listinit(&w->link);
+      |              ^~~~~~~~
+sophia/scheduler/sc_worker.c:32:14: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   32 |  ss_listinit(&w->linkidle);
+      |              ^~~~~~~~~~~~
+sophia/scheduler/sc_worker.c:33:15: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   33 |  ss_traceinit(&w->trace);
+      |               ^~~~~~~~~
+sophia/scheduler/sc_worker.c:34:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   34 |  ss_trace(&w->trace, "%s", "init");
+      |           ^~~~~~~~~
+sophia/std/ss_trace.h:72:14: note: in definition of macro ‘ss_trace’
+   72 |  ss_traceset(t, __FILE__, __func__, __LINE__, fmt, __VA_ARGS__)
+      |              ^
+sophia/scheduler/sc_worker.c: In function ‘sc_workerfree’:
+sophia/scheduler/sc_worker.c:41:11: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   41 |  sd_cfree(&w->dc, r);
+      |           ^~~~~~
+sophia/scheduler/sc_worker.c:42:15: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   42 |  ss_tracefree(&w->trace);
+      |               ^~~~~~~~~
+sophia/scheduler/sc_worker.c: In function ‘sc_workerpool_new’:
+sophia/scheduler/sc_worker.c:71:26: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   71 |  ss_listappend(&p->list, &w->link);
+      |                          ^~~~~~~~
+sophia/scheduler/sc_worker.c:72:30: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+   72 |  ss_listappend(&p->listidle, &w->linkidle);
+      |                              ^~~~~~~~~~~~
+sophia/environment/se_conf.c: In function ‘se_confscheduler_trace’:
+sophia/environment/se_conf.c:140:30: warning: taking address of packed member of ‘struct scworker’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  140 |  int tracelen = ss_tracecopy(&w->trace, tracesz, sizeof(tracesz));
+      |                              ^~~~~~~~~
+sophia/std/ss_lz4filter.c: In function ‘LZ4F_decompress’:
+sophia/std/ss_lz4filter.c:4826:33: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 4826 |                 dctxPtr->dStage = dstage_storeHeader;
+      |                 ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_lz4filter.c:4829:9: note: here
+ 4829 |         case dstage_storeHeader:
+      |         ^~~~
+sophia/std/ss_zstdfilter.c: In function ‘FSE_initDStream’:
+sophia/std/ss_zstdfilter.c:1636:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1636 |             case 7: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[6]) << (sizeof(bitD_t)*8 - 16);
+      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_zstdfilter.c:1637:13: note: here
+ 1637 |             case 6: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[5]) << (sizeof(bitD_t)*8 - 24);
+      |             ^~~~
+sophia/std/ss_zstdfilter.c:1637:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1637 |             case 6: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[5]) << (sizeof(bitD_t)*8 - 24);
+      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_zstdfilter.c:1638:13: note: here
+ 1638 |             case 5: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[4]) << (sizeof(bitD_t)*8 - 32);
+      |             ^~~~
+sophia/std/ss_zstdfilter.c:1638:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1638 |             case 5: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[4]) << (sizeof(bitD_t)*8 - 32);
+      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_zstdfilter.c:1639:13: note: here
+ 1639 |             case 4: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[3]) << 24;
+      |             ^~~~
+sophia/std/ss_zstdfilter.c:1639:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1639 |             case 4: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[3]) << 24;
+      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_zstdfilter.c:1640:13: note: here
+ 1640 |             case 3: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[2]) << 16;
+      |             ^~~~
+sophia/std/ss_zstdfilter.c:1640:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1640 |             case 3: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[2]) << 16;
+      |                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sophia/std/ss_zstdfilter.c:1641:13: note: here
+ 1641 |             case 2: bitD->bitContainer += (bitD_t)(((BYTE*)(bitD->start))[1]) <<  8;
+      |             ^~~~
+sophia/database/sd_pageiter.h: In function ‘sd_pageiter_gt’:
+sophia/database/sd_pageiter.h:119:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  119 |    if (e) {
+      |       ^
+sophia/database/sd_pageiter.h:122:3: note: here
+  122 |   case -1:
+      |   ^~~~
+sophia/database/sd_pageiter.h: In function ‘sd_pageiter_lt’:
+sophia/database/sd_pageiter.h:146:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  146 |    if (e) {
+      |       ^
+sophia/database/sd_pageiter.h:149:3: note: here
+  149 |   case 1:
+      |   ^~~~
+
+Command finished with return code: 0
+

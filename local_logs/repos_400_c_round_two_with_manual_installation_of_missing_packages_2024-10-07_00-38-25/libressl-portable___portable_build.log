@@ -1,0 +1,13 @@
+Running command: autoreconf -i
+sh: 1: cannot open VERSION: No such file
+sh: 1: cannot open crypto/VERSION: No such file
+sh: 1: cannot open ssl/VERSION: No such file
+sh: 1: cannot open tls/VERSION: No such file
+configure.ac:21: error: AC_INIT should be called with package and version arguments
+/usr/share/aclocal-1.16/init.m4:29: AM_INIT_AUTOMAKE is expanded from...
+configure.ac:21: the top level
+autom4te: /usr/bin/m4 failed with exit status: 1
+aclocal: error: echo failed with exit status: 1
+autoreconf: aclocal failed with exit status: 1
+Command finished with return code: 1
+

@@ -1,0 +1,13 @@
+Running command: autoreconf -i
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'aux-build'.
+libtoolize: copying file 'aux-build/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+configure.ac:76: error: possibly undefined macro: AC_CHECK_INCLUDES_DEFAULT
+      If this token and others are legitimate, please use m4_pattern_allow.
+      See the Autoconf documentation.
+autoreconf: /usr/bin/autoconf failed with exit status: 1
+Command finished with return code: 1
+

@@ -1,0 +1,14 @@
+Running command: chmod +x build.sh && ./build.sh
+
+build.sh: Missing OPERATION to perform
+
+Usage: build.sh [-EnoPRrUux] [-a ARCH] [-B BID] [-C EXTRAS]
+                [-c COMPILER] [-D DEST] [-j NJOB] [-M MOBJ] [-m MACH]
+                [-N NOISY] [-O OOBJ] [-R RELEASE] [-S SEED] [-T TOOLS]
+                [-V VAR=[VALUE]] [-w WRAPPER] [-X X11SRC]
+                [-Z VAR]
+                OPERATION ...
+       build.sh ( -h | -? )
+
+Command finished with return code: 1
+
