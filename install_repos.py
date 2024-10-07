@@ -89,7 +89,7 @@ class AutotoolsBuildSystem(BuildSystem):
 
     def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
         logger.info("Running autoreconf")
-        success, output = self.run_command('autoreconf -vif', repo_path, logger)
+        success, output = self.run_command('autoreconf -i', repo_path, logger)
         if not success:
             return "autoreconf failed", self.find_missing_headers(output), output
 
@@ -170,6 +170,40 @@ class CMakeBuildSystem(BuildSystem):
         missing_headers.extend(re.findall(r'#include <(.+?)>', output))
 
         return missing_headers
+
+class SlnBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        # Check if there's a .sln file in the repo directory or search in depth
+        return any(f.endswith('.sln') for f in os.listdir(repo_path)) or search_in_depth(repo_path, ['*.sln'])
+
+    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
+        # Locate the solution file
+        solution_file = self.find_solution_file(repo_path)
+        if not solution_file:
+            return "No .sln file found", [], ""
+
+        logger.info(f"Building {solution_file}")
+        build_command = f"msbuild {solution_file} /p:Configuration=Release"
+
+        success, output = self.run_command(build_command, repo_path, logger)
+        if not success:
+            return "sln build failed", self.find_missing_references(output), output
+
+        return "success", [], ""
+
+    def find_solution_file(self, repo_path: str) -> str:
+        # Return the first .sln file found in the directory or subdirectories
+        for root, dirs, files in os.walk(repo_path):
+            for file in files:
+                if file.endswith(".sln"):
+                    return os.path.join(root, file)
+        return ""
+
+    def find_missing_references(self, output: str) -> List[str]:
+        # Extract missing project references or header files from the output
+        missing_references = re.findall(r"error: (.+?): No such file or directory", output)
+        return missing_references
+
 
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
@@ -272,39 +306,29 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         SConsBuildSystem(),
         AutotoolsBuildSystem(),
         CMakeBuildSystem(),
+        SlnBuildSystem(),
         MakefileBuildSystem(),
         GradleBuildSystem(),
         BazelBuildSystem(),
         MesonBuildSystem(),
     ]
 
-    # turn into a dictionary
-    res = {
-        "build_system": "Unknown",
-        "result": "no build system",
-        "missing_headers": [],
-        "output": "",
-        "additional_buildsystems": []
-    }
     for build_system in build_systems:
         if build_system.detect(repo_path):
             print(f"Build system detected: {build_system.__class__.__name__}")
-            res["additional_buildsystems"].append(build_system.__class__.__name__)
             result, missing_headers, output = build_system.build(repo_path, logger)
-            res["build_system"] = build_system.__class__.__name__
-            res["result"] = result
-            res["missing_headers"] = missing_headers
-            res["output"] = output
-            if result == "success":
-                return res
+            #result, missing_headers, output = True, [], ""
+            return build_system.__class__.__name__, result, missing_headers, output
+
+        
 
     logger.error(f"No supported build system found for {repo_path}")
-    return res
+    return "Unknown", "no build system", [], ""
 
-def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
-    successes = {}
-    failures = {}
-    build_system_counts = {}
+def main() -> Tuple[Dict[str, List[str]], Dict[str, List[str]], Dict[str, List[str]], List[str]]:
+    successes: Dict[str, List[str]] = defaultdict(list)
+    failures: Dict[str, List[str]] = defaultdict(list)
+    build_system_counts: Dict[str, List[str]] = defaultdict(list)
     all_missing_headers = []
     buildsystem_categories = defaultdict(list)
 
@@ -313,69 +337,70 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
         repo_path = os.path.join(REPOS_DIR, repo_name)
         logger.info(f"Analyzing {repo_path}")
 
-        # "res" is a dictionary which contains the following
-        # "build_system": the name of the build system that was detected
-        # "result": the result of the build (success or failure)
-        # "missing_headers": a list of missing headers that were detected during the build
-        # "output": the output of the build process
-        res = build_repo(repo_path, logger)
-        build_system, result, missing_headers, output, additional_buildsystems = res["build_system"], res["result"], res["missing_headers"], res["output"], res["additional_buildsystems"]
+        build_system, result, missing_headers, output = build_repo(repo_path, logger)
 
-        build_system_counts[build_system] = build_system_counts.get(build_system, 0) + 1
+        build_system_counts[build_system].append(repo_name)
 
         buildsystem_categories[build_system].append({
             "repo_name": repo_name,
-            "result": result=="success",
+            "result": result == "success",
         })
-        logger.info(f"Additional build systems detected for repo: " + str(additional_buildsystems))
+
         if result == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
-            successes[build_system] = successes.get(build_system, 0) + 1
+            successes[build_system].append(repo_name)
         else:
             logger.error(f"Error: Build failed for {repo_name}\nBuild failed for reason: {result}")
             print(f"\033[91mError: Build failed for {repo_name}\nBuild failed for reason: {result}\033[0m")
-            failures[build_system] = failures.get(build_system, 0) + 1
+            failures[build_system].append(repo_name)
 
         all_missing_headers.extend(missing_headers)
 
         print_running_totals(successes, failures, build_system_counts, all_missing_headers)
-        overall_logger.info(f"Repos categorized by buildsystem....")
-        # Print out all the repos categorized by build system, with line breaks in between for human readability
-        for build_system, repos in buildsystem_categories.items():
-            overall_logger.info(f"Build system: {build_system}")
-            for repo in repos:
-                overall_logger.info(f"Repo: {repo['repo_name']} - Success: {repo['result']}")
-            overall_logger.info("\n")
+        overall_logger.info(f"Repos categorized by buildsystem: {buildsystem_categories}")
 
     return successes, failures, build_system_counts, list(all_missing_headers)
 
-def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], build_system_counts: Dict[str, int], missing_headers: List[str]):
-    total_successes = sum(successes.values())
-    total_failures = sum(failures.values())
+
+# TODO 2: Change build_system_coutns, failures, successes to the Dict[str, List[str]] structure accordingly
+
+def print_running_totals(successes: Dict[str, List[str]], failures: Dict[str, List[str]], build_system_counts: Dict[str, List[str]], missing_headers: List[str]):
+    total_successes = sum(len(repos) for repos in successes.values())
+    total_failures = sum(len(repos) for repos in failures.values())
     total_repos = total_successes + total_failures
 
     print("\033[92m")
     print(f"Overall success rate: {total_successes}/{total_repos}")
-
     overall_logger.info(f"Overall success rate: {total_successes}/{total_repos}")
 
-    for build_system in build_system_counts:
-        success_count = successes.get(build_system, 0)
-        total_count = build_system_counts[build_system]
+    for build_system, repos in build_system_counts.items():
+        success_count = len(successes.get(build_system, []))
+        total_count = len(repos)
         print(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
         overall_logger.info(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
 
-    print(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
-    overall_logger.info(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
 
-    print(f"Number of repos with package not found error: {len(missing_headers)}")
-    overall_logger.info(f"Number of repos with package not found error: {len(missing_headers)}")
-
-    print(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
-    overall_logger.info(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
-
-    print(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
-    overall_logger.info(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
+#TODO 3: Improve Error logging -- In addition to logging numbers of each type, also log the list of corresponding repo names. 
+    unknown_buildsystems = build_system_counts.get('Unknown', [])
+    print(f"Number of repos with no detectable buildsystem: {len(unknown_buildsystems)}")
+    overall_logger.info(f"Number of repos with no detectable buildsystem: {len(unknown_buildsystems)}")
+    if unknown_buildsystems:
+        overall_logger.info(f"Repos with no detectable buildsystem: {unknown_buildsystems}")
+    
+    print(f"Number of repos with package not found error (missing headers): {len(missing_headers)}")
+    overall_logger.info(f"Number of repos with package not found error (missing headers): {len(missing_headers)}")
+    if missing_headers:
+        overall_logger.info(f"List of repos with missing headers: {missing_headers}")
+    
+    autotools_failures = failures.get('AutotoolsBuildSystem', [])
+    print(f"Number of repos with ./configure errors: {len(autotools_failures)}")
+    overall_logger.info(f"Number of repos with ./configure errors: {len(autotools_failures)}")
+    if autotools_failures:
+        overall_logger.info(f"Repos with ./configure errors: {autotools_failures}")
+    
+    other_failures_count = sum(len(repos) for repos in failures.values()) - len(autotools_failures) - len(missing_headers) - len(unknown_buildsystems)
+    print(f"Number of repos with other errors: {other_failures_count}")
+    overall_logger.info(f"Number of repos with other errors: {other_failures_count}")
 
     print(f"List of all missing headers so far: {missing_headers}")
     overall_logger.info(f"List of all missing headers so far: {missing_headers}")
