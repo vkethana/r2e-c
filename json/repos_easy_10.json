@@ -1,0 +1,10 @@
+[
+"https://github.com/sqlite/sqlite",
+"https://github.com/redis/redis",
+"https://github.com/curl/curl",
+"https://github.com/git/git",
+"https://github.com/nginx/nginx",
+"https://github.com/php/php-src",
+"https://github.com/openssl/openssl",
+"https://github.com/lua/lua"
+]

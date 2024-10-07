@@ -1,0 +1,201 @@
+Missing Packages and Development Files Report
+============================================
+
+Repository: meituan-dianping___sqladvisor
+No missing packages or files detected.
+
+Repository: jiangdongguo___androidusbcamera
+No missing packages or files detected.
+
+Repository: facebookarchive___libphenom
+No missing packages or files detected.
+
+Repository: foobnix___librerareader
+No missing packages or files detected.
+
+Repository: coolwanglu___vim.js
+Missing packages/files:
+  - auto/osdef.h
+    Suggestion: Look for a '-dev' or '-devel' package containing auto/osdef.h
+
+Repository: christinaa___rpi-open-firmware
+No missing packages or files detected.
+
+Repository: endrazine___wcc
+Missing packages/files:
+  - bfd.h
+    Suggestion: Look for a '-dev' or '-devel' package containing bfd.h
+  - dev-package-for-bfd.h
+    Suggestion: Consider installing development packages. For bfd.h, try 'libbfd.h-dev' or similar.
+
+Repository: satori-com___tcpkali
+No missing packages or files detected.
+
+Repository: rpisec___mbe
+No missing packages or files detected.
+
+Repository: bumptech___stud
+Missing packages/files:
+  - dev-package-for-ev.h
+    Suggestion: Consider installing development packages. For ev.h, try 'libev.h-dev' or similar.
+  - ev.h
+    Suggestion: Look for a '-dev' or '-devel' package containing ev.h
+
+Repository: build
+Missing packages/files:
+  - a
+    Suggestion: Try installing 'a' or 'a-dev'
+  - bits/c++config.h
+    Suggestion: Look for a '-dev' or '-devel' package containing bits/c++config.h
+  - dev-package-for-bits/c++config.h
+    Suggestion: Consider installing development packages. For bits/c++config.h, try 'libbits-dev' or similar.
+  - dev-package-for-lua.h
+    Suggestion: Consider installing development packages. For lua.h, try 'liblua.h-dev' or similar.
+  - lua.h
+    Suggestion: Look for a '-dev' or '-devel' package containing lua.h
+
+Repository: pipelinedb___pipelinedb
+No missing packages or files detected.
+
+Repository: confluentinc___bottledwater-pg
+No missing packages or files detected.
+
+Repository: fascinatedbox___lily
+No missing packages or files detected.
+
+Repository: juhovh___shairplay
+No missing packages or files detected.
+
+Repository: nikhilm___uvbook
+No missing packages or files detected.
+
+Repository: saminiir___level-ip
+Missing packages/files:
+  - dev-package-for-sys/capability.h
+    Suggestion: Consider installing development packages. For sys/capability.h, try 'libsys-dev' or similar.
+  - sys/capability.h
+    Suggestion: Look for a '-dev' or '-devel' package containing sys/capability.h
+
+Repository: zavg___linux-0.01
+No missing packages or files detected.
+
+Repository: torch___torch7
+No missing packages or files detected.
+
+Repository: hashcat___hashcat-legacy
+Missing packages/files:
+  - dev-package-for-gmp.h
+    Suggestion: Consider installing development packages. For gmp.h, try 'libgmp.h-dev' or similar.
+  - gmp.h
+    Suggestion: Look for a '-dev' or '-devel' package containing gmp.h
+
+Repository: mpenkov___ffmpeg-tutorial
+Missing packages/files:
+  - dev-package-for-libavcodec/avcodec.h
+    Suggestion: Consider installing development packages. For libavcodec/avcodec.h, try 'liblibavcodec-dev' or similar.
+  - libavcodec
+    Suggestion: Try installing 'libavcodec' or 'libavcodec-dev'
+  - libavcodec/avcodec.h
+    Suggestion: Look for a '-dev' or '-devel' package containing libavcodec/avcodec.h
+  - libavformat
+    Suggestion: Try installing 'libavformat' or 'libavformat-dev'
+  - libavutil
+    Suggestion: Try installing 'libavutil' or 'libavutil-dev'
+  - libswresample
+    Suggestion: Try installing 'libswresample' or 'libswresample-dev'
+  - libswscale
+    Suggestion: Try installing 'libswscale' or 'libswscale-dev'
+  - sdl
+    Suggestion: Try installing 'sdl' or 'sdl-dev'
+
+Repository: snavely___bundler_sfm
+Missing packages/files:
+  - cannot execute ‘f951’: execvp
+    Suggestion: Try installing 'cannot execute ‘f951’: execvp' or 'cannot execute ‘f951’: execvp-dev'
+
+Repository: sustrik___libmill
+No missing packages or files detected.
+
+Repository: twitter___fatcache
+No missing packages or files detected.
+
+Repository: dmajkic___redis
+No missing packages or files detected.
+
+Repository: samyk___pwnat
+No missing packages or files detected.
+
+Repository: cnlohr___espusb
+No missing packages or files detected.
+
+Summary of Missing Packages and Files
+=====================================
+libavformat: 1 repositories
+Suggestion: Try installing 'libavformat' or 'libavformat-dev'
+
+dev-package-for-bits/c++config.h: 1 repositories
+Suggestion: Consider installing development packages. For bits/c++config.h, try 'libbits-dev' or similar.
+
+dev-package-for-sys/capability.h: 1 repositories
+Suggestion: Consider installing development packages. For sys/capability.h, try 'libsys-dev' or similar.
+
+sys/capability.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing sys/capability.h
+
+dev-package-for-ev.h: 1 repositories
+Suggestion: Consider installing development packages. For ev.h, try 'libev.h-dev' or similar.
+
+gmp.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing gmp.h
+
+bits/c++config.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing bits/c++config.h
+
+libavutil: 1 repositories
+Suggestion: Try installing 'libavutil' or 'libavutil-dev'
+
+cannot execute ‘f951’: execvp: 1 repositories
+Suggestion: Try installing 'cannot execute ‘f951’: execvp' or 'cannot execute ‘f951’: execvp-dev'
+
+libswresample: 1 repositories
+Suggestion: Try installing 'libswresample' or 'libswresample-dev'
+
+lua.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing lua.h
+
+libavcodec: 1 repositories
+Suggestion: Try installing 'libavcodec' or 'libavcodec-dev'
+
+auto/osdef.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing auto/osdef.h
+
+libavcodec/avcodec.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing libavcodec/avcodec.h
+
+sdl: 1 repositories
+Suggestion: Try installing 'sdl' or 'sdl-dev'
+
+dev-package-for-gmp.h: 1 repositories
+Suggestion: Consider installing development packages. For gmp.h, try 'libgmp.h-dev' or similar.
+
+dev-package-for-lua.h: 1 repositories
+Suggestion: Consider installing development packages. For lua.h, try 'liblua.h-dev' or similar.
+
+libswscale: 1 repositories
+Suggestion: Try installing 'libswscale' or 'libswscale-dev'
+
+bfd.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing bfd.h
+
+ev.h: 1 repositories
+Suggestion: Look for a '-dev' or '-devel' package containing ev.h
+
+dev-package-for-libavcodec/avcodec.h: 1 repositories
+Suggestion: Consider installing development packages. For libavcodec/avcodec.h, try 'liblibavcodec-dev' or similar.
+
+a: 1 repositories
+Suggestion: Try installing 'a' or 'a-dev'
+
+dev-package-for-bfd.h: 1 repositories
+Suggestion: Consider installing development packages. For bfd.h, try 'libbfd.h-dev' or similar.
+
