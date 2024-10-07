@@ -325,11 +325,10 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
     logger.error(f"No supported build system found for {repo_path}")
     return "Unknown", "no build system", [], ""
 
-# TODO 1: Modify Change build_system_coutns, failures, successes into Dict[str, List[str]]
-def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
-    successes = {}
-    failures = {}
-    build_system_counts = {}
+def main() -> Tuple[Dict[str, List[str]], Dict[str, List[str]], Dict[str, List[str]], List[str]]:
+    successes: Dict[str, List[str]] = defaultdict(list)
+    failures: Dict[str, List[str]] = defaultdict(list)
+    build_system_counts: Dict[str, List[str]] = defaultdict(list)
     all_missing_headers = []
     buildsystem_categories = defaultdict(list)
 
@@ -340,20 +339,20 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
 
         build_system, result, missing_headers, output = build_repo(repo_path, logger)
 
-        build_system_counts[build_system] = build_system_counts.get(build_system, 0) + 1
+        build_system_counts[build_system].append(repo_name)
 
         buildsystem_categories[build_system].append({
             "repo_name": repo_name,
-            "result": result=="success",
+            "result": result == "success",
         })
 
         if result == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
-            successes[build_system] = successes.get(build_system, 0) + 1
+            successes[build_system].append(repo_name)
         else:
             logger.error(f"Error: Build failed for {repo_name}\nBuild failed for reason: {result}")
             print(f"\033[91mError: Build failed for {repo_name}\nBuild failed for reason: {result}\033[0m")
-            failures[build_system] = failures.get(build_system, 0) + 1
+            failures[build_system].append(repo_name)
 
         all_missing_headers.extend(missing_headers)
 
@@ -363,37 +362,45 @@ def main() -> Tuple[Dict[str, int], Dict[str, int], Dict[str, int], List[str]]:
     return successes, failures, build_system_counts, list(all_missing_headers)
 
 
+# TODO 2: Change build_system_coutns, failures, successes to the Dict[str, List[str]] structure accordingly
 
-# TODO 2: Change build_system_coutns, failures, successes
-
-def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], build_system_counts: Dict[str, int], missing_headers: List[str]):
-    total_successes = sum(successes.values())
-    total_failures = sum(failures.values())
+def print_running_totals(successes: Dict[str, List[str]], failures: Dict[str, List[str]], build_system_counts: Dict[str, List[str]], missing_headers: List[str]):
+    total_successes = sum(len(repos) for repos in successes.values())
+    total_failures = sum(len(repos) for repos in failures.values())
     total_repos = total_successes + total_failures
 
     print("\033[92m")
     print(f"Overall success rate: {total_successes}/{total_repos}")
-
     overall_logger.info(f"Overall success rate: {total_successes}/{total_repos}")
 
-    for build_system in build_system_counts:
-        success_count = successes.get(build_system, 0)
-        total_count = build_system_counts[build_system]
+    for build_system, repos in build_system_counts.items():
+        success_count = len(successes.get(build_system, []))
+        total_count = len(repos)
         print(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
         overall_logger.info(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
 
-#TODO 3: Improve Error logging
-    print(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
-    overall_logger.info(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
 
-    print(f"Number of repos with package not found error: {len(missing_headers)}")
-    overall_logger.info(f"Number of repos with package not found error: {len(missing_headers)}")
-
-    print(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
-    overall_logger.info(f"Number of repos with ./configure errors: {failures.get('AutotoolsBuildSystem', 0)}")
-
-    print(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
-    overall_logger.info(f"Number of repos with other errors: {total_failures - failures.get('AutotoolsBuildSystem', 0) - len(missing_headers) - build_system_counts.get('Unknown', 0)}")
+#TODO 3: Improve Error logging -- In addition to logging numbers of each type, also log the list of corresponding repo names. 
+    unknown_buildsystems = build_system_counts.get('Unknown', [])
+    print(f"Number of repos with no detectable buildsystem: {len(unknown_buildsystems)}")
+    overall_logger.info(f"Number of repos with no detectable buildsystem: {len(unknown_buildsystems)}")
+    if unknown_buildsystems:
+        overall_logger.info(f"Repos with no detectable buildsystem: {unknown_buildsystems}")
+    
+    print(f"Number of repos with package not found error (missing headers): {len(missing_headers)}")
+    overall_logger.info(f"Number of repos with package not found error (missing headers): {len(missing_headers)}")
+    if missing_headers:
+        overall_logger.info(f"List of repos with missing headers: {missing_headers}")
+    
+    autotools_failures = failures.get('AutotoolsBuildSystem', [])
+    print(f"Number of repos with ./configure errors: {len(autotools_failures)}")
+    overall_logger.info(f"Number of repos with ./configure errors: {len(autotools_failures)}")
+    if autotools_failures:
+        overall_logger.info(f"Repos with ./configure errors: {autotools_failures}")
+    
+    other_failures_count = sum(len(repos) for repos in failures.values()) - len(autotools_failures) - len(missing_headers) - len(unknown_buildsystems)
+    print(f"Number of repos with other errors: {other_failures_count}")
+    overall_logger.info(f"Number of repos with other errors: {other_failures_count}")
 
     print(f"List of all missing headers so far: {missing_headers}")
     overall_logger.info(f"List of all missing headers so far: {missing_headers}")
