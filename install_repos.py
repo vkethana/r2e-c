@@ -5,6 +5,7 @@ from paths import REPOS_DIR, LOGGER_DIR
 from utils import setup_logger
 import subprocess
 import re
+from openai import OpenAI 
 from collections import defaultdict
 
 class BuildSystem(ABC):
@@ -412,29 +413,18 @@ def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], bu
     print(f"Number of repos with package not found error: {len(missing_headers)}")
     print("\033[0m")
 
+def check_dependency(command: str, name: str):
+    try:
+        subprocess.run([command, '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    except FileNotFoundError:
+        raise Exception(f"{name} is not installed. Please install before running this script.")
+
+
 if __name__ == "__main__":
-    # Verify that scons is installed
-    try:
-        subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("SCons is not installed. Please install before running this script.")
-
-    # Verify that bazel is installed, doesn't seem to be needed
-    try:
-        subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Bazel is not installed. Please install before running this script.")
-
-    try:
-        subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Ninja is not installed. Please install before running this script.")
-
-    try:
-        subprocess.run(['meson', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Meson is not installed. Please install before running this script.")
-
+    check_dependency('scons', 'SCons')
+    check_dependency('bazel', 'Bazel')
+    check_dependency('ninja', 'Ninja')
+    check_dependency('meson', 'Meson')
     successes, failures, build_system_counts, missing_headers = main()
 
     print("\nFinal Summary:")
