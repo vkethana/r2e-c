@@ -13,6 +13,7 @@ from paths import SELF_EQUIV_OUTPUT_DIR
 To run this script, makesure LLVM and Clang are installed on your system.
 Specifically, make sure llvm-10 is installed
 '''
+
 llvm_library_path = '/usr/lib/llvm-10/lib/libclang.so.1'
 
 class CFunctionExtractor:

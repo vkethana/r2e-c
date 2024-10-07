@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import os
-from typing import List, Tuple, Dict
+from typing import List, Dict, Tuple
 from paths import REPOS_DIR, LOGGER_DIR
 from utils import setup_logger
 import subprocess
@@ -12,11 +12,14 @@ class BuildSystem(ABC):
     def detect(self, repo_path: str) -> bool:
         pass
 
-    @abstractmethod
-    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
-        pass
+    def find_missing_headers(self, output: str) -> List[str]:
+        """Base implementation for finding missing headers"""
+        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
+        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
+        return list(set(missing_headers))
 
-    def run_command(self, command: str, repo_path: str, logger) -> Tuple[bool, str]:
+    def run_command(self, command: str, repo_path: str, logger) -> Dict[str, str]:
+        """Base implementation for running commands"""
         log_file = os.path.join(LOGGER_DIR, f"{os.path.basename(repo_path)}_build.log")
         logger.info(f"Running command: {command}")
         logger.info(f"Logging output to: {log_file}")
@@ -41,266 +44,275 @@ class BuildSystem(ABC):
             return_code = process.wait()
             log.write(f"Command finished with return code: {return_code}\n\n")
             
-        return return_code == 0, output
+        return {
+            "success": return_code == 0,
+            "output": output
+        }
 
-class MakefileBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        makefile_variants = ['Makefile', 'makefile', 'MAKEFILE']
-        if any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants):
-            return True
-        return search_in_depth(repo_path, makefile_variants)
+    @abstractmethod
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        pass
 
-    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
-        logger.info("Running make")
+class MakeBasedSystem(BuildSystem):
+    """Base class for make-based build systems"""
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+
+        # Common cleanup steps
         self.run_command('make clean', repo_path, logger)
         self.run_command('make distclean', repo_path, logger)
         self.run_command('rm -rf autom4te.cache', repo_path, logger)
         self.run_command('rm -f config.status config.cache config.log', repo_path, logger)
 
-        logger.info("Running autogen")
-        self.run_command('./autogen', repo_path, logger)
+        # Run configure if it exists
+        if os.path.exists(os.path.join(repo_path, 'configure')):
+            cmd_result = self.run_command('./configure', repo_path, logger)
+            res["output"] += cmd_result["output"]
+
+        # Run make
+        cmd_result = self.run_command('make', repo_path, logger)
+        res["output"] += cmd_result["output"]
         
+        if not cmd_result["success"]:
+            res["result"] = "make failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
 
-        logger.info("Running ./configure")
-        success, output = self.run_command('./configure', repo_path, logger)
-        '''
-        # Sometimes configure fails because it dones't exist. so don't exclude repos just because configure failed
-        if not success:
-            return "configure failed", self.find_missing_headers(output), output
-        '''
+        return res
+
+class MakefileBuildSystem(MakeBasedSystem):
+    def detect(self, repo_path: str) -> bool:
+        makefile_variants = ['Makefile', 'makefile', 'MAKEFILE']
+        return any(os.path.isfile(os.path.join(repo_path, variant)) for variant in makefile_variants)
+
+class AutotoolsBuildSystem(MakeBasedSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'configure.ac'))
+
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+
+        # Run autoreconf
+        cmd_result = self.run_command('autoreconf -i', repo_path, logger)
+        res["output"] += cmd_result["output"]
+        if not cmd_result["success"]:
+            res["result"] = "autoreconf failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            return res
+
+        # Run parent class build method (handles configure and make)
+        parent_res = super().build(repo_path, logger)
+        res["output"] += parent_res["output"]
         
-        logger.info("Running make")
-        success, output = self.run_command('make', repo_path, logger)
-        if not success:
-            return "make failed", self.find_missing_headers(output), output
+        if parent_res["result"] != "success":
+            res.update(parent_res)
 
-        return "success", [], ""
+        return res
 
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
-        return list(missing_headers)
-
-class AutotoolsBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'configure.ac')):
-            return True
-        return search_in_depth(repo_path, ['configure.ac'])
-
-    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
-        logger.info("Running autoreconf")
-        success, output = self.run_command('autoreconf -i', repo_path, logger)
-        if not success:
-            return "autoreconf failed", self.find_missing_headers(output), output
-
-        logger.info("Running autogen.sh")
-        self.run_command('./autogen.sh', repo_path, logger)
-
-        logger.info("Running configure")
-        success, output = self.run_command('./configure', repo_path, logger)
-        '''
-        if not success:
-            return "configure failed", self.find_missing_headers(output), output
-        '''
-
-        logger.info("Running make")
-        success, output = self.run_command('make', repo_path, logger)
-        if not success:
-            return "make failed", self.find_missing_headers(output), output
-
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
-        return list(missing_headers)
-
-class GradleBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'gradlew')):
-            return True
-        return search_in_depth(repo_path, ['gradlew'])
-
-    def build(self, repo_path: str, logger):
-        self.run_command('./gradlew clean', repo_path, logger)
-        self.run_command('rm -rf .gradle/', repo_path, logger)
-        self.run_command('rm -rf build/', repo_path, logger)
-
-        logger.info("Running Gradle build")
-        success, output = self.run_command(f'chmod +x gradlew && ./gradlew build', repo_path, logger)
-        if not success:
-            return "gradle failed", self.find_missing_headers(output), output
-
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
-        return list(missing_headers)
 
 class CMakeBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt')):
-            return True
-        return search_in_depth(repo_path, ['CMakeLists.txt'])
-
-    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
-        # Clear Existing files
-        self.run_command('rm -rf build/', repo_path, logger)
-        self.run_command('rm -rf CMakeCache.txt', repo_path, logger)
-        self.run_command('rm -rf CMakeFiles/', repo_path, logger)
-
-        logger.info("Running CMake")
+        return os.path.isfile(os.path.join(repo_path, 'CMakeLists.txt'))
+        
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
+        # Create build directory
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
-
-        success, output = self.run_command(f"cmake ..", build_dir, logger)
-        if not success:
-            return "cmake failed", self.find_missing_headers(output), output
-
-        success, output = self.run_command(f"cmake --build .", build_dir, logger)
-        if not success:
-            return "cmake build failed", self.find_missing_headers(output), output
-
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        # Just find all lines with #Include and extrct the header file name
-        missing_headers = list(re.findall(r'fatal error: (.+?): No such file or directory', output))
-        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
-
-        return missing_headers
-
-class SlnBuildSystem(BuildSystem):
-    def detect(self, repo_path: str) -> bool:
-        # Check if there's a .sln file in the repo directory or search in depth
-        return any(f.endswith('.sln') for f in os.listdir(repo_path)) or search_in_depth(repo_path, ['*.sln'])
-
-    def build(self, repo_path: str, logger) -> Tuple[str, List[str], str]:
-        # Locate the solution file
-        solution_file = self.find_solution_file(repo_path)
-        if not solution_file:
-            return "No .sln file found", [], ""
-
-        logger.info(f"Building {solution_file}")
-        build_command = f"msbuild {solution_file} /p:Configuration=Release"
-
-        success, output = self.run_command(build_command, repo_path, logger)
-        if not success:
-            return "sln build failed", self.find_missing_references(output), output
-
-        return "success", [], ""
-
-    def find_solution_file(self, repo_path: str) -> str:
-        # Return the first .sln file found in the directory or subdirectories
-        for root, dirs, files in os.walk(repo_path):
-            for file in files:
-                if file.endswith(".sln"):
-                    return os.path.join(root, file)
-        return ""
-
-    def find_missing_references(self, output: str) -> List[str]:
-        # Extract missing project references or header files from the output
-        missing_references = re.findall(r"error: (.+?): No such file or directory", output)
-        return missing_references
-
+        
+        # Run CMake
+        cmd_result = self.run_command('cmake ..', build_dir, logger)
+        res["output"] += cmd_result["output"]
+        if not cmd_result["success"]:
+            res["result"] = "cmake failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            return res
+            
+        # Run make
+        cmd_result = self.run_command('make', build_dir, logger)
+        res["output"] += cmd_result["output"]
+        if not cmd_result["success"]:
+            res["result"] = "make failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            
+        return res
 
 class SConsBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'SConstruct')):
-            return True
-        return search_in_depth(repo_path, ['SConstruct'])
-
-    def build(self, repo_path: str, logger):
-        logger.info("Running SCons build")
-        success, output = self.run_command(f"scons", repo_path, logger)
-        if not success:
-            return "scons failed", self.find_missing_headers(output), output
-
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = list(re.findall(r'fatal error: (.+?): No such file or directory', output))
-        return list(missing_headers)
+        return os.path.isfile(os.path.join(repo_path, 'SConstruct')) or \
+               os.path.isfile(os.path.join(repo_path, 'Sconstruct'))
+               
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
+        # Clean first
+        self.run_command('scons -c', repo_path, logger)
+        
+        # Run SCons build
+        cmd_result = self.run_command('scons', repo_path, logger)
+        res["output"] += cmd_result["output"]
+        
+        if not cmd_result["success"]:
+            res["result"] = "scons failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            
+        return res
 
 class BazelBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'WORKSPACE')):
-            return True
-        return search_in_depth(repo_path, ['WORKSPACE'])
-
-    def build(self, repo_path: str, logger):
-        self.run_command('bazel clean --expunge', repo_path, logger)
-
-        logger.info("Running Bazel build")
-        success, output = self.run_command(f"bazel build //...", repo_path, logger)
-
-        if not success:
-            return "bazel build failed", self.find_missing_headers(output), output
-
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
-        return list(missing_headers)
-
+        return os.path.isfile(os.path.join(repo_path, 'WORKSPACE')) or \
+               os.path.isfile(os.path.join(repo_path, 'WORKSPACE.bazel'))
+               
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
+        # Clean first
+        self.run_command('bazel clean', repo_path, logger)
+        
+        # Run Bazel build
+        cmd_result = self.run_command('bazel build //...', repo_path, logger)
+        res["output"] += cmd_result["output"]
+        
+        if not cmd_result["success"]:
+            res["result"] = "bazel failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            
+        return res
 
 class MesonBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'meson.build')):
-            return True
-        return search_in_depth(repo_path, ['meson.build'])
-
-    def build(self, repo_path: str, logger):
-        self.run_command('rm -rf build/', repo_path, logger)
-
-        logger.info("Running Meson build")
+        return os.path.isfile(os.path.join(repo_path, 'meson.build'))
+        
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
         build_dir = os.path.join(repo_path, 'build')
         os.makedirs(build_dir, exist_ok=True)
-
-        success, output = self.run_command(f'meson ..', build_dir, logger)
-        if not success:
-            return "meson failed", self.find_missing_headers(output), output
-
-        success, output = self.run_command('ninja', build_dir, logger)
-        if not success:
-            return "ninja failed", self.find_missing_headers(output), output
-
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        missing_headers.extend(re.findall(r'#include <(.+?)>', output))
-        return list(missing_headers)
+        
+        # Setup build directory
+        cmd_result = self.run_command('meson setup ..', build_dir, logger)
+        res["output"] += cmd_result["output"]
+        if not cmd_result["success"]:
+            res["result"] = "meson setup failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            return res
+            
+        # Run build
+        cmd_result = self.run_command('ninja', build_dir, logger)
+        res["output"] += cmd_result["output"]
+        if not cmd_result["success"]:
+            res["result"] = "ninja failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            
+        return res
 
 class CustomScriptBuildSystem(BuildSystem):
     def detect(self, repo_path: str) -> bool:
-        if os.path.isfile(os.path.join(repo_path, 'build.sh')):
-            return True
-        return search_in_depth(repo_path, ['build.sh'])
+        build_scripts = ['build.sh', 'compile.sh', 'make.sh', 'build']
+        return any(os.path.isfile(os.path.join(repo_path, script)) for script in build_scripts)
+        
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
+        # Try different build scripts in order of preference
+        build_scripts = ['build.sh', 'compile.sh', 'make.sh', 'build']
+        for script in build_scripts:
+            script_path = os.path.join(repo_path, script)
+            if os.path.isfile(script_path):
+                # Make script executable
+                os.chmod(script_path, 0o755)
+                cmd_result = self.run_command(f'./{script}', repo_path, logger)
+                res["output"] += cmd_result["output"]
+                
+                if not cmd_result["success"]:
+                    res["result"] = f"build script {script} failed"
+                    res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+                return res
+                
+        return res
 
-    def build(self, repo_path: str, logger):
-        logger.info("Running custom build.sh script")
-        build_script = os.path.join(repo_path, 'build.sh')
+class SlnBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return any(f.endswith('.sln') for f in os.listdir(repo_path))
+        
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
+        # Find .sln file
+        sln_files = [f for f in os.listdir(repo_path) if f.endswith('.sln')]
+        if not sln_files:
+            res["result"] = "no .sln file found"
+            return res
+            
+        sln_file = sln_files[0]
+        
+        # Build using MSBuild
+        cmd_result = self.run_command(f'msbuild {sln_file}', repo_path, logger)
+        res["output"] += cmd_result["output"]
+        
+        if not cmd_result["success"]:
+            res["result"] = "msbuild failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            
+        return res
 
-        success, output = self.run_command('chmod +x build.sh && ./build.sh', repo_path, logger)
-        if not success:
-            return "build.sh failed", self.find_missing_headers(output), output
+class GradleBuildSystem(BuildSystem):
+    def detect(self, repo_path: str) -> bool:
+        return os.path.isfile(os.path.join(repo_path, 'build.gradle'))
+        
+    def build(self, repo_path: str, logger) -> Dict[str, any]:
+        res = {
+            "result": "success",
+            "missing_headers": [],
+            "output": "",
+        }
+        
+        # Clean first
+        self.run_command('./gradlew clean', repo_path, logger)
+        
+        # Run Gradle build
+        cmd_result = self.run_command('./gradlew build', repo_path, logger)
+        res["output"] += cmd_result["output"]
+        
+        if not cmd_result["success"]:
+            res["result"] = "gradle build failed"
+            res["missing_headers"] = self.find_missing_headers(cmd_result["output"])
+            
+        return res
 
-        return "success", [], ""
-
-    def find_missing_headers(self, output: str) -> List[str]:
-        missing_headers = re.findall(r'fatal error: (.+?): No such file or directory', output)
-        return list(missing_headers)
-
-def search_in_depth(repo_path: str, build_file_names: List[str]) -> bool:
-    for root, dirs, files in os.walk(repo_path):
-        if any(build_file in files for build_file in build_file_names):
-            return True
-    return False
-
-def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
+def build_repo(repo_path: str, logger) -> Dict[str, any]:
     build_systems = [
         CustomScriptBuildSystem(),
         SConsBuildSystem(),
@@ -313,115 +325,105 @@ def build_repo(repo_path: str, logger) -> Tuple[str, str, List[str], str]:
         MesonBuildSystem(),
     ]
 
+    res = {
+        "build_system": "Unknown",
+        "result": "no build system",
+        "missing_headers": [],
+        "output": "",
+        "additional_buildsystems": []
+    }
+
+    # Try automatic detection first
     for build_system in build_systems:
         if build_system.detect(repo_path):
             print(f"Build system detected: {build_system.__class__.__name__}")
-            result, missing_headers, output = build_system.build(repo_path, logger)
-            #result, missing_headers, output = True, [], ""
-            return build_system.__class__.__name__, result, missing_headers, output
-
-        
+            build_res = build_system.build(repo_path, logger)
+            
+            res["build_system"] = build_system.__class__.__name__
+            res.update(build_res)
+            
+            # If build failed, try other build systems
+            if build_res["result"] != "success":
+                print("Primary build system failed, trying alternatives...")
+                for alt_system in build_systems:
+                    if alt_system.__class__.__name__ != res["build_system"]:
+                        if alt_system.detect(repo_path):
+                            alt_res = alt_system.build(repo_path, logger)
+                            if alt_res["result"] == "success":
+                                res["additional_buildsystems"].append({
+                                    "name": alt_system.__class__.__name__,
+                                    "result": "success"
+                                })
+                            
+            return res
 
     logger.error(f"No supported build system found for {repo_path}")
-    return "Unknown", "no build system", [], ""
+    return res
 
 def main() -> Tuple[Dict[str, List[str]], Dict[str, List[str]], Dict[str, List[str]], List[str]]:
-    successes: Dict[str, List[str]] = defaultdict(list)
-    failures: Dict[str, List[str]] = defaultdict(list)
-    build_system_counts: Dict[str, List[str]] = defaultdict(list)
+    successes = defaultdict(list)
+    failures = defaultdict(list)
+    build_system_counts = defaultdict(list)
     all_missing_headers = []
     buildsystem_categories = defaultdict(list)
+    print("Running installer on ", REPOS_DIR)
+    print("There are ", len(os.listdir(REPOS_DIR)), " repos to be installed")
 
     for repo_name in os.listdir(REPOS_DIR):
         logger = setup_logger(LOGGER_DIR, repo_name)
         repo_path = os.path.join(REPOS_DIR, repo_name)
         logger.info(f"Analyzing {repo_path}")
 
-        build_system, result, missing_headers, output = build_repo(repo_path, logger)
+        build_res = build_repo(repo_path, logger)
 
+        build_system = build_res["build_system"]
         build_system_counts[build_system].append(repo_name)
 
-        buildsystem_categories[build_system].append({
-            "repo_name": repo_name,
-            "result": result == "success",
-        })
-
-        if result == "success":
+        if build_res["result"] == "success":
             logger.info(f"Success: Build succeeded for {repo_name}")
             successes[build_system].append(repo_name)
         else:
-            logger.error(f"Error: Build failed for {repo_name}\nBuild failed for reason: {result}")
-            print(f"\033[91mError: Build failed for {repo_name}\nBuild failed for reason: {result}\033[0m")
+            logger.error(f"Error: Build failed for {repo_name}\nBuild failed for reason: {build_res['result']}")
+            print(f"\033[91mError: Build failed for {repo_name}\nBuild failed for reason: {build_res['result']}\033[0m")
             failures[build_system].append(repo_name)
 
-        all_missing_headers.extend(missing_headers)
+            if build_res["additional_buildsystems"]:
+                logger.info(f"Alternative build systems succeeded: {build_res['additional_buildsystems']}")
 
+        all_missing_headers.extend(build_res["missing_headers"])
         print_running_totals(successes, failures, build_system_counts, all_missing_headers)
-        overall_logger.info(f"Repos categorized by buildsystem: {buildsystem_categories}")
 
-    return successes, failures, build_system_counts, list(all_missing_headers)
+    return successes, failures, build_system_counts, list(set(all_missing_headers))
 
-
-# TODO 2: Change build_system_coutns, failures, successes to the Dict[str, List[str]] structure accordingly
-
-def print_running_totals(successes: Dict[str, List[str]], failures: Dict[str, List[str]], build_system_counts: Dict[str, List[str]], missing_headers: List[str]):
-    total_successes = sum(len(repos) for repos in successes.values())
-    total_failures = sum(len(repos) for repos in failures.values())
+def print_running_totals(successes: Dict[str, int], failures: Dict[str, int], build_system_counts: Dict[str, int], missing_headers: List[str]):
+    total_successes = len(successes.values())
+    total_failures = len(failures.values())
     total_repos = total_successes + total_failures
 
     print("\033[92m")
     print(f"Overall success rate: {total_successes}/{total_repos}")
-    overall_logger.info(f"Overall success rate: {total_successes}/{total_repos}")
-
-    for build_system, repos in build_system_counts.items():
-        success_count = len(successes.get(build_system, []))
-        total_count = len(repos)
+    
+    for build_system in build_system_counts:
+        success_count = len(successes.get(build_system, 0))
+        total_count = len(build_system_counts[build_system])
         print(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
-        overall_logger.info(f"Success rate for {build_system} Repos: {success_count}/{total_count}")
 
-
-#TODO 3: Improve Error logging -- In addition to logging numbers of each type, also log the list of corresponding repo names. 
-    unknown_buildsystems = build_system_counts.get('Unknown', [])
-    print(f"Number of repos with no detectable buildsystem: {len(unknown_buildsystems)}")
-    overall_logger.info(f"Number of repos with no detectable buildsystem: {len(unknown_buildsystems)}")
-    if unknown_buildsystems:
-        overall_logger.info(f"Repos with no detectable buildsystem: {unknown_buildsystems}")
-    
-    print(f"Number of repos with package not found error (missing headers): {len(missing_headers)}")
-    overall_logger.info(f"Number of repos with package not found error (missing headers): {len(missing_headers)}")
-    if missing_headers:
-        overall_logger.info(f"List of repos with missing headers: {missing_headers}")
-    
-    autotools_failures = failures.get('AutotoolsBuildSystem', [])
-    print(f"Number of repos with ./configure errors: {len(autotools_failures)}")
-    overall_logger.info(f"Number of repos with ./configure errors: {len(autotools_failures)}")
-    if autotools_failures:
-        overall_logger.info(f"Repos with ./configure errors: {autotools_failures}")
-    
-    other_failures_count = sum(len(repos) for repos in failures.values()) - len(autotools_failures) - len(missing_headers) - len(unknown_buildsystems)
-    print(f"Number of repos with other errors: {other_failures_count}")
-    overall_logger.info(f"Number of repos with other errors: {other_failures_count}")
-
-    print(f"List of all missing headers so far: {missing_headers}")
-    overall_logger.info(f"List of all missing headers so far: {missing_headers}")
+    print(f"Number of repos with no detectable buildsystem: {build_system_counts.get('Unknown', 0)}")
+    print(f"Number of repos with package not found error: {len(missing_headers)}")
     print("\033[0m")
 
 if __name__ == "__main__":
-    overall_logger = setup_logger(LOGGER_DIR, "overall_stats")
-    overall_logger.info("Overall logger has been initialized; this file contains running stats for all repos")
-
+    # Verify that scons is installed
     try:
         subprocess.run(['scons', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("SCons is not installed. Please install before running this script.")
 
-    '''
-    # Bazel installation is not working in docker container (unfortunately)
+    # Verify that bazel is installed, doesn't seem to be needed
     try:
         subprocess.run(['bazel', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     except FileNotFoundError:
         raise Exception("Bazel is not installed. Please install before running this script.")
-    '''
 
     try:
         subprocess.run(['ninja', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -433,19 +435,9 @@ if __name__ == "__main__":
     except FileNotFoundError:
         raise Exception("Meson is not installed. Please install before running this script.")
 
-    try:
-        subprocess.run(['gradle', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Gradle is not installed. Please install before running this script.")
-
-    try:
-        subprocess.run(['autoreconf', '-version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    except FileNotFoundError:
-        raise Exception("Gradle is not installed. Please install before running this script.")
-
     successes, failures, build_system_counts, missing_headers = main()
 
-    overall_logger.info("\nFinal Summary:")
+    print("\nFinal Summary:")
     print_running_totals(successes, failures, build_system_counts, missing_headers)
-    overall_logger.info(f"Missing headers:{missing_headers}")
+    print("Missing headers:", missing_headers)
 
