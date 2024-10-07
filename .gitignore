@@ -57,3 +57,5 @@ logs/
 __pycache__
 repos2/
 ./gradle
+self_equiv_tests
+test_results
