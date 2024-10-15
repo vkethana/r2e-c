@@ -1,8 +1,0 @@
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (berkeleydb___libdb)
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb INFO Analyzing repos/berkeleydb___libdb (install_repos.py:338) (berkeleydb___libdb)
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb INFO Running autoreconf (install_repos.py:91) (berkeleydb___libdb)
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb INFO Running command: autoreconf -i (install_repos.py:21) (berkeleydb___libdb)
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/berkeleydb___libdb_build.log (install_repos.py:22) (berkeleydb___libdb)
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb DEBUG autoreconf: 'configure.ac' or 'configure.in' is required (install_repos.py:39) (berkeleydb___libdb)
-10/07/2024 12:44:34 AM logger_berkeleydb___libdb ERROR Error: Build failed for berkeleydb___libdb
-Build failed for reason: autoreconf failed (install_repos.py:353) (berkeleydb___libdb)

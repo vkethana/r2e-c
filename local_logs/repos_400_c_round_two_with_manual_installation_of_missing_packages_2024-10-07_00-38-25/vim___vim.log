@@ -1,8 +1,0 @@
-10/07/2024 12:50:59 AM logger_vim___vim INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (vim___vim)
-10/07/2024 12:50:59 AM logger_vim___vim INFO Analyzing repos/vim___vim (install_repos.py:338) (vim___vim)
-10/07/2024 12:50:59 AM logger_vim___vim INFO Running autoreconf (install_repos.py:91) (vim___vim)
-10/07/2024 12:50:59 AM logger_vim___vim INFO Running command: autoreconf -i (install_repos.py:21) (vim___vim)
-10/07/2024 12:50:59 AM logger_vim___vim INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/vim___vim_build.log (install_repos.py:22) (vim___vim)
-10/07/2024 12:50:59 AM logger_vim___vim DEBUG autoreconf: 'configure.ac' or 'configure.in' is required (install_repos.py:39) (vim___vim)
-10/07/2024 12:50:59 AM logger_vim___vim ERROR Error: Build failed for vim___vim
-Build failed for reason: autoreconf failed (install_repos.py:353) (vim___vim)

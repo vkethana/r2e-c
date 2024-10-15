@@ -1,8 +1,0 @@
-10/07/2024 12:38:44 AM logger_libsdl-org___SDL INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (libsdl-org___SDL)
-10/07/2024 12:38:44 AM logger_libsdl-org___SDL INFO Analyzing repos/libsdl-org___SDL (install_repos.py:338) (libsdl-org___SDL)
-10/07/2024 12:38:44 AM logger_libsdl-org___SDL INFO Running autoreconf (install_repos.py:91) (libsdl-org___SDL)
-10/07/2024 12:38:44 AM logger_libsdl-org___SDL INFO Running command: autoreconf -i (install_repos.py:21) (libsdl-org___SDL)
-10/07/2024 12:38:44 AM logger_libsdl-org___SDL INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/libsdl-org___SDL_build.log (install_repos.py:22) (libsdl-org___SDL)
-10/07/2024 12:38:45 AM logger_libsdl-org___SDL DEBUG autoreconf: 'configure.ac' or 'configure.in' is required (install_repos.py:39) (libsdl-org___SDL)
-10/07/2024 12:38:45 AM logger_libsdl-org___SDL ERROR Error: Build failed for libsdl-org___SDL
-Build failed for reason: autoreconf failed (install_repos.py:353) (libsdl-org___SDL)

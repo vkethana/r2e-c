@@ -1,5 +1,0 @@
-10/07/2024 12:40:52 AM logger_apple___homekitadk INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (apple___homekitadk)
-10/07/2024 12:40:52 AM logger_apple___homekitadk INFO Analyzing repos/apple___homekitadk (install_repos.py:338) (apple___homekitadk)
-10/07/2024 12:40:52 AM logger_apple___homekitadk ERROR No supported build system found for repos/apple___homekitadk (install_repos.py:325) (apple___homekitadk)
-10/07/2024 12:40:52 AM logger_apple___homekitadk ERROR Error: Build failed for apple___homekitadk
-Build failed for reason: no build system (install_repos.py:353) (apple___homekitadk)

@@ -1,8 +1,0 @@
-10/07/2024 12:44:36 AM logger_samba-team___samba INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (samba-team___samba)
-10/07/2024 12:44:36 AM logger_samba-team___samba INFO Analyzing repos/samba-team___samba (install_repos.py:338) (samba-team___samba)
-10/07/2024 12:44:36 AM logger_samba-team___samba INFO Running autoreconf (install_repos.py:91) (samba-team___samba)
-10/07/2024 12:44:36 AM logger_samba-team___samba INFO Running command: autoreconf -i (install_repos.py:21) (samba-team___samba)
-10/07/2024 12:44:36 AM logger_samba-team___samba INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/samba-team___samba_build.log (install_repos.py:22) (samba-team___samba)
-10/07/2024 12:44:37 AM logger_samba-team___samba DEBUG autoreconf: 'configure.ac' or 'configure.in' is required (install_repos.py:39) (samba-team___samba)
-10/07/2024 12:44:37 AM logger_samba-team___samba ERROR Error: Build failed for samba-team___samba
-Build failed for reason: autoreconf failed (install_repos.py:353) (samba-team___samba)

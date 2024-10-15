@@ -1,8 +1,0 @@
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (libjpeg-turbo___libjpeg-turbo)
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo INFO Analyzing repos/libjpeg-turbo___libjpeg-turbo (install_repos.py:338) (libjpeg-turbo___libjpeg-turbo)
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo INFO Running custom build.sh script (install_repos.py:284) (libjpeg-turbo___libjpeg-turbo)
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo INFO Running command: chmod +x build.sh && ./build.sh (install_repos.py:21) (libjpeg-turbo___libjpeg-turbo)
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/libjpeg-turbo___libjpeg-turbo_build.log (install_repos.py:22) (libjpeg-turbo___libjpeg-turbo)
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo DEBUG chmod: cannot access 'build.sh': No such file or directory (install_repos.py:39) (libjpeg-turbo___libjpeg-turbo)
-10/07/2024 12:51:38 AM logger_libjpeg-turbo___libjpeg-turbo ERROR Error: Build failed for libjpeg-turbo___libjpeg-turbo
-Build failed for reason: build.sh failed (install_repos.py:353) (libjpeg-turbo___libjpeg-turbo)

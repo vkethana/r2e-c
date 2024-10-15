@@ -1,8 +1,0 @@
-10/07/2024 12:42:53 AM logger_tmux___tmux INFO <<<<<<<<<<<<<<<<<< Logger setup anew <<<<<<<<<<<<<<<<<<< (utils.py:39) (tmux___tmux)
-10/07/2024 12:42:53 AM logger_tmux___tmux INFO Analyzing repos/tmux___tmux (install_repos.py:338) (tmux___tmux)
-10/07/2024 12:42:53 AM logger_tmux___tmux INFO Running custom build.sh script (install_repos.py:284) (tmux___tmux)
-10/07/2024 12:42:53 AM logger_tmux___tmux INFO Running command: chmod +x build.sh && ./build.sh (install_repos.py:21) (tmux___tmux)
-10/07/2024 12:42:53 AM logger_tmux___tmux INFO Logging output to: logs/repos_400_c_round_two_with_manual_installation_of_missing_packages_2024-10-07_00-38-25/tmux___tmux_build.log (install_repos.py:22) (tmux___tmux)
-10/07/2024 12:42:53 AM logger_tmux___tmux DEBUG chmod: cannot access 'build.sh': No such file or directory (install_repos.py:39) (tmux___tmux)
-10/07/2024 12:42:53 AM logger_tmux___tmux ERROR Error: Build failed for tmux___tmux
-Build failed for reason: build.sh failed (install_repos.py:353) (tmux___tmux)
