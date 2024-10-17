@@ -1,6 +1,7 @@
 # R2E-C
 This repo is a work-in-progress attempt to expand R2E ([r2e.dev](r2e.dev)), a tool for turning Python GitHub repos into programming agent environments, to support the C programming language. There are several parts to this process:
-0) Cloning the relevant repos (using `clone_repos.py`)
+
+0) Cloning the relevant repos which we want to generate tests for (using `clone_repos.py`).
 1) **Buildsystem Detection**, which is handled by `install_repos.py`. This script reads an arbitrary GitHub repo and attempts to figure out what buildsystem, if any, it uses
 2) **Test Extraction**, which is handled by `generate_self_equiv_tests.py`. This script attempts to grab relevant functions from the repos and extract them into a JSON. We are also working to add dependency slicing, which will identify what imports / headers / other functions are necessary for a given test to function
 3) **Test Execution**, which is handled by `run_self_equiv_tests.py`. This runs the tests generated in the previous step.
